@@ -1,0 +1,2 @@
+Hey Guys!
+This folder is just to test the functionality of git. So if you want, try put some stuff up on this repository.
