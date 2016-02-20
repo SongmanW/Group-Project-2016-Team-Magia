@@ -3,7 +3,7 @@
   <Asset Type="Graphics:MeshContent">
     <Name>Box01</Name>
     <Identity>
-      <SourceFilename>E:\GDApp - 8 - Rail Camera\GDApp\GDAppContent\Assets\Models\box.FBX</SourceFilename>
+      <SourceFilename>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDAppContent\Assets\Models\box.FBX</SourceFilename>
       <SourceTool>FbxImporter</SourceTool>
     </Identity>
     <Transform>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</Transform>
@@ -26,7 +26,7 @@
     <Resource ID="#Resource1" Type="Graphics:BasicMaterialContent">
       <Name>Default</Name>
       <Identity>
-        <SourceFilename>E:\GDApp - 8 - Rail Camera\GDApp\GDAppContent\Assets\Models\box.FBX</SourceFilename>
+        <SourceFilename>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDAppContent\Assets\Models\box.FBX</SourceFilename>
         <SourceTool>FbxImporter</SourceTool>
       </Identity>
       <OpaqueData>

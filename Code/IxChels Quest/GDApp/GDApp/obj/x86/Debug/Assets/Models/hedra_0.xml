@@ -3,7 +3,7 @@
   <Asset Type="Graphics:MeshContent">
     <Name>Hedra01</Name>
     <Identity>
-      <SourceFilename>E:\GDApp - 8 - Rail Camera\GDApp\GDAppContent\Assets\Models\hedra.FBX</SourceFilename>
+      <SourceFilename>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDAppContent\Assets\Models\hedra.FBX</SourceFilename>
       <SourceTool>FbxImporter</SourceTool>
     </Identity>
     <Transform>2.54 0 0 0 0 7.19523466E-16 -2.54 0 0 2.54 7.19523466E-16 0 1.271124 0 -3.81244183 1</Transform>

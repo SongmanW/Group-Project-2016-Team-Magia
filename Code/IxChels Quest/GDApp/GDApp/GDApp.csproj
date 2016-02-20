@@ -120,6 +120,7 @@
     <Compile Include="GDLibrary\Debug\BoundingBoxDrawer.cs" />
     <Compile Include="GDLibrary\Dictionary\GenericDictionary.cs" />
     <Compile Include="GDLibrary\Factory\VertexFactory.cs" />
+    <Compile Include="GDLibrary\Objects\Model\CharacterModelObject.cs" />
     <Compile Include="GDLibrary\Parameters\RailParameters.cs" />
     <Compile Include="GDLibrary\Cameras\RailCamera3D.cs" />
     <Compile Include="GDLibrary\Debug\Old\TexturedQuad.cs" />

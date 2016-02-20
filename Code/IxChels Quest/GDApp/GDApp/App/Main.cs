@@ -11,6 +11,17 @@ using System;
  */
 
 /*
+    Version: 9.1
+    =============
+    Author: STWL
+    Revisions:
+    - Added CharacterModelObject (movement is dependant on Camera (needs to be set to get new Movements))
+    - Added InitializeLevel (to set initial CharacterModel to first Camera)
+    Bugs:
+    Fixes:
+ */
+
+/*
  * Version: 9
   =============
  * Author: NMCG
@@ -153,7 +164,7 @@ namespace GDApp
         private KeyboardManager keyboardManager;
         private MouseManager mouseManager;
         private ObjectManager objectManager;
-        private MoveableModelObject playerActor;
+        private CharacterModelObject playerActor;
         private GenericDictionary<string, Texture2D> textureDictionary;
         private GenericDictionary<string, SpriteFont> fontDictionary;
         private GenericDictionary<string, Model> modelDictionary;
@@ -228,8 +239,15 @@ namespace GDApp
 
             InitializeCameraTracks();
             InitializeCamera();
- 
+
+
+            InitializeLevel();
             base.Initialize();
+        }
+
+        private void InitializeLevel()
+        {
+            this.playerActor.Camera = this.cameraManager[0];
         }
 
         private void InitializeCameraTracks()
@@ -277,7 +295,7 @@ namespace GDApp
             transform = new Transform3D(new Vector3(0, 0.2f, 0),
                 Vector3.Zero, 0.1f * Vector3.One,
                 Vector3.UnitX, Vector3.UnitY);
-            this.playerActor = new MoveableModelObject("m",
+            this.playerActor = new CharacterModelObject("m",
                 ObjectType.Player, transform,
                 texture, model);
 

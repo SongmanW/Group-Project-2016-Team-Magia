@@ -7,8 +7,8 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Debug\Fonts\debug.xnb</Output>
-      <Time>2016-02-02T12:45:04+00:00</Time>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Debug\Fonts\debug.xnb</Output>
+      <Time>2016-02-20T15:54:53.1065865+00:00</Time>
     </Item>
     <Item>
       <Source>Assets\Textures\Game\Abstract\abstract1.jpg</Source>
@@ -16,8 +16,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Abstract\abstract1.xnb</Output>
-      <Time>2016-02-02T17:10:34+00:00</Time>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Abstract\abstract1.xnb</Output>
+      <Time>2016-02-20T15:54:53.1280174+00:00</Time>
     </Item>
     <Item>
       <Source>Assets\Textures\Game\Abstract\pink.jpg</Source>
@@ -25,8 +25,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Abstract\pink.xnb</Output>
-      <Time>2016-02-02T17:10:34+00:00</Time>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Abstract\pink.xnb</Output>
+      <Time>2016-02-20T15:54:53.1296599+00:00</Time>
     </Item>
     <Item>
       <Source>Assets\Textures\Game\Abstract\pink_trans1.png</Source>
@@ -34,8 +34,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Abstract\pink_trans1.xnb</Output>
-      <Time>2016-02-02T17:10:34+00:00</Time>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Abstract\pink_trans1.xnb</Output>
+      <Time>2016-02-20T15:54:53.1321641+00:00</Time>
     </Item>
     <Item>
       <Source>Assets\Textures\Game\Architecture\Fence\fence1.jpg</Source>
@@ -43,8 +43,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Fence\fence1.xnb</Output>
-      <Time>2016-02-02T17:10:34+00:00</Time>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Fence\fence1.xnb</Output>
+      <Time>2016-02-20T15:54:53.1348926+00:00</Time>
     </Item>
     <Item>
       <Source>Assets\Textures\Game\Architecture\Fence\fence2.jpg</Source>
@@ -52,8 +52,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Fence\fence2.xnb</Output>
-      <Time>2016-02-02T17:10:34+00:00</Time>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Fence\fence2.xnb</Output>
+      <Time>2016-02-20T15:54:53.1359+00:00</Time>
     </Item>
     <Item>
       <Source>Assets\Textures\Game\Architecture\Fence\fence3.jpg</Source>
@@ -61,8 +61,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Fence\fence3.xnb</Output>
-      <Time>2016-02-02T17:10:34+00:00</Time>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Fence\fence3.xnb</Output>
+      <Time>2016-02-20T15:54:53.1379005+00:00</Time>
     </Item>
     <Item>
       <Source>Assets\Textures\Game\Architecture\Fence\fence4.png</Source>
@@ -70,8 +70,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Fence\fence4.xnb</Output>
-      <Time>2016-02-02T17:10:34+00:00</Time>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Fence\fence4.xnb</Output>
+      <Time>2016-02-20T15:54:53.1479139+00:00</Time>
     </Item>
     <Item>
       <Source>Assets\Textures\Game\Architecture\Structures\backwall.jpg</Source>
@@ -79,8 +79,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Structures\backwall.xnb</Output>
-      <Time>2016-02-02T17:10:34+00:00</Time>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Structures\backwall.xnb</Output>
+      <Time>2016-02-20T15:54:53.1494131+00:00</Time>
     </Item>
     <Item>
       <Source>Assets\Textures\Game\Architecture\Structures\sidewall.jpg</Source>
@@ -88,8 +88,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Structures\sidewall.xnb</Output>
-      <Time>2016-02-02T17:10:34+00:00</Time>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Structures\sidewall.xnb</Output>
+      <Time>2016-02-20T15:54:53.1504138+00:00</Time>
     </Item>
     <Item>
       <Source>Assets\Textures\Game\Billboards\alarm1.png</Source>
@@ -97,8 +97,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\alarm1.xnb</Output>
-      <Time>2016-02-02T17:10:34+00:00</Time>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\alarm1.xnb</Output>
+      <Time>2016-02-20T15:54:53.1514148+00:00</Time>
     </Item>
     <Item>
       <Source>Assets\Textures\Game\Billboards\alarm2.png</Source>
@@ -106,8 +106,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\alarm2.xnb</Output>
-      <Time>2016-02-02T17:10:34+00:00</Time>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\alarm2.xnb</Output>
+      <Time>2016-02-20T15:54:53.1519162+00:00</Time>
     </Item>
     <Item>
       <Source>Assets\Textures\Game\Billboards\billboardtexture.jpg</Source>
@@ -115,8 +115,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\billboardtexture.xnb</Output>
-      <Time>2016-02-02T17:10:34+00:00</Time>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\billboardtexture.xnb</Output>
+      <Time>2016-02-20T15:54:53.1534166+00:00</Time>
     </Item>
     <Item>
       <Source>Assets\Textures\Game\Billboards\chevron1.png</Source>
@@ -124,8 +124,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\chevron1.xnb</Output>
-      <Time>2016-02-02T17:10:34+00:00</Time>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\chevron1.xnb</Output>
+      <Time>2016-02-20T15:54:53.1544168+00:00</Time>
     </Item>
     <Item>
       <Source>Assets\Textures\Game\Billboards\chevron2.png</Source>
@@ -133,8 +133,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\chevron2.xnb</Output>
-      <Time>2016-02-02T17:10:34+00:00</Time>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\chevron2.xnb</Output>
+      <Time>2016-02-20T15:54:53.1549178+00:00</Time>
     </Item>
     <Item>
       <Source>Assets\Textures\Game\Billboards\snow1.png</Source>
@@ -142,8 +142,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\snow1.xnb</Output>
-      <Time>2016-02-02T17:10:34+00:00</Time>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\snow1.xnb</Output>
+      <Time>2016-02-20T15:54:53.1561983+00:00</Time>
     </Item>
     <Item>
       <Source>Assets\Textures\Game\Billboards\welcome.png</Source>
@@ -151,8 +151,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\welcome.xnb</Output>
-      <Time>2016-02-02T17:10:34+00:00</Time>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\welcome.xnb</Output>
+      <Time>2016-02-20T15:54:53.1572017+00:00</Time>
     </Item>
     <Item>
       <Source>Assets\Debug\Textures\ml.png</Source>
@@ -160,8 +160,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Debug\Textures\ml.xnb</Output>
-      <Time>2016-02-02T17:10:34+00:00</Time>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Debug\Textures\ml.xnb</Output>
+      <Time>2016-02-20T15:54:53.1115938+00:00</Time>
     </Item>
     <Item>
       <Source>Assets\Debug\Textures\slj.jpg</Source>
@@ -169,8 +169,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Debug\Textures\slj.xnb</Output>
-      <Time>2016-02-02T17:10:34+00:00</Time>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Debug\Textures\slj.xnb</Output>
+      <Time>2016-02-20T15:54:53.1125913+00:00</Time>
     </Item>
     <Item>
       <Source>Assets\Textures\Game\Foliage\Ground\foliage.png</Source>
@@ -178,8 +178,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Foliage\Ground\foliage.xnb</Output>
-      <Time>2016-02-02T17:10:34+00:00</Time>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Foliage\Ground\foliage.xnb</Output>
+      <Time>2016-02-20T15:54:53.1598595+00:00</Time>
     </Item>
     <Item>
       <Source>Assets\Textures\Game\Foliage\Ground\grass1.jpg</Source>
@@ -187,8 +187,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Foliage\Ground\grass1.xnb</Output>
-      <Time>2016-02-02T17:10:34+00:00</Time>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Foliage\Ground\grass1.xnb</Output>
+      <Time>2016-02-20T15:54:53.1628639+00:00</Time>
     </Item>
     <Item>
       <Source>Assets\Textures\Game\Foliage\Trees\tree1.png</Source>
@@ -196,8 +196,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Foliage\Trees\tree1.xnb</Output>
-      <Time>2016-02-02T17:10:34+00:00</Time>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Foliage\Trees\tree1.xnb</Output>
+      <Time>2016-02-20T15:54:53.1638646+00:00</Time>
     </Item>
     <Item>
       <Source>Assets\Textures\Game\Foliage\Trees\tree2.png</Source>
@@ -205,8 +205,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Foliage\Trees\tree2.xnb</Output>
-      <Time>2016-02-02T17:10:34+00:00</Time>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Foliage\Trees\tree2.xnb</Output>
+      <Time>2016-02-20T15:54:53.1663443+00:00</Time>
     </Item>
     <Item>
       <Source>Assets\Textures\Game\Foliage\Trees\tree3.png</Source>
@@ -214,8 +214,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Foliage\Trees\tree3.xnb</Output>
-      <Time>2016-02-02T17:10:34+00:00</Time>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Foliage\Trees\tree3.xnb</Output>
+      <Time>2016-02-20T15:54:53.1688494+00:00</Time>
     </Item>
     <Item>
       <Source>Assets\Textures\Game\Props\Crates\crate1.jpg</Source>
@@ -223,8 +223,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Props\Crates\crate1.xnb</Output>
-      <Time>2016-02-02T17:10:34+00:00</Time>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Props\Crates\crate1.xnb</Output>
+      <Time>2016-02-20T15:54:53.1708499+00:00</Time>
     </Item>
     <Item>
       <Source>Assets\Textures\Game\Props\Crates\crate2.jpg</Source>
@@ -232,8 +232,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Props\Crates\crate2.xnb</Output>
-      <Time>2016-02-02T17:10:34+00:00</Time>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Props\Crates\crate2.xnb</Output>
+      <Time>2016-02-20T15:54:53.1723507+00:00</Time>
     </Item>
     <Item>
       <Source>Assets\Textures\Game\Skybox\back.bmp</Source>
@@ -241,8 +241,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\back.xnb</Output>
-      <Time>2016-02-02T17:10:34+00:00</Time>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\back.xnb</Output>
+      <Time>2016-02-20T15:54:53.1793605+00:00</Time>
     </Item>
     <Item>
       <Source>Assets\Textures\Game\Skybox\front.bmp</Source>
@@ -250,8 +250,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\front.xnb</Output>
-      <Time>2016-02-02T17:10:34+00:00</Time>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\front.xnb</Output>
+      <Time>2016-02-20T15:54:53.1873722+00:00</Time>
     </Item>
     <Item>
       <Source>Assets\Textures\Game\Skybox\ground2.bmp</Source>
@@ -259,8 +259,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\ground2.xnb</Output>
-      <Time>2016-02-02T17:10:34+00:00</Time>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\ground2.xnb</Output>
+      <Time>2016-02-20T15:54:53.1938767+00:00</Time>
     </Item>
     <Item>
       <Source>Assets\Textures\Game\Skybox\left.bmp</Source>
@@ -268,8 +268,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\left.xnb</Output>
-      <Time>2016-02-02T17:10:34+00:00</Time>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\left.xnb</Output>
+      <Time>2016-02-20T15:54:53.200881+00:00</Time>
     </Item>
     <Item>
       <Source>Assets\Textures\Game\Skybox\right.bmp</Source>
@@ -277,8 +277,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\right.xnb</Output>
-      <Time>2016-02-02T17:10:34+00:00</Time>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\right.xnb</Output>
+      <Time>2016-02-20T15:54:53.2073831+00:00</Time>
     </Item>
     <Item>
       <Source>Assets\Textures\Game\Skybox\sky.bmp</Source>
@@ -286,8 +286,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\sky.xnb</Output>
-      <Time>2016-02-02T17:10:34+00:00</Time>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\sky.xnb</Output>
+      <Time>2016-02-20T15:54:53.212889+00:00</Time>
     </Item>
     <Item>
       <Source>Assets\Textures\Game\white.png</Source>
@@ -295,8 +295,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\white.xnb</Output>
-      <Time>2016-02-02T17:10:34+00:00</Time>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\white.xnb</Output>
+      <Time>2016-02-20T15:54:53.2138877+00:00</Time>
     </Item>
     <Item>
       <Source>Assets\Textures\Menu\audiomenu.png</Source>
@@ -304,8 +304,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\audiomenu.xnb</Output>
-      <Time>2016-02-02T17:10:34+00:00</Time>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\audiomenu.xnb</Output>
+      <Time>2016-02-20T15:54:53.2148895+00:00</Time>
     </Item>
     <Item>
       <Source>Assets\Textures\Menu\exitmenu.png</Source>
@@ -313,8 +313,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\exitmenu.xnb</Output>
-      <Time>2016-02-02T17:10:34+00:00</Time>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\exitmenu.xnb</Output>
+      <Time>2016-02-20T15:54:53.2153885+00:00</Time>
     </Item>
     <Item>
       <Source>Assets\Textures\Menu\exitmenuwithtrans.png</Source>
@@ -322,8 +322,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\exitmenuwithtrans.xnb</Output>
-      <Time>2016-02-02T17:10:34+00:00</Time>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\exitmenuwithtrans.xnb</Output>
+      <Time>2016-02-20T15:54:53.2163927+00:00</Time>
     </Item>
     <Item>
       <Source>Assets\Textures\Menu\mainmenu.PNG</Source>
@@ -331,8 +331,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\mainmenu.xnb</Output>
-      <Time>2016-02-02T17:10:34+00:00</Time>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\mainmenu.xnb</Output>
+      <Time>2016-02-20T15:54:53.2173563+00:00</Time>
     </Item>
     <Item>
       <Source>Assets\Textures\UI\mouseicons.png</Source>
@@ -340,8 +340,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\UI\mouseicons.xnb</Output>
-      <Time>2016-02-02T17:10:34+00:00</Time>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\UI\mouseicons.xnb</Output>
+      <Time>2016-02-20T15:54:53.2185547+00:00</Time>
     </Item>
     <Item>
       <Source>Assets\Models\box.FBX</Source>
@@ -349,11 +349,11 @@
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\box.xnb</Output>
-      <Time>2016-02-15T11:56:32+00:00</Time>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\box.xnb</Output>
+      <Time>2016-02-20T15:54:53.1135912+00:00</Time>
       <Dependency>
-        <Key>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\obj\x86\Debug\Assets\Models\box_0.xml</Key>
-        <Value>2016-02-16T11:26:24+00:00</Value>
+        <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\box_0.xml</Key>
+        <Value>2016-02-20T16:28:48.8230988+00:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -362,11 +362,11 @@
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\cylinder.xnb</Output>
-      <Time>2016-02-15T11:56:32+00:00</Time>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\cylinder.xnb</Output>
+      <Time>2016-02-20T15:54:53.1145923+00:00</Time>
       <Dependency>
-        <Key>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\obj\x86\Debug\Assets\Models\cylinder_0.xml</Key>
-        <Value>2016-02-16T11:26:24+00:00</Value>
+        <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\cylinder_0.xml</Key>
+        <Value>2016-02-20T16:28:48.9204071+00:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -375,11 +375,11 @@
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\dome.xnb</Output>
-      <Time>2016-02-15T11:56:32+00:00</Time>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\dome.xnb</Output>
+      <Time>2016-02-20T15:54:53.1165979+00:00</Time>
       <Dependency>
-        <Key>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\obj\x86\Debug\Assets\Models\dome_0.xml</Key>
-        <Value>2016-02-16T11:26:26+00:00</Value>
+        <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\dome_0.xml</Key>
+        <Value>2016-02-20T16:28:49.0002047+00:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -388,11 +388,11 @@
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\hedra.xnb</Output>
-      <Time>2016-02-15T11:56:32+00:00</Time>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\hedra.xnb</Output>
+      <Time>2016-02-20T15:54:53.1170981+00:00</Time>
       <Dependency>
-        <Key>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\obj\x86\Debug\Assets\Models\hedra_0.xml</Key>
-        <Value>2016-02-16T11:26:26+00:00</Value>
+        <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\hedra_0.xml</Key>
+        <Value>2016-02-20T16:28:49.0437024+00:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -401,11 +401,11 @@
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\octahedron.xnb</Output>
-      <Time>2016-02-15T11:56:32+00:00</Time>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\octahedron.xnb</Output>
+      <Time>2016-02-20T15:54:53.1175998+00:00</Time>
       <Dependency>
-        <Key>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\obj\x86\Debug\Assets\Models\octahedron_0.xml</Key>
-        <Value>2016-02-16T11:26:26+00:00</Value>
+        <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\octahedron_0.xml</Key>
+        <Value>2016-02-20T16:28:49.0814885+00:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -414,11 +414,11 @@
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\plane.xnb</Output>
-      <Time>2016-02-15T11:56:32+00:00</Time>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\plane.xnb</Output>
+      <Time>2016-02-20T15:54:53.1190094+00:00</Time>
       <Dependency>
-        <Key>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\obj\x86\Debug\Assets\Models\plane_0.xml</Key>
-        <Value>2016-02-16T11:26:26+00:00</Value>
+        <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\plane_0.xml</Key>
+        <Value>2016-02-20T16:28:49.1476897+00:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -427,11 +427,11 @@
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\prism.xnb</Output>
-      <Time>2016-02-15T11:56:32+00:00</Time>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\prism.xnb</Output>
+      <Time>2016-02-20T15:54:53.1195107+00:00</Time>
       <Dependency>
-        <Key>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\obj\x86\Debug\Assets\Models\prism_0.xml</Key>
-        <Value>2016-02-16T11:26:26+00:00</Value>
+        <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\prism_0.xml</Key>
+        <Value>2016-02-20T16:28:49.1833557+00:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -440,11 +440,11 @@
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\sphere.xnb</Output>
-      <Time>2016-02-15T11:56:32+00:00</Time>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\sphere.xnb</Output>
+      <Time>2016-02-20T15:54:53.1210115+00:00</Time>
       <Dependency>
-        <Key>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\obj\x86\Debug\Assets\Models\sphere_0.xml</Key>
-        <Value>2016-02-16T11:26:28+00:00</Value>
+        <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\sphere_0.xml</Key>
+        <Value>2016-02-20T16:28:49.2347663+00:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -453,11 +453,11 @@
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\spindle.xnb</Output>
-      <Time>2016-02-15T11:56:32+00:00</Time>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\spindle.xnb</Output>
+      <Time>2016-02-20T15:54:53.1220126+00:00</Time>
       <Dependency>
-        <Key>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\obj\x86\Debug\Assets\Models\spindle_0.xml</Key>
-        <Value>2016-02-16T11:26:30+00:00</Value>
+        <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\spindle_0.xml</Key>
+        <Value>2016-02-20T16:28:49.2749067+00:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -466,11 +466,11 @@
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\torus.xnb</Output>
-      <Time>2016-02-15T11:56:32+00:00</Time>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\torus.xnb</Output>
+      <Time>2016-02-20T15:54:53.1230129+00:00</Time>
       <Dependency>
-        <Key>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\obj\x86\Debug\Assets\Models\torus_0.xml</Key>
-        <Value>2016-02-16T11:26:30+00:00</Value>
+        <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\torus_0.xml</Key>
+        <Value>2016-02-20T16:28:49.3199766+00:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -479,89 +479,89 @@
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\torusknot.xnb</Output>
-      <Time>2016-02-15T11:56:32+00:00</Time>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\torusknot.xnb</Output>
+      <Time>2016-02-20T15:54:53.1260149+00:00</Time>
       <Dependency>
-        <Key>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\obj\x86\Debug\Assets\Models\torusknot_0.xml</Key>
-        <Value>2016-02-16T11:26:30+00:00</Value>
+        <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\torusknot_0.xml</Key>
+        <Value>2016-02-20T16:28:49.3958659+00:00</Value>
       </Dependency>
     </Item>
     <Item>
       <Source>Assets\Models\box.FBX</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\obj\x86\Debug\Assets\Models\box_0.xml</Output>
-      <Time>2016-02-15T11:56:32+00:00</Time>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\box_0.xml</Output>
+      <Time>2016-02-20T15:54:53.1135912+00:00</Time>
     </Item>
     <Item>
       <Source>Assets\Models\cylinder.FBX</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\obj\x86\Debug\Assets\Models\cylinder_0.xml</Output>
-      <Time>2016-02-15T11:56:32+00:00</Time>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\cylinder_0.xml</Output>
+      <Time>2016-02-20T15:54:53.1145923+00:00</Time>
     </Item>
     <Item>
       <Source>Assets\Models\dome.FBX</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\obj\x86\Debug\Assets\Models\dome_0.xml</Output>
-      <Time>2016-02-15T11:56:32+00:00</Time>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\dome_0.xml</Output>
+      <Time>2016-02-20T15:54:53.1165979+00:00</Time>
     </Item>
     <Item>
       <Source>Assets\Models\hedra.FBX</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\obj\x86\Debug\Assets\Models\hedra_0.xml</Output>
-      <Time>2016-02-15T11:56:32+00:00</Time>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\hedra_0.xml</Output>
+      <Time>2016-02-20T15:54:53.1170981+00:00</Time>
     </Item>
     <Item>
       <Source>Assets\Models\octahedron.FBX</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\obj\x86\Debug\Assets\Models\octahedron_0.xml</Output>
-      <Time>2016-02-15T11:56:32+00:00</Time>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\octahedron_0.xml</Output>
+      <Time>2016-02-20T15:54:53.1175998+00:00</Time>
     </Item>
     <Item>
       <Source>Assets\Models\plane.FBX</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\obj\x86\Debug\Assets\Models\plane_0.xml</Output>
-      <Time>2016-02-15T11:56:32+00:00</Time>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\plane_0.xml</Output>
+      <Time>2016-02-20T15:54:53.1190094+00:00</Time>
     </Item>
     <Item>
       <Source>Assets\Models\prism.FBX</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\obj\x86\Debug\Assets\Models\prism_0.xml</Output>
-      <Time>2016-02-15T11:56:32+00:00</Time>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\prism_0.xml</Output>
+      <Time>2016-02-20T15:54:53.1195107+00:00</Time>
     </Item>
     <Item>
       <Source>Assets\Models\sphere.FBX</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\obj\x86\Debug\Assets\Models\sphere_0.xml</Output>
-      <Time>2016-02-15T11:56:32+00:00</Time>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\sphere_0.xml</Output>
+      <Time>2016-02-20T15:54:53.1210115+00:00</Time>
     </Item>
     <Item>
       <Source>Assets\Models\spindle.FBX</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\obj\x86\Debug\Assets\Models\spindle_0.xml</Output>
-      <Time>2016-02-15T11:56:32+00:00</Time>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\spindle_0.xml</Output>
+      <Time>2016-02-20T15:54:53.1220126+00:00</Time>
     </Item>
     <Item>
       <Source>Assets\Models\torus.FBX</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\obj\x86\Debug\Assets\Models\torus_0.xml</Output>
-      <Time>2016-02-15T11:56:32+00:00</Time>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\torus_0.xml</Output>
+      <Time>2016-02-20T15:54:53.1230129+00:00</Time>
     </Item>
     <Item>
       <Source>Assets\Models\torusknot.FBX</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\obj\x86\Debug\Assets\Models\torusknot_0.xml</Output>
-      <Time>2016-02-15T11:56:32+00:00</Time>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\torusknot_0.xml</Output>
+      <Time>2016-02-20T15:54:53.1260149+00:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -570,39 +570,39 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>E:\GDApp - 8 - Rail Camera\GDApp\GDAppContent\</RootDirectory>
-      <LoggerRootDirectory>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\</LoggerRootDirectory>
-      <IntermediateDirectory>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDAppContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
-        <Value>2011-09-01T16:22:30+01:00</Value>
+        <Value>2011-09-01T17:22:30+01:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
-        <Value>2011-09-01T16:22:30+01:00</Value>
+        <Value>2011-09-01T17:22:30+01:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
-        <Value>2011-09-01T16:22:30+01:00</Value>
+        <Value>2011-09-01T17:22:30+01:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
-        <Value>2011-09-01T16:22:30+01:00</Value>
+        <Value>2011-09-01T17:22:30+01:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
-        <Value>2011-09-01T16:22:30+01:00</Value>
+        <Value>2011-09-01T17:22:30+01:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
-        <Value>2011-09-01T16:22:30+01:00</Value>
+        <Value>2011-09-01T17:22:30+01:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2014-10-07T08:18:33.4930349+01:00</Value>
+        <Key>C:\WINDOWS\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2016-02-20T15:49:11.423585+00:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>
