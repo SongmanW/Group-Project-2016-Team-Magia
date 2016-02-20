@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Graphics="Microsoft.Xna.Framework.Content.Pipeline.Graphics" xmlns:Framework="Microsoft.Xna.Framework">
+  <Asset Type="Graphics:MeshContent">
+    <Name>Hedra01</Name>
+    <Identity>
+      <SourceFilename>E:\GDApp - 8 - Rail Camera\GDApp\GDAppContent\Assets\Models\hedra.FBX</SourceFilename>
+      <SourceTool>FbxImporter</SourceTool>
+    </Identity>
+    <Transform>2.54 0 0 0 0 7.19523466E-16 -2.54 0 0 2.54 7.19523466E-16 0 1.271124 0 -3.81244183 1</Transform>
+    <Positions>0 0 7.65765762 5.41478157 5.41478157 7.93977051E-10 -5.41478157 5.41478157 1.91402328E-16 -5.41478157 -5.41478157 -1.70034156E-15 5.41478157 -5.41478157 7.939749E-10 1.122852E-09 1.95539284E-14 -7.65765762</Positions>
+    <Geometry>
+      <Batch>
+        <Indices>2 1 0 5 4 3 8 7 6 11 10 9 14 13 12 17 16 15 20 19 18 23 22 21</Indices>
+        <Vertices>
+          <PositionIndices>0 4 1 1 5 2 2 3 0 3 5 4 1 2 0 3 4 0 4 5 1 3 2 5</PositionIndices>
+          <Channels>
+            <VertexChannel Name="Normal0" ElementType="Framework:Vector3">0.8164966 -1.15417927E-16 0.577350259 0.8164966 -1.15417927E-16 0.577350259 0.8164966 -1.15417927E-16 0.577350259 0 0.8164966 -0.577350259 0 0.8164966 -0.577350259 0 0.8164966 -0.577350259 -0.8164966 -1.0085346E-16 0.577350259 -0.8164966 -1.0085346E-16 0.577350259 -0.8164966 -1.0085346E-16 0.577350259 0 -0.8164966 -0.577350259 0 -0.8164966 -0.577350259 0 -0.8164966 -0.577350259 -4.232883E-11 0.8164966 0.577350259 -4.232883E-11 0.8164966 0.577350259 -4.232883E-11 0.8164966 0.577350259 -4.23288175E-11 -0.8164966 0.577350259 -4.23288175E-11 -0.8164966 0.577350259 -4.23288175E-11 -0.8164966 0.577350259 0.8164966 0 -0.577350259 0.8164966 0 -0.577350259 0.8164966 0 -0.577350259 -0.8164966 1.0085346E-16 -0.577350259 -0.8164966 1.0085346E-16 -0.577350259 -0.8164966 1.0085346E-16 -0.577350259</VertexChannel>
+            <VertexChannel Name="TextureCoordinate0" ElementType="Framework:Vector2">0 0.5 -0.5 1 0.5 1 5.184203E-11 0.5 -0.5 1 1.24974459E-17 1.5 0.5 1 -0.5 1 0 0.5 -1.110223E-16 1.5 -0.5 1 5.184189E-11 0.5 5.184203E-11 0.5 1.24974459E-17 1.5 0.5 1 -1.110223E-16 1.5 5.184189E-11 0.5 0.5 1 -0.5 1 1.80560637E-15 1.5 0.5 1 -0.5 1 0.5 1 1.80560637E-15 1.5</VertexChannel>
+          </Channels>
+        </Vertices>
+      </Batch>
+    </Geometry>
+  </Asset>
+</XnaContent>

@@ -1,0 +1,440 @@
+C:\Users\mcguinnn\Downloads\GDApp\GDApp\GDApp\bin\x86\Debug\GDApp.exe
+C:\Users\mcguinnn\Downloads\GDApp\GDApp\GDApp\bin\x86\Debug\GDApp.pdb
+C:\Users\mcguinnn\Downloads\GDApp\GDApp\GDApp\obj\x86\Debug\GDApp.csprojResolveAssemblyReference.cache
+C:\Users\mcguinnn\Downloads\GDApp\GDApp\GDApp\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\mcguinnn\Downloads\GDApp\GDApp\GDApp\obj\x86\Debug\GDApp.exe
+C:\Users\mcguinnn\Downloads\GDApp\GDApp\GDApp\obj\x86\Debug\GDApp.pdb
+E:\GDApp - 1 - Introduction - Drawing Vertices\GDApp\GDApp\bin\x86\Debug\GDApp.exe
+E:\GDApp - 1 - Introduction - Drawing Vertices\GDApp\GDApp\bin\x86\Debug\GDApp.pdb
+E:\GDApp - 1 - Introduction - Drawing Vertices\GDApp\GDApp\obj\x86\Debug\GDApp.csprojResolveAssemblyReference.cache
+E:\GDApp - 1 - Introduction - Drawing Vertices\GDApp\GDApp\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+E:\GDApp - 1 - Introduction - Drawing Vertices\GDApp\GDApp\obj\x86\Debug\GDApp.exe
+E:\GDApp - 1 - Introduction - Drawing Vertices\GDApp\GDApp\obj\x86\Debug\GDApp.pdb
+F:\GDApp - 3 - Buffers & Cameras\GDApp\GDApp\bin\x86\Debug\GDApp.exe
+F:\GDApp - 3 - Buffers & Cameras\GDApp\GDApp\bin\x86\Debug\GDApp.pdb
+F:\GDApp - 3 - Buffers & Cameras\GDApp\GDApp\obj\x86\Debug\GDApp.csprojResolveAssemblyReference.cache
+F:\GDApp - 3 - Buffers & Cameras\GDApp\GDApp\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+F:\GDApp - 3 - Buffers & Cameras\GDApp\GDApp\obj\x86\Debug\GDApp.exe
+F:\GDApp - 3 - Buffers & Cameras\GDApp\GDApp\obj\x86\Debug\GDApp.pdb
+E:\GDApp - 3 - Buffers & Cameras\GDApp\GDApp\bin\x86\Debug\GDApp.exe
+E:\GDApp - 3 - Buffers & Cameras\GDApp\GDApp\bin\x86\Debug\GDApp.pdb
+E:\GDApp - 3 - Buffers & Cameras\GDApp\GDApp\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+E:\GDApp - 3 - Buffers & Cameras\GDApp\GDApp\obj\x86\Debug\GDApp.exe
+E:\GDApp - 3 - Buffers & Cameras\GDApp\GDApp\obj\x86\Debug\GDApp.pdb
+H:\GDApp - 3 - Buffers & Cameras\GDApp\GDApp\obj\x86\Debug\GDApp.csprojResolveAssemblyReference.cache
+H:\GDApp - 3 - Buffers & Cameras\GDApp\GDApp\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+H:\GDApp - 3 - Buffers & Cameras\GDApp\GDApp\obj\x86\Debug\GDApp.exe
+H:\GDApp - 3 - Buffers & Cameras\GDApp\GDApp\obj\x86\Debug\GDApp.pdb
+H:\GDApp - 3 - Buffers & Cameras\GDApp\GDApp\bin\x86\Debug\GDApp.exe
+H:\GDApp - 3 - Buffers & Cameras\GDApp\GDApp\bin\x86\Debug\GDApp.pdb
+H:\GDApp - 3 - Buffers & Cameras\GDApp\GDApp\bin\x86\Debug\Content\Assets\Debug\Fonts\debug.xnb
+H:\GDApp - 3.1 Buffers & Cameras\GDApp\GDApp\bin\x86\Debug\Content\Assets\Debug\Fonts\debug.xnb
+H:\GDApp - 3.1 Buffers & Cameras\GDApp\GDApp\bin\x86\Debug\GDApp.exe
+H:\GDApp - 3.1 Buffers & Cameras\GDApp\GDApp\bin\x86\Debug\GDApp.pdb
+H:\GDApp - 3.1 Buffers & Cameras\GDApp\GDApp\obj\x86\Debug\GDApp.csprojResolveAssemblyReference.cache
+H:\GDApp - 3.1 Buffers & Cameras\GDApp\GDApp\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+H:\GDApp - 3.1 Buffers & Cameras\GDApp\GDApp\obj\x86\Debug\GDApp.exe
+H:\GDApp - 3.1 Buffers & Cameras\GDApp\GDApp\obj\x86\Debug\GDApp.pdb
+E:\GAS\GDApp - 3.1 Buffers & Cameras\GDApp\GDApp\bin\x86\Debug\Content\Assets\Debug\Fonts\debug.xnb
+E:\GAS\GDApp - 3.1 Buffers & Cameras\GDApp\GDApp\bin\x86\Debug\GDApp.exe
+E:\GAS\GDApp - 3.1 Buffers & Cameras\GDApp\GDApp\bin\x86\Debug\GDApp.pdb
+E:\GAS\GDApp - 3.1 Buffers & Cameras\GDApp\GDApp\obj\x86\Debug\GDApp.csprojResolveAssemblyReference.cache
+E:\GAS\GDApp - 3.1 Buffers & Cameras\GDApp\GDApp\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+E:\GAS\GDApp - 3.1 Buffers & Cameras\GDApp\GDApp\obj\x86\Debug\GDApp.exe
+E:\GAS\GDApp - 3.1 Buffers & Cameras\GDApp\GDApp\obj\x86\Debug\GDApp.pdb
+F:\GAS\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Fonts\debug.xnb
+F:\GAS\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Abstract\abstract1.xnb
+F:\GAS\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Abstract\pink.xnb
+F:\GAS\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Abstract\pink_trans1.xnb
+F:\GAS\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Fence\fence1.xnb
+F:\GAS\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Fence\fence2.xnb
+F:\GAS\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Fence\fence3.xnb
+F:\GAS\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Fence\fence4.xnb
+F:\GAS\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Structures\backwall.xnb
+F:\GAS\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Structures\sidewall.xnb
+F:\GAS\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\alarm1.xnb
+F:\GAS\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\alarm2.xnb
+F:\GAS\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\billboardtexture.xnb
+F:\GAS\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\chevron1.xnb
+F:\GAS\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\chevron2.xnb
+F:\GAS\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\snow1.xnb
+F:\GAS\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\welcome.xnb
+F:\GAS\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Debug\ml.xnb
+F:\GAS\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Debug\slj.xnb
+F:\GAS\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Foliage\Ground\foliage.xnb
+F:\GAS\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Foliage\Ground\grass1.xnb
+F:\GAS\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Foliage\Trees\tree1.xnb
+F:\GAS\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Foliage\Trees\tree2.xnb
+F:\GAS\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Foliage\Trees\tree3.xnb
+F:\GAS\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Props\Crates\crate1.xnb
+F:\GAS\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Props\Crates\crate2.xnb
+F:\GAS\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\back.xnb
+F:\GAS\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\front.xnb
+F:\GAS\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\ground2.xnb
+F:\GAS\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\left.xnb
+F:\GAS\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\right.xnb
+F:\GAS\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\sky.xnb
+F:\GAS\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\white.xnb
+F:\GAS\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\audiomenu.xnb
+F:\GAS\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\exitmenu.xnb
+F:\GAS\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\exitmenuwithtrans.xnb
+F:\GAS\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\mainmenu.xnb
+F:\GAS\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\UI\mouseicons.xnb
+F:\GAS\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\GDApp.exe
+F:\GAS\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\GDApp.pdb
+F:\GAS\GDApp - 4 - Textured Quad\GDApp\GDApp\obj\x86\Debug\GDApp.csprojResolveAssemblyReference.cache
+F:\GAS\GDApp - 4 - Textured Quad\GDApp\GDApp\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+F:\GAS\GDApp - 4 - Textured Quad\GDApp\GDApp\obj\x86\Debug\GDApp.exe
+F:\GAS\GDApp - 4 - Textured Quad\GDApp\GDApp\obj\x86\Debug\GDApp.pdb
+C:\Users\mcguinnn\Downloads\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Abstract\abstract1.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Abstract\pink.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Abstract\pink_trans1.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Fence\fence1.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Fence\fence2.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Fence\fence3.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Fence\fence4.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Structures\backwall.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Structures\sidewall.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\alarm1.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\alarm2.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\billboardtexture.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\chevron1.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\chevron2.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\snow1.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\welcome.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Foliage\Ground\foliage.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Foliage\Ground\grass1.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Foliage\Trees\tree1.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Foliage\Trees\tree2.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Foliage\Trees\tree3.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Props\Crates\crate1.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Props\Crates\crate2.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\back.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\front.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\ground2.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\left.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\right.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\sky.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\white.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\audiomenu.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\exitmenu.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\exitmenuwithtrans.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\mainmenu.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\UI\mouseicons.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\GDApp.exe
+C:\Users\mcguinnn\Downloads\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\GDApp.pdb
+C:\Users\mcguinnn\Downloads\GDApp - 4 - Textured Quad\GDApp\GDApp\obj\x86\Debug\GDApp.csprojResolveAssemblyReference.cache
+C:\Users\mcguinnn\Downloads\GDApp - 4 - Textured Quad\GDApp\GDApp\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\mcguinnn\Downloads\GDApp - 4 - Textured Quad\GDApp\GDApp\obj\x86\Debug\GDApp.exe
+C:\Users\mcguinnn\Downloads\GDApp - 4 - Textured Quad\GDApp\GDApp\obj\x86\Debug\GDApp.pdb
+C:\Users\mcguinnn\Downloads\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Debug\Fonts\debug.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Debug\Textures\ml.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 4 - Textured Quad\GDApp\GDApp\bin\x86\Debug\Content\Assets\Debug\Textures\slj.xnb
+E:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\obj\x86\Debug\GDApp.csprojResolveAssemblyReference.cache
+E:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+E:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\obj\x86\Debug\GDApp.exe
+E:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Debug\Fonts\debug.xnb
+E:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Abstract\abstract1.xnb
+E:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Abstract\pink.xnb
+E:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Abstract\pink_trans1.xnb
+E:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Fence\fence1.xnb
+E:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Fence\fence2.xnb
+E:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Fence\fence3.xnb
+E:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Fence\fence4.xnb
+E:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Structures\backwall.xnb
+E:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Structures\sidewall.xnb
+E:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\alarm1.xnb
+E:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\alarm2.xnb
+E:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\billboardtexture.xnb
+E:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\chevron1.xnb
+E:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\chevron2.xnb
+E:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\snow1.xnb
+E:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\welcome.xnb
+E:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Debug\Textures\ml.xnb
+E:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Debug\Textures\slj.xnb
+E:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Foliage\Ground\foliage.xnb
+E:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Foliage\Ground\grass1.xnb
+E:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Foliage\Trees\tree1.xnb
+E:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Foliage\Trees\tree2.xnb
+E:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Foliage\Trees\tree3.xnb
+E:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Props\Crates\crate1.xnb
+E:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Props\Crates\crate2.xnb
+E:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\back.xnb
+E:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\front.xnb
+E:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\ground2.xnb
+E:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\left.xnb
+E:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\right.xnb
+E:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\sky.xnb
+E:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\white.xnb
+E:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\audiomenu.xnb
+E:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\exitmenu.xnb
+E:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\exitmenuwithtrans.xnb
+E:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\mainmenu.xnb
+E:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\UI\mouseicons.xnb
+E:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\GDApp.exe
+E:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\GDApp.pdb
+E:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\obj\x86\Debug\GDApp.pdb
+H:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Debug\Fonts\debug.xnb
+H:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Abstract\abstract1.xnb
+H:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Abstract\pink.xnb
+H:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Abstract\pink_trans1.xnb
+H:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Fence\fence1.xnb
+H:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Fence\fence2.xnb
+H:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Fence\fence3.xnb
+H:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Fence\fence4.xnb
+H:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Structures\backwall.xnb
+H:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Structures\sidewall.xnb
+H:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\alarm1.xnb
+H:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\alarm2.xnb
+H:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\billboardtexture.xnb
+H:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\chevron1.xnb
+H:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\chevron2.xnb
+H:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\snow1.xnb
+H:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\welcome.xnb
+H:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Debug\Textures\ml.xnb
+H:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Debug\Textures\slj.xnb
+H:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Foliage\Ground\foliage.xnb
+H:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Foliage\Ground\grass1.xnb
+H:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Foliage\Trees\tree1.xnb
+H:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Foliage\Trees\tree2.xnb
+H:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Foliage\Trees\tree3.xnb
+H:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Props\Crates\crate1.xnb
+H:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Props\Crates\crate2.xnb
+H:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\back.xnb
+H:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\front.xnb
+H:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\ground2.xnb
+H:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\left.xnb
+H:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\right.xnb
+H:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\sky.xnb
+H:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\white.xnb
+H:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\audiomenu.xnb
+H:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\exitmenu.xnb
+H:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\exitmenuwithtrans.xnb
+H:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\mainmenu.xnb
+H:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\UI\mouseicons.xnb
+H:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\GDApp.exe
+H:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\bin\x86\Debug\GDApp.pdb
+H:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\obj\x86\Debug\GDApp.csprojResolveAssemblyReference.cache
+H:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+H:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\obj\x86\Debug\GDApp.exe
+H:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDApp\obj\x86\Debug\GDApp.pdb
+C:\Users\mcguinnn\Downloads\GDApp - 6 - Camera Manager\GDApp\GDApp\bin\x86\Debug\Content\Assets\Debug\Fonts\debug.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 6 - Camera Manager\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Abstract\abstract1.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 6 - Camera Manager\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Abstract\pink.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 6 - Camera Manager\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Abstract\pink_trans1.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 6 - Camera Manager\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Fence\fence1.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 6 - Camera Manager\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Fence\fence2.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 6 - Camera Manager\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Fence\fence3.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 6 - Camera Manager\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Fence\fence4.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 6 - Camera Manager\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Structures\backwall.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 6 - Camera Manager\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Structures\sidewall.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 6 - Camera Manager\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\alarm1.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 6 - Camera Manager\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\alarm2.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 6 - Camera Manager\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\billboardtexture.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 6 - Camera Manager\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\chevron1.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 6 - Camera Manager\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\chevron2.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 6 - Camera Manager\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\snow1.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 6 - Camera Manager\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\welcome.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 6 - Camera Manager\GDApp\GDApp\bin\x86\Debug\Content\Assets\Debug\Textures\ml.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 6 - Camera Manager\GDApp\GDApp\bin\x86\Debug\Content\Assets\Debug\Textures\slj.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 6 - Camera Manager\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Foliage\Ground\foliage.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 6 - Camera Manager\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Foliage\Ground\grass1.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 6 - Camera Manager\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Foliage\Trees\tree1.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 6 - Camera Manager\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Foliage\Trees\tree2.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 6 - Camera Manager\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Foliage\Trees\tree3.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 6 - Camera Manager\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Props\Crates\crate1.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 6 - Camera Manager\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Props\Crates\crate2.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 6 - Camera Manager\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\back.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 6 - Camera Manager\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\front.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 6 - Camera Manager\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\ground2.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 6 - Camera Manager\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\left.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 6 - Camera Manager\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\right.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 6 - Camera Manager\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\sky.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 6 - Camera Manager\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\white.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 6 - Camera Manager\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\audiomenu.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 6 - Camera Manager\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\exitmenu.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 6 - Camera Manager\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\exitmenuwithtrans.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 6 - Camera Manager\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\mainmenu.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 6 - Camera Manager\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\UI\mouseicons.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 6 - Camera Manager\GDApp\GDApp\bin\x86\Debug\GDApp.exe
+C:\Users\mcguinnn\Downloads\GDApp - 6 - Camera Manager\GDApp\GDApp\bin\x86\Debug\GDApp.pdb
+C:\Users\mcguinnn\Downloads\GDApp - 6 - Camera Manager\GDApp\GDApp\obj\x86\Debug\GDApp.csprojResolveAssemblyReference.cache
+C:\Users\mcguinnn\Downloads\GDApp - 6 - Camera Manager\GDApp\GDApp\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\mcguinnn\Downloads\GDApp - 6 - Camera Manager\GDApp\GDApp\obj\x86\Debug\GDApp.exe
+C:\Users\mcguinnn\Downloads\GDApp - 6 - Camera Manager\GDApp\GDApp\obj\x86\Debug\GDApp.pdb
+C:\Users\mcguinnn\Downloads\GDApp - 6 - Camera Manager\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\box.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 6 - Camera Manager\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\cylinder.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 6 - Camera Manager\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\dome.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 6 - Camera Manager\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\hedra.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 6 - Camera Manager\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\octahedron.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 6 - Camera Manager\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\plane.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 6 - Camera Manager\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\prism.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 6 - Camera Manager\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\sphere.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 6 - Camera Manager\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\spindle.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 6 - Camera Manager\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\torus.xnb
+C:\Users\mcguinnn\Downloads\GDApp - 6 - Camera Manager\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\torusknot.xnb
+C:\Users\mcguinnn.AD\Downloads\GDApp - 7 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Debug\Fonts\debug.xnb
+C:\Users\mcguinnn.AD\Downloads\GDApp - 7 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Abstract\abstract1.xnb
+C:\Users\mcguinnn.AD\Downloads\GDApp - 7 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Abstract\pink.xnb
+C:\Users\mcguinnn.AD\Downloads\GDApp - 7 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Abstract\pink_trans1.xnb
+C:\Users\mcguinnn.AD\Downloads\GDApp - 7 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Fence\fence1.xnb
+C:\Users\mcguinnn.AD\Downloads\GDApp - 7 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Fence\fence2.xnb
+C:\Users\mcguinnn.AD\Downloads\GDApp - 7 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Fence\fence3.xnb
+C:\Users\mcguinnn.AD\Downloads\GDApp - 7 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Fence\fence4.xnb
+C:\Users\mcguinnn.AD\Downloads\GDApp - 7 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Structures\backwall.xnb
+C:\Users\mcguinnn.AD\Downloads\GDApp - 7 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Structures\sidewall.xnb
+C:\Users\mcguinnn.AD\Downloads\GDApp - 7 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\alarm1.xnb
+C:\Users\mcguinnn.AD\Downloads\GDApp - 7 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\alarm2.xnb
+C:\Users\mcguinnn.AD\Downloads\GDApp - 7 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\billboardtexture.xnb
+C:\Users\mcguinnn.AD\Downloads\GDApp - 7 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\chevron1.xnb
+C:\Users\mcguinnn.AD\Downloads\GDApp - 7 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\chevron2.xnb
+C:\Users\mcguinnn.AD\Downloads\GDApp - 7 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\snow1.xnb
+C:\Users\mcguinnn.AD\Downloads\GDApp - 7 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\welcome.xnb
+C:\Users\mcguinnn.AD\Downloads\GDApp - 7 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Debug\Textures\ml.xnb
+C:\Users\mcguinnn.AD\Downloads\GDApp - 7 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Debug\Textures\slj.xnb
+C:\Users\mcguinnn.AD\Downloads\GDApp - 7 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Foliage\Ground\foliage.xnb
+C:\Users\mcguinnn.AD\Downloads\GDApp - 7 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Foliage\Ground\grass1.xnb
+C:\Users\mcguinnn.AD\Downloads\GDApp - 7 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Foliage\Trees\tree1.xnb
+C:\Users\mcguinnn.AD\Downloads\GDApp - 7 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Foliage\Trees\tree2.xnb
+C:\Users\mcguinnn.AD\Downloads\GDApp - 7 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Foliage\Trees\tree3.xnb
+C:\Users\mcguinnn.AD\Downloads\GDApp - 7 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Props\Crates\crate1.xnb
+C:\Users\mcguinnn.AD\Downloads\GDApp - 7 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Props\Crates\crate2.xnb
+C:\Users\mcguinnn.AD\Downloads\GDApp - 7 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\back.xnb
+C:\Users\mcguinnn.AD\Downloads\GDApp - 7 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\front.xnb
+C:\Users\mcguinnn.AD\Downloads\GDApp - 7 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\ground2.xnb
+C:\Users\mcguinnn.AD\Downloads\GDApp - 7 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\left.xnb
+C:\Users\mcguinnn.AD\Downloads\GDApp - 7 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\right.xnb
+C:\Users\mcguinnn.AD\Downloads\GDApp - 7 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\sky.xnb
+C:\Users\mcguinnn.AD\Downloads\GDApp - 7 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\white.xnb
+C:\Users\mcguinnn.AD\Downloads\GDApp - 7 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\audiomenu.xnb
+C:\Users\mcguinnn.AD\Downloads\GDApp - 7 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\exitmenu.xnb
+C:\Users\mcguinnn.AD\Downloads\GDApp - 7 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\exitmenuwithtrans.xnb
+C:\Users\mcguinnn.AD\Downloads\GDApp - 7 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\mainmenu.xnb
+C:\Users\mcguinnn.AD\Downloads\GDApp - 7 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\UI\mouseicons.xnb
+C:\Users\mcguinnn.AD\Downloads\GDApp - 7 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\box.xnb
+C:\Users\mcguinnn.AD\Downloads\GDApp - 7 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\cylinder.xnb
+C:\Users\mcguinnn.AD\Downloads\GDApp - 7 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\dome.xnb
+C:\Users\mcguinnn.AD\Downloads\GDApp - 7 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\hedra.xnb
+C:\Users\mcguinnn.AD\Downloads\GDApp - 7 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\octahedron.xnb
+C:\Users\mcguinnn.AD\Downloads\GDApp - 7 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\plane.xnb
+C:\Users\mcguinnn.AD\Downloads\GDApp - 7 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\prism.xnb
+C:\Users\mcguinnn.AD\Downloads\GDApp - 7 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\sphere.xnb
+C:\Users\mcguinnn.AD\Downloads\GDApp - 7 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\spindle.xnb
+C:\Users\mcguinnn.AD\Downloads\GDApp - 7 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\torus.xnb
+C:\Users\mcguinnn.AD\Downloads\GDApp - 7 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\torusknot.xnb
+C:\Users\mcguinnn.AD\Downloads\GDApp - 7 - Actors\GDApp\GDApp\bin\x86\Debug\GDApp.exe
+C:\Users\mcguinnn.AD\Downloads\GDApp - 7 - Actors\GDApp\GDApp\bin\x86\Debug\GDApp.pdb
+C:\Users\mcguinnn.AD\Downloads\GDApp - 7 - Actors\GDApp\GDApp\obj\x86\Debug\GDApp.csprojResolveAssemblyReference.cache
+C:\Users\mcguinnn.AD\Downloads\GDApp - 7 - Actors\GDApp\GDApp\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\mcguinnn.AD\Downloads\GDApp - 7 - Actors\GDApp\GDApp\obj\x86\Debug\GDApp.exe
+C:\Users\mcguinnn.AD\Downloads\GDApp - 7 - Actors\GDApp\GDApp\obj\x86\Debug\GDApp.pdb
+E:\GDApp - 7.1 - Actors\GDApp\GDApp\obj\x86\Debug\GDApp.csprojResolveAssemblyReference.cache
+E:\GDApp - 7.1 - Actors\GDApp\GDApp\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+E:\GDApp - 7.1 - Actors\GDApp\GDApp\obj\x86\Debug\GDApp.exe
+E:\GDApp - 7.1 - Actors\GDApp\GDApp\obj\x86\Debug\GDApp.pdb
+E:\GDApp - 7.1 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Debug\Fonts\debug.xnb
+E:\GDApp - 7.1 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Abstract\abstract1.xnb
+E:\GDApp - 7.1 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Abstract\pink.xnb
+E:\GDApp - 7.1 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Abstract\pink_trans1.xnb
+E:\GDApp - 7.1 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Fence\fence1.xnb
+E:\GDApp - 7.1 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Fence\fence2.xnb
+E:\GDApp - 7.1 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Fence\fence3.xnb
+E:\GDApp - 7.1 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Fence\fence4.xnb
+E:\GDApp - 7.1 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Structures\backwall.xnb
+E:\GDApp - 7.1 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Structures\sidewall.xnb
+E:\GDApp - 7.1 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\alarm1.xnb
+E:\GDApp - 7.1 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\alarm2.xnb
+E:\GDApp - 7.1 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\billboardtexture.xnb
+E:\GDApp - 7.1 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\chevron1.xnb
+E:\GDApp - 7.1 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\chevron2.xnb
+E:\GDApp - 7.1 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\snow1.xnb
+E:\GDApp - 7.1 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\welcome.xnb
+E:\GDApp - 7.1 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Debug\Textures\ml.xnb
+E:\GDApp - 7.1 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Debug\Textures\slj.xnb
+E:\GDApp - 7.1 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Foliage\Ground\foliage.xnb
+E:\GDApp - 7.1 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Foliage\Ground\grass1.xnb
+E:\GDApp - 7.1 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Foliage\Trees\tree1.xnb
+E:\GDApp - 7.1 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Foliage\Trees\tree2.xnb
+E:\GDApp - 7.1 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Foliage\Trees\tree3.xnb
+E:\GDApp - 7.1 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Props\Crates\crate1.xnb
+E:\GDApp - 7.1 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Props\Crates\crate2.xnb
+E:\GDApp - 7.1 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\back.xnb
+E:\GDApp - 7.1 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\front.xnb
+E:\GDApp - 7.1 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\ground2.xnb
+E:\GDApp - 7.1 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\left.xnb
+E:\GDApp - 7.1 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\right.xnb
+E:\GDApp - 7.1 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\sky.xnb
+E:\GDApp - 7.1 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\white.xnb
+E:\GDApp - 7.1 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\audiomenu.xnb
+E:\GDApp - 7.1 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\exitmenu.xnb
+E:\GDApp - 7.1 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\exitmenuwithtrans.xnb
+E:\GDApp - 7.1 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\mainmenu.xnb
+E:\GDApp - 7.1 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\UI\mouseicons.xnb
+E:\GDApp - 7.1 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\box.xnb
+E:\GDApp - 7.1 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\cylinder.xnb
+E:\GDApp - 7.1 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\dome.xnb
+E:\GDApp - 7.1 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\hedra.xnb
+E:\GDApp - 7.1 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\octahedron.xnb
+E:\GDApp - 7.1 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\plane.xnb
+E:\GDApp - 7.1 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\prism.xnb
+E:\GDApp - 7.1 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\sphere.xnb
+E:\GDApp - 7.1 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\spindle.xnb
+E:\GDApp - 7.1 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\torus.xnb
+E:\GDApp - 7.1 - Actors\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\torusknot.xnb
+E:\GDApp - 7.1 - Actors\GDApp\GDApp\bin\x86\Debug\GDApp.exe
+E:\GDApp - 7.1 - Actors\GDApp\GDApp\bin\x86\Debug\GDApp.pdb
+E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Debug\Fonts\debug.xnb
+E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Abstract\abstract1.xnb
+E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Abstract\pink.xnb
+E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Abstract\pink_trans1.xnb
+E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Fence\fence1.xnb
+E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Fence\fence2.xnb
+E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Fence\fence3.xnb
+E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Fence\fence4.xnb
+E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Structures\backwall.xnb
+E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Structures\sidewall.xnb
+E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\alarm1.xnb
+E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\alarm2.xnb
+E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\billboardtexture.xnb
+E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\chevron1.xnb
+E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\chevron2.xnb
+E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\snow1.xnb
+E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\welcome.xnb
+E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Debug\Textures\ml.xnb
+E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Debug\Textures\slj.xnb
+E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Foliage\Ground\foliage.xnb
+E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Foliage\Ground\grass1.xnb
+E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Foliage\Trees\tree1.xnb
+E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Foliage\Trees\tree2.xnb
+E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Foliage\Trees\tree3.xnb
+E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Props\Crates\crate1.xnb
+E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Props\Crates\crate2.xnb
+E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\back.xnb
+E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\front.xnb
+E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\ground2.xnb
+E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\left.xnb
+E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\right.xnb
+E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\sky.xnb
+E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\white.xnb
+E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\audiomenu.xnb
+E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\exitmenu.xnb
+E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\exitmenuwithtrans.xnb
+E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\mainmenu.xnb
+E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\UI\mouseicons.xnb
+E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\box.xnb
+E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\cylinder.xnb
+E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\dome.xnb
+E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\hedra.xnb
+E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\octahedron.xnb
+E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\plane.xnb
+E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\prism.xnb
+E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\sphere.xnb
+E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\spindle.xnb
+E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\torus.xnb
+E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\torusknot.xnb
+E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\GDApp.exe
+E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\GDApp.pdb
+E:\GDApp - 8 - Rail Camera\GDApp\GDApp\obj\x86\Debug\GDApp.csprojResolveAssemblyReference.cache
+E:\GDApp - 8 - Rail Camera\GDApp\GDApp\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+E:\GDApp - 8 - Rail Camera\GDApp\GDApp\obj\x86\Debug\GDApp.exe
+E:\GDApp - 8 - Rail Camera\GDApp\GDApp\obj\x86\Debug\GDApp.pdb

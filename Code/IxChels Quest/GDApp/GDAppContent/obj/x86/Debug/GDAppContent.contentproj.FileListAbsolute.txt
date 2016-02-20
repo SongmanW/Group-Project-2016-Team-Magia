@@ -1,0 +1,14 @@
+C:\Users\mcguinnn\Downloads\GDApp\GDApp\GDAppContent\obj\x86\Debug\GDAppContent.contentprojResolveAssemblyReference.cache
+E:\GDApp - 1 - Introduction - Drawing Vertices\GDApp\GDAppContent\obj\x86\Debug\GDAppContent.contentprojResolveAssemblyReference.cache
+F:\GDApp - 3 - Buffers & Cameras\GDApp\GDAppContent\obj\x86\Debug\GDAppContent.contentprojResolveAssemblyReference.cache
+H:\GDApp - 3 - Buffers & Cameras\GDApp\GDAppContent\obj\x86\Debug\GDAppContent.contentprojResolveAssemblyReference.cache
+H:\GDApp - 3.1 Buffers & Cameras\GDApp\GDAppContent\obj\x86\Debug\GDAppContent.contentprojResolveAssemblyReference.cache
+E:\GAS\GDApp - 3.1 Buffers & Cameras\GDApp\GDAppContent\obj\x86\Debug\GDAppContent.contentprojResolveAssemblyReference.cache
+F:\GAS\GDApp - 4 - Textured Quad\GDApp\GDAppContent\obj\x86\Debug\GDAppContent.contentprojResolveAssemblyReference.cache
+C:\Users\mcguinnn\Downloads\GDApp - 4 - Textured Quad\GDApp\GDAppContent\obj\x86\Debug\GDAppContent.contentprojResolveAssemblyReference.cache
+E:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDAppContent\obj\x86\Debug\GDAppContent.contentprojResolveAssemblyReference.cache
+H:\GAS\Week 3\GDApp - 5 - Clone and Reset Testing\GDApp - 5 - Clone and Reset Testing\GDApp\GDAppContent\obj\x86\Debug\GDAppContent.contentprojResolveAssemblyReference.cache
+C:\Users\mcguinnn\Downloads\GDApp - 6 - Camera Manager\GDApp\GDAppContent\obj\x86\Debug\GDAppContent.contentprojResolveAssemblyReference.cache
+C:\Users\mcguinnn.AD\Downloads\GDApp - 7 - Actors\GDApp\GDAppContent\obj\x86\Debug\GDAppContent.contentprojResolveAssemblyReference.cache
+E:\GDApp - 7.1 - Actors\GDApp\GDAppContent\obj\x86\Debug\GDAppContent.contentprojResolveAssemblyReference.cache
+E:\GDApp - 8 - Rail Camera\GDApp\GDAppContent\obj\x86\Debug\GDAppContent.contentprojResolveAssemblyReference.cache

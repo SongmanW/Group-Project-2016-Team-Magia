@@ -1,0 +1,609 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>Assets\Debug\Fonts\debug.spritefont</Source>
+      <Name>Assets\Debug\Fonts\debug</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Debug\Fonts\debug.xnb</Output>
+      <Time>2016-02-02T12:45:04+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Textures\Game\Abstract\abstract1.jpg</Source>
+      <Name>Assets\Textures\Game\Abstract\abstract1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Abstract\abstract1.xnb</Output>
+      <Time>2016-02-02T17:10:34+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Textures\Game\Abstract\pink.jpg</Source>
+      <Name>Assets\Textures\Game\Abstract\pink</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Abstract\pink.xnb</Output>
+      <Time>2016-02-02T17:10:34+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Textures\Game\Abstract\pink_trans1.png</Source>
+      <Name>Assets\Textures\Game\Abstract\pink_trans1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Abstract\pink_trans1.xnb</Output>
+      <Time>2016-02-02T17:10:34+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Textures\Game\Architecture\Fence\fence1.jpg</Source>
+      <Name>Assets\Textures\Game\Architecture\Fence\fence1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Fence\fence1.xnb</Output>
+      <Time>2016-02-02T17:10:34+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Textures\Game\Architecture\Fence\fence2.jpg</Source>
+      <Name>Assets\Textures\Game\Architecture\Fence\fence2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Fence\fence2.xnb</Output>
+      <Time>2016-02-02T17:10:34+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Textures\Game\Architecture\Fence\fence3.jpg</Source>
+      <Name>Assets\Textures\Game\Architecture\Fence\fence3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Fence\fence3.xnb</Output>
+      <Time>2016-02-02T17:10:34+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Textures\Game\Architecture\Fence\fence4.png</Source>
+      <Name>Assets\Textures\Game\Architecture\Fence\fence4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Fence\fence4.xnb</Output>
+      <Time>2016-02-02T17:10:34+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Textures\Game\Architecture\Structures\backwall.jpg</Source>
+      <Name>Assets\Textures\Game\Architecture\Structures\backwall</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Structures\backwall.xnb</Output>
+      <Time>2016-02-02T17:10:34+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Textures\Game\Architecture\Structures\sidewall.jpg</Source>
+      <Name>Assets\Textures\Game\Architecture\Structures\sidewall</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Structures\sidewall.xnb</Output>
+      <Time>2016-02-02T17:10:34+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Textures\Game\Billboards\alarm1.png</Source>
+      <Name>Assets\Textures\Game\Billboards\alarm1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\alarm1.xnb</Output>
+      <Time>2016-02-02T17:10:34+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Textures\Game\Billboards\alarm2.png</Source>
+      <Name>Assets\Textures\Game\Billboards\alarm2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\alarm2.xnb</Output>
+      <Time>2016-02-02T17:10:34+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Textures\Game\Billboards\billboardtexture.jpg</Source>
+      <Name>Assets\Textures\Game\Billboards\billboardtexture</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\billboardtexture.xnb</Output>
+      <Time>2016-02-02T17:10:34+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Textures\Game\Billboards\chevron1.png</Source>
+      <Name>Assets\Textures\Game\Billboards\chevron1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\chevron1.xnb</Output>
+      <Time>2016-02-02T17:10:34+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Textures\Game\Billboards\chevron2.png</Source>
+      <Name>Assets\Textures\Game\Billboards\chevron2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\chevron2.xnb</Output>
+      <Time>2016-02-02T17:10:34+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Textures\Game\Billboards\snow1.png</Source>
+      <Name>Assets\Textures\Game\Billboards\snow1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\snow1.xnb</Output>
+      <Time>2016-02-02T17:10:34+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Textures\Game\Billboards\welcome.png</Source>
+      <Name>Assets\Textures\Game\Billboards\welcome</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\welcome.xnb</Output>
+      <Time>2016-02-02T17:10:34+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Debug\Textures\ml.png</Source>
+      <Name>Assets\Debug\Textures\ml</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Debug\Textures\ml.xnb</Output>
+      <Time>2016-02-02T17:10:34+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Debug\Textures\slj.jpg</Source>
+      <Name>Assets\Debug\Textures\slj</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Debug\Textures\slj.xnb</Output>
+      <Time>2016-02-02T17:10:34+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Textures\Game\Foliage\Ground\foliage.png</Source>
+      <Name>Assets\Textures\Game\Foliage\Ground\foliage</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Foliage\Ground\foliage.xnb</Output>
+      <Time>2016-02-02T17:10:34+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Textures\Game\Foliage\Ground\grass1.jpg</Source>
+      <Name>Assets\Textures\Game\Foliage\Ground\grass1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Foliage\Ground\grass1.xnb</Output>
+      <Time>2016-02-02T17:10:34+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Textures\Game\Foliage\Trees\tree1.png</Source>
+      <Name>Assets\Textures\Game\Foliage\Trees\tree1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Foliage\Trees\tree1.xnb</Output>
+      <Time>2016-02-02T17:10:34+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Textures\Game\Foliage\Trees\tree2.png</Source>
+      <Name>Assets\Textures\Game\Foliage\Trees\tree2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Foliage\Trees\tree2.xnb</Output>
+      <Time>2016-02-02T17:10:34+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Textures\Game\Foliage\Trees\tree3.png</Source>
+      <Name>Assets\Textures\Game\Foliage\Trees\tree3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Foliage\Trees\tree3.xnb</Output>
+      <Time>2016-02-02T17:10:34+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Textures\Game\Props\Crates\crate1.jpg</Source>
+      <Name>Assets\Textures\Game\Props\Crates\crate1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Props\Crates\crate1.xnb</Output>
+      <Time>2016-02-02T17:10:34+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Textures\Game\Props\Crates\crate2.jpg</Source>
+      <Name>Assets\Textures\Game\Props\Crates\crate2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Props\Crates\crate2.xnb</Output>
+      <Time>2016-02-02T17:10:34+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Textures\Game\Skybox\back.bmp</Source>
+      <Name>Assets\Textures\Game\Skybox\back</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\back.xnb</Output>
+      <Time>2016-02-02T17:10:34+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Textures\Game\Skybox\front.bmp</Source>
+      <Name>Assets\Textures\Game\Skybox\front</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\front.xnb</Output>
+      <Time>2016-02-02T17:10:34+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Textures\Game\Skybox\ground2.bmp</Source>
+      <Name>Assets\Textures\Game\Skybox\ground2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\ground2.xnb</Output>
+      <Time>2016-02-02T17:10:34+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Textures\Game\Skybox\left.bmp</Source>
+      <Name>Assets\Textures\Game\Skybox\left</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\left.xnb</Output>
+      <Time>2016-02-02T17:10:34+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Textures\Game\Skybox\right.bmp</Source>
+      <Name>Assets\Textures\Game\Skybox\right</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\right.xnb</Output>
+      <Time>2016-02-02T17:10:34+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Textures\Game\Skybox\sky.bmp</Source>
+      <Name>Assets\Textures\Game\Skybox\sky</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\sky.xnb</Output>
+      <Time>2016-02-02T17:10:34+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Textures\Game\white.png</Source>
+      <Name>Assets\Textures\Game\white</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\white.xnb</Output>
+      <Time>2016-02-02T17:10:34+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Textures\Menu\audiomenu.png</Source>
+      <Name>Assets\Textures\Menu\audiomenu</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\audiomenu.xnb</Output>
+      <Time>2016-02-02T17:10:34+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Textures\Menu\exitmenu.png</Source>
+      <Name>Assets\Textures\Menu\exitmenu</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\exitmenu.xnb</Output>
+      <Time>2016-02-02T17:10:34+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Textures\Menu\exitmenuwithtrans.png</Source>
+      <Name>Assets\Textures\Menu\exitmenuwithtrans</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\exitmenuwithtrans.xnb</Output>
+      <Time>2016-02-02T17:10:34+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Textures\Menu\mainmenu.PNG</Source>
+      <Name>Assets\Textures\Menu\mainmenu</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\mainmenu.xnb</Output>
+      <Time>2016-02-02T17:10:34+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Textures\UI\mouseicons.png</Source>
+      <Name>Assets\Textures\UI\mouseicons</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\UI\mouseicons.xnb</Output>
+      <Time>2016-02-02T17:10:34+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Models\box.FBX</Source>
+      <Name>Assets\Models\box</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\box.xnb</Output>
+      <Time>2016-02-15T11:56:32+00:00</Time>
+      <Dependency>
+        <Key>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\obj\x86\Debug\Assets\Models\box_0.xml</Key>
+        <Value>2016-02-16T11:26:24+00:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Assets\Models\cylinder.FBX</Source>
+      <Name>Assets\Models\cylinder</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\cylinder.xnb</Output>
+      <Time>2016-02-15T11:56:32+00:00</Time>
+      <Dependency>
+        <Key>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\obj\x86\Debug\Assets\Models\cylinder_0.xml</Key>
+        <Value>2016-02-16T11:26:24+00:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Assets\Models\dome.FBX</Source>
+      <Name>Assets\Models\dome</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\dome.xnb</Output>
+      <Time>2016-02-15T11:56:32+00:00</Time>
+      <Dependency>
+        <Key>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\obj\x86\Debug\Assets\Models\dome_0.xml</Key>
+        <Value>2016-02-16T11:26:26+00:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Assets\Models\hedra.FBX</Source>
+      <Name>Assets\Models\hedra</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\hedra.xnb</Output>
+      <Time>2016-02-15T11:56:32+00:00</Time>
+      <Dependency>
+        <Key>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\obj\x86\Debug\Assets\Models\hedra_0.xml</Key>
+        <Value>2016-02-16T11:26:26+00:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Assets\Models\octahedron.FBX</Source>
+      <Name>Assets\Models\octahedron</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\octahedron.xnb</Output>
+      <Time>2016-02-15T11:56:32+00:00</Time>
+      <Dependency>
+        <Key>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\obj\x86\Debug\Assets\Models\octahedron_0.xml</Key>
+        <Value>2016-02-16T11:26:26+00:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Assets\Models\plane.FBX</Source>
+      <Name>Assets\Models\plane</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\plane.xnb</Output>
+      <Time>2016-02-15T11:56:32+00:00</Time>
+      <Dependency>
+        <Key>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\obj\x86\Debug\Assets\Models\plane_0.xml</Key>
+        <Value>2016-02-16T11:26:26+00:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Assets\Models\prism.FBX</Source>
+      <Name>Assets\Models\prism</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\prism.xnb</Output>
+      <Time>2016-02-15T11:56:32+00:00</Time>
+      <Dependency>
+        <Key>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\obj\x86\Debug\Assets\Models\prism_0.xml</Key>
+        <Value>2016-02-16T11:26:26+00:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Assets\Models\sphere.FBX</Source>
+      <Name>Assets\Models\sphere</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\sphere.xnb</Output>
+      <Time>2016-02-15T11:56:32+00:00</Time>
+      <Dependency>
+        <Key>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\obj\x86\Debug\Assets\Models\sphere_0.xml</Key>
+        <Value>2016-02-16T11:26:28+00:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Assets\Models\spindle.FBX</Source>
+      <Name>Assets\Models\spindle</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\spindle.xnb</Output>
+      <Time>2016-02-15T11:56:32+00:00</Time>
+      <Dependency>
+        <Key>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\obj\x86\Debug\Assets\Models\spindle_0.xml</Key>
+        <Value>2016-02-16T11:26:30+00:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Assets\Models\torus.FBX</Source>
+      <Name>Assets\Models\torus</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\torus.xnb</Output>
+      <Time>2016-02-15T11:56:32+00:00</Time>
+      <Dependency>
+        <Key>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\obj\x86\Debug\Assets\Models\torus_0.xml</Key>
+        <Value>2016-02-16T11:26:30+00:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Assets\Models\torusknot.FBX</Source>
+      <Name>Assets\Models\torusknot</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\torusknot.xnb</Output>
+      <Time>2016-02-15T11:56:32+00:00</Time>
+      <Dependency>
+        <Key>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\obj\x86\Debug\Assets\Models\torusknot_0.xml</Key>
+        <Value>2016-02-16T11:26:30+00:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Assets\Models\box.FBX</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\obj\x86\Debug\Assets\Models\box_0.xml</Output>
+      <Time>2016-02-15T11:56:32+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Models\cylinder.FBX</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\obj\x86\Debug\Assets\Models\cylinder_0.xml</Output>
+      <Time>2016-02-15T11:56:32+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Models\dome.FBX</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\obj\x86\Debug\Assets\Models\dome_0.xml</Output>
+      <Time>2016-02-15T11:56:32+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Models\hedra.FBX</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\obj\x86\Debug\Assets\Models\hedra_0.xml</Output>
+      <Time>2016-02-15T11:56:32+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Models\octahedron.FBX</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\obj\x86\Debug\Assets\Models\octahedron_0.xml</Output>
+      <Time>2016-02-15T11:56:32+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Models\plane.FBX</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\obj\x86\Debug\Assets\Models\plane_0.xml</Output>
+      <Time>2016-02-15T11:56:32+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Models\prism.FBX</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\obj\x86\Debug\Assets\Models\prism_0.xml</Output>
+      <Time>2016-02-15T11:56:32+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Models\sphere.FBX</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\obj\x86\Debug\Assets\Models\sphere_0.xml</Output>
+      <Time>2016-02-15T11:56:32+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Models\spindle.FBX</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\obj\x86\Debug\Assets\Models\spindle_0.xml</Output>
+      <Time>2016-02-15T11:56:32+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Models\torus.FBX</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\obj\x86\Debug\Assets\Models\torus_0.xml</Output>
+      <Time>2016-02-15T11:56:32+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Models\torusknot.FBX</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\obj\x86\Debug\Assets\Models\torusknot_0.xml</Output>
+      <Time>2016-02-15T11:56:32+00:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <ContentProjectGUID>{A8302FA8-6217-4691-BDFF-0D183CB4B6E5}</ContentProjectGUID>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>HiDef</TargetProfile>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>E:\GDApp - 8 - Rail Camera\GDApp\GDAppContent\</RootDirectory>
+      <LoggerRootDirectory>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\</LoggerRootDirectory>
+      <IntermediateDirectory>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>E:\GDApp - 8 - Rail Camera\GDApp\GDApp\bin\x86\Debug\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2011-09-01T16:22:30+01:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2011-09-01T16:22:30+01:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2011-09-01T16:22:30+01:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2011-09-01T16:22:30+01:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2011-09-01T16:22:30+01:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2011-09-01T16:22:30+01:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2014-10-07T08:18:33.4930349+01:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>
