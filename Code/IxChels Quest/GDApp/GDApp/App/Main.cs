@@ -17,6 +17,8 @@ using System;
     Revisions:
     - Added CharacterModelObject (movement is dependant on Camera (needs to be set to get new Movements))
     - Added InitializeLevel (to set initial CharacterModel to first Camera)
+    - Added CameraUtility.GetCameraToTarget(Vector3 parent, Transform3D camera)
+    - Added RailCharacterFollowCamera3D
     Bugs:
     Fixes:
  */
@@ -537,8 +539,20 @@ namespace GDApp
             this.cameraManager.Add(CameraLayout.TwoHorizontal, clone);
             #endregion
 
+            #region RailFollow
+            RailCharacterFollowCamera3D railCharacterFollowCamera = new RailCharacterFollowCamera3D("railCharacterFollow", ObjectType.RailCharacterFollow,
+                Transform3D.Zero, ProjectionParameters.StandardMediumFourThree,
+                        this.graphics.GraphicsDevice.Viewport,
+                    new RailParameters("r1", new Vector3(0, 50, -100),
+                                        new Vector3(0, 30, 100)),
+                        playerActor, new Vector3(0,-200,200), 20);
+
+            this.cameraManager.Add(CameraLayout.RailCharacterFollowCamera, railCharacterFollowCamera);
+
+            #endregion
+
             //set the default layout
-            this.cameraManager.SetCameraLayout(CameraLayout.RailCamera);
+            this.cameraManager.SetCameraLayout(CameraLayout.RailCharacterFollowCamera);
         }
 
         /// <summary>

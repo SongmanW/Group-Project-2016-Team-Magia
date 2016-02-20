@@ -19,11 +19,18 @@ namespace GDLibrary
             return cameraToTarget;
         }
 
-        //camera to target vector
+        //camera to target transform
         public static Vector3 GetCameraToTarget(Transform3D parent, Transform3D camera)
         {
             //camera to target object vector
             return Vector3.Normalize(parent.Translation - camera.Translation);
+        }
+
+        //camera to target vector --added by Songman
+        public static Vector3 GetCameraToTarget(Vector3 parent, Transform3D camera)
+        {
+            //camera to target object vector
+            return Vector3.Normalize(parent - camera.Translation);
         }
     }
 }

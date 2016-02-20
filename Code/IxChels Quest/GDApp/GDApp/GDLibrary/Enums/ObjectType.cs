@@ -19,6 +19,7 @@ namespace GDLibrary
         Rail, 
         Track, 
         Fixed, 
-        Security
+        Security,
+        RailCharacterFollow
     }
 }

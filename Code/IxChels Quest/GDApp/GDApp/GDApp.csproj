@@ -111,6 +111,7 @@
     <Compile Include="GDLibrary\Cameras\Camera3D.cs" />
     <Compile Include="GDLibrary\Cameras\FirstPersonCamera3D.cs" />
     <Compile Include="GDLibrary\Cameras\FreeLookCamera3D.cs" />
+    <Compile Include="GDLibrary\Cameras\RailCharacterFollowCamera3D.cs" />
     <Compile Include="GDLibrary\Cameras\TrackCamera3D.cs" />
     <Compile Include="GDLibrary\Curve\Camera3DTrack.cs" />
     <Compile Include="GDLibrary\Curve\Curve1D.cs" />

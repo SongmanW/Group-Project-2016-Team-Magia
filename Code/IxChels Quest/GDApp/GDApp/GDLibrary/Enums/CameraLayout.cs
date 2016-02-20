@@ -12,6 +12,7 @@ namespace GDLibrary
         TwoVertical,
         TwoHorizontal,
         RailCamera,
-        Track
+        Track,
+        RailCharacterFollowCamera
     }
 }
