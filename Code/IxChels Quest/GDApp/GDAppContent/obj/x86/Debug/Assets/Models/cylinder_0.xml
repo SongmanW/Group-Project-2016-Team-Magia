@@ -3,7 +3,7 @@
   <Asset Type="Graphics:MeshContent">
     <Name>Cylinder01</Name>
     <Identity>
-      <SourceFilename>E:\GDApp - 8 - Rail Camera\GDApp\GDAppContent\Assets\Models\cylinder.FBX</SourceFilename>
+      <SourceFilename>C:\Users\Pudding\Desktop\GroupProject\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDAppContent\Assets\Models\cylinder.FBX</SourceFilename>
       <SourceTool>FbxImporter</SourceTool>
     </Identity>
     <Transform>2.54 0 0 0 0 7.19523466E-16 -2.54 0 0 2.54 7.19523466E-16 0 12.8806095 0 -26.0094585 1</Transform>

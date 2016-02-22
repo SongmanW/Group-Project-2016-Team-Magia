@@ -21,8 +21,8 @@ namespace GDLibrary
         }
 
         public CharacterModelObject(string id, ObjectType objectType, Transform3D transform,
-            Texture2D texture, Model model)
-            : base(id, objectType, transform, texture, model)
+            Model model)
+            : base(id, objectType, transform, null, model)
         {
             this.camera = null;
         }

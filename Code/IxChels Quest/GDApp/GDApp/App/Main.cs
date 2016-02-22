@@ -292,14 +292,13 @@ namespace GDApp
             Transform3D transform = null;
             Model model = null;
 
-            texture = Content.Load<Texture2D>("Assets\\Textures\\Game\\Props\\Crates\\crate1");    
-            model = Content.Load<Model>("Assets\\Models\\box");
+            model = Content.Load<Model>("Assets\\Models\\characterModelv2");
             transform = new Transform3D(new Vector3(0, 0.2f, 0),
                 Vector3.Zero, 0.1f * Vector3.One,
                 Vector3.UnitX, Vector3.UnitY);
             this.playerActor = new CharacterModelObject("m",
                 ObjectType.Player, transform,
-                texture, model);
+                model);
 
             this.objectManager.Add(this.playerActor);
         }
