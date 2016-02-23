@@ -19,6 +19,8 @@ using System;
     - Added InitializeLevel (to set initial CharacterModel to first Camera)
     - Added CameraUtility.GetCameraToTarget(Vector3 parent, Transform3D camera)
     - Added RailCharacterFollowCamera3D
+    - Added Transform3D.RotateTo(Vector3 rotateTo)
+    - Added CharacterRotation upon movement
     Bugs:
     Fixes:
  */

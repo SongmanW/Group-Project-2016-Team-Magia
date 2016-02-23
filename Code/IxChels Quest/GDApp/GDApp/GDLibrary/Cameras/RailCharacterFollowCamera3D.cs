@@ -37,7 +37,7 @@ namespace GDLibrary
 
             //new position for camera if it is positioned between start and the end points of the rail
             Vector3 projectedCameraPosition = this.Transform3D.Translation
-                + Vector3.Dot(cameraToTarget, railParameters.Look) * railParameters.Look * gameTime.ElapsedGameTime.Milliseconds;
+                + Vector3.Dot(cameraToTarget, railParameters.Look) * railParameters.Look * gameTime.ElapsedGameTime.Milliseconds * 0.5f;
 
             //do not allow the camera to move outside the rail
             if (!railParameters.InsideRail(projectedCameraPosition))

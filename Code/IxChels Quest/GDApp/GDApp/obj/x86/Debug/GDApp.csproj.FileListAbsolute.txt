@@ -549,3 +549,4 @@ C:\Users\Pudding\Desktop\GroupProject\Group-Project-2016-Team-Magia\Code\IxChels
 C:\Users\Pudding\Desktop\GroupProject\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\Pudding\Desktop\GroupProject\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\GDApp.exe
 C:\Users\Pudding\Desktop\GroupProject\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\GDApp.pdb
+C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\characterModelv2.xnb

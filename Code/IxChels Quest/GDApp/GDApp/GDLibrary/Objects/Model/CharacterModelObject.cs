@@ -36,28 +36,46 @@ namespace GDLibrary
 
         public override void Update(GameTime gameTime)
         {
+            Vector3 rotate = Vector3.Zero;
+            Vector3 moveVectorX = Vector3.Zero;
+            Vector3 moveVectorZ = Vector3.Zero;
             if (game.KeyboardManager.IsKeyDown(Keys.W))
             {
-                this.Transform3D.TranslateBy(Vector3.Normalize(new Vector3(this.camera.Transform3D.Look.X, 0, this.camera.Transform3D.Look.Z)),
+                moveVectorX = Vector3.Normalize(new Vector3(this.camera.Transform3D.Look.X, 0, this.camera.Transform3D.Look.Z));
+                this.Transform3D.TranslateBy(moveVectorX,
                     0.01f * gameTime.ElapsedGameTime.Milliseconds);
             }
             else if (game.KeyboardManager.IsKeyDown(Keys.S))
             {
-                this.Transform3D.TranslateBy(-Vector3.Normalize(new Vector3(this.camera.Transform3D.Look.X, 0, this.camera.Transform3D.Look.Z)),
+                moveVectorX = -Vector3.Normalize(new Vector3(this.camera.Transform3D.Look.X, 0, this.camera.Transform3D.Look.Z));
+                this.Transform3D.TranslateBy(moveVectorX,
                     0.01f * gameTime.ElapsedGameTime.Milliseconds);
             }
 
             if (game.KeyboardManager.IsKeyDown(Keys.A))
             {
-                this.Transform3D.TranslateBy(-Vector3.Normalize(new Vector3(this.camera.Transform3D.Right.X, 0, this.camera.Transform3D.Right.Z)),
+                moveVectorZ = -Vector3.Normalize(new Vector3(this.camera.Transform3D.Right.X, 0, this.camera.Transform3D.Right.Z));
+                this.Transform3D.TranslateBy(moveVectorZ,
                     0.01f * gameTime.ElapsedGameTime.Milliseconds);
             }
             else if (game.KeyboardManager.IsKeyDown(Keys.D))
             {
-                this.Transform3D.TranslateBy(Vector3.Normalize(new Vector3(this.camera.Transform3D.Right.X, 0, this.camera.Transform3D.Right.Z)),
+                moveVectorZ = Vector3.Normalize(new Vector3(this.camera.Transform3D.Right.X, 0, this.camera.Transform3D.Right.Z));
+                this.Transform3D.TranslateBy(moveVectorZ,
                     0.01f * gameTime.ElapsedGameTime.Milliseconds);
             }
-
+            if (moveVectorX != Vector3.Zero || moveVectorZ != Vector3.Zero)
+            {
+                Vector3 moveVector = Vector3.Normalize(moveVectorX + moveVectorZ);
+                if (moveVector.Z >= 0)
+                {
+                    this.Transform3D.RotateTo(new Vector3(0, 180-MathHelper.ToDegrees((float)Math.Acos(moveVector.X)), 0));
+                }
+                else
+                {
+                    this.Transform3D.RotateTo(new Vector3(0, 180+MathHelper.ToDegrees((float)Math.Acos(moveVector.X)), 0));
+                }
+            }
 
 
             base.Update(gameTime);

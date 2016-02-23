@@ -211,6 +211,20 @@ namespace GDLibrary
             this.isDirty = true;
         }
 
+        public void RotateTo(Vector3 rotateTo)
+        {
+            this.rotation = rotateTo;
+
+            //update the look and up - RADIANS!!!!
+            Matrix rot = Matrix.CreateFromYawPitchRoll(MathHelper.ToRadians(this.rotation.X),
+                MathHelper.ToRadians(this.rotation.Y), MathHelper.ToRadians(this.rotation.Z));
+
+            this.look = Vector3.Transform(this.originalLook, rot);
+            this.up = Vector3.Transform(this.originalUp, rot);
+
+            this.isDirty = true;
+        }
+
         public void TranslateBy(Vector3 translateBy, float speedMultiplier)
         {
             this.translation += translateBy * speedMultiplier;
