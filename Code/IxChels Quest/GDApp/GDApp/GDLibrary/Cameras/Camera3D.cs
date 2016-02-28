@@ -13,6 +13,7 @@ Fixes:			None
 
 namespace GDLibrary
 {
+    //Represents a static camera with no attached controller (i.e. dynamic behaviour)
     public class Camera3D : Actor
     {
         #region Fields
@@ -111,5 +112,7 @@ namespace GDLibrary
             return new Camera3D(this.ID,
                 this.ObjectType, (Transform3D)this.Transform3D.Clone(), (ProjectionParameters)this.projectionParameters.Clone(), this.viewPort);
         }
+
+        //Add reset...
     }
 }

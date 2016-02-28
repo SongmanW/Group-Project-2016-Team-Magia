@@ -14,12 +14,14 @@ namespace GDLibrary
         NonPlayerCharacter, //enemy
 
         //cameras
-        FirstPerson, 
-        ThirdPerson, 
-        Rail, 
-        Track, 
-        Fixed, 
-        Security,
-        RailCharacterFollow
+        FirstPersonCamera,
+        ThirdPersonCamera,
+        RailCamera,
+        TrackCamera,
+        FixedCamera,
+        SecurityCamera,
+        Helper,
+        ThirdPerson,
+        RailCharacterFollowCamera
     }
 }

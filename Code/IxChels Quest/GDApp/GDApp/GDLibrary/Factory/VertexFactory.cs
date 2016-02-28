@@ -1,15 +1,18 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace GDLibrary
 {
-    public class VertexFactory
+
+    public static class VertexFactory
     {
         //Dictionary
+        //Key - Circle, radius, angle
+        //private static Dictionary<string, VertexPositionColor[]> dictionary;
+
+
+
 
         public static VertexPositionColorTexture[] GetTextureQuadVertices()
         {
@@ -29,5 +32,45 @@ namespace GDLibrary
 
             return vertices;
         }
+
+        public static VertexPositionColor[] GetSpiralVertices(int radius, int angleInDegrees,
+                            float verticalIncrement, out int primitiveCount)
+        {
+            VertexPositionColor[] vertices = GetCircleVertices(radius, angleInDegrees, out primitiveCount);
+
+            for(int i = 0; i < vertices.Length; i++)
+            {
+                vertices[i].Position.Z = verticalIncrement * i;
+            }
+
+            return vertices;
+        }
+
+        public static VertexPositionColor[] GetCircleVertices(int radius, 
+                            int angleInDegrees, out int primitiveCount)
+        {
+            primitiveCount = 360 / angleInDegrees;
+            VertexPositionColor[] vertices = new VertexPositionColor[primitiveCount + 1];
+
+            Vector3 position = Vector3.Zero;
+            float angleInRadians = MathHelper.ToRadians(angleInDegrees);
+
+            for (int i = 0; i <= primitiveCount; i++)
+            {
+                position.X = (float)(radius * Math.Cos(i * angleInRadians));
+                position.Y = (float)(radius * Math.Sin(i * angleInRadians));
+
+                vertices[i] = new VertexPositionColor(position, Color.White);
+            }
+            return vertices;
+        }
+
+
+
+
+
+
+
+
     }
 }

@@ -111,8 +111,11 @@
     <Compile Include="GDLibrary\Cameras\Camera3D.cs" />
     <Compile Include="GDLibrary\Cameras\FirstPersonCamera3D.cs" />
     <Compile Include="GDLibrary\Cameras\FreeLookCamera3D.cs" />
+    <Compile Include="GDLibrary\Cameras\PawnCamera3D.cs" />
     <Compile Include="GDLibrary\Cameras\RailCharacterFollowCamera3D.cs" />
     <Compile Include="GDLibrary\Cameras\TrackCamera3D.cs" />
+    <Compile Include="GDLibrary\Controllers\Camera\RailController.cs" />
+    <Compile Include="GDLibrary\Controllers\Camera\SecurityController.cs" />
     <Compile Include="GDLibrary\Curve\Camera3DTrack.cs" />
     <Compile Include="GDLibrary\Curve\Curve1D.cs" />
     <Compile Include="GDLibrary\Curve\Curve2D.cs" />
@@ -120,7 +123,14 @@
     <Compile Include="GDLibrary\Curve\Transform2DCurve.cs" />
     <Compile Include="GDLibrary\Debug\BoundingBoxDrawer.cs" />
     <Compile Include="GDLibrary\Dictionary\GenericDictionary.cs" />
+    <Compile Include="GDLibrary\Events\EventData.cs" />
+    <Compile Include="GDLibrary\Events\EventDispatcher.cs" />
+    <Compile Include="GDLibrary\Events\EventType.cs" />
+    <Compile Include="GDLibrary\Events\PlayerSprite.cs" />
     <Compile Include="GDLibrary\Factory\VertexFactory.cs" />
+    <Compile Include="GDLibrary\Interfaces\Controller.cs" />
+    <Compile Include="GDLibrary\Interfaces\IActor.cs" />
+    <Compile Include="GDLibrary\Interfaces\IController.cs" />
     <Compile Include="GDLibrary\Objects\Model\CharacterModelObject.cs" />
     <Compile Include="GDLibrary\Parameters\RailParameters.cs" />
     <Compile Include="GDLibrary\Cameras\RailCamera3D.cs" />
@@ -132,7 +142,6 @@
     <Compile Include="GDLibrary\Managers\Object\ObjectManager.cs" />
     <Compile Include="GDLibrary\Objects\Base\Actor.cs" />
     <Compile Include="GDLibrary\Objects\Base\DrawnActor.cs" />
-    <Compile Include="GDLibrary\Objects\Base\IActor.cs" />
     <Compile Include="GDLibrary\Objects\Model\ModelObject.cs" />
     <Compile Include="GDLibrary\Objects\Model\MoveableModelObject.cs" />
     <Compile Include="GDLibrary\Objects\Primitives\TexturedPrimitiveObject.cs" />

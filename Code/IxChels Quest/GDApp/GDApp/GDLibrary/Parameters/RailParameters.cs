@@ -98,6 +98,8 @@ namespace GDLibrary
             }
         }
 
+        //todo - Add clone...
+
 
     }
 }

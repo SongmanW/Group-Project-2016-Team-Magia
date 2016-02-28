@@ -5,6 +5,7 @@ using System.Text;
 
 namespace GDLibrary
 {
+    //No longer in user since V11
     public enum CameraLayout : sbyte
     {
         FullScreen,

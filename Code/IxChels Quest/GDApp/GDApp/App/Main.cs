@@ -413,7 +413,7 @@ namespace GDApp
                 Console.WriteLine("different!");
 
             Camera3D c1 = new Camera3D("1",
-                ObjectType.FirstPerson,
+                ObjectType.FirstPersonCamera,
                 t1,
                 ProjectionParameters.StandardMediumFourThree,
                 new Viewport(0,0,800,600));
@@ -494,7 +494,7 @@ namespace GDApp
             Camera3D camera = null;
 
             #region Track
-            camera = new TrackCamera3D("track", ObjectType.Track,
+            camera = new TrackCamera3D("track", ObjectType.TrackCamera,
                 Transform3D.Zero, ProjectionParameters.StandardMediumFourThree,
                 this.graphics.GraphicsDevice.Viewport, 
                 this.trackDictionary["puke"]);
@@ -502,7 +502,7 @@ namespace GDApp
             #endregion
 
 
-            camera = new FirstPersonCamera3D("full", ObjectType.FirstPerson,
+            camera = new FirstPersonCamera3D("full", ObjectType.FirstPersonCamera,
                    new Transform3D(new Vector3(0,0,5), -Vector3.UnitZ, Vector3.UnitY),
                        ProjectionParameters.StandardMediumFourThree, this.graphics.GraphicsDevice.Viewport, GameData.CameraSpeed);
 
@@ -511,7 +511,7 @@ namespace GDApp
             #endregion
 
             #region Rail
-            RailCamera3D railCamera = new RailCamera3D("rail", ObjectType.Rail,
+            RailCamera3D railCamera = new RailCamera3D("rail", ObjectType.RailCamera,
                 Transform3D.Zero, ProjectionParameters.StandardMediumFourThree,
                         this.graphics.GraphicsDevice.Viewport,
                     new RailParameters("r1", new Vector3(-20, 20, 10), 
@@ -541,7 +541,7 @@ namespace GDApp
             #endregion
 
             #region RailFollow
-            RailCharacterFollowCamera3D railCharacterFollowCamera = new RailCharacterFollowCamera3D("railCharacterFollow", ObjectType.RailCharacterFollow,
+            RailCharacterFollowCamera3D railCharacterFollowCamera = new RailCharacterFollowCamera3D("railCharacterFollow", ObjectType.RailCharacterFollowCamera,
                 Transform3D.Zero, ProjectionParameters.StandardMediumFourThree,
                         this.graphics.GraphicsDevice.Viewport,
                     new RailParameters("r1", new Vector3(0, 50, -100),
