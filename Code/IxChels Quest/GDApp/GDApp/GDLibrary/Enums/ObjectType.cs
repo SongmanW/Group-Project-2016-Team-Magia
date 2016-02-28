@@ -22,6 +22,6 @@ namespace GDLibrary
         SecurityCamera,
         Helper,
         ThirdPerson,
-        RailCharacterFollowCamera
+        RotateCamera
     }
 }

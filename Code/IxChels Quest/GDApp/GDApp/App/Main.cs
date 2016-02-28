@@ -11,6 +11,48 @@ using System;
  */
 
 /*
+ * Version:11.1
+ *==============
+ * Author: STWL
+ * Revisions:
+ *  - Added RotateCameraController
+ *  - Added TransitionController (unfinished)
+ *
+ */
+
+/*
+* Version: 11
+ =============
+* Author: NMCG
+* Revisions:
+* - Added first version of the EventDispatcher
+* Bugs:
+* - Jitter on Curve3D possibly related to Curve1D tangents
+* - RailCamera3D shows bug when rail passes over the object - up vector?
+* Fixes:
+* - None
+* Addition:
+* - Have RailCamera3D lag the target object slightly - configurable
+* - Test clone for ModelObject and MoveableModelObject
+*/
+
+/*
+ * Version: 10
+  =============
+ * Author: NMCG
+ * Revisions:
+ * - Added IController, Controller, PawnCamera3D, and a rail camera controller example
+ * - Added more VertexFactory methods, added security and 3rd person camera
+ * Bugs:
+ * - Jitter on Curve3D possibly related to Curve1D tangents
+ * - RailCamera3D shows bug when rail passes over the object - up vector?
+ * Fixes:
+ * - None
+ * Addition:
+ * - Have RailCamera3D lag the target object slightly - configurable
+ * - Test clone for ModelObject and MoveableModelObject
+ */
+/*
     Version: 9.1
     =============
     Author: STWL
@@ -492,13 +534,14 @@ namespace GDApp
         {
             Camera3D clone = null;
             Camera3D camera = null;
+            PawnCamera3D pawnCamera = null;
 
             #region Track
             camera = new TrackCamera3D("track", ObjectType.TrackCamera,
                 Transform3D.Zero, ProjectionParameters.StandardMediumFourThree,
                 this.graphics.GraphicsDevice.Viewport, 
                 this.trackDictionary["puke"]);
-            this.cameraManager.Add(CameraLayout.Track, camera);
+            this.cameraManager.Add("Track", camera);
             #endregion
 
 
@@ -507,7 +550,7 @@ namespace GDApp
                        ProjectionParameters.StandardMediumFourThree, this.graphics.GraphicsDevice.Viewport, GameData.CameraSpeed);
 
             #region Fullscreen
-            this.cameraManager.Add(CameraLayout.FullScreen, camera);
+            this.cameraManager.Add("FullScreen", camera);
             #endregion
 
             #region Rail
@@ -518,7 +561,7 @@ namespace GDApp
                                         new Vector3(20, 1, 10)),
                         playerActor);
 
-            this.cameraManager.Add(CameraLayout.RailCamera, railCamera);
+            this.cameraManager.Add("Rail", railCamera);
             #endregion
 
             #region Two Horizontal
@@ -528,7 +571,7 @@ namespace GDApp
             clone.Transform3D.Translation = new Vector3(0, 0, 5);
             clone.Transform3D.Look = -Vector3.UnitZ;
             clone.ViewportWidth /= 2;
-            this.cameraManager.Add(CameraLayout.TwoHorizontal, clone);
+            this.cameraManager.Add("TwoHorizontal", clone);
 
             //left
             clone = (Camera3D)camera.Clone();
@@ -537,23 +580,36 @@ namespace GDApp
             clone.Transform3D.Look = Vector3.UnitX;
             clone.ViewportWidth /= 2;
             clone.ViewportX = clone.ViewportWidth;
-            this.cameraManager.Add(CameraLayout.TwoHorizontal, clone);
+            this.cameraManager.Add("TwoHorizontal", clone);
             #endregion
 
-            #region RailFollow
-            RailCharacterFollowCamera3D railCharacterFollowCamera = new RailCharacterFollowCamera3D("railCharacterFollow", ObjectType.RailCharacterFollowCamera,
-                Transform3D.Zero, ProjectionParameters.StandardMediumFourThree,
-                        this.graphics.GraphicsDevice.Viewport,
-                    new RailParameters("r1", new Vector3(0, 50, -100),
-                                        new Vector3(0, 30, 100)),
-                        playerActor, new Vector3(0,-200,200), 20);
+            #region RailCharacterFollow
 
-            this.cameraManager.Add(CameraLayout.RailCharacterFollowCamera, railCharacterFollowCamera);
+            pawnCamera = new PawnCamera3D("rail character follow camera 1",
+                ObjectType.RotateCamera, Transform3D.Zero,
+                ProjectionParameters.StandardMediumFourThree, this.graphics.GraphicsDevice.Viewport);
+
+            pawnCamera.Add(new RailCharacterFollowController("rail character follow controller 1",
+                pawnCamera, new RailParameters("r1", new Vector3(0, 50, -100),
+                new Vector3(0, 30, 100)), playerActor, new Vector3(0, -200, 200), 20));
+            this.cameraManager.Add("RailCharacterFollow", pawnCamera);
+
+            #endregion
+
+            #region RotateCamera
+
+            pawnCamera = new PawnCamera3D("RotateCamera",
+                ObjectType.RotateCamera, new Transform3D(new Vector3(50,50,50), Vector3.UnitZ, Vector3.UnitY),
+                ProjectionParameters.StandardMediumFourThree, this.graphics.GraphicsDevice.Viewport);
+
+            pawnCamera.Add(new RotateCameraController("rotate camera controller 1",
+                pawnCamera, playerActor));
+            this.cameraManager.Add("RotateCamera", pawnCamera);
 
             #endregion
 
             //set the default layout
-            this.cameraManager.SetCameraLayout(CameraLayout.RailCharacterFollowCamera);
+            this.cameraManager.SetCameraLayout("RailCharacterFollow");
         }
 
         /// <summary>
@@ -608,13 +664,20 @@ namespace GDApp
         private void demoCameraLayout()
         {
             if (this.keyboardManager.IsFirstKeyPress(Keys.F1))
-                this.cameraManager.SetCameraLayout(CameraLayout.FullScreen);
+                this.cameraManager.SetCameraLayout("FullScreen");
             else if (this.keyboardManager.IsFirstKeyPress(Keys.F2))
-                this.cameraManager.SetCameraLayout(CameraLayout.TwoHorizontal);
+                this.cameraManager.SetCameraLayout("TwoHorizontal");
             else if (this.keyboardManager.IsFirstKeyPress(Keys.F3))
-                this.cameraManager.SetCameraLayout(CameraLayout.RailCamera);
+                this.cameraManager.SetCameraLayout("Rail");
             else if (this.keyboardManager.IsFirstKeyPress(Keys.F4))
-                this.cameraManager.SetCameraLayout(CameraLayout.Track);
+                this.cameraManager.SetCameraLayout("Track");
+            else if (this.keyboardManager.IsFirstKeyPress(Keys.F5))
+                this.cameraManager.SetCameraLayout("RailCharacterFollow");
+            else if (this.keyboardManager.IsFirstKeyPress(Keys.F6))
+            {
+                this.cameraManager.SetCameraLayout("RotateCamera");
+                ((RotateCameraController)((PawnCamera3D)this.cameraManager[0]).ControllerList[0]).Set();
+            }
         }
        
 

@@ -7,9 +7,9 @@ namespace GDLibrary
     public class CameraManager : GameComponent
     {
         #region Fields
-        private Dictionary<CameraLayout, List<Camera3D>>cameraDictionary;
+        private Dictionary<string, List<Camera3D>> cameraDictionary;
         private List<Camera3D> activeCameraList;
-        private CameraLayout currentCameraLayout;
+        private string currentCameraLayout;
         #endregion
 
         #region Properties
@@ -33,10 +33,10 @@ namespace GDLibrary
             : base(game)
         {
             this.cameraDictionary =
-                new Dictionary<CameraLayout, List<Camera3D>>();
+                new Dictionary<string, List<Camera3D>>();
         }
 
-        public void Add(CameraLayout cameraLayout, Camera3D camera)
+        public void Add(string cameraLayout, Camera3D camera)
         {
             if (this.cameraDictionary.ContainsKey(cameraLayout))
             {
@@ -53,7 +53,7 @@ namespace GDLibrary
             }
         }
 
-        public void Remove(CameraLayout cameraLayout, string id)
+        public void Remove(string cameraLayout, string id)
         {
             if (this.cameraDictionary.ContainsKey(cameraLayout))
             {
@@ -67,7 +67,7 @@ namespace GDLibrary
             }
         }
 
-        public bool SetCameraLayout(CameraLayout cameraLayout)
+        public bool SetCameraLayout(string cameraLayout)
         {
             //if first time and NULL or not the same as current
             if((this.activeCameraList == null) || (!this.currentCameraLayout.Equals(cameraLayout)))
