@@ -48,3 +48,4 @@ Content\Assets\Models\spindle.xnb
 Content\Assets\Models\torus.xnb
 Content\Assets\Models\torusknot.xnb
 Content\Assets\Models\characterModelv2.xnb
+Content\Assets\Models\mm.xnb

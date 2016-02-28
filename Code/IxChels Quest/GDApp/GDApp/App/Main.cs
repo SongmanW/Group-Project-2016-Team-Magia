@@ -294,8 +294,8 @@ namespace GDApp
             Transform3D transform = null;
             Model model = null;
 
-            model = Content.Load<Model>("Assets\\Models\\characterModelv2");
-            transform = new Transform3D(new Vector3(0, 0.2f, 0),
+            model = Content.Load<Model>("Assets\\Models\\mm");
+            transform = new Transform3D(new Vector3(0, 14.5f, 0),
                 Vector3.Zero, 0.1f * Vector3.One,
                 Vector3.UnitX, Vector3.UnitY);
             this.playerActor = new CharacterModelObject("m",
