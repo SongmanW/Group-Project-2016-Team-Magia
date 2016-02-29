@@ -216,6 +216,7 @@ namespace GDApp
         private GenericDictionary<string, Model> modelDictionary;
         private GenericDictionary<string, Camera3DTrack> trackDictionary;
         private Camera3DTrack cameraTrack;
+        private ModelObject doorActor;
 
         #endregion
 
@@ -280,7 +281,7 @@ namespace GDApp
             InitializeDictionaries();
             InitializeEffect();
 
-            InitializeSkyBox(1000);
+            //InitializeSkyBox(1000);
             InitializeModels();
 
             InitializeCameraTracks();
@@ -331,24 +332,46 @@ namespace GDApp
 
         private void InitializeModels()
         {
-            Texture2D texture = null;
-           // MoveableModelObject playerActor = null;
+            //Texture2D texture = null;
+            //MoveableModelObject playerActor = null;
             Transform3D transform = null;
             Model model = null;
+            ModelObject modelobject = null;
 
             model = Content.Load<Model>("Assets\\Models\\mm");
-            transform = new Transform3D(new Vector3(0, 14.5f, 0),
-                Vector3.Zero, 0.1f * Vector3.One,
+            transform = new Transform3D(new Vector3(0, 24, 0),
+                new Vector3(0,90,0), 0.1f* Vector3.One,
                 Vector3.UnitX, Vector3.UnitY);
             this.playerActor = new CharacterModelObject("m",
                 ObjectType.Player, transform,
                 model);
 
             this.objectManager.Add(this.playerActor);
+
+            model = Content.Load<Model>("Assets\\Models\\door");
+            transform = new Transform3D(new Vector3(300, 0, 0), Vector3.Zero, 0.1f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
+            this.doorActor = new ModelObject("door", ObjectType.Door, transform, null, model);
+
+            this.objectManager.Add(this.doorActor);
+
+
+            model = Content.Load<Model>("Assets\\Models\\door");
+            transform = new Transform3D(new Vector3(-300, 0, 0), Vector3.Zero, 0.1f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
+            this.doorActor = new ModelObject("door", ObjectType.Door, transform, null, model);
+
+            this.objectManager.Add(this.doorActor);
+
+            model = Content.Load<Model>("Assets\\Models\\room");
+            transform = new Transform3D(new Vector3(0, 0, 0), Vector3.Zero, 0.1f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
+            modelobject = new ModelObject("room", ObjectType.Door, transform, null, model);
+
+            this.objectManager.Add(modelobject);
+
+
         }
 
 
-      
+
 
         private void InitializeSkyBox(int scale)
         {
@@ -545,7 +568,7 @@ namespace GDApp
             #endregion
 
 
-            camera = new FirstPersonCamera3D("full", ObjectType.FirstPersonCamera,
+            camera = new FreeLookCamera3D("full", ObjectType.FirstPersonCamera,
                    new Transform3D(new Vector3(0,0,5), -Vector3.UnitZ, Vector3.UnitY),
                        ProjectionParameters.StandardMediumFourThree, this.graphics.GraphicsDevice.Viewport, GameData.CameraSpeed);
 
@@ -586,12 +609,12 @@ namespace GDApp
             #region RailCharacterFollow
 
             pawnCamera = new PawnCamera3D("rail character follow camera 1",
-                ObjectType.RotateCamera, Transform3D.Zero,
+                ObjectType.ZoomOnDoorCamera, Transform3D.Zero,
                 ProjectionParameters.StandardMediumFourThree, this.graphics.GraphicsDevice.Viewport);
 
             pawnCamera.Add(new RailCharacterFollowController("rail character follow controller 1",
-                pawnCamera, new RailParameters("r1", new Vector3(0, 50, -100),
-                new Vector3(0, 30, 100)), playerActor, new Vector3(0, -200, 200), 20));
+                pawnCamera, new RailParameters("r1", new Vector3(-300, 100, 0),
+                new Vector3(100, 100, 0)), playerActor, new Vector3(300, -100, 0), 114));
             this.cameraManager.Add("RailCharacterFollow", pawnCamera);
 
             #endregion
@@ -599,12 +622,22 @@ namespace GDApp
             #region RotateCamera
 
             pawnCamera = new PawnCamera3D("RotateCamera",
-                ObjectType.RotateCamera, new Transform3D(new Vector3(50,50,50), Vector3.UnitZ, Vector3.UnitY),
+                ObjectType.ZoomOnDoorCamera, new Transform3D(new Vector3(50,100,50), Vector3.UnitZ, Vector3.UnitY),
                 ProjectionParameters.StandardMediumFourThree, this.graphics.GraphicsDevice.Viewport);
 
             pawnCamera.Add(new RotateCameraController("rotate camera controller 1",
                 pawnCamera, playerActor));
             this.cameraManager.Add("RotateCamera", pawnCamera);
+
+            #endregion
+
+            #region ZoomOnDoor
+
+            pawnCamera = new PawnCamera3D("ZoomOnDoor",
+                ObjectType.ZoomOnDoorCamera, new Transform3D(new Vector3(100, 100, 0), new Vector3(100,-25,0), Vector3.UnitY),
+                ProjectionParameters.StandardMediumFourThree, this.graphics.GraphicsDevice.Viewport);
+            
+            this.cameraManager.Add("ZoomOnDoor", pawnCamera);
 
             #endregion
 
@@ -678,6 +711,8 @@ namespace GDApp
                 this.cameraManager.SetCameraLayout("RotateCamera");
                 ((RotateCameraController)((PawnCamera3D)this.cameraManager[0]).ControllerList[0]).Set();
             }
+            else if (this.keyboardManager.IsFirstKeyPress(Keys.F7))
+                this.cameraManager.SetCameraLayout("ZoomOnDoor");
         }
        
 

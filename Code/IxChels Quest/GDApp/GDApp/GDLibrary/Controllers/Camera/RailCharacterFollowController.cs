@@ -41,6 +41,7 @@ namespace GDLibrary
             if (!railParameters.InsideRail(projectedCameraPosition))
             {
                 //change Camera
+                
             }
 
             this.ParentActor.Transform3D.Translation = projectedCameraPosition;

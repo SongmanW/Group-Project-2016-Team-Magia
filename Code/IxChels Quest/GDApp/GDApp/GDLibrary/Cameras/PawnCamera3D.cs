@@ -53,8 +53,11 @@ namespace GDLibrary
 
         public override void Update(GameTime gameTime)
         {
-            foreach (IController controller in this.controllerList)
-                controller.Update(gameTime);
+            if (this.controllerList != null)
+            {
+                foreach (IController controller in this.controllerList)
+                    controller.Update(gameTime);
+            }
         }
 
         //add clone...

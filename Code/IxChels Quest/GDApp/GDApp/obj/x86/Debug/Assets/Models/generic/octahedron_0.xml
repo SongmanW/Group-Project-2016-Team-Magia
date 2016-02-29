@@ -3,7 +3,7 @@
   <Asset Type="Graphics:MeshContent">
     <Name>Sphere01</Name>
     <Identity>
-      <SourceFilename>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDAppContent\Assets\Models\octahedron.FBX</SourceFilename>
+      <SourceFilename>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDAppContent\Assets\Models\generic\octahedron.FBX</SourceFilename>
       <SourceTool>FbxImporter</SourceTool>
     </Identity>
     <Transform>-0.5224194 -2.29475069E-16 0.810073256 0 0.810073256 -1.47989375E-16 0.5224194 0 0 0.9639194 2.73056132E-16 0 -0.0227117911 0 -0.295907319 1</Transform>

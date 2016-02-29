@@ -22,6 +22,7 @@ namespace GDLibrary
         SecurityCamera,
         Helper,
         ThirdPerson,
-        RotateCamera
+        ZoomOnDoorCamera,
+        Door
     }
 }

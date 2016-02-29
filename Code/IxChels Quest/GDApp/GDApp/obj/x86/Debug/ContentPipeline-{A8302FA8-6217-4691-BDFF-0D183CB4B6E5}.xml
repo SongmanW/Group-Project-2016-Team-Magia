@@ -344,226 +344,6 @@
       <Time>2016-02-20T15:54:53.2185547+00:00</Time>
     </Item>
     <Item>
-      <Source>Assets\Models\box.FBX</Source>
-      <Name>Assets\Models\box</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\box.xnb</Output>
-      <Time>2016-02-20T15:54:53.1135912+00:00</Time>
-      <Dependency>
-        <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\box_0.xml</Key>
-        <Value>2016-02-20T16:28:48.8230988+00:00</Value>
-      </Dependency>
-    </Item>
-    <Item>
-      <Source>Assets\Models\cylinder.FBX</Source>
-      <Name>Assets\Models\cylinder</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\cylinder.xnb</Output>
-      <Time>2016-02-20T15:54:53.1145923+00:00</Time>
-      <Dependency>
-        <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\cylinder_0.xml</Key>
-        <Value>2016-02-20T16:28:48.9204071+00:00</Value>
-      </Dependency>
-    </Item>
-    <Item>
-      <Source>Assets\Models\dome.FBX</Source>
-      <Name>Assets\Models\dome</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\dome.xnb</Output>
-      <Time>2016-02-20T15:54:53.1165979+00:00</Time>
-      <Dependency>
-        <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\dome_0.xml</Key>
-        <Value>2016-02-20T16:28:49.0002047+00:00</Value>
-      </Dependency>
-    </Item>
-    <Item>
-      <Source>Assets\Models\hedra.FBX</Source>
-      <Name>Assets\Models\hedra</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\hedra.xnb</Output>
-      <Time>2016-02-20T15:54:53.1170981+00:00</Time>
-      <Dependency>
-        <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\hedra_0.xml</Key>
-        <Value>2016-02-20T16:28:49.0437024+00:00</Value>
-      </Dependency>
-    </Item>
-    <Item>
-      <Source>Assets\Models\octahedron.FBX</Source>
-      <Name>Assets\Models\octahedron</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\octahedron.xnb</Output>
-      <Time>2016-02-20T15:54:53.1175998+00:00</Time>
-      <Dependency>
-        <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\octahedron_0.xml</Key>
-        <Value>2016-02-20T16:28:49.0814885+00:00</Value>
-      </Dependency>
-    </Item>
-    <Item>
-      <Source>Assets\Models\plane.FBX</Source>
-      <Name>Assets\Models\plane</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\plane.xnb</Output>
-      <Time>2016-02-20T15:54:53.1190094+00:00</Time>
-      <Dependency>
-        <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\plane_0.xml</Key>
-        <Value>2016-02-20T16:28:49.1476897+00:00</Value>
-      </Dependency>
-    </Item>
-    <Item>
-      <Source>Assets\Models\prism.FBX</Source>
-      <Name>Assets\Models\prism</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\prism.xnb</Output>
-      <Time>2016-02-20T15:54:53.1195107+00:00</Time>
-      <Dependency>
-        <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\prism_0.xml</Key>
-        <Value>2016-02-20T16:28:49.1833557+00:00</Value>
-      </Dependency>
-    </Item>
-    <Item>
-      <Source>Assets\Models\sphere.FBX</Source>
-      <Name>Assets\Models\sphere</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\sphere.xnb</Output>
-      <Time>2016-02-20T15:54:53.1210115+00:00</Time>
-      <Dependency>
-        <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\sphere_0.xml</Key>
-        <Value>2016-02-20T16:28:49.2347663+00:00</Value>
-      </Dependency>
-    </Item>
-    <Item>
-      <Source>Assets\Models\spindle.FBX</Source>
-      <Name>Assets\Models\spindle</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\spindle.xnb</Output>
-      <Time>2016-02-20T15:54:53.1220126+00:00</Time>
-      <Dependency>
-        <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\spindle_0.xml</Key>
-        <Value>2016-02-20T16:28:49.2749067+00:00</Value>
-      </Dependency>
-    </Item>
-    <Item>
-      <Source>Assets\Models\torus.FBX</Source>
-      <Name>Assets\Models\torus</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\torus.xnb</Output>
-      <Time>2016-02-20T15:54:53.1230129+00:00</Time>
-      <Dependency>
-        <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\torus_0.xml</Key>
-        <Value>2016-02-20T16:28:49.3199766+00:00</Value>
-      </Dependency>
-    </Item>
-    <Item>
-      <Source>Assets\Models\torusknot.FBX</Source>
-      <Name>Assets\Models\torusknot</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\torusknot.xnb</Output>
-      <Time>2016-02-20T15:54:53.1260149+00:00</Time>
-      <Dependency>
-        <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\torusknot_0.xml</Key>
-        <Value>2016-02-20T16:28:49.3958659+00:00</Value>
-      </Dependency>
-    </Item>
-    <Item>
-      <Source>Assets\Models\box.FBX</Source>
-      <Importer>FbxImporter</Importer>
-      <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\box_0.xml</Output>
-      <Time>2016-02-20T15:54:53.1135912+00:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Models\cylinder.FBX</Source>
-      <Importer>FbxImporter</Importer>
-      <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\cylinder_0.xml</Output>
-      <Time>2016-02-20T15:54:53.1145923+00:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Models\dome.FBX</Source>
-      <Importer>FbxImporter</Importer>
-      <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\dome_0.xml</Output>
-      <Time>2016-02-20T15:54:53.1165979+00:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Models\hedra.FBX</Source>
-      <Importer>FbxImporter</Importer>
-      <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\hedra_0.xml</Output>
-      <Time>2016-02-20T15:54:53.1170981+00:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Models\octahedron.FBX</Source>
-      <Importer>FbxImporter</Importer>
-      <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\octahedron_0.xml</Output>
-      <Time>2016-02-20T15:54:53.1175998+00:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Models\plane.FBX</Source>
-      <Importer>FbxImporter</Importer>
-      <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\plane_0.xml</Output>
-      <Time>2016-02-20T15:54:53.1190094+00:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Models\prism.FBX</Source>
-      <Importer>FbxImporter</Importer>
-      <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\prism_0.xml</Output>
-      <Time>2016-02-20T15:54:53.1195107+00:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Models\sphere.FBX</Source>
-      <Importer>FbxImporter</Importer>
-      <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\sphere_0.xml</Output>
-      <Time>2016-02-20T15:54:53.1210115+00:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Models\spindle.FBX</Source>
-      <Importer>FbxImporter</Importer>
-      <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\spindle_0.xml</Output>
-      <Time>2016-02-20T15:54:53.1220126+00:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Models\torus.FBX</Source>
-      <Importer>FbxImporter</Importer>
-      <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\torus_0.xml</Output>
-      <Time>2016-02-20T15:54:53.1230129+00:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Models\torusknot.FBX</Source>
-      <Importer>FbxImporter</Importer>
-      <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\torusknot_0.xml</Output>
-      <Time>2016-02-20T15:54:53.1260149+00:00</Time>
-    </Item>
-    <Item>
       <Source>Assets\Models\characterModelv2.FBX</Source>
       <Name>Assets\Models\characterModelv2</Name>
       <Importer>FbxImporter</Importer>
@@ -702,6 +482,226 @@
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\wall_0.xml</Output>
       <Time>2016-02-28T21:11:28.5382386+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Models\generic\box.FBX</Source>
+      <Name>Assets\Models\generic\box</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\generic\box.xnb</Output>
+      <Time>2016-02-20T15:54:53.1135912+00:00</Time>
+      <Dependency>
+        <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\generic\box_0.xml</Key>
+        <Value>2016-02-28T23:28:32.5270343+00:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Assets\Models\generic\cylinder.FBX</Source>
+      <Name>Assets\Models\generic\cylinder</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\generic\cylinder.xnb</Output>
+      <Time>2016-02-20T15:54:53.1145923+00:00</Time>
+      <Dependency>
+        <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\generic\cylinder_0.xml</Key>
+        <Value>2016-02-28T23:28:32.6932287+00:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Assets\Models\generic\dome.FBX</Source>
+      <Name>Assets\Models\generic\dome</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\generic\dome.xnb</Output>
+      <Time>2016-02-20T15:54:53.1165979+00:00</Time>
+      <Dependency>
+        <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\generic\dome_0.xml</Key>
+        <Value>2016-02-28T23:28:32.786313+00:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Assets\Models\generic\hedra.FBX</Source>
+      <Name>Assets\Models\generic\hedra</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\generic\hedra.xnb</Output>
+      <Time>2016-02-20T15:54:53.1170981+00:00</Time>
+      <Dependency>
+        <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\generic\hedra_0.xml</Key>
+        <Value>2016-02-28T23:28:32.8553944+00:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Assets\Models\generic\octahedron.FBX</Source>
+      <Name>Assets\Models\generic\octahedron</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\generic\octahedron.xnb</Output>
+      <Time>2016-02-20T15:54:53.1175998+00:00</Time>
+      <Dependency>
+        <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\generic\octahedron_0.xml</Key>
+        <Value>2016-02-28T23:28:32.9169732+00:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Assets\Models\generic\plane.FBX</Source>
+      <Name>Assets\Models\generic\plane</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\generic\plane.xnb</Output>
+      <Time>2016-02-20T15:54:53.1190094+00:00</Time>
+      <Dependency>
+        <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\generic\plane_0.xml</Key>
+        <Value>2016-02-28T23:28:32.9880279+00:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Assets\Models\generic\prism.FBX</Source>
+      <Name>Assets\Models\generic\prism</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\generic\prism.xnb</Output>
+      <Time>2016-02-20T15:54:53.1195107+00:00</Time>
+      <Dependency>
+        <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\generic\prism_0.xml</Key>
+        <Value>2016-02-28T23:28:33.0243536+00:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Assets\Models\generic\sphere.FBX</Source>
+      <Name>Assets\Models\generic\sphere</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\generic\sphere.xnb</Output>
+      <Time>2016-02-20T15:54:53.1210115+00:00</Time>
+      <Dependency>
+        <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\generic\sphere_0.xml</Key>
+        <Value>2016-02-28T23:28:33.0852491+00:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Assets\Models\generic\spindle.FBX</Source>
+      <Name>Assets\Models\generic\spindle</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\generic\spindle.xnb</Output>
+      <Time>2016-02-20T15:54:53.1220126+00:00</Time>
+      <Dependency>
+        <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\generic\spindle_0.xml</Key>
+        <Value>2016-02-28T23:28:33.1274659+00:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Assets\Models\generic\torus.FBX</Source>
+      <Name>Assets\Models\generic\torus</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\generic\torus.xnb</Output>
+      <Time>2016-02-20T15:54:53.1230129+00:00</Time>
+      <Dependency>
+        <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\generic\torus_0.xml</Key>
+        <Value>2016-02-28T23:28:33.1725561+00:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Assets\Models\generic\torusknot.FBX</Source>
+      <Name>Assets\Models\generic\torusknot</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\generic\torusknot.xnb</Output>
+      <Time>2016-02-20T15:54:53.1260149+00:00</Time>
+      <Dependency>
+        <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\generic\torusknot_0.xml</Key>
+        <Value>2016-02-28T23:28:33.2462969+00:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Assets\Models\generic\box.FBX</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\generic\box_0.xml</Output>
+      <Time>2016-02-20T15:54:53.1135912+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Models\generic\cylinder.FBX</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\generic\cylinder_0.xml</Output>
+      <Time>2016-02-20T15:54:53.1145923+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Models\generic\dome.FBX</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\generic\dome_0.xml</Output>
+      <Time>2016-02-20T15:54:53.1165979+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Models\generic\hedra.FBX</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\generic\hedra_0.xml</Output>
+      <Time>2016-02-20T15:54:53.1170981+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Models\generic\octahedron.FBX</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\generic\octahedron_0.xml</Output>
+      <Time>2016-02-20T15:54:53.1175998+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Models\generic\plane.FBX</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\generic\plane_0.xml</Output>
+      <Time>2016-02-20T15:54:53.1190094+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Models\generic\prism.FBX</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\generic\prism_0.xml</Output>
+      <Time>2016-02-20T15:54:53.1195107+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Models\generic\sphere.FBX</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\generic\sphere_0.xml</Output>
+      <Time>2016-02-20T15:54:53.1210115+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Models\generic\spindle.FBX</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\generic\spindle_0.xml</Output>
+      <Time>2016-02-20T15:54:53.1220126+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Models\generic\torus.FBX</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\generic\torus_0.xml</Output>
+      <Time>2016-02-20T15:54:53.1230129+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Models\generic\torusknot.FBX</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\generic\torusknot_0.xml</Output>
+      <Time>2016-02-20T15:54:53.1260149+00:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

@@ -43,26 +43,26 @@ namespace GDLibrary
             {
                 moveVectorX = Vector3.Normalize(new Vector3(this.camera.Transform3D.Look.X, 0, this.camera.Transform3D.Look.Z));
                 this.Transform3D.TranslateBy(moveVectorX,
-                    0.01f * gameTime.ElapsedGameTime.Milliseconds);
+                    0.1f * gameTime.ElapsedGameTime.Milliseconds);
             }
             else if (game.KeyboardManager.IsKeyDown(Keys.S))
             {
                 moveVectorX = -Vector3.Normalize(new Vector3(this.camera.Transform3D.Look.X, 0, this.camera.Transform3D.Look.Z));
                 this.Transform3D.TranslateBy(moveVectorX,
-                    0.01f * gameTime.ElapsedGameTime.Milliseconds);
+                    0.1f * gameTime.ElapsedGameTime.Milliseconds);
             }
 
             if (game.KeyboardManager.IsKeyDown(Keys.A))
             {
                 moveVectorZ = -Vector3.Normalize(new Vector3(this.camera.Transform3D.Right.X, 0, this.camera.Transform3D.Right.Z));
                 this.Transform3D.TranslateBy(moveVectorZ,
-                    0.01f * gameTime.ElapsedGameTime.Milliseconds);
+                    0.1f * gameTime.ElapsedGameTime.Milliseconds);
             }
             else if (game.KeyboardManager.IsKeyDown(Keys.D))
             {
                 moveVectorZ = Vector3.Normalize(new Vector3(this.camera.Transform3D.Right.X, 0, this.camera.Transform3D.Right.Z));
                 this.Transform3D.TranslateBy(moveVectorZ,
-                    0.01f * gameTime.ElapsedGameTime.Milliseconds);
+                    0.1f * gameTime.ElapsedGameTime.Milliseconds);
             }
             if (moveVectorX != Vector3.Zero || moveVectorZ != Vector3.Zero)
             {

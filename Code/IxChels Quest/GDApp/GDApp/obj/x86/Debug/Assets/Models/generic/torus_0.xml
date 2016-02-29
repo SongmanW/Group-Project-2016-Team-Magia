@@ -3,7 +3,7 @@
   <Asset Type="Graphics:MeshContent">
     <Name>torus</Name>
     <Identity>
-      <SourceFilename>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDAppContent\Assets\Models\torus.FBX</SourceFilename>
+      <SourceFilename>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDAppContent\Assets\Models\generic\torus.FBX</SourceFilename>
       <SourceTool>FbxImporter</SourceTool>
     </Identity>
     <Transform>2.54 0 0 0 0 7.19523466E-16 -2.54 0 0 2.54 7.19523466E-16 0 -3.113841 0 -28.00112 1</Transform>
