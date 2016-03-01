@@ -7,7 +7,7 @@ For a new feature:
  - check back to master branch 
  - merge new branch into master branch
 
-Code for this:
+Code for this (Open the GitShell to use these commands):
  <br>?>git branch [new_branch]
  <br>?>git checkout [new_branch]
  <br>//start working
@@ -16,3 +16,5 @@ Code for this:
  <br>?>git commit
  <br>?>git checkout master
  <br>?>git merge [new_branch] //if this does not work initially, contact me
+ <br>//if your local repository is behind the server's repository: ?>git rebase origin/master
+ <br>?>git push
