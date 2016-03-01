@@ -7,13 +7,13 @@ For a new feature:
  - check back to master branch 
  - merge new branch into master branch
 
-Code for this:
- -?>git branch [new_branch]
- -?>git checkout [new_branch]
- -//start working
- -//end working
- -?>git add [everything_new]
- -?>git commit
- -?>git checkout master
- -?>git merge [new_branch]
- -//if this does not work initially, contact me
+Code for this:\n
+ -?>git branch [new_branch]\n
+ -?>git checkout [new_branch]\n
+ -//start working\n
+ -//end working\n
+ -?>git add [everything_new]\n
+ -?>git commit\n
+ -?>git checkout master\n
+ -?>git merge [new_branch]\n
+ -//if this does not work initially, contact me\n
