@@ -8,12 +8,12 @@ For a new feature:
  - merge new branch into master branch
 
 Code for this:
- ?>git branch [new_branch]
- ?>git checkout [new_branch]
- //start working
- //end working
- ?>git add [everything_new]
- ?>git commit
- ?>git checkout master
- ?>git merge [new_branch]
- //if this does not work initially, contact me
+ -?>git branch [new_branch]
+ -?>git checkout [new_branch]
+ -//start working
+ -//end working
+ -?>git add [everything_new]
+ -?>git commit
+ -?>git checkout master
+ -?>git merge [new_branch]
+ -//if this does not work initially, contact me
