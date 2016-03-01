@@ -21,7 +21,7 @@ namespace GDLibrary
             this.distanceToTarget = distanceToTarget;
 
             //put the camera on the rail mid point
-            this.ParentActor.Transform3D.Translation = railParameters.MidPoint;
+            this.ParentActor.Transform3D.Translation = railParameters.Start;
             //look along Rail all the time
             this.ParentActor.Transform3D.Look = Vector3.Normalize(look);
         }
@@ -45,7 +45,8 @@ namespace GDLibrary
             }
 
             this.ParentActor.Transform3D.Translation = projectedCameraPosition;
-            
+
+            Console.WriteLine("Camera Translation: " + this.ParentActor.Transform3D.Translation);
 
             base.Update(gameTime);
         }

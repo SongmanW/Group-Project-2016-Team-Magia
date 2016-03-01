@@ -23,6 +23,9 @@ namespace GDLibrary
         Helper,
         ThirdPerson,
         ZoomOnDoorCamera,
-        Door
+        Rotation,
+        Door,
+        Wall,
+        Plate
     }
 }

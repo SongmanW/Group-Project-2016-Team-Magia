@@ -282,6 +282,7 @@ namespace GDApp
             InitializeEffect();
 
             //InitializeSkyBox(1000);
+            LoadModels();
             InitializeModels();
 
             InitializeCameraTracks();
@@ -290,6 +291,29 @@ namespace GDApp
 
             InitializeLevel();
             base.Initialize();
+        }
+
+        private void LoadModels()
+        {
+            Model model = null;
+
+            model = Content.Load<Model>("Assets\\Models\\mm");
+            this.modelDictionary.Add("player", model);
+
+            model = Content.Load<Model>("Assets\\Models\\door");
+            this.modelDictionary.Add("door", model);
+
+            model = Content.Load<Model>("Assets\\Models\\room");
+            this.modelDictionary.Add("room", model);
+
+            model = Content.Load<Model>("Assets\\Models\\rotation");
+            this.modelDictionary.Add("rotation", model);
+
+            model = Content.Load<Model>("Assets\\Models\\wall");
+            this.modelDictionary.Add("wall", model);
+
+            model = Content.Load<Model>("Assets\\Models\\plate");
+            this.modelDictionary.Add("plate", model);
         }
 
         private void InitializeLevel()
@@ -338,40 +362,98 @@ namespace GDApp
             Model model = null;
             ModelObject modelobject = null;
 
-            model = Content.Load<Model>("Assets\\Models\\mm");
-            transform = new Transform3D(new Vector3(0, 24, 0),
-                new Vector3(0,90,0), 0.1f* Vector3.One,
+
+            #region Player Model
+            model = this.modelDictionary["player"];
+            transform = new Transform3D(new Vector3(-300, 24, 0),
+                new Vector3(0, 180, 0), 0.1f * Vector3.One,
                 Vector3.UnitX, Vector3.UnitY);
             this.playerActor = new CharacterModelObject("m",
                 ObjectType.Player, transform,
                 model);
 
             this.objectManager.Add(this.playerActor);
+            #endregion
 
-            model = Content.Load<Model>("Assets\\Models\\door");
+            #region ExitDoor Model
+            model = this.modelDictionary["door"];
             transform = new Transform3D(new Vector3(300, 0, 0), Vector3.Zero, 0.1f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
             this.doorActor = new ModelObject("door", ObjectType.Door, transform, null, model);
 
             this.objectManager.Add(this.doorActor);
+            #endregion
+            #region EntranceDoor Model
+            //model = this.modelDictionary["door"];
+            //transform = new Transform3D(new Vector3(-300, 0, 0), Vector3.Zero, 0.1f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
+            //modelobject = new ModelObject("entrance", ObjectType.Door, transform, null, model);
 
+            //this.objectManager.Add(modelobject);
+            #endregion
 
-            model = Content.Load<Model>("Assets\\Models\\door");
-            transform = new Transform3D(new Vector3(-300, 0, 0), Vector3.Zero, 0.1f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            this.doorActor = new ModelObject("door", ObjectType.Door, transform, null, model);
-
-            this.objectManager.Add(this.doorActor);
-
-            model = Content.Load<Model>("Assets\\Models\\room");
+            #region Room Model
+            model = this.modelDictionary["room"];
             transform = new Transform3D(new Vector3(0, 0, 0), Vector3.Zero, 0.1f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            modelobject = new ModelObject("room", ObjectType.Door, transform, null, model);
+            modelobject = new ModelObject("room", ObjectType.Wall, transform, null, model);
 
             this.objectManager.Add(modelobject);
+            #endregion
 
+            #region Rotationthingy Model
+            model = this.modelDictionary["rotation"];
+            transform = new Transform3D(new Vector3(0, 0, 0), Vector3.Zero, 0.1f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
+            modelobject = new ModelObject("RotationThingy", ObjectType.Rotation, transform, null, model);
+
+            this.objectManager.Add(modelobject);
+            #endregion
+
+            #region Wall right Model
+            model = this.modelDictionary["wall"];
+            transform = new Transform3D(new Vector3(0, 0, 153.7244f), Vector3.Zero, 0.1f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
+            modelobject = new ModelObject("Wall1", ObjectType.Wall, transform, null, model);
+
+            this.objectManager.Add(modelobject);
+            #endregion
+            #region Wall left Model
+            model = this.modelDictionary["wall"];
+            transform = new Transform3D(new Vector3(0, 0, -153.54f), new Vector3(0,180,0), 0.1f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
+            modelobject = new ModelObject("Wall2", ObjectType.Wall, transform, null, model);
+
+            this.objectManager.Add(modelobject);
+            #endregion
+
+            #region Pressure Plate Exit Model
+            model = this.modelDictionary["plate"];
+            transform = new Transform3D(new Vector3(250, 4.75f, 0), Vector3.Zero, Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
+            modelobject = new ModelObject("PressurePlate1", ObjectType.Plate, transform, null, model);
+
+            this.objectManager.Add(modelobject);
+            #endregion
+            #region Pressure Plate Right Up Model
+            transform = new Transform3D(new Vector3(50, 4.75f, 230), Vector3.Zero, Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
+            modelobject = new ModelObject("PressurePlate2", ObjectType.Plate, transform, null, model);
+
+            this.objectManager.Add(modelobject);
+            #endregion
+            #region Pressure Plate Right Down Model
+            transform = new Transform3D(new Vector3(-50, 4.75f, 230), Vector3.Zero, Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
+            modelobject = new ModelObject("PressurePlate2", ObjectType.Plate, transform, null, model);
+
+            this.objectManager.Add(modelobject);
+            #endregion
+            #region Pressure Plate Left Up Model
+            transform = new Transform3D(new Vector3(50, 4.75f, -230), Vector3.Zero, Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
+            modelobject = new ModelObject("PressurePlate2", ObjectType.Plate, transform, null, model);
+
+            this.objectManager.Add(modelobject);
+            #endregion
+            #region Pressure Plate Left Down Model
+            transform = new Transform3D(new Vector3(-50, 4.75f, -230), Vector3.Zero, Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
+            modelobject = new ModelObject("PressurePlate2", ObjectType.Plate, transform, null, model);
+
+            this.objectManager.Add(modelobject);
+            #endregion
 
         }
-
-
-
 
         private void InitializeSkyBox(int scale)
         {
@@ -613,8 +695,8 @@ namespace GDApp
                 ProjectionParameters.StandardMediumFourThree, this.graphics.GraphicsDevice.Viewport);
 
             pawnCamera.Add(new RailCharacterFollowController("rail character follow controller 1",
-                pawnCamera, new RailParameters("r1", new Vector3(-300, 100, 0),
-                new Vector3(100, 100, 0)), playerActor, new Vector3(300, -100, 0), 114));
+                pawnCamera, new RailParameters("r1", new Vector3(-300, 126, 0),
+                new Vector3(300, 126, 0)), playerActor, new Vector3(300, -300, 0), 114));
             this.cameraManager.Add("RailCharacterFollow", pawnCamera);
 
             #endregion
@@ -634,7 +716,7 @@ namespace GDApp
             #region ZoomOnDoor
 
             pawnCamera = new PawnCamera3D("ZoomOnDoor",
-                ObjectType.ZoomOnDoorCamera, new Transform3D(new Vector3(100, 100, 0), new Vector3(100,-25,0), Vector3.UnitY),
+                ObjectType.ZoomOnDoorCamera, new Transform3D(new Vector3(100, 126, 0), new Vector3(100,-51,0), Vector3.UnitY),
                 ProjectionParameters.StandardMediumFourThree, this.graphics.GraphicsDevice.Viewport);
             
             this.cameraManager.Add("ZoomOnDoor", pawnCamera);
@@ -678,7 +760,7 @@ namespace GDApp
                 this.Exit();
 
             demoCameraLayout();
-            demoCameraTrack(gameTime);
+            //demoCameraTrack(gameTime);
 
             base.Update(gameTime);
         }
