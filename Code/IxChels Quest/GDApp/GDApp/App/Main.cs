@@ -210,7 +210,7 @@ namespace GDApp
         private KeyboardManager keyboardManager;
         private MouseManager mouseManager;
         private ObjectManager objectManager;
-        private CharacterModelObject playerActor;
+        public PawnModelObject playerActor;
         private GenericDictionary<string, Texture2D> textureDictionary;
         private GenericDictionary<string, SpriteFont> fontDictionary;
         private GenericDictionary<string, Model> modelDictionary;
@@ -319,7 +319,8 @@ namespace GDApp
 
         private void InitializeLevel()
         {
-            this.playerActor.Camera = this.cameraManager[0];
+            ((CharacterMoveController)this.playerActor.ControllerList[0]).Camera = this.cameraManager[0];
+            ((CharacterRotatorInteractionController)this.playerActor.ControllerList[1]).TargetActor = this.rotator;
         }
 
         private void InitializeCameraTracks()
@@ -370,9 +371,10 @@ namespace GDApp
             transform = new Transform3D(new Vector3(-300, 24, 0),
                 new Vector3(0, 180, 0), 0.1f * Vector3.One,
                 Vector3.UnitX, Vector3.UnitY);
-            this.playerActor = new CharacterModelObject("m",
-                ObjectType.Player, transform,
-                model);
+            this.playerActor = new PawnModelObject("m",
+                ObjectType.Player, transform, null, model);
+            this.playerActor.Add(new CharacterMoveController(this, "character move controller", this.playerActor));
+            this.playerActor.Add(new CharacterRotatorInteractionController(this, "character rotator interaction controller", this.playerActor));
 
             this.objectManager.Add(this.playerActor);
             #endregion
@@ -769,7 +771,7 @@ namespace GDApp
 
             demoCameraLayout();
             //demoCameraTrack(gameTime);
-            demoRotation();
+            //demoRotation();
 
             base.Update(gameTime);
         }
