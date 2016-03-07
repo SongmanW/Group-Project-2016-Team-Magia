@@ -119,6 +119,7 @@
     <Compile Include="GDLibrary\Controllers\Camera\RotateCameraController.cs" />
     <Compile Include="GDLibrary\Controllers\Camera\SecurityController.cs" />
     <Compile Include="GDLibrary\Controllers\Camera\TransitionController.cs" />
+    <Compile Include="GDLibrary\Controllers\RotatorController.cs" />
     <Compile Include="GDLibrary\Curve\Camera3DTrack.cs" />
     <Compile Include="GDLibrary\Curve\Curve1D.cs" />
     <Compile Include="GDLibrary\Curve\Curve2D.cs" />
@@ -135,6 +136,7 @@
     <Compile Include="GDLibrary\Interfaces\IActor.cs" />
     <Compile Include="GDLibrary\Interfaces\IController.cs" />
     <Compile Include="GDLibrary\Objects\Model\CharacterModelObject.cs" />
+    <Compile Include="GDLibrary\Objects\Model\PawnModelObject.cs" />
     <Compile Include="GDLibrary\Parameters\RailParameters.cs" />
     <Compile Include="GDLibrary\Cameras\RailCamera3D.cs" />
     <Compile Include="GDLibrary\Debug\Old\TexturedQuad.cs" />

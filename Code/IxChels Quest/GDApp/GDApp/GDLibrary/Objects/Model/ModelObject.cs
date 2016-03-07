@@ -15,6 +15,20 @@ namespace GDLibrary
 
         #region Properties 
         //add...
+        public Texture2D Texture
+        {
+            get
+            {
+                return this.texture;
+            }
+        }
+        public Model Model
+        {
+            get
+            {
+                return this.model;
+            }
+        }
         #endregion
 
         public ModelObject(string id, ObjectType objectType, Transform3D transform, 
@@ -55,6 +69,11 @@ namespace GDLibrary
                 mesh.Draw();
             }
             base.Draw(gameTime);
+        }
+
+        public virtual object Clone()
+        {
+            return new ModelObject(this.ID, this.ObjectType, (Transform3D)this.Transform3D.Clone(), texture, model);
         }
     }
 }

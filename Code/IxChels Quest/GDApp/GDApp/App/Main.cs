@@ -15,9 +15,9 @@ using System;
  *==============
  * Author: STWL
  * Revisions:
- *  - Added RotateCameraController
+ *  - Added RotatorController
  *  - Added TransitionController (unfinished)
- *
+ *  - Added PawnModelObject and ModelObject.Clone(), .Texture and .Model
  */
 
 /*
@@ -217,6 +217,7 @@ namespace GDApp
         private GenericDictionary<string, Camera3DTrack> trackDictionary;
         private Camera3DTrack cameraTrack;
         private ModelObject doorActor;
+        private PawnModelObject rotator;
 
         #endregion
 
@@ -360,7 +361,8 @@ namespace GDApp
             //MoveableModelObject playerActor = null;
             Transform3D transform = null;
             Model model = null;
-            ModelObject modelobject = null;
+            ModelObject modelObject = null;
+            PawnModelObject pawnObject = null;
 
 
             #region Player Model
@@ -393,64 +395,70 @@ namespace GDApp
             #region Room Model
             model = this.modelDictionary["room"];
             transform = new Transform3D(new Vector3(0, 0, 0), Vector3.Zero, 0.1f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            modelobject = new ModelObject("room", ObjectType.Wall, transform, null, model);
+            modelObject = new ModelObject("room", ObjectType.Wall, transform, null, model);
 
-            this.objectManager.Add(modelobject);
+            this.objectManager.Add(modelObject);
             #endregion
 
             #region Rotationthingy Model
             model = this.modelDictionary["rotation"];
             transform = new Transform3D(new Vector3(0, 0, 0), Vector3.Zero, 0.1f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            modelobject = new ModelObject("RotationThingy", ObjectType.Rotation, transform, null, model);
+            this.rotator = new PawnModelObject("RotationThingy", ObjectType.Rotation, transform, null, model);
 
-            this.objectManager.Add(modelobject);
+            this.objectManager.Add(this.rotator);
             #endregion
 
+            //Walls are initialized after Rotator because of their dependancy on Rotator (see RotatorController)
+            //Maybe we should rather go for a more active approach meaning Rotator gets everything which is gonna rotate around it and rotates it
             #region Wall right Model
             model = this.modelDictionary["wall"];
             transform = new Transform3D(new Vector3(0, 0, 153.7244f), Vector3.Zero, 0.1f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            modelobject = new ModelObject("Wall1", ObjectType.Wall, transform, null, model);
+            pawnObject = new PawnModelObject("Wall1", ObjectType.Wall, transform, null, model);
+            pawnObject.Add(new RotatorController("wall1Rotator", pawnObject, this.rotator));
+            ((RotatorController)pawnObject.ControllerList[0]).Set();
 
-            this.objectManager.Add(modelobject);
+            this.objectManager.Add(pawnObject);
             #endregion
             #region Wall left Model
             model = this.modelDictionary["wall"];
             transform = new Transform3D(new Vector3(0, 0, -153.54f), new Vector3(0,180,0), 0.1f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            modelobject = new ModelObject("Wall2", ObjectType.Wall, transform, null, model);
+            pawnObject = new PawnModelObject("Wall2", ObjectType.Wall, transform, null, model);
+            pawnObject.Add(new RotatorController("wall2Rotator", pawnObject, this.rotator));
+            ((RotatorController)pawnObject.ControllerList[0]).Set();
 
-            this.objectManager.Add(modelobject);
+            this.objectManager.Add(pawnObject);
             #endregion
 
             #region Pressure Plate Exit Model
             model = this.modelDictionary["plate"];
             transform = new Transform3D(new Vector3(250, 4.75f, 0), Vector3.Zero, Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            modelobject = new ModelObject("PressurePlate1", ObjectType.Plate, transform, null, model);
+            modelObject = new ModelObject("PressurePlate1", ObjectType.Plate, transform, null, model);
 
-            this.objectManager.Add(modelobject);
+            this.objectManager.Add(modelObject);
             #endregion
             #region Pressure Plate Right Up Model
             transform = new Transform3D(new Vector3(50, 4.75f, 230), Vector3.Zero, Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            modelobject = new ModelObject("PressurePlate2", ObjectType.Plate, transform, null, model);
+            modelObject = new ModelObject("PressurePlate2", ObjectType.Plate, transform, null, model);
 
-            this.objectManager.Add(modelobject);
+            this.objectManager.Add(modelObject);
             #endregion
             #region Pressure Plate Right Down Model
             transform = new Transform3D(new Vector3(-50, 4.75f, 230), Vector3.Zero, Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            modelobject = new ModelObject("PressurePlate2", ObjectType.Plate, transform, null, model);
+            modelObject = new ModelObject("PressurePlate2", ObjectType.Plate, transform, null, model);
 
-            this.objectManager.Add(modelobject);
+            this.objectManager.Add(modelObject);
             #endregion
             #region Pressure Plate Left Up Model
             transform = new Transform3D(new Vector3(50, 4.75f, -230), Vector3.Zero, Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            modelobject = new ModelObject("PressurePlate2", ObjectType.Plate, transform, null, model);
+            modelObject = new ModelObject("PressurePlate2", ObjectType.Plate, transform, null, model);
 
-            this.objectManager.Add(modelobject);
+            this.objectManager.Add(modelObject);
             #endregion
             #region Pressure Plate Left Down Model
             transform = new Transform3D(new Vector3(-50, 4.75f, -230), Vector3.Zero, Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            modelobject = new ModelObject("PressurePlate2", ObjectType.Plate, transform, null, model);
+            modelObject = new ModelObject("PressurePlate2", ObjectType.Plate, transform, null, model);
 
-            this.objectManager.Add(modelobject);
+            this.objectManager.Add(modelObject);
             #endregion
 
         }
@@ -707,8 +715,8 @@ namespace GDApp
                 ObjectType.ZoomOnDoorCamera, new Transform3D(new Vector3(50,100,50), Vector3.UnitZ, Vector3.UnitY),
                 ProjectionParameters.StandardMediumFourThree, this.graphics.GraphicsDevice.Viewport);
 
-            pawnCamera.Add(new RotateCameraController("rotate camera controller 1",
-                pawnCamera, playerActor));
+            pawnCamera.Add(new RotatorController("rotate camera controller 1",
+                pawnCamera, this.rotator));
             this.cameraManager.Add("RotateCamera", pawnCamera);
 
             #endregion
@@ -761,6 +769,7 @@ namespace GDApp
 
             demoCameraLayout();
             //demoCameraTrack(gameTime);
+            demoRotation();
 
             base.Update(gameTime);
         }
@@ -791,12 +800,20 @@ namespace GDApp
             else if (this.keyboardManager.IsFirstKeyPress(Keys.F6))
             {
                 this.cameraManager.SetCameraLayout("RotateCamera");
-                ((RotateCameraController)((PawnCamera3D)this.cameraManager[0]).ControllerList[0]).Set();
+                ((RotatorController)((PawnCamera3D)this.cameraManager[0]).ControllerList[0]).Set();
             }
             else if (this.keyboardManager.IsFirstKeyPress(Keys.F7))
                 this.cameraManager.SetCameraLayout("ZoomOnDoor");
         }
-       
+
+        private void demoRotation()
+        {
+            if (this.keyboardManager.IsKeyDown(Keys.H))
+                this.rotator.Transform3D.RotateAroundYBy(-1);
+            else if (this.keyboardManager.IsKeyDown(Keys.J))
+                this.rotator.Transform3D.RotateAroundYBy(1);
+        }
+
 
         /// <summary>
         /// This is called when the game should draw itself.
