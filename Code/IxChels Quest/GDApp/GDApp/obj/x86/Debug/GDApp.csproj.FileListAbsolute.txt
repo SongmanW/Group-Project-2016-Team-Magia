@@ -556,3 +556,6 @@ C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\I
 C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\generic\spindle.xnb
 C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\generic\torus.xnb
 C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\generic\torusknot.xnb
+C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\arrow.xnb
+C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\trap.xnb
+C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\whitedoor.xnb

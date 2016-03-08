@@ -33,7 +33,6 @@ namespace GDLibrary
             this.targetActor = null;
             this.isRotating = false;
         }
-
         public CharacterRotatorInteractionController(Main game, string name, Actor parentActor, Actor targetActor)
             : base(name, parentActor)
         {

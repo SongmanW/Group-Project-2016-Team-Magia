@@ -358,7 +358,7 @@ namespace GDApp
 
         private void InitializeModels()
         {
-            //Texture2D texture = null;
+            Texture2D texture = null;
             //MoveableModelObject playerActor = null;
             Transform3D transform = null;
             Model model = null;
@@ -379,10 +379,11 @@ namespace GDApp
             this.objectManager.Add(this.playerActor);
             #endregion
 
+            texture = Content.Load<Texture2D>("Assets\\Textures\\Game\\whitedoor");
             #region ExitDoor Model
             model = this.modelDictionary["door"];
             transform = new Transform3D(new Vector3(300, 0, 0), Vector3.Zero, 0.1f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            this.doorActor = new ModelObject("door", ObjectType.Door, transform, null, model);
+            this.doorActor = new ModelObject("door", ObjectType.Door, transform, texture, model);
 
             this.objectManager.Add(this.doorActor);
             #endregion
@@ -393,11 +394,11 @@ namespace GDApp
 
             //this.objectManager.Add(modelobject);
             #endregion
-
+            texture = Content.Load<Texture2D>("Assets\\Textures\\Game\\white");
             #region Room Model
             model = this.modelDictionary["room"];
             transform = new Transform3D(new Vector3(0, 0, 0), Vector3.Zero, 0.1f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            modelObject = new ModelObject("room", ObjectType.Wall, transform, null, model);
+            modelObject = new ModelObject("room", ObjectType.Wall, transform, texture, model);
 
             this.objectManager.Add(modelObject);
             #endregion
@@ -405,7 +406,7 @@ namespace GDApp
             #region Rotationthingy Model
             model = this.modelDictionary["rotation"];
             transform = new Transform3D(new Vector3(0, 0, 0), Vector3.Zero, 0.1f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            this.rotator = new PawnModelObject("RotationThingy", ObjectType.Rotation, transform, null, model);
+            this.rotator = new PawnModelObject("RotationThingy", ObjectType.Rotation, transform, texture, model);
 
             this.objectManager.Add(this.rotator);
             #endregion
@@ -415,7 +416,7 @@ namespace GDApp
             #region Wall right Model
             model = this.modelDictionary["wall"];
             transform = new Transform3D(new Vector3(0, 0, 153.7244f), Vector3.Zero, 0.1f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            pawnObject = new PawnModelObject("Wall1", ObjectType.Wall, transform, null, model);
+            pawnObject = new PawnModelObject("Wall1", ObjectType.Wall, transform, texture, model);
             pawnObject.Add(new RotatorController("wall1Rotator", pawnObject, this.rotator));
             ((RotatorController)pawnObject.ControllerList[0]).Set();
 
@@ -424,7 +425,7 @@ namespace GDApp
             #region Wall left Model
             model = this.modelDictionary["wall"];
             transform = new Transform3D(new Vector3(0, 0, -153.54f), new Vector3(0,180,0), 0.1f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            pawnObject = new PawnModelObject("Wall2", ObjectType.Wall, transform, null, model);
+            pawnObject = new PawnModelObject("Wall2", ObjectType.Wall, transform, texture, model);
             pawnObject.Add(new RotatorController("wall2Rotator", pawnObject, this.rotator));
             ((RotatorController)pawnObject.ControllerList[0]).Set();
 
@@ -434,31 +435,31 @@ namespace GDApp
             #region Pressure Plate Exit Model
             model = this.modelDictionary["plate"];
             transform = new Transform3D(new Vector3(250, 4.75f, 0), Vector3.Zero, Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            modelObject = new ModelObject("PressurePlate1", ObjectType.Plate, transform, null, model);
+            modelObject = new ModelObject("PressurePlate1", ObjectType.Plate, transform, texture, model);
 
             this.objectManager.Add(modelObject);
             #endregion
             #region Pressure Plate Right Up Model
             transform = new Transform3D(new Vector3(50, 4.75f, 230), Vector3.Zero, Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            modelObject = new ModelObject("PressurePlate2", ObjectType.Plate, transform, null, model);
+            modelObject = new ModelObject("PressurePlate2", ObjectType.Plate, transform, texture, model);
 
             this.objectManager.Add(modelObject);
             #endregion
             #region Pressure Plate Right Down Model
             transform = new Transform3D(new Vector3(-50, 4.75f, 230), Vector3.Zero, Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            modelObject = new ModelObject("PressurePlate2", ObjectType.Plate, transform, null, model);
+            modelObject = new ModelObject("PressurePlate2", ObjectType.Plate, transform, texture, model);
 
             this.objectManager.Add(modelObject);
             #endregion
             #region Pressure Plate Left Up Model
             transform = new Transform3D(new Vector3(50, 4.75f, -230), Vector3.Zero, Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            modelObject = new ModelObject("PressurePlate2", ObjectType.Plate, transform, null, model);
+            modelObject = new ModelObject("PressurePlate2", ObjectType.Plate, transform, texture, model);
 
             this.objectManager.Add(modelObject);
             #endregion
             #region Pressure Plate Left Down Model
             transform = new Transform3D(new Vector3(-50, 4.75f, -230), Vector3.Zero, Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            modelObject = new ModelObject("PressurePlate2", ObjectType.Plate, transform, null, model);
+            modelObject = new ModelObject("PressurePlate2", ObjectType.Plate, transform, texture, model);
 
             this.objectManager.Add(modelObject);
             #endregion

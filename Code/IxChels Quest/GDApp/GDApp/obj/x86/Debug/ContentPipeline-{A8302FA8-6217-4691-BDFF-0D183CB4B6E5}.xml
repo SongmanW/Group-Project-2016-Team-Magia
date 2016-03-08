@@ -296,7 +296,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\white.xnb</Output>
-      <Time>2016-02-20T15:54:53.2138877+00:00</Time>
+      <Time>2016-03-08T14:49:39.0751289+00:00</Time>
     </Item>
     <Item>
       <Source>Assets\Textures\Menu\audiomenu.png</Source>
@@ -702,6 +702,55 @@
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\generic\torusknot_0.xml</Output>
       <Time>2016-02-29T00:27:28.508798+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Models\arrow.FBX</Source>
+      <Name>Assets\Models\arrow</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\arrow.xnb</Output>
+      <Time>2016-03-08T13:45:14.1739571+00:00</Time>
+      <Dependency>
+        <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\arrow_0.xml</Key>
+        <Value>2016-03-08T14:55:15.8226901+00:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Assets\Models\trap.FBX</Source>
+      <Name>Assets\Models\trap</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\trap.xnb</Output>
+      <Time>2016-03-08T13:45:14.1739571+00:00</Time>
+      <Dependency>
+        <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\trap_0.xml</Key>
+        <Value>2016-03-08T14:55:15.9239842+00:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Assets\Models\arrow.FBX</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\arrow_0.xml</Output>
+      <Time>2016-03-08T13:45:14.1739571+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Models\trap.FBX</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\trap_0.xml</Output>
+      <Time>2016-03-08T13:45:14.1739571+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Textures\Game\whitedoor.png</Source>
+      <Name>Assets\Textures\Game\whitedoor</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\whitedoor.xnb</Output>
+      <Time>2016-03-08T15:08:25.0585063+00:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
