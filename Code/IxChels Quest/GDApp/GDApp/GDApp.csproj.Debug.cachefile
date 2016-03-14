@@ -37,6 +37,10 @@ Content\Assets\Textures\Menu\exitmenuwithtrans.xnb
 Content\Assets\Textures\Menu\mainmenu.xnb
 Content\Assets\Textures\UI\mouseicons.xnb
 Content\Assets\Textures\Game\whitedoor.xnb
+Content\Assets\Textures\Game\symbol1.xnb
+Content\Assets\Textures\Game\symbol2.xnb
+Content\Assets\Textures\Game\symbol3.xnb
+Content\Assets\Textures\Game\symbol4.xnb
 Content\Assets\Models\generic\box.xnb
 Content\Assets\Models\generic\cylinder.xnb
 Content\Assets\Models\characterModelv2.xnb
@@ -57,7 +61,3 @@ Content\Assets\Models\generic\torus.xnb
 Content\Assets\Models\generic\torusknot.xnb
 Content\Assets\Models\arrow.xnb
 Content\Assets\Models\trap.xnb
-Content\Assets\Textures\Game\symbol1.xnb
-Content\Assets\Textures\Game\symbol2.xnb
-Content\Assets\Textures\Game\symbol3.xnb
-Content\Assets\Textures\Game\symbol4.xnb

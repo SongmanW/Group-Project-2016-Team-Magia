@@ -3,7 +3,7 @@
   <Asset Type="Graphics:MeshContent">
     <Name>dome</Name>
     <Identity>
-      <SourceFilename>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDAppContent\Assets\Models\generic\dome.FBX</SourceFilename>
+      <SourceFilename>C:\Users\Pudding\Desktop\GroupProject\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDAppContent\Assets\Models\generic\dome.FBX</SourceFilename>
       <SourceTool>FbxImporter</SourceTool>
     </Identity>
     <Transform>1.55530138E-16 2.54 7.19523466E-16 0 0 7.19523466E-16 -2.54 0 -2.54 1.55530138E-16 4.40581043E-32 0 9.071965 0 -27.76439 1</Transform>

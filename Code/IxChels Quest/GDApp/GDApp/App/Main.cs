@@ -234,8 +234,18 @@ namespace GDApp
         private PawnModelObject trap6;
         private PawnModelObject trap7;
         private PawnModelObject trap8;
+        private PawnModelObject arrow1;
+        private PawnModelObject arrow2;
+        private PawnModelObject arrow3;
+        private PawnModelObject arrow4;
+        private PawnModelObject arrow5;
+        private PawnModelObject arrow6;
+        private PawnModelObject arrow7;
+        private PawnModelObject arrow8;
 
         private int nextStep;
+        private bool bReset;
+        private int resetCount;
         #endregion
 
         #region Properties
@@ -336,6 +346,9 @@ namespace GDApp
 
             model = Content.Load<Model>("Assets\\Models\\trap");
             this.modelDictionary.Add("trap", model);
+
+            model = Content.Load<Model>("Assets\\Models\\arrow");
+            this.modelDictionary.Add("arrow", model);
         }
 
         private void InitializeLevel()
@@ -503,21 +516,55 @@ namespace GDApp
             trap4 = new PawnModelObject("PressurePlate1", ObjectType.Plate, transform, texture, model);
             this.objectManager.Add(trap4);
 
-            transform = new Transform3D(new Vector3(-180, 20f, 210), Vector3.UnitZ * 90, Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
+            transform = new Transform3D(new Vector3(-180, 20f, 210), -Vector3.UnitZ * 90, Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
             trap5 = new PawnModelObject("PressurePlate1", ObjectType.Plate, transform, texture, model);
             this.objectManager.Add(trap5);
 
-            transform = new Transform3D(new Vector3(-180, 20f, 230), Vector3.UnitZ * 90, Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
+            transform = new Transform3D(new Vector3(-180, 20f, 230), -Vector3.UnitZ * 90, Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
             trap6 = new PawnModelObject("PressurePlate1", ObjectType.Plate, transform, texture, model);
             this.objectManager.Add(trap6);
 
-            transform = new Transform3D(new Vector3(-180, 20f, -210), Vector3.UnitZ * 90, Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
+            transform = new Transform3D(new Vector3(-180, 20f, -210), -Vector3.UnitZ * 90, Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
             trap7 = new PawnModelObject("PressurePlate1", ObjectType.Plate, transform, texture, model);
             this.objectManager.Add(trap7);
 
-            transform = new Transform3D(new Vector3(-180, 20f, -230), Vector3.UnitZ * 90, Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
+            transform = new Transform3D(new Vector3(-180, 20f, -230), -Vector3.UnitZ * 90, Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
             trap8 = new PawnModelObject("PressurePlate1", ObjectType.Plate, transform, texture, model);
             this.objectManager.Add(trap8);
+            #endregion
+            #region Arrow
+            model = this.modelDictionary["arrow"];
+            transform = new Transform3D(new Vector3(180, 20f, 210), Vector3.UnitZ * 90, Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
+            arrow1 = new PawnModelObject("Arrow1", ObjectType.Plate, transform, texture, model);
+            this.objectManager.Add(arrow1);
+
+            transform = new Transform3D(new Vector3(180, 20f, 230), Vector3.UnitZ * 90, Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
+            arrow2 = new PawnModelObject("Arrow2", ObjectType.Plate, transform, texture, model);
+            this.objectManager.Add(arrow2);
+
+            transform = new Transform3D(new Vector3(180, 20f, -210), Vector3.UnitZ * 90, Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
+            arrow3 = new PawnModelObject("Arrow3", ObjectType.Plate, transform, texture, model);
+            this.objectManager.Add(arrow3);
+
+            transform = new Transform3D(new Vector3(180, 20f, -230), Vector3.UnitZ * 90, Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
+            arrow4 = new PawnModelObject("Arrow4", ObjectType.Plate, transform, texture, model);
+            this.objectManager.Add(arrow4);
+
+            transform = new Transform3D(new Vector3(-180, 20f, 210), -Vector3.UnitZ * 90, Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
+            arrow5 = new PawnModelObject("Arrow5", ObjectType.Plate, transform, texture, model);
+            this.objectManager.Add(arrow5);
+
+            transform = new Transform3D(new Vector3(-180, 20f, 230), -Vector3.UnitZ * 90, Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
+            arrow6 = new PawnModelObject("Arrow6", ObjectType.Plate, transform, texture, model);
+            this.objectManager.Add(arrow6);
+
+            transform = new Transform3D(new Vector3(-180, 20f, -210), -Vector3.UnitZ * 90, Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
+            arrow7 = new PawnModelObject("Arrow7", ObjectType.Plate, transform, texture, model);
+            this.objectManager.Add(arrow7);
+
+            transform = new Transform3D(new Vector3(-180, 20f, -230), -Vector3.UnitZ * 90, Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
+            arrow8 = new PawnModelObject("Arrow8", ObjectType.Plate, transform, texture, model);
+            this.objectManager.Add(arrow8);
             #endregion
 
             rotator.Add(new OffsetController("offset controller 2", rotator, new Vector3(0, 50, 0)));
@@ -535,6 +582,14 @@ namespace GDApp
             trap6.Add(new OffsetController("offset controller 12", trap6, new Vector3(20, 0, 0)));
             trap7.Add(new OffsetController("offset controller 13", trap7, new Vector3(20, 0, 0)));
             trap8.Add(new OffsetController("offset controller 14", trap8, new Vector3(20, 0, 0)));
+            arrow1.Add(new OffsetController("offset controller 7", arrow1, new Vector3(-200, 0, 0)));
+            arrow2.Add(new OffsetController("offset controller 8", arrow2, new Vector3(-200, 0, 0)));
+            arrow3.Add(new OffsetController("offset controller 9", arrow3, new Vector3(-200, 0, 0)));
+            arrow4.Add(new OffsetController("offset controller 10", arrow4, new Vector3(-200, 0, 0)));
+            arrow5.Add(new OffsetController("offset controller 11", arrow5, new Vector3(200, 0, 0)));
+            arrow6.Add(new OffsetController("offset controller 12", arrow6, new Vector3(200, 0, 0)));
+            arrow7.Add(new OffsetController("offset controller 13", arrow7, new Vector3(200, 0, 0)));
+            arrow8.Add(new OffsetController("offset controller 14", arrow8, new Vector3(200, 0, 0)));
 
         }
 
@@ -851,6 +906,20 @@ namespace GDApp
             //demoRotation();
             demoWinLose();
 
+            if(bReset)
+            {
+                if(resetCount > 100)
+                {
+                    bReset = false;
+                    resetCount = 0;
+                    Reset();
+                }
+                else
+                {
+                    resetCount += gameTime.ElapsedGameTime.Milliseconds;
+                }
+            }
+
             base.Update(gameTime);
         }
 
@@ -978,7 +1047,15 @@ namespace GDApp
                         ((OffsetController)step5.ControllerList[0]).Unset();
                         if (mistake)
                         {
-                            Reset();
+                            bReset = true;
+                            ((OffsetController)arrow1.ControllerList[0]).Set();
+                            ((OffsetController)arrow2.ControllerList[0]).Set();
+                            ((OffsetController)arrow3.ControllerList[0]).Set();
+                            ((OffsetController)arrow4.ControllerList[0]).Set();
+                            ((OffsetController)arrow5.ControllerList[0]).Set();
+                            ((OffsetController)arrow6.ControllerList[0]).Set();
+                            ((OffsetController)arrow7.ControllerList[0]).Set();
+                            ((OffsetController)arrow8.ControllerList[0]).Set();
                         }
                         else
                         {
