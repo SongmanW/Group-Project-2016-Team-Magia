@@ -121,6 +121,7 @@
     <Compile Include="GDLibrary\Controllers\Camera\TransitionController.cs" />
     <Compile Include="GDLibrary\Controllers\CharacterMoveController.cs" />
     <Compile Include="GDLibrary\Controllers\CharacterRotatorInteractionController.cs" />
+    <Compile Include="GDLibrary\Controllers\OffsetController.cs" />
     <Compile Include="GDLibrary\Controllers\RotatorController.cs" />
     <Compile Include="GDLibrary\Curve\Camera3DTrack.cs" />
     <Compile Include="GDLibrary\Curve\Curve1D.cs" />

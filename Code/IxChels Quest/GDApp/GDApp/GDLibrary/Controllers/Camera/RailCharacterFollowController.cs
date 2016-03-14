@@ -38,13 +38,14 @@ namespace GDLibrary
                 + Vector3.Dot(cameraToTarget, railParameters.Look) * railParameters.Look * gameTime.ElapsedGameTime.Milliseconds * 0.5f;
 
             //do not allow the camera to move outside the rail
-            if (!railParameters.InsideRail(projectedCameraPosition))
+            if (railParameters.InsideRail(projectedCameraPosition))
             {
                 //change Camera
-                
+                this.ParentActor.Transform3D.Translation = projectedCameraPosition;
+
             }
 
-            this.ParentActor.Transform3D.Translation = projectedCameraPosition;
+            //this.ParentActor.Transform3D.Look = Vector3.Dot(this.ParentActor.Transform3D.Look, target) * this.ParentActor.Transform3D.Look;
 
             Console.WriteLine("Camera Translation: " + this.ParentActor.Transform3D.Translation);
 

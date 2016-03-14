@@ -68,6 +68,8 @@ namespace GDLibrary
 
                     // Set everything for Rotation
                     ((RotatorController)((PawnCamera3D)this.game.CameraManager[0]).ControllerList[0]).Set();
+                    ((RotatorController)((PawnModelObject)this.game.wall1).ControllerList[0]).Set();
+                    ((RotatorController)((PawnModelObject)this.game.wall2).ControllerList[0]).Set();
                     ((CharacterMoveController)this.game.playerActor.ControllerList[0]).Camera = this.game.CameraManager[0];
                     this.isRotating = true;
                 }

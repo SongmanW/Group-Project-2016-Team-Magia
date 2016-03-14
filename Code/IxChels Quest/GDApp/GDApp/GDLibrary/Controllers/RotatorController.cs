@@ -12,6 +12,7 @@ namespace GDLibrary
         private Transform3D oldPTransform;
         private Transform3D oldTransform;
         private Actor targetActor;
+        private bool bSet = false;
 
         public RotatorController(string name, Actor parentActor, Actor targetActor)
             :base(name, parentActor)
@@ -23,28 +24,31 @@ namespace GDLibrary
         {
             this.ParentActor.Transform3D.Look = new Vector3(
                 this.targetActor.Transform3D.Translation.X - this.ParentActor.Transform3D.Translation.X,
-                this.ParentActor.Transform3D.Look.Y,
+                this.targetActor.Transform3D.Translation.Y - this.ParentActor.Transform3D.Translation.Y,
                 this.targetActor.Transform3D.Translation.Z - this.ParentActor.Transform3D.Translation.Z);
             offSet = this.ParentActor.Transform3D.Translation - this.targetActor.Transform3D.Translation;
             oldTransform = (Transform3D)this.targetActor.Transform3D.Clone();
             oldPTransform = (Transform3D)this.ParentActor.Transform3D.Clone();
 
-
+            bSet = true;
         }
 
         public override void Update(GameTime gameTime)
         {
-            Vector3 newRotation = oldTransform.Rotation - targetActor.Transform3D.Rotation;
+            if (bSet)
+            {
+                Vector3 newRotation = oldTransform.Rotation - targetActor.Transform3D.Rotation;
 
-            Matrix rot = Matrix.CreateFromYawPitchRoll(-MathHelper.ToRadians(newRotation.Y),
-                MathHelper.ToRadians(newRotation.X), MathHelper.ToRadians(newRotation.Z));
+                Matrix rot = Matrix.CreateFromYawPitchRoll(-MathHelper.ToRadians(newRotation.Y),
+                    MathHelper.ToRadians(newRotation.X), MathHelper.ToRadians(newRotation.Z));
 
-            this.ParentActor.Transform3D.Translation = this.targetActor.Transform3D.Translation + Vector3.Transform(this.offSet, rot);
-            this.ParentActor.Transform3D.Look = Vector3.Transform(this.oldPTransform.Look, rot);
-            this.ParentActor.Transform3D.Up = Vector3.Transform(this.oldPTransform.Up, rot);
-            this.ParentActor.Transform3D.Rotation = this.oldPTransform.Rotation - newRotation;
+                this.ParentActor.Transform3D.Translation = this.targetActor.Transform3D.Translation + Vector3.Transform(this.offSet, rot);
+                this.ParentActor.Transform3D.Look = Vector3.Transform(this.oldPTransform.Look, rot);
+                this.ParentActor.Transform3D.Up = Vector3.Transform(this.oldPTransform.Up, rot);
+                this.ParentActor.Transform3D.Rotation = this.oldPTransform.Rotation - newRotation;
 
-            base.Update(gameTime);
+                base.Update(gameTime);
+            }
         }
     }
 }
