@@ -3,7 +3,7 @@
   <Asset Type="Graphics:MeshContent">
     <Name>Prism01</Name>
     <Identity>
-      <SourceFilename>C:\Users\Pudding\Desktop\GroupProject\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDAppContent\Assets\Models\generic\prism.FBX</SourceFilename>
+      <SourceFilename>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDAppContent\Assets\Models\generic\prism.FBX</SourceFilename>
       <SourceTool>FbxImporter</SourceTool>
     </Identity>
     <Transform>2.54 0 0 0 0 2.53815651 -0.09675806 0 0 0.09675806 2.53815651 0 1.02842557 0 -11.2738857 1</Transform>

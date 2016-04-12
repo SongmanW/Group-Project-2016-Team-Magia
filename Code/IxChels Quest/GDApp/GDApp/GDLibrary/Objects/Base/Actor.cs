@@ -51,6 +51,13 @@ namespace GDLibrary
                 this.transform = value;
             }
         }
+        public Matrix World
+        {
+            get
+            {
+                return this.transform.World;
+            }
+        }
         #endregion
 
         public Actor(string id, ObjectType objectType, Transform3D transform)
@@ -63,6 +70,17 @@ namespace GDLibrary
         public virtual void Update(GameTime gameTime)
         {
 
+        }
+
+        public virtual Matrix GetWorldMatrix()
+        {
+            return this.transform.World;
+        }
+
+        public virtual void Remove()
+        {
+            //tag for garbage collection
+            this.transform = null;
         }
     }
 }

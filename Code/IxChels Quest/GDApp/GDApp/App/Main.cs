@@ -4,6 +4,8 @@ using Microsoft.Xna.Framework.Input;
 using GDApp.GDLibrary;
 using GDLibrary;
 using System;
+using JigLibX.Geometry;
+using JigLibX.Collision;
 
 /*
  To Do:
@@ -210,12 +212,18 @@ namespace GDApp
         private KeyboardManager keyboardManager;
         private MouseManager mouseManager;
         private ObjectManager objectManager;
-        public PawnModelObject playerActor;
+        private SoundManager soundManager;
+        private PhysicsManager physicsManager;
+
+
+
         private GenericDictionary<string, Texture2D> textureDictionary;
         private GenericDictionary<string, SpriteFont> fontDictionary;
         private GenericDictionary<string, Model> modelDictionary;
         private GenericDictionary<string, Camera3DTrack> trackDictionary;
+        private EventDispatcher eventDispatcher;
         private Camera3DTrack cameraTrack;
+        public PlayerObject playerActor;
         private PawnModelObject doorActor;
         private PawnModelObject rotator;
         private PawnModelObject step1;
@@ -225,7 +233,6 @@ namespace GDApp
         private PawnModelObject step5;
         public PawnModelObject wall1;
         public PawnModelObject wall2;
-        private bool mistake = false;
         private PawnModelObject trap1;
         private PawnModelObject trap2;
         private PawnModelObject trap3;
@@ -242,6 +249,7 @@ namespace GDApp
         private PawnModelObject arrow6;
         private PawnModelObject arrow7;
         private PawnModelObject arrow8;
+        private bool mistake = false;
 
         private int nextStep;
         private bool bReset;
@@ -249,11 +257,39 @@ namespace GDApp
         #endregion
 
         #region Properties
+        public PhysicsManager PhysicsManager
+        {
+            get
+            {
+                return this.physicsManager;
+            }
+        }
+        public ObjectManager ObjectManager
+        {
+            get
+            {
+                return this.objectManager;
+            }
+        }
+        public EventDispatcher EventDispatcher
+        {
+            get
+            {
+                return this.eventDispatcher;
+            }
+        }
         public Vector2 ScreenCentre
         {
             get
             {
                 return this.screenCentre;
+            }
+        }
+        public SoundManager SoundManager
+        {
+            get
+            {
+                return soundManager;
             }
         }
 
@@ -301,12 +337,13 @@ namespace GDApp
         /// </summary>
         protected override void Initialize()
         {
-           // testCloning();
+            // testCloning();
+            InitializeEventDispatcher();
             InitializeStatics();
             IntializeGraphics(1024, 768);
-            InitializeFonts();
             InitializeManagers(true);
             InitializeDictionaries();
+            InitializeFonts();
             InitializeEffect();
 
             //InitializeSkyBox(1000);
@@ -320,6 +357,12 @@ namespace GDApp
 
             InitializeLevel();
             base.Initialize();
+        }
+
+        private void InitializeEventDispatcher()
+        {
+            this.eventDispatcher = new EventDispatcher(this);
+            Components.Add(this.eventDispatcher);
         }
 
         private void LoadModels()
@@ -353,8 +396,8 @@ namespace GDApp
 
         private void InitializeLevel()
         {
-            ((CharacterMoveController)this.playerActor.ControllerList[0]).Camera = this.cameraManager[0];
-            ((CharacterRotatorInteractionController)this.playerActor.ControllerList[1]).TargetActor = this.rotator;
+            //((CharacterMoveController)this.playerActor.ControllerList[0]).Camera = this.cameraManager[0];
+            //((CharacterRotatorInteractionController)this.playerActor.ControllerList[1]).TargetActor = this.rotator;
             nextStep = 1;
             mistake = false;
         }
@@ -400,6 +443,8 @@ namespace GDApp
             Model model = null;
             ModelObject modelObject = null;
             PawnModelObject pawnObject = null;
+            CollidableObject collObj = null;
+            TriangleMeshObject triangleObj = null;
 
 
             #region Player Model
@@ -407,11 +452,11 @@ namespace GDApp
             transform = new Transform3D(new Vector3(-200, 24, 0),
                 new Vector3(0, 180, 0), 0.1f * Vector3.One,
                 Vector3.UnitX, Vector3.UnitY);
-            this.playerActor = new PawnModelObject("m",
-                ObjectType.Player, transform, null, model);
-            this.playerActor.Add(new CharacterMoveController(this, "character move controller", this.playerActor));
-            this.playerActor.Add(new CharacterRotatorInteractionController(this, "character rotator interaction controller", this.playerActor));
-
+            this.playerActor = new PlayerObject("player",
+                ObjectType.Player, transform, null, model, Color.White, 1f, KeyData.Player_Keys, 7.5f, 23, 1, 1);
+            //this.playerActor.Add(new CharacterMoveController(this, "character move controller", this.playerActor));
+            //this.playerActor.Add(new CharacterRotatorInteractionController(this, "character rotator interaction controller", this.playerActor));
+            this.playerActor.Enable(false, 1);
             this.objectManager.Add(this.playerActor);
             #endregion
 
@@ -434,9 +479,11 @@ namespace GDApp
             #region Room Model
             model = this.modelDictionary["room"];
             transform = new Transform3D(new Vector3(0, 0, 0), Vector3.Zero, 0.1f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            modelObject = new ModelObject("room", ObjectType.Wall, transform, texture, model);
+            MaterialProperties material = new MaterialProperties(1f, 0.1f, 0.05f);
+            triangleObj = new TriangleMeshObject("room", ObjectType.Wall, transform, texture, model,Color.White, 1, material);
+            triangleObj.Enable(true, 200);
 
-            this.objectManager.Add(modelObject);
+            this.objectManager.Add(triangleObj);
             #endregion
 
             #region Rotationthingy Model
@@ -608,7 +655,7 @@ namespace GDApp
                 scale * Vector3.One, Vector3.UnitZ, Vector3.UnitY);
 
             texturedPrimitive = new TexturedPrimitiveObject("sky", ObjectType.Decorator,
-                transform, vertices, this.textureEffect, PrimitiveType.TriangleStrip, 2, texture);
+                transform, vertices, this.textureEffect, Microsoft.Xna.Framework.Graphics.PrimitiveType.TriangleStrip, 2, texture);
             this.objectManager.Add(texturedPrimitive);
 
             //top
@@ -662,6 +709,9 @@ namespace GDApp
 
         private void InitializeManagers(bool isMouseVisible)
         {
+            this.physicsManager = new PhysicsManager(this, true);
+            Components.Add(physicsManager);
+
             this.cameraManager = new CameraManager(this);
             Components.Add(this.cameraManager);
 

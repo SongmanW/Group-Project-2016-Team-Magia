@@ -19,5 +19,14 @@ namespace GDLibrary
         {
 
         }
+
+        public override void Remove()
+        {
+            //remove from objectManager
+            game.ObjectManager.Remove(this);
+
+            //nullify any expensive objects
+            base.Remove();
+        }
     }
 }

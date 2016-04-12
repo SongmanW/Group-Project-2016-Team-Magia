@@ -26,6 +26,15 @@ namespace GDLibrary
         #endregion
 
         #region Properties
+        public Matrix Orientation
+        {
+            get
+            {
+                return Matrix.CreateRotationX(MathHelper.ToRadians(rotation.X))
+                        * Matrix.CreateRotationY(MathHelper.ToRadians(rotation.Y))
+                            * Matrix.CreateRotationZ(MathHelper.ToRadians(rotation.Z));
+            }
+        }
         public Matrix World
         {
             set
