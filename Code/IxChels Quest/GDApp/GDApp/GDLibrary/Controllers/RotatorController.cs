@@ -47,6 +47,11 @@ namespace GDLibrary
                 this.ParentActor.Transform3D.Up = Vector3.Transform(this.oldPTransform.Up, rot);
                 this.ParentActor.Transform3D.Rotation = this.oldPTransform.Rotation - newRotation;
 
+                if(this.ParentActor.ObjectType == ObjectType.Wall)
+                {
+                    ((CollidableObject)this.ParentActor).Body.MoveTo(this.ParentActor.Transform3D.Translation, this.ParentActor.Transform3D.Orientation);
+                }
+
                 base.Update(gameTime);
             }
         }

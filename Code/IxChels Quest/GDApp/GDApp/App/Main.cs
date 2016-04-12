@@ -226,11 +226,11 @@ namespace GDApp
         public PlayerObject playerActor;
         private PawnCollidableObject doorActor;
         private PawnModelObject rotator;
-        private PawnModelObject step1;
-        private PawnModelObject step2;
-        private PawnModelObject step3;
-        private PawnModelObject step4;
-        private PawnModelObject step5;
+        private PawnCollidableObject step1;
+        private PawnCollidableObject step2;
+        private PawnCollidableObject step3;
+        private PawnCollidableObject step4;
+        private PawnCollidableObject step5;
         public PawnCollidableObject wall1;
         public PawnCollidableObject wall2;
         private PawnModelObject trap1;
@@ -523,32 +523,43 @@ namespace GDApp
 
             #region Pressure Plate Exit Model
             model = this.modelDictionary["plate"];
+            scales = new Vector3(25, 5, 25);
             transform = new Transform3D(new Vector3(250, 4.75f, 0), Vector3.Zero, Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            step1 = new PawnModelObject("PressurePlate1", ObjectType.Plate, transform, texture, model);
+            step1 = new PawnCollidableObject("PressurePlate1", ObjectType.Plate, transform, texture, model, Color.White, 1);
+            step1.AddPrimitive(new Box(transform.Translation, Matrix.Identity, scales), new MaterialProperties());
+            step1.Enable(true, 2000);
 
             this.objectManager.Add(step1);
             #endregion
             #region Pressure Plate Right Up Model
             transform = new Transform3D(new Vector3(50, 4.75f, 230), Vector3.Zero, Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            step2 = new PawnModelObject("PressurePlate2", ObjectType.Plate, transform, texture, model);
+            step2 = new PawnCollidableObject("PressurePlate2", ObjectType.Plate, transform, texture, model, Color.White, 1);
+            step2.AddPrimitive(new Box(transform.Translation, Matrix.Identity, scales), new MaterialProperties());
+            step2.Enable(true, 2000);
 
             this.objectManager.Add(step2);
             #endregion
             #region Pressure Plate Right Down Model
             transform = new Transform3D(new Vector3(-50, 4.75f, 230), Vector3.Zero, Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            step4 = new PawnModelObject("PressurePlate2", ObjectType.Plate, transform, texture, model);
-
+            step4 = new PawnCollidableObject("PressurePlate4", ObjectType.Plate, transform, texture, model, Color.White, 1);
+            step4.AddPrimitive(new Box(transform.Translation, Matrix.Identity, scales), new MaterialProperties());
+            step4.Enable(true, 2000);
+            
             this.objectManager.Add(step4);
             #endregion
             #region Pressure Plate Left Up Model
             transform = new Transform3D(new Vector3(50, 4.75f, -230), Vector3.Zero, Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            step3 = new PawnModelObject("PressurePlate2", ObjectType.Plate, transform, texture, model);
-
+            step3 = new PawnCollidableObject("PressurePlate3", ObjectType.Plate, transform, texture, model, Color.White, 1);
+            step3.AddPrimitive(new Box(transform.Translation, Matrix.Identity, scales), new MaterialProperties());
+            step3.Enable(true, 2000);
+            
             this.objectManager.Add(step3);
             #endregion
             #region Pressure Plate Left Down Model
             transform = new Transform3D(new Vector3(-50, 4.75f, -230), Vector3.Zero, Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            step5 = new PawnModelObject("PressurePlate2", ObjectType.Plate, transform, texture, model);
+            step5 = new PawnCollidableObject("PressurePlate5", ObjectType.Plate, transform, texture, model, Color.White, 1);
+            step5.AddPrimitive(new Box(transform.Translation, Matrix.Identity, scales), new MaterialProperties());
+            step5.Enable(true, 2000);
 
             this.objectManager.Add(step5);
             #endregion
@@ -625,6 +636,7 @@ namespace GDApp
             rotator.Add(new OffsetController("offset controller 2", rotator, true, new Vector3(0, 50, 0)));
             doorActor.Add(new OffsetController("offset vontroller 7", doorActor, true, new Vector3(0, -200, 0)));
             step1.Add(new OffsetController("offset controller 1", step1, true, new Vector3(0, -3, 0)));
+            step1.Add(new CharacterRotatorInteractionController(this, "rotate controller 1", step1, rotator, true));
             step2.Add(new OffsetController("offset controller 3", step2, true, new Vector3(0, -3, 0)));
             step3.Add(new OffsetController("offset controller 4", step3, true, new Vector3(0, -3, 0)));
             step4.Add(new OffsetController("offset controller 5", step4, true, new Vector3(0, -3, 0)));
@@ -961,7 +973,7 @@ namespace GDApp
 
             demoCameraLayout();
             //demoCameraTrack(gameTime);
-            //demoRotation();
+            demoRotation();
             demoWinLose();
 
             if(bReset)

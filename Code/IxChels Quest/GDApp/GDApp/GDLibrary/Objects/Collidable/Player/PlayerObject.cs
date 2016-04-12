@@ -37,6 +37,7 @@ namespace GDLibrary
                     radius, height, accelerationRate, decelerationRate)
         {
             this.keys = keys;
+            this.Body.CollisionSkin.callbackFn += CollisionSkin_callbackFn;
         }
 
         public override void Update(GameTime gameTime)
@@ -99,7 +100,44 @@ namespace GDLibrary
         //in this case we need to add the CollisionSkin_callbackFn() method
         // - See CollidableObject::CollisionSkin_callbackFn
 
-        
-     
+        public bool CollisionSkin_callbackFn(CollisionSkin collider, CollisionSkin collidee)
+        {
+            if (collidee.Owner.ExternalData is PawnCollidableObject)
+            {
+                //if the object that i collide with is a pickup object then set its color to be blue
+                PawnCollidableObject c = (PawnCollidableObject)collidee.Owner.ExternalData;
+
+                if (c.ObjectType == GDLibrary.ObjectType.Plate)
+                {
+                    if (!((OffsetController)c.ControllerList[0]).isSet)
+                    {
+                        int step = 0;
+                        switch (c.ID)
+                        {
+                            case "PressurePlate1":
+                                step = 1;
+                                break;
+                            case "PressurePlate2":
+                                step = 2;
+                                break;
+                            case "PressurePlate3":
+                                step = 3;
+                                break;
+                            case "PressurePlate4":
+                                step = 4;
+                                break;
+                            case "PressurePlate5":
+                                step = 5;
+                                break;
+                        }
+
+                        game.checkNext(step);
+                    }
+                }
+            }
+
+            return true;
+        }
+
     }
 }

@@ -13,6 +13,14 @@ namespace GDLibrary
         private Vector3 originalTranslation;
         private bool bSet = false;
 
+        public bool isSet
+        {
+            get
+            {
+                return bSet;
+            }
+        }
+
         public OffsetController(string name, Actor parentActor, bool bEnabled, Vector3 maxOffset)
             : base(name, parentActor, bEnabled)
         {
