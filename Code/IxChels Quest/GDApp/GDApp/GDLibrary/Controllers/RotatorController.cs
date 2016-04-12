@@ -14,8 +14,8 @@ namespace GDLibrary
         private Actor targetActor;
         private bool bSet = false;
 
-        public RotatorController(string name, Actor parentActor, Actor targetActor)
-            :base(name, parentActor)
+        public RotatorController(string name, Actor parentActor, bool bEnabled, Actor targetActor)
+            :base(name, parentActor, bEnabled)
         {
             this.targetActor = targetActor;
         }

@@ -16,9 +16,9 @@ namespace GDLibrary
         #region Properties
         #endregion
 
-        public SecurityController(string name, Actor parentActor,
+        public SecurityController(string name, Actor parentActor, bool bEnabled,
             int maxSweepAngle, int sweepSpeed)
-            : base(name, parentActor)
+            : base(name, parentActor, bEnabled)
         {
             this.maxSweepAngle = maxSweepAngle;
             this.sweepSpeed = sweepSpeed;
@@ -35,6 +35,7 @@ namespace GDLibrary
         {
             return new SecurityController("clone - " + this.Name,
                 this.ParentActor,
+                this.Enabled,
                 this.maxSweepAngle, //deep - primitive - copy by value
                 this.sweepSpeed); //deep - primitive - copy by value
 

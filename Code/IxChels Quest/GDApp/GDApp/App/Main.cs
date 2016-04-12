@@ -224,15 +224,15 @@ namespace GDApp
         private EventDispatcher eventDispatcher;
         private Camera3DTrack cameraTrack;
         public PlayerObject playerActor;
-        private PawnModelObject doorActor;
+        private PawnCollidableObject doorActor;
         private PawnModelObject rotator;
         private PawnModelObject step1;
         private PawnModelObject step2;
         private PawnModelObject step3;
         private PawnModelObject step4;
         private PawnModelObject step5;
-        public PawnModelObject wall1;
-        public PawnModelObject wall2;
+        public PawnCollidableObject wall1;
+        public PawnCollidableObject wall2;
         private PawnModelObject trap1;
         private PawnModelObject trap2;
         private PawnModelObject trap3;
@@ -464,7 +464,10 @@ namespace GDApp
             #region ExitDoor Model
             model = this.modelDictionary["door"];
             transform = new Transform3D(new Vector3(300, 0, 0), Vector3.Zero, 0.1f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            this.doorActor = new PawnModelObject("door", ObjectType.Door, transform, texture, model);
+            this.doorActor = new PawnCollidableObject("door", ObjectType.Door, transform, texture, model, Color.White, 1f);
+            Vector3 scales = new Vector3(12, 250, 69);
+            this.doorActor.AddPrimitive(new Box(transform.Translation, Matrix.Identity, scales), new MaterialProperties());
+            this.doorActor.Enable(true, 2000);
 
             this.objectManager.Add(this.doorActor);
             #endregion
@@ -499,16 +502,21 @@ namespace GDApp
             #region Wall right Model
             model = this.modelDictionary["wall"];
             transform = new Transform3D(new Vector3(0, 0, 153.7244f), Vector3.Zero, 0.1f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            wall1 = new PawnModelObject("Wall1", ObjectType.Wall, transform, texture, model);
-            wall1.Add(new RotatorController("wall1Rotator", wall1, this.rotator));
+            wall1 = new PawnCollidableObject("Wall1", ObjectType.Wall, transform, texture, model, Color.White, 1);
+            wall1.Add(new RotatorController("wall1Rotator", wall1, true, this.rotator));
+            scales = new Vector3(320, 250, 1);
+            wall1.AddPrimitive(new Box(transform.Translation, Matrix.Identity, scales), new MaterialProperties());
+            wall1.Enable(true, 2000);
 
             this.objectManager.Add(wall1);
             #endregion
             #region Wall left Model
             model = this.modelDictionary["wall"];
             transform = new Transform3D(new Vector3(0, 0, -153.54f), new Vector3(0,180,0), 0.1f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            wall2 = new PawnModelObject("Wall2", ObjectType.Wall, transform, texture, model);
-            wall2.Add(new RotatorController("wall2Rotator", wall2, this.rotator));
+            wall2 = new PawnCollidableObject("Wall2", ObjectType.Wall, transform, texture, model, Color.White, 1);
+            wall2.Add(new RotatorController("wall2Rotator", wall2, true, this.rotator));
+            wall2.AddPrimitive(new Box(transform.Translation, Matrix.Identity, scales), new MaterialProperties());
+            wall2.Enable(true, 2000);
 
             this.objectManager.Add(wall2);
             #endregion
@@ -614,29 +622,29 @@ namespace GDApp
             this.objectManager.Add(arrow8);
             #endregion
 
-            rotator.Add(new OffsetController("offset controller 2", rotator, new Vector3(0, 50, 0)));
-            doorActor.Add(new OffsetController("offset vontroller 7", doorActor, new Vector3(0, -200, 0)));
-            step1.Add(new OffsetController("offset controller 1", step1, new Vector3(0, -3, 0)));
-            step2.Add(new OffsetController("offset controller 3", step2, new Vector3(0, -3, 0)));
-            step3.Add(new OffsetController("offset controller 4", step3, new Vector3(0, -3, 0)));
-            step4.Add(new OffsetController("offset controller 5", step4, new Vector3(0, -3, 0)));
-            step5.Add(new OffsetController("offset controller 6", step5, new Vector3(0, -3, 0)));
-            trap1.Add(new OffsetController("offset controller 7", trap1, new Vector3(-20, 0, 0)));
-            trap2.Add(new OffsetController("offset controller 8", trap2, new Vector3(-20, 0, 0)));
-            trap3.Add(new OffsetController("offset controller 9", trap3, new Vector3(-20, 0, 0)));
-            trap4.Add(new OffsetController("offset controller 10", trap4, new Vector3(-20, 0, 0)));
-            trap5.Add(new OffsetController("offset controller 11", trap5, new Vector3(20, 0, 0)));
-            trap6.Add(new OffsetController("offset controller 12", trap6, new Vector3(20, 0, 0)));
-            trap7.Add(new OffsetController("offset controller 13", trap7, new Vector3(20, 0, 0)));
-            trap8.Add(new OffsetController("offset controller 14", trap8, new Vector3(20, 0, 0)));
-            arrow1.Add(new OffsetController("offset controller 7", arrow1, new Vector3(-200, 0, 0)));
-            arrow2.Add(new OffsetController("offset controller 8", arrow2, new Vector3(-200, 0, 0)));
-            arrow3.Add(new OffsetController("offset controller 9", arrow3, new Vector3(-200, 0, 0)));
-            arrow4.Add(new OffsetController("offset controller 10", arrow4, new Vector3(-200, 0, 0)));
-            arrow5.Add(new OffsetController("offset controller 11", arrow5, new Vector3(200, 0, 0)));
-            arrow6.Add(new OffsetController("offset controller 12", arrow6, new Vector3(200, 0, 0)));
-            arrow7.Add(new OffsetController("offset controller 13", arrow7, new Vector3(200, 0, 0)));
-            arrow8.Add(new OffsetController("offset controller 14", arrow8, new Vector3(200, 0, 0)));
+            rotator.Add(new OffsetController("offset controller 2", rotator, true, new Vector3(0, 50, 0)));
+            doorActor.Add(new OffsetController("offset vontroller 7", doorActor, true, new Vector3(0, -200, 0)));
+            step1.Add(new OffsetController("offset controller 1", step1, true, new Vector3(0, -3, 0)));
+            step2.Add(new OffsetController("offset controller 3", step2, true, new Vector3(0, -3, 0)));
+            step3.Add(new OffsetController("offset controller 4", step3, true, new Vector3(0, -3, 0)));
+            step4.Add(new OffsetController("offset controller 5", step4, true, new Vector3(0, -3, 0)));
+            step5.Add(new OffsetController("offset controller 6", step5, true, new Vector3(0, -3, 0)));
+            trap1.Add(new OffsetController("offset controller 7", trap1, true, new Vector3(-20, 0, 0)));
+            trap2.Add(new OffsetController("offset controller 8", trap2, true, new Vector3(-20, 0, 0)));
+            trap3.Add(new OffsetController("offset controller 9", trap3, true, new Vector3(-20, 0, 0)));
+            trap4.Add(new OffsetController("offset controller 10", trap4, true, new Vector3(-20, 0, 0)));
+            trap5.Add(new OffsetController("offset controller 11", trap5, true, new Vector3(20, 0, 0)));
+            trap6.Add(new OffsetController("offset controller 12", trap6, true, new Vector3(20, 0, 0)));
+            trap7.Add(new OffsetController("offset controller 13", trap7, true, new Vector3(20, 0, 0)));
+            trap8.Add(new OffsetController("offset controller 14", trap8, true, new Vector3(20, 0, 0)));
+            arrow1.Add(new OffsetController("offset controller 7", arrow1, true, new Vector3(-200, 0, 0)));
+            arrow2.Add(new OffsetController("offset controller 8", arrow2, true, new Vector3(-200, 0, 0)));
+            arrow3.Add(new OffsetController("offset controller 9", arrow3, true, new Vector3(-200, 0, 0)));
+            arrow4.Add(new OffsetController("offset controller 10", arrow4, true, new Vector3(-200, 0, 0)));
+            arrow5.Add(new OffsetController("offset controller 11", arrow5, true, new Vector3(200, 0, 0)));
+            arrow6.Add(new OffsetController("offset controller 12", arrow6, true, new Vector3(200, 0, 0)));
+            arrow7.Add(new OffsetController("offset controller 13", arrow7, true, new Vector3(200, 0, 0)));
+            arrow8.Add(new OffsetController("offset controller 14", arrow8, true, new Vector3(200, 0, 0)));
 
         }
 
@@ -887,7 +895,7 @@ namespace GDApp
                 ProjectionParameters.StandardMediumFourThree, this.graphics.GraphicsDevice.Viewport);
 
             pawnCamera.Add(new RailCharacterFollowController("rail character follow controller 1",
-                pawnCamera, new RailParameters("r1", new Vector3(-320, 126, 0),
+                pawnCamera, true, new RailParameters("r1", new Vector3(-320, 126, 0),
                 new Vector3(300, 126, 0)), playerActor, new Vector3(300, -300, 0), 114));
             this.cameraManager.Add("RailCharacterFollow", pawnCamera);
 
@@ -900,7 +908,7 @@ namespace GDApp
                 ProjectionParameters.StandardMediumFourThree, this.graphics.GraphicsDevice.Viewport);
 
             pawnCamera.Add(new RotatorController("rotate camera controller 1",
-                pawnCamera, this.rotator));
+                pawnCamera, true, this.rotator));
             this.cameraManager.Add("RotateCamera", pawnCamera);
 
             #endregion
@@ -1038,6 +1046,10 @@ namespace GDApp
 
             graphics.GraphicsDevice.SamplerStates[0] 
                             = SamplerState.LinearClamp;
+
+            //RasterizerState rasterizer = new RasterizerState();
+            //rasterizer.FillMode = FillMode.WireFrame;
+            //graphics.GraphicsDevice.RasterizerState = rasterizer;
 
             //spriteBatch.Begin();
             //spriteBatch.DrawString(this.debugFont, "Keys: Camera - U, D, L, R arrow keys", new Vector2(10, 10), Color.White);

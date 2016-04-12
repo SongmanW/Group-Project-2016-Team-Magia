@@ -10,9 +10,9 @@ namespace GDLibrary
     {
         private Camera3DTrack track;
 
-        public TransitionController(string name, Actor parentActor,
+        public TransitionController(string name, Actor parentActor, bool bEnabled,
             Actor actor1, Actor actor2, float timeInSecs)
-            : base(name, parentActor)
+            : base(name, parentActor, bEnabled)
         {
             this.track = new Camera3DTrack(CurveLoopType.Constant);
             //set the initial position of the camera

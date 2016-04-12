@@ -13,8 +13,8 @@ namespace GDLibrary
         private RailParameters railParameters;
         private Actor targetActor;
 
-        public RailCharacterFollowController(string name, Actor parentActor, RailParameters railParameters, Actor targetActor, Vector3 look, float distanceToTarget)
-            : base(name, parentActor)
+        public RailCharacterFollowController(string name, Actor parentActor, bool bEnabled, RailParameters railParameters, Actor targetActor, Vector3 look, float distanceToTarget)
+            : base(name, parentActor, bEnabled)
         {
             this.railParameters = railParameters;
             this.targetActor = targetActor;

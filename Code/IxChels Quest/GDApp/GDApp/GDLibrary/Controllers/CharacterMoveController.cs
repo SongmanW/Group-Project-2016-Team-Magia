@@ -21,15 +21,15 @@ namespace GDLibrary
             }
         }
 
-        public CharacterMoveController(Main game, string name, Actor parentActor)
-            : base(name, parentActor)
+        public CharacterMoveController(Main game, string name, Actor parentActor, bool bEnabled)
+            : base(name, parentActor, bEnabled)
         {
             this.game = game;
             this.camera = null;
         }
 
-        public CharacterMoveController(Main game, string name, Actor parentActor, Camera3D camera)
-            : base(name, parentActor)
+        public CharacterMoveController(Main game, string name, Actor parentActor, bool bEnabled, Camera3D camera)
+            : base(name, parentActor, bEnabled)
         {
             this.game = game;
             this.camera = camera;

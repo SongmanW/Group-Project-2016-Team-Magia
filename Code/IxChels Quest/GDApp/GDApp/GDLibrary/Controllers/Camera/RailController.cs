@@ -12,9 +12,9 @@ namespace GDLibrary
         #region Properties
         #endregion
 
-        public RailController(string name, Actor parentActor, 
+        public RailController(string name, Actor parentActor, bool bEnabled, 
             RailParameters railParameters, Actor targetActor)
-            : base(name, parentActor)
+            : base(name, parentActor, bEnabled)
         {
             this.railParameters = railParameters;
             this.targetActor = targetActor;
@@ -47,6 +47,7 @@ namespace GDLibrary
         {
             return new RailController("clone - " + this.Name,
                 this.ParentActor, //shallow - reset normally
+                this.Enabled,
                 this.railParameters, //shallow - change to deep - add Clone()
                 this.targetActor); //shallow - cloned rail should have same target
         }

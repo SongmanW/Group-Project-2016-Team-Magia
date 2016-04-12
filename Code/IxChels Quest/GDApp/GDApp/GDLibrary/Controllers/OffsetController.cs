@@ -13,8 +13,8 @@ namespace GDLibrary
         private Vector3 originalTranslation;
         private bool bSet = false;
 
-        public OffsetController(string name, Actor parentActor, Vector3 maxOffset)
-            : base(name, parentActor)
+        public OffsetController(string name, Actor parentActor, bool bEnabled, Vector3 maxOffset)
+            : base(name, parentActor, bEnabled)
         {
             this.maxOffset = maxOffset;
             this.originalTranslation = ParentActor.Transform3D.Translation;

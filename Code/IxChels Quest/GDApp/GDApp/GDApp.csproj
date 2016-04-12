@@ -151,6 +151,7 @@
     <Compile Include="GDLibrary\Objects\Collidable\Player\CharacterObject.cs" />
     <Compile Include="GDLibrary\Objects\Collidable\Player\PlayerObject.cs" />
     <Compile Include="GDLibrary\Objects\Collidable\Static\TriangleMeshObject.cs" />
+    <Compile Include="GDLibrary\Objects\Collidable\PawnCollidableObject.cs" />
     <Compile Include="GDLibrary\Objects\Collidable\Zones\CameraZoneObject.cs" />
     <Compile Include="GDLibrary\Objects\Collidable\Zones\ZoneObject.cs" />
     <Compile Include="GDLibrary\Objects\Model\CharacterModelObject.cs" />

@@ -8,6 +8,7 @@ namespace GDLibrary
         Actor GetParentActor();
         void SetParentActor(Actor parentActor);
 
+        bool isEnabled();
         void Update(GameTime gameTime);
         object Clone();
     }

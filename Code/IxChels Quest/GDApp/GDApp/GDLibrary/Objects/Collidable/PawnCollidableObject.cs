@@ -7,7 +7,7 @@ using System.Text;
 
 namespace GDLibrary
 {
-    public class PawnModelObject : ModelObject
+    public class PawnCollidableObject : CollidableObject
     {
         #region Fields
         private List<IController> controllerList;
@@ -23,9 +23,9 @@ namespace GDLibrary
         }
         #endregion
 
-        public PawnModelObject(string id, ObjectType objectType,
-            Transform3D transform, Texture2D texture, Model model)
-                : base(id, objectType, transform, texture, model)
+        public PawnCollidableObject(string id, ObjectType objectType, Transform3D transform,
+            Texture2D texture, Model model, Color color, float alpha)
+            : base(id, objectType, transform, texture, model, color, alpha)
         {
 
         }
@@ -55,34 +55,8 @@ namespace GDLibrary
             if (this.controllerList != null)
             {
                 foreach (IController controller in this.controllerList)
-                    if (controller.isEnabled())
-                    {
-                        controller.Update(gameTime);
-                    }
+                    controller.Update(gameTime);
             }
         }
-
-        //add clone...
-        public override object Clone()
-        {
-            PawnModelObject clone
-                = new PawnModelObject("clone - " + this.ID,
-                    this.ObjectType,
-                    (Transform3D)this.Transform3D.Clone(), //deep copy
-                    this.Texture,
-                    this.Model); //shallow or deep?
-
-            for (int i = 0; i < this.controllerList.Count; i++)
-            {
-                IController cloneController
-                        = (IController)this.controllerList[i].Clone();
-                cloneController.SetParentActor(clone);
-                clone.Add(cloneController);
-            }
-
-            return clone;
-        }
-
-
     }
 }

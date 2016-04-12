@@ -11,6 +11,7 @@ namespace GDLibrary
         #region Fields
         private string name;
         private Actor parentActor;
+        private bool bEnabled;
         #endregion
 
         #region Properties
@@ -32,12 +33,24 @@ namespace GDLibrary
                 return this.name;
             }
         }
+        public bool Enabled
+        {
+            get
+            {
+                return this.bEnabled;
+            }
+            set
+            {
+                this.bEnabled = value;
+            }
+        }
         #endregion
 
-        public Controller(string name, Actor parentActor)
+        public Controller(string name, Actor parentActor, bool bEnabled)
         {
             this.name = name;
             this.parentActor = parentActor;
+            this.bEnabled = bEnabled;
         }
 
         public string GetName()
@@ -64,7 +77,12 @@ namespace GDLibrary
             return new Controller("clone - " + this.name,
                 //we will generally reset parent actor 
                 //since new controller should have new parent
-                this.parentActor);
+                this.parentActor, this.Enabled);
+        }
+
+        public virtual bool isEnabled()
+        {
+            return bEnabled;
         }
     }
 }

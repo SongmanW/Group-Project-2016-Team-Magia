@@ -13,8 +13,8 @@ namespace GDLibrary
         private Transform3D oldTransform;
         private Actor targetActor;
 
-        public RotateCameraController(string name, Actor parentActor, Actor targetActor)
-            :base(name, parentActor)
+        public RotateCameraController(string name, Actor parentActor, bool bEnabled, Actor targetActor)
+            :base(name, parentActor, bEnabled)
         {
             this.targetActor = targetActor;
         }
