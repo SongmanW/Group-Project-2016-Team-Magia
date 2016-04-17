@@ -372,16 +372,16 @@ namespace GDApp
             model = Content.Load<Model>("Assets\\Models\\mm");
             this.modelDictionary.Add("player", model);
 
-            model = Content.Load<Model>("Assets\\Models\\door");
+            model = Content.Load<Model>("Assets\\Models\\DoorV1");
             this.modelDictionary.Add("door", model);
 
             model = Content.Load<Model>("Assets\\Models\\room");
             this.modelDictionary.Add("room", model);
 
-            model = Content.Load<Model>("Assets\\Models\\rotation");
+            model = Content.Load<Model>("Assets\\Models\\totemV1");
             this.modelDictionary.Add("rotation", model);
 
-            model = Content.Load<Model>("Assets\\Models\\wall");
+            model = Content.Load<Model>("Assets\\Models\\wallV1");
             this.modelDictionary.Add("wall", model);
 
             model = Content.Load<Model>("Assets\\Models\\plate");
@@ -443,7 +443,7 @@ namespace GDApp
             Model model = null;
             ModelObject modelObject = null;
             PawnModelObject pawnObject = null;
-            CollidableObject collObj = null;
+            PawnCollidableObject collObj = null;
             TriangleMeshObject triangleObj = null;
 
 
@@ -460,11 +460,10 @@ namespace GDApp
             this.objectManager.Add(this.playerActor);
             #endregion
 
-            texture = Content.Load<Texture2D>("Assets\\Textures\\Game\\whitedoor");
             #region ExitDoor Model
             model = this.modelDictionary["door"];
-            transform = new Transform3D(new Vector3(300, 0, 0), Vector3.Zero, 0.1f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            this.doorActor = new PawnCollidableObject("door", ObjectType.Door, transform, texture, model, Color.White, 1f);
+            transform = new Transform3D(new Vector3(300, 0, 0), Vector3.Zero, 1f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
+            this.doorActor = new PawnCollidableObject("door", ObjectType.Door, transform, null, model, Color.White, 1f);
             Vector3 scales = new Vector3(12, 250, 69);
             this.doorActor.AddPrimitive(new Box(transform.Translation, Matrix.Identity, scales), new MaterialProperties());
             this.doorActor.Enable(true, 2000);
@@ -472,18 +471,20 @@ namespace GDApp
             this.objectManager.Add(this.doorActor);
             #endregion
             #region EntranceDoor Model
-            //model = this.modelDictionary["door"];
-            //transform = new Transform3D(new Vector3(-300, 0, 0), Vector3.Zero, 0.1f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            //modelobject = new ModelObject("entrance", ObjectType.Door, transform, null, model);
+            model = this.modelDictionary["door"];
+            transform = new Transform3D(new Vector3(-300, 0, 0), Vector3.Zero, 1f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
+            collObj = new PawnCollidableObject("door", ObjectType.Door, transform, null, model, Color.White, 1f);
+            collObj.AddPrimitive(new Box(transform.Translation, Matrix.Identity, scales), new MaterialProperties());
+            collObj.Enable(true, 2000);
 
-            //this.objectManager.Add(modelobject);
+            this.objectManager.Add(collObj);
             #endregion
             texture = Content.Load<Texture2D>("Assets\\Textures\\Game\\white");
             #region Room Model
             model = this.modelDictionary["room"];
             transform = new Transform3D(new Vector3(0, 0, 0), Vector3.Zero, 0.1f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
             MaterialProperties material = new MaterialProperties(1f, 0.1f, 0.05f);
-            triangleObj = new TriangleMeshObject("room", ObjectType.Wall, transform, texture, model,Color.White, 1, material);
+            triangleObj = new TriangleMeshObject("room", ObjectType.Wall, transform, null, model,Color.White, 1, material);
             triangleObj.Enable(true, 200);
 
             this.objectManager.Add(triangleObj);
@@ -491,8 +492,8 @@ namespace GDApp
 
             #region Rotationthingy Model
             model = this.modelDictionary["rotation"];
-            transform = new Transform3D(new Vector3(0, -50, 0), Vector3.Zero, 0.1f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            this.rotator = new PawnModelObject("RotationThingy", ObjectType.Rotation, transform, texture, model);
+            transform = new Transform3D(new Vector3(0, -50, 0), Vector3.Zero, 1f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
+            this.rotator = new PawnModelObject("RotationThingy", ObjectType.Rotation, transform, null, model);
 
             this.objectManager.Add(this.rotator);
             #endregion
@@ -501,8 +502,8 @@ namespace GDApp
             //Maybe we should rather go for a more active approach meaning Rotator gets everything which is gonna rotate around it and rotates it
             #region Wall right Model
             model = this.modelDictionary["wall"];
-            transform = new Transform3D(new Vector3(0, 0, 153.7244f), Vector3.Zero, 0.1f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            wall1 = new PawnCollidableObject("Wall1", ObjectType.Wall, transform, texture, model, Color.White, 1);
+            transform = new Transform3D(new Vector3(0, 0, 153.7244f), new Vector3(0, 90, 0), 1f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
+            wall1 = new PawnCollidableObject("Wall1", ObjectType.Wall, transform, null, model, Color.White, 1);
             wall1.Add(new RotatorController("wall1Rotator", wall1, true, this.rotator));
             scales = new Vector3(320, 250, 1);
             wall1.AddPrimitive(new Box(transform.Translation, Matrix.Identity, scales), new MaterialProperties());
@@ -512,8 +513,8 @@ namespace GDApp
             #endregion
             #region Wall left Model
             model = this.modelDictionary["wall"];
-            transform = new Transform3D(new Vector3(0, 0, -153.54f), new Vector3(0,180,0), 0.1f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            wall2 = new PawnCollidableObject("Wall2", ObjectType.Wall, transform, texture, model, Color.White, 1);
+            transform = new Transform3D(new Vector3(0, 0, -153.54f), new Vector3(0,90,0), 1f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
+            wall2 = new PawnCollidableObject("Wall2", ObjectType.Wall, transform, null, model, Color.White, 1);
             wall2.Add(new RotatorController("wall2Rotator", wall2, true, this.rotator));
             wall2.AddPrimitive(new Box(transform.Translation, Matrix.Identity, scales), new MaterialProperties());
             wall2.Enable(true, 2000);
@@ -524,7 +525,7 @@ namespace GDApp
             #region Pressure Plate Exit Model
             model = this.modelDictionary["plate"];
             scales = new Vector3(25, 5, 25);
-            transform = new Transform3D(new Vector3(250, 4.75f, 0), Vector3.Zero, Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
+            transform = new Transform3D(new Vector3(250, 4.75f, 0), new Vector3(0, 90, 0), Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
             step1 = new PawnCollidableObject("PressurePlate1", ObjectType.Plate, transform, texture, model, Color.White, 1);
             step1.AddPrimitive(new Box(transform.Translation, Matrix.Identity, scales), new MaterialProperties());
             step1.Enable(true, 2000);
@@ -907,8 +908,8 @@ namespace GDApp
                 ProjectionParameters.StandardMediumFourThree, this.graphics.GraphicsDevice.Viewport);
 
             pawnCamera.Add(new RailCharacterFollowController("rail character follow controller 1",
-                pawnCamera, true, new RailParameters("r1", new Vector3(-320, 126, 0),
-                new Vector3(300, 126, 0)), playerActor, new Vector3(300, -300, 0), 114));
+                pawnCamera, true, new RailParameters("r1", new Vector3(-300, 68, 0),
+                new Vector3(300, 68, 0)), playerActor, new Vector3(300, -100, 0), 114));
             this.cameraManager.Add("RailCharacterFollow", pawnCamera);
 
             #endregion

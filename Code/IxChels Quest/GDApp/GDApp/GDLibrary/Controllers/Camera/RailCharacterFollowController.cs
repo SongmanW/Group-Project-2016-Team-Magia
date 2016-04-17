@@ -45,7 +45,11 @@ namespace GDLibrary
 
             }
 
-            //this.ParentActor.Transform3D.Look = Vector3.Dot(this.ParentActor.Transform3D.Look, target) * this.ParentActor.Transform3D.Look;
+            Vector3 calcLook = Vector3.Lerp(Vector3.Normalize(cameraToTarget), railParameters.Look, 0.6f);
+            this.ParentActor.Transform3D.Look = new Vector3(
+                calcLook.X,
+                railParameters.Look.Y,
+                calcLook.Z);
 
             Console.WriteLine("Camera Translation: " + this.ParentActor.Transform3D.Translation);
 

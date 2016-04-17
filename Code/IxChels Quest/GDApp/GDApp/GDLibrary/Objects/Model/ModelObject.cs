@@ -62,8 +62,14 @@ namespace GDLibrary
                     be.View = game.ActiveCamera.View;
                     be.World = transforms[mesh.ParentBone.Index] * this.Transform3D.World;
 
-                    be.TextureEnabled = true;
-                    be.Texture = this.texture;
+                    if (texture != null)
+                    {
+                        be.TextureEnabled = true;
+                        be.Texture = this.texture;
+                    }else
+                    {
+                        be.TextureEnabled = true;
+                    }
                 }
                 //Draw
                 mesh.Draw();
