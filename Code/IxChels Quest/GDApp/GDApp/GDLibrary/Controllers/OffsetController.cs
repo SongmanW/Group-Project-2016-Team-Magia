@@ -33,6 +33,8 @@ namespace GDLibrary
             if (bSet)
             {
                 ParentActor.Transform3D.Translation = this.originalTranslation + this.offset;
+                if(this.ParentActor.ObjectType == ObjectType.Door)
+                    ((CollidableObject)this.ParentActor).Body.MoveTo(this.ParentActor.Transform3D.Translation, this.ParentActor.Transform3D.Orientation);
                 if (offset.Length() < maxOffset.Length())
                 {
                     this.offset += maxOffset / 100 * gameTime.ElapsedGameTime.Milliseconds;
