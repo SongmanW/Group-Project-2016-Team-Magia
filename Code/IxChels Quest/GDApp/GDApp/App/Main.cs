@@ -225,7 +225,7 @@ namespace GDApp
         private Camera3DTrack cameraTrack;
         public PlayerObject playerActor;
         private PawnCollidableObject doorActor;
-        private PawnModelObject rotator;
+        private PawnCollidableObject rotator;
         private PawnCollidableObject step1;
         private PawnCollidableObject step2;
         private PawnCollidableObject step3;
@@ -493,7 +493,12 @@ namespace GDApp
             #region Rotationthingy Model
             model = this.modelDictionary["rotation"];
             transform = new Transform3D(new Vector3(0, -50, 0), Vector3.Zero, 1f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            this.rotator = new PawnModelObject("RotationThingy", ObjectType.Rotation, transform, null, model);
+            this.rotator = new PawnCollidableObject("RotationThingy", ObjectType.Rotation, transform, null, model, Color.White, 1);
+            Matrix rot;
+            this.rotator.AddPrimitive(new Capsule(transform.Translation - new Vector3(0, 0, 20), Matrix.Identity, 5, 40), new MaterialProperties());
+            Matrix.CreateRotationY(MathHelper.ToRadians(90), out rot);
+            this.rotator.AddPrimitive(new Capsule(transform.Translation - new Vector3(20, 0, 0), rot, 5, 40), new MaterialProperties());
+            this.rotator.Enable(true, 200);
 
             this.objectManager.Add(this.rotator);
             #endregion

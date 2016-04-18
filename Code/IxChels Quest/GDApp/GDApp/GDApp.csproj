@@ -148,6 +148,7 @@
     <Compile Include="GDLibrary\Managers\Sound\Cue3D.cs" />
     <Compile Include="GDLibrary\Managers\Sound\SoundManager.cs" />
     <Compile Include="GDLibrary\Objects\Collidable\CollidableObject.cs" />
+    <Compile Include="GDLibrary\Objects\Collidable\PawnTriangleMeshObject.cs" />
     <Compile Include="GDLibrary\Objects\Collidable\Player\CharacterObject.cs" />
     <Compile Include="GDLibrary\Objects\Collidable\Player\PlayerObject.cs" />
     <Compile Include="GDLibrary\Objects\Collidable\Static\TriangleMeshObject.cs" />

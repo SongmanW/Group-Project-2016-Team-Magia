@@ -795,10 +795,10 @@
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\DoorV1.xnb</Output>
-      <Time>2016-04-17T22:09:13.4481638+01:00</Time>
+      <Time>2016-04-17T23:36:55.7937463+01:00</Time>
       <Dependency>
         <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\DoorV1_0.xml</Key>
-        <Value>2016-04-17T22:10:13.5000383+01:00</Value>
+        <Value>2016-04-18T13:31:34.4353453+01:00</Value>
       </Dependency>
       <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\grey-stone-concrete-wall-with-sm_0.xnb</Request>
     </Item>
@@ -809,10 +809,10 @@
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\roomV1.xnb</Output>
-      <Time>2016-04-17T22:09:13.4714432+01:00</Time>
+      <Time>2016-04-17T23:36:55.8327795+01:00</Time>
       <Dependency>
         <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\roomV1_0.xml</Key>
-        <Value>2016-04-17T22:10:20.4182945+01:00</Value>
+        <Value>2016-04-18T13:31:42.264109+01:00</Value>
       </Dependency>
       <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\mfjyroO_0.xnb</Request>
       <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\sign4_0.xnb</Request>
@@ -827,10 +827,10 @@
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\roomV2.xnb</Output>
-      <Time>2016-04-17T22:09:13.4844622+01:00</Time>
+      <Time>2016-04-17T23:36:55.8718056+01:00</Time>
       <Dependency>
         <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\roomV2_0.xml</Key>
-        <Value>2016-04-17T22:10:32.1273354+01:00</Value>
+        <Value>2016-04-18T13:31:55.547172+01:00</Value>
       </Dependency>
       <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\mfjyroO_0.xnb</Request>
       <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\sign4_0.xnb</Request>
@@ -845,10 +845,10 @@
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\totemV1.xnb</Output>
-      <Time>2016-04-17T22:09:13.4863956+01:00</Time>
+      <Time>2016-04-17T23:36:55.8738002+01:00</Time>
       <Dependency>
         <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\totemV1_0.xml</Key>
-        <Value>2016-04-17T22:10:32.7777881+01:00</Value>
+        <Value>2016-04-18T13:31:56.2864967+01:00</Value>
       </Dependency>
       <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\totem_1x_0.xnb</Request>
       <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\grey-stone-concrete-wall-with-sm_0.xnb</Request>
@@ -861,10 +861,10 @@
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\totemV2.xnb</Output>
-      <Time>2016-04-17T22:09:13.4893988+01:00</Time>
+      <Time>2016-04-17T23:36:55.8758016+01:00</Time>
       <Dependency>
         <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\totemV2_0.xml</Key>
-        <Value>2016-04-17T22:11:09.1562775+01:00</Value>
+        <Value>2016-04-18T13:31:56.5996698+01:00</Value>
       </Dependency>
       <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\grey-stone-concrete-wall-with-sm_0.xnb</Request>
       <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\totem_1x_0.xnb</Request>
@@ -877,10 +877,10 @@
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\wallV1.xnb</Output>
-      <Time>2016-04-17T22:09:13.4924012+01:00</Time>
+      <Time>2016-04-17T23:36:55.8788032+01:00</Time>
       <Dependency>
         <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\wallV1_0.xml</Key>
-        <Value>2016-04-17T22:11:09.558548+01:00</Value>
+        <Value>2016-04-18T13:31:56.9780139+01:00</Value>
       </Dependency>
       <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\mfjyroO_0.xnb</Request>
     </Item>
@@ -891,10 +891,10 @@
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\wallV2.xnb</Output>
-      <Time>2016-04-17T22:09:13.4947207+01:00</Time>
+      <Time>2016-04-17T23:36:55.8818068+01:00</Time>
       <Dependency>
         <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\wallV2_0.xml</Key>
-        <Value>2016-04-17T22:11:09.8713872+01:00</Value>
+        <Value>2016-04-18T13:31:57.316214+01:00</Value>
       </Dependency>
       <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\mfjyroO_0.xnb</Request>
     </Item>
@@ -903,7 +903,7 @@
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\DoorV1_0.xml</Output>
-      <Time>2016-04-17T22:09:13.4481638+01:00</Time>
+      <Time>2016-04-17T23:36:55.7937463+01:00</Time>
     </Item>
     <Item>
       <Source>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\Desktop\GP modle\grey-stone-concrete-wall-with-small-rough-stones-manmade-porous-surface-solid-material-huge-seamless-squared-texture-256x256.jpg</Source>
@@ -919,14 +919,14 @@
       </Parameters>
       <Options>None</Options>
       <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\grey-stone-concrete-wall-with-sm_0.xnb</Output>
-      <Time>2016-04-10T23:13:44+01:00</Time>
+      <Time>2016-04-17T23:36:55.2994766+01:00</Time>
     </Item>
     <Item>
       <Source>Assets\Models\roomV1.FBX</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\roomV1_0.xml</Output>
-      <Time>2016-04-17T22:09:13.4714432+01:00</Time>
+      <Time>2016-04-17T23:36:55.8327795+01:00</Time>
     </Item>
     <Item>
       <Source>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\Desktop\GP modle\mfjyroO.jpg</Source>
@@ -942,7 +942,7 @@
       </Parameters>
       <Options>None</Options>
       <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\mfjyroO_0.xnb</Output>
-      <Time>2016-04-10T23:17:38+01:00</Time>
+      <Time>2016-04-17T23:36:55.3004776+01:00</Time>
     </Item>
     <Item>
       <Source>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\Desktop\GP modle\sign4.png</Source>
@@ -958,7 +958,7 @@
       </Parameters>
       <Options>None</Options>
       <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\sign4_0.xnb</Output>
-      <Time>2016-04-11T21:26:10+01:00</Time>
+      <Time>2016-04-17T23:36:55.3254952+01:00</Time>
     </Item>
     <Item>
       <Source>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\Desktop\GP modle\sign3.png</Source>
@@ -974,7 +974,7 @@
       </Parameters>
       <Options>None</Options>
       <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\sign3_0.xnb</Output>
-      <Time>2016-04-11T21:25:38+01:00</Time>
+      <Time>2016-04-17T23:36:55.3244949+01:00</Time>
     </Item>
     <Item>
       <Source>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\Desktop\GP modle\sign2.png</Source>
@@ -990,7 +990,7 @@
       </Parameters>
       <Options>None</Options>
       <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\sign2_0.xnb</Output>
-      <Time>2016-04-11T21:25:10+01:00</Time>
+      <Time>2016-04-17T23:36:55.3234934+01:00</Time>
     </Item>
     <Item>
       <Source>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\Desktop\GP modle\sign1.png</Source>
@@ -1006,21 +1006,21 @@
       </Parameters>
       <Options>None</Options>
       <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\sign1_0.xnb</Output>
-      <Time>2016-04-11T21:24:42+01:00</Time>
+      <Time>2016-04-17T23:36:55.3224967+01:00</Time>
     </Item>
     <Item>
       <Source>Assets\Models\roomV2.FBX</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\roomV2_0.xml</Output>
-      <Time>2016-04-17T22:09:13.4844622+01:00</Time>
+      <Time>2016-04-17T23:36:55.8718056+01:00</Time>
     </Item>
     <Item>
       <Source>Assets\Models\totemV1.FBX</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\totemV1_0.xml</Output>
-      <Time>2016-04-17T22:09:13.4863956+01:00</Time>
+      <Time>2016-04-17T23:36:55.8738002+01:00</Time>
     </Item>
     <Item>
       <Source>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\Desktop\GP modle\totem_1x.jpg</Source>
@@ -1036,7 +1036,7 @@
       </Parameters>
       <Options>None</Options>
       <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\totem_1x_0.xnb</Output>
-      <Time>2016-04-17T22:10:51.9326313+01:00</Time>
+      <Time>2016-04-17T23:36:55.3274961+01:00</Time>
     </Item>
     <Item>
       <Source>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\Desktop\GP modle\Wood-Texture-by-xNickixstockx.jpg</Source>
@@ -1052,28 +1052,28 @@
       </Parameters>
       <Options>None</Options>
       <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Wood-Texture-by-xNickixstockx_0.xnb</Output>
-      <Time>2016-04-17T22:11:06.5807538+01:00</Time>
+      <Time>2016-04-17T23:36:55.2944748+01:00</Time>
     </Item>
     <Item>
       <Source>Assets\Models\totemV2.FBX</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\totemV2_0.xml</Output>
-      <Time>2016-04-17T22:09:13.4893988+01:00</Time>
+      <Time>2016-04-17T23:36:55.8758016+01:00</Time>
     </Item>
     <Item>
       <Source>Assets\Models\wallV1.FBX</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\wallV1_0.xml</Output>
-      <Time>2016-04-17T22:09:13.4924012+01:00</Time>
+      <Time>2016-04-17T23:36:55.8788032+01:00</Time>
     </Item>
     <Item>
       <Source>Assets\Models\wallV2.FBX</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\wallV2_0.xml</Output>
-      <Time>2016-04-17T22:09:13.4947207+01:00</Time>
+      <Time>2016-04-17T23:36:55.8818068+01:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
