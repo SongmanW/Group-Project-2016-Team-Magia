@@ -1,5 +1,6 @@
 ﻿using GDApp;
 using Microsoft.Xna.Framework;
+using System;
 using System.Collections.Generic;
 
 namespace GDLibrary
@@ -8,6 +9,7 @@ namespace GDLibrary
     {
         #region Fields
         private List<DrawnActor> drawList, removeList;
+        private Main game;
         #endregion
 
         #region Properties
@@ -30,8 +32,29 @@ namespace GDLibrary
         public ObjectManager(Main game, int initialDrawSize, int initialRemoveSize)
             : base(game)
         {
+            this.game = game;
             this.drawList = new List<DrawnActor>(initialDrawSize);
             this.removeList = new List<DrawnActor>(initialRemoveSize);
+
+            game.EventDispatcher.RotationStarted += HandleRotationStart;
+            game.EventDispatcher.RotationEnd += HandleRotationEnd;
+        }
+
+        private void HandleRotationEnd(object sender)
+        {
+            Console.WriteLine("Rotation End");
+            ((RotatorController)(this.game.wall1).ControllerList[0]).Unset();
+            ((RotatorController)(this.game.wall2).ControllerList[0]).Unset();
+            this.game.playerActor.Unset();
+        }
+
+        private void HandleRotationStart(object sender)
+        {
+            Console.WriteLine("Rotation Start");
+            ((RotatorController)(this.game.wall1).ControllerList[0]).Set();
+            ((RotatorController)(this.game.wall2).ControllerList[0]).Set();
+            this.game.playerActor.Set();
+            ((RotorController)this.game.rotator.ControllerList[1]).Rotate(90, 3000, true);
         }
 
         public void Add(DrawnActor actor)

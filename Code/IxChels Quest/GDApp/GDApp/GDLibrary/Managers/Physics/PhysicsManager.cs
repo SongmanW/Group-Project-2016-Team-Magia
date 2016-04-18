@@ -134,7 +134,7 @@ namespace GDLibrary
                     if (drawnActor is CollidableObject)
                     {
                         CollidableObject collidableObject = drawnActor as CollidableObject;
-                        //this.DebugDrawer.DrawDebug(collidableObject.Body, collidableObject.Collision);
+                        this.DebugDrawer.DrawDebug(collidableObject.Body, collidableObject.Collision);
                     }
                 }
             }

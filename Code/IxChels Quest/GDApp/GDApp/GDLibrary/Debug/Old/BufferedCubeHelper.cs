@@ -166,8 +166,8 @@ namespace GDApp.GDLibrary
 
             this.effect.World = this.world;
             //draw with reference to the camera
-            this.effect.View = this.game.ActiveCamera.View;
-            this.effect.Projection = this.game.ActiveCamera.ProjectionParameters.Projection;
+            this.effect.View = this.game.CameraManager.ActiveCamera.View;
+            this.effect.Projection = this.game.CameraManager.ActiveCamera.ProjectionParameters.Projection;
 
             //load the GFX card with the W, V, and P values
             this.effect.CurrentTechnique.Passes[0].Apply();

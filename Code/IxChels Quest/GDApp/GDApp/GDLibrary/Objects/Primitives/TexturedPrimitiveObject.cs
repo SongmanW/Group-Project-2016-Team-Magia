@@ -45,8 +45,8 @@ namespace GDLibrary
         public override void Draw(GameTime gameTime)
         {
             this.effect.World = this.Transform3D.World;
-            this.effect.View = game.ActiveCamera.View;
-            this.effect.Projection = game.ActiveCamera.ProjectionParameters.Projection;
+            this.effect.View = game.CameraManager.ActiveCamera.View;
+            this.effect.Projection = game.CameraManager.ActiveCamera.ProjectionParameters.Projection;
 
             this.effect.Texture = this.texture;
 

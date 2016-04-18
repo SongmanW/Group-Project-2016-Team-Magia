@@ -14,6 +14,10 @@ namespace GDLibrary
     {
         #region Variables
         private Keys[] keys;
+        private bool bSet;
+        private Vector3 offSet;
+        private Transform3D oldTransform;
+        private Transform3D oldPTransform;
         #endregion
 
         #region Properties
@@ -59,40 +63,67 @@ namespace GDLibrary
             //this.CharacterBody.Velocity = //..
             //this.CharacterBody.DesiredVelocity = Vector3.Zero;
             //this.Transform3D.RotateBy(Vector3.UnitY * 2);
-
-            Vector3 rotate = Vector3.Zero;
-            Vector3 moveVectorX = Vector3.Zero;
-            Vector3 moveVectorZ = Vector3.Zero;
-            if (game.KeyboardManager.IsKeyDown(Keys[KeyData.PlayerMoveUpIndex]) || game.KeyboardManager.IsKeyDown(Keys[KeyData.PlayerMoveUpIndexAlt]))
+            if (!bSet)
             {
-                moveVectorX = Vector3.Normalize(new Vector3(game.ActiveCamera.Transform3D.Look.X, 0, game.ActiveCamera.Transform3D.Look.Z));
-            }
-            else if (game.KeyboardManager.IsKeyDown(Keys[KeyData.PlayerMoveDownIndex]) || game.KeyboardManager.IsKeyDown(Keys[KeyData.PlayerMoveDownIndexAlt]))
-            {
-                moveVectorX = -Vector3.Normalize(new Vector3(game.ActiveCamera.Transform3D.Look.X, 0, game.ActiveCamera.Transform3D.Look.Z));
-            }
-
-            if (game.KeyboardManager.IsKeyDown(Keys[KeyData.PlayerMoveLeftIndex]) || game.KeyboardManager.IsKeyDown(Keys[KeyData.PlayerMoveLeftIndexAlt]))
-            {
-                moveVectorZ = -Vector3.Normalize(new Vector3(game.ActiveCamera.Transform3D.Right.X, 0, game.ActiveCamera.Transform3D.Right.Z));
-            }
-            else if (game.KeyboardManager.IsKeyDown(Keys[KeyData.PlayerMoveRightIndex]) || game.KeyboardManager.IsKeyDown(Keys[KeyData.PlayerMoveRightIndexAlt]))
-            {
-                moveVectorZ = Vector3.Normalize(new Vector3(game.ActiveCamera.Transform3D.Right.X, 0, game.ActiveCamera.Transform3D.Right.Z));
-            }
-            this.CharacterBody.Velocity = ((moveVectorX == Vector3.Zero && moveVectorZ == Vector3.Zero ? Vector3.Zero : Vector3.Normalize(moveVectorX + moveVectorZ)) * 85);
-            this.CharacterBody.DesiredVelocity = Vector3.Zero;
-            if (moveVectorX != Vector3.Zero || moveVectorZ != Vector3.Zero)
-            {
-                Vector3 moveVector = Vector3.Normalize(moveVectorX + moveVectorZ);
-                if (moveVector.Z >= 0)
+                Vector3 rotate = Vector3.Zero;
+                Vector3 moveVectorX = Vector3.Zero;
+                Vector3 moveVectorZ = Vector3.Zero;
+                if (game.KeyboardManager.IsKeyDown(Keys[KeyData.PlayerMoveUpIndex]) || game.KeyboardManager.IsKeyDown(Keys[KeyData.PlayerMoveUpIndexAlt]))
                 {
-                    this.Transform3D.RotateTo(new Vector3(0, 180 - MathHelper.ToDegrees((float)Math.Acos(moveVector.X)), 0));
+                    moveVectorX = Vector3.Normalize(new Vector3(game.CameraManager.ActiveCamera.Transform3D.Look.X, 0, game.CameraManager.ActiveCamera.Transform3D.Look.Z));
                 }
-                else
+                else if (game.KeyboardManager.IsKeyDown(Keys[KeyData.PlayerMoveDownIndex]) || game.KeyboardManager.IsKeyDown(Keys[KeyData.PlayerMoveDownIndexAlt]))
                 {
-                    this.Transform3D.RotateTo(new Vector3(0, 180 + MathHelper.ToDegrees((float)Math.Acos(moveVector.X)), 0));
+                    moveVectorX = -Vector3.Normalize(new Vector3(game.CameraManager.ActiveCamera.Transform3D.Look.X, 0, game.CameraManager.ActiveCamera.Transform3D.Look.Z));
                 }
+
+                if (game.KeyboardManager.IsKeyDown(Keys[KeyData.PlayerMoveLeftIndex]) || game.KeyboardManager.IsKeyDown(Keys[KeyData.PlayerMoveLeftIndexAlt]))
+                {
+                    moveVectorZ = -Vector3.Normalize(new Vector3(game.CameraManager.ActiveCamera.Transform3D.Right.X, 0, game.CameraManager.ActiveCamera.Transform3D.Right.Z));
+                }
+                else if (game.KeyboardManager.IsKeyDown(Keys[KeyData.PlayerMoveRightIndex]) || game.KeyboardManager.IsKeyDown(Keys[KeyData.PlayerMoveRightIndexAlt]))
+                {
+                    moveVectorZ = Vector3.Normalize(new Vector3(game.CameraManager.ActiveCamera.Transform3D.Right.X, 0, game.CameraManager.ActiveCamera.Transform3D.Right.Z));
+                }
+                this.CharacterBody.Velocity = ((moveVectorX == Vector3.Zero && moveVectorZ == Vector3.Zero ? Vector3.Zero : Vector3.Normalize(moveVectorX + moveVectorZ)) * 85);
+                this.CharacterBody.DesiredVelocity = Vector3.Zero;
+                if (moveVectorX != Vector3.Zero || moveVectorZ != Vector3.Zero)
+                {
+                    Vector3 moveVector = Vector3.Normalize(moveVectorX + moveVectorZ);
+                    if (moveVector.Z >= 0)
+                    {
+                        this.Transform3D.RotateTo(new Vector3(0, 180 - MathHelper.ToDegrees((float)Math.Acos(moveVector.X)), 0));
+                    }
+                    else
+                    {
+                        this.Transform3D.RotateTo(new Vector3(0, 180 + MathHelper.ToDegrees((float)Math.Acos(moveVector.X)), 0));
+                    }
+                }
+                Vector3 distanceToTotem = this.Transform3D.Translation - game.rotator.Transform3D.Translation;
+                distanceToTotem.Y = 0;
+                if (game.NextStep > 1)
+                {
+                    if (distanceToTotem.Length() < 50)
+                    {
+                        if (game.KeyboardManager.IsFirstKeyPress(Keys[KeyData.PlayerInteractIndex]) || game.KeyboardManager.IsFirstKeyPress(Keys[KeyData.PlayerInteractIndexAlt]))
+                        {
+                            Console.WriteLine("Turn: " + distanceToTotem.Length());
+                            EventDispatcher.Publish(new EventData("rotation start", this, EventType.OnRotationStart));
+                        }
+                    }
+                }
+            }
+            else
+            {
+                Vector3 newRotation = oldTransform.Rotation - game.rotator.Transform3D.Rotation;
+
+                Matrix rot = Matrix.CreateFromYawPitchRoll(-MathHelper.ToRadians(newRotation.Y),
+                    MathHelper.ToRadians(newRotation.X), MathHelper.ToRadians(newRotation.Z));
+
+                this.Transform3D.Translation = game.rotator.Transform3D.Translation + Vector3.Transform(this.offSet, rot);
+                this.Transform3D.Look = Vector3.Transform(this.oldPTransform.Look, rot);
+                this.Transform3D.Up = Vector3.Transform(this.oldPTransform.Up, rot);
+                this.Transform3D.Rotation = this.oldPTransform.Rotation - newRotation;
             }
         }
 
@@ -137,6 +168,20 @@ namespace GDLibrary
             }
 
             return true;
+        }
+
+        public void Set()
+        {
+            this.offSet = this.Transform3D.Translation - game.rotator.Transform3D.Translation;
+            this.oldTransform = (Transform3D)game.rotator.Transform3D.Clone();
+            this.oldPTransform = (Transform3D)game.rotator.Transform3D.Clone();
+
+            bSet = true;
+        }
+
+        public void Unset()
+        {
+            bSet = false;
         }
 
     }

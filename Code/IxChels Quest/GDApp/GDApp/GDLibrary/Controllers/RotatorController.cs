@@ -33,6 +33,11 @@ namespace GDLibrary
             bSet = true;
         }
 
+        public void Unset()
+        {
+            bSet = false;
+        }
+
         public override void Update(GameTime gameTime)
         {
             if (bSet)
@@ -49,7 +54,8 @@ namespace GDLibrary
 
                 if(this.ParentActor.ObjectType == ObjectType.Wall)
                 {
-                    ((CollidableObject)this.ParentActor).Body.MoveTo(this.ParentActor.Transform3D.Translation, this.ParentActor.Transform3D.Orientation);
+                    Matrix rot2 = Matrix.CreateRotationY(MathHelper.ToRadians(0));
+                    ((CollidableObject)this.ParentActor).Body.MoveTo(this.ParentActor.Transform3D.Translation, this.ParentActor.Transform3D.Orientation * rot2);
                 }
 
                 base.Update(gameTime);

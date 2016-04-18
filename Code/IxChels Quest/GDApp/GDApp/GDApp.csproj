@@ -127,7 +127,9 @@
     <Compile Include="GDLibrary\Controllers\CharacterRotatorInteractionController.cs" />
     <Compile Include="GDLibrary\Controllers\OffsetController.cs" />
     <Compile Include="GDLibrary\Controllers\Physics\PhysicsController.cs" />
+    <Compile Include="GDLibrary\Controllers\ProximityPlayerController.cs" />
     <Compile Include="GDLibrary\Controllers\RotatorController.cs" />
+    <Compile Include="GDLibrary\Controllers\RotorController.cs" />
     <Compile Include="GDLibrary\Curve\Camera3DTrack.cs" />
     <Compile Include="GDLibrary\Curve\Curve1D.cs" />
     <Compile Include="GDLibrary\Curve\Curve2D.cs" />

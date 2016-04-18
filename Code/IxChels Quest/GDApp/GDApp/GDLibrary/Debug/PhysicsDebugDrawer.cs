@@ -30,8 +30,8 @@ namespace GDLibrary
             if (vertexData.Count == 0) return;
 
             this.basicEffect.AmbientLightColor = Vector3.One;
-            this.basicEffect.View = this.game.ActiveCamera.View;
-            this.basicEffect.Projection = this.game.ActiveCamera.ProjectionParameters.Projection;
+            this.basicEffect.View = this.game.CameraManager.ActiveCamera.View;
+            this.basicEffect.Projection = this.game.CameraManager.ActiveCamera.ProjectionParameters.Projection;
             this.basicEffect.VertexColorEnabled = true;
             this.basicEffect.CurrentTechnique.Passes[0].Apply();
             GraphicsDevice.DrawUserPrimitives<VertexPositionColor>(PrimitiveType.LineStrip, vertexData.ToArray(), 0, vertexData.Count - 1);

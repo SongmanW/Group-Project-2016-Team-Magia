@@ -72,8 +72,8 @@ namespace GDLibrary
 
 
             this.effect.World = this.world;
-            this.effect.View = this.game.ActiveCamera.View;
-            this.effect.Projection = this.game.ActiveCamera.ProjectionParameters.Projection;
+            this.effect.View = this.game.CameraManager.ActiveCamera.View;
+            this.effect.Projection = this.game.CameraManager.ActiveCamera.ProjectionParameters.Projection;
 
             this.effect.Texture = this.texture;
             this.effect.DiffuseColor = this.color.ToVector3();

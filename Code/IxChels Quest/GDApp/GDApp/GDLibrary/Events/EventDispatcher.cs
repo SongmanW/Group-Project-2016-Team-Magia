@@ -38,6 +38,14 @@ namespace GDLibrary
                     OnStart(eventData);
                     break;
 
+                case EventType.OnRotationStart:
+                    OnRotationStart(eventData);
+                    break;
+
+                case EventType.OnRotationEnd:
+                    OnRotationEnd(eventData);
+                    break;
+
                 //add a case to handle the On...() method for each type
 
                 default:
@@ -52,6 +60,22 @@ namespace GDLibrary
         {
             if (GameStarted != null)
                 GameStarted(eventData.sender);
+        }
+
+        public delegate void RotationStartEventHandler(object sender);
+        public event RotationStartEventHandler RotationStarted;
+        public void OnRotationStart(EventData eventData)
+        {
+            if (RotationStarted != null)
+                RotationStarted(eventData.sender);
+        }
+
+        public delegate void RotationEndEventHandler(object sender);
+        public event RotationEndEventHandler RotationEnd;
+        public void OnRotationEnd(EventData eventData)
+        {
+            if (RotationEnd != null)
+                RotationEnd(eventData.sender);
         }
 
     }

@@ -206,8 +206,7 @@ namespace GDApp
         private BasicEffect textureEffect;
         private Texture2D texture;
         private Vector2 screenCentre;
-
-        private Camera3D activeCamera;
+        
         private CameraManager cameraManager;
         private KeyboardManager keyboardManager;
         private MouseManager mouseManager;
@@ -225,7 +224,7 @@ namespace GDApp
         private Camera3DTrack cameraTrack;
         public PlayerObject playerActor;
         private PawnCollidableObject doorActor;
-        private PawnCollidableObject rotator;
+        public PawnCollidableObject rotator;
         private PawnCollidableObject step1;
         private PawnCollidableObject step2;
         private PawnCollidableObject step3;
@@ -257,6 +256,13 @@ namespace GDApp
         #endregion
 
         #region Properties
+        public int NextStep
+        {
+            get
+            {
+                return nextStep;
+            }
+        }
         public PhysicsManager PhysicsManager
         {
             get
@@ -314,13 +320,7 @@ namespace GDApp
                 return this.mouseManager;
             }
         }
-        public Camera3D ActiveCamera
-        {
-            get
-            {
-                return this.activeCamera;
-            }
-        }
+
         #endregion
 
         public Main()
@@ -375,13 +375,13 @@ namespace GDApp
             model = Content.Load<Model>("Assets\\Models\\DoorV1");
             this.modelDictionary.Add("door", model);
 
-            model = Content.Load<Model>("Assets\\Models\\room");
+            model = Content.Load<Model>("Assets\\Models\\RoomV4");
             this.modelDictionary.Add("room", model);
 
             model = Content.Load<Model>("Assets\\Models\\totemV1");
             this.modelDictionary.Add("rotation", model);
 
-            model = Content.Load<Model>("Assets\\Models\\wallV1");
+            model = Content.Load<Model>("Assets\\Models\\wall");
             this.modelDictionary.Add("wall", model);
 
             model = Content.Load<Model>("Assets\\Models\\plate");
@@ -442,7 +442,7 @@ namespace GDApp
             Transform3D transform = null;
             Model model = null;
             ModelObject modelObject = null;
-            PawnModelObject pawnObject = null;
+            CollidableObject collidableObj = null;
             PawnCollidableObject collObj = null;
             TriangleMeshObject triangleObj = null;
 
@@ -482,10 +482,10 @@ namespace GDApp
             texture = Content.Load<Texture2D>("Assets\\Textures\\Game\\white");
             #region Room Model
             model = this.modelDictionary["room"];
-            transform = new Transform3D(new Vector3(0, 0, 0), Vector3.Zero, 0.1f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
+            transform = new Transform3D(new Vector3(0, 0, 0), new Vector3(0,180,0), 0.1f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
             MaterialProperties material = new MaterialProperties(1f, 0.1f, 0.05f);
-            triangleObj = new TriangleMeshObject("room", ObjectType.Wall, transform, null, model,Color.White, 1, material);
-            triangleObj.Enable(true, 200);
+            triangleObj = new TriangleMeshObject("room", ObjectType.Wall, transform, null, model, Color.White, 1, material);
+            triangleObj.Enable(true, 2000);
 
             this.objectManager.Add(triangleObj);
             #endregion
@@ -507,8 +507,9 @@ namespace GDApp
             //Maybe we should rather go for a more active approach meaning Rotator gets everything which is gonna rotate around it and rotates it
             #region Wall right Model
             model = this.modelDictionary["wall"];
-            transform = new Transform3D(new Vector3(0, 0, 153.7244f), new Vector3(0, 90, 0), 1f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            wall1 = new PawnCollidableObject("Wall1", ObjectType.Wall, transform, null, model, Color.White, 1);
+            transform = new Transform3D(new Vector3(0, 0, 157f), new Vector3(0, 0, 0), 0.1f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
+            texture = Content.Load<Texture2D>("Assets/Models/skin/Brick_Tut_35");
+            wall1 = new PawnCollidableObject("Wall1", ObjectType.Wall, transform, texture, model, Color.Gray, 1);
             wall1.Add(new RotatorController("wall1Rotator", wall1, true, this.rotator));
             scales = new Vector3(320, 250, 1);
             wall1.AddPrimitive(new Box(transform.Translation, Matrix.Identity, scales), new MaterialProperties());
@@ -518,8 +519,8 @@ namespace GDApp
             #endregion
             #region Wall left Model
             model = this.modelDictionary["wall"];
-            transform = new Transform3D(new Vector3(0, 0, -153.54f), new Vector3(0,90,0), 1f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            wall2 = new PawnCollidableObject("Wall2", ObjectType.Wall, transform, null, model, Color.White, 1);
+            transform = new Transform3D(new Vector3(0, 0, -157f), new Vector3(0,180,0), 0.1f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
+            wall2 = new PawnCollidableObject("Wall2", ObjectType.Wall, transform, texture, model, Color.White, 1);
             wall2.Add(new RotatorController("wall2Rotator", wall2, true, this.rotator));
             wall2.AddPrimitive(new Box(transform.Translation, Matrix.Identity, scales), new MaterialProperties());
             wall2.Enable(true, 2000);
@@ -640,9 +641,9 @@ namespace GDApp
             #endregion
 
             rotator.Add(new OffsetController("offset controller 2", rotator, true, new Vector3(0, 50, 0)));
+            rotator.Add(new RotorController("rotor Controller", this.rotator, true));
             doorActor.Add(new OffsetController("offset vontroller 7", doorActor, true, new Vector3(0, -200, 0)));
             step1.Add(new OffsetController("offset controller 1", step1, true, new Vector3(0, -3, 0)));
-            step1.Add(new CharacterRotatorInteractionController(this, "rotate controller 1", step1, rotator, true));
             step2.Add(new OffsetController("offset controller 3", step2, true, new Vector3(0, -3, 0)));
             step3.Add(new OffsetController("offset controller 4", step3, true, new Vector3(0, -3, 0)));
             step4.Add(new OffsetController("offset controller 5", step4, true, new Vector3(0, -3, 0)));
@@ -859,63 +860,23 @@ namespace GDApp
             Camera3D camera = null;
             PawnCamera3D pawnCamera = null;
 
-            #region Track
-            camera = new TrackCamera3D("track", ObjectType.TrackCamera,
-                Transform3D.Zero, ProjectionParameters.StandardMediumFourThree,
-                this.graphics.GraphicsDevice.Viewport, 
-                this.trackDictionary["puke"]);
-            this.cameraManager.Add("Track", camera);
-            #endregion
-
-
             camera = new FreeLookCamera3D("full", ObjectType.FirstPersonCamera,
-                   new Transform3D(new Vector3(0,0,5), -Vector3.UnitZ, Vector3.UnitY),
+                   new Transform3D(new Vector3(-10, 5, 30), -Vector3.UnitZ, Vector3.UnitY),
                        ProjectionParameters.StandardMediumFourThree, this.graphics.GraphicsDevice.Viewport, GameData.CameraSpeed);
 
             #region Fullscreen
-            this.cameraManager.Add("FullScreen", camera);
-            #endregion
-
-            #region Rail
-            RailCamera3D railCamera = new RailCamera3D("rail", ObjectType.RailCamera,
-                Transform3D.Zero, ProjectionParameters.StandardMediumFourThree,
-                        this.graphics.GraphicsDevice.Viewport,
-                    new RailParameters("r1", new Vector3(-20, 20, 10), 
-                                        new Vector3(20, 1, 10)),
-                        playerActor);
-
-            this.cameraManager.Add("Rail", railCamera);
-            #endregion
-
-            #region Two Horizontal
-            //front
-            clone = (Camera3D)camera.Clone();
-            clone.ID = "front";
-            clone.Transform3D.Translation = new Vector3(0, 0, 5);
-            clone.Transform3D.Look = -Vector3.UnitZ;
-            clone.ViewportWidth /= 2;
-            this.cameraManager.Add("TwoHorizontal", clone);
-
-            //left
-            clone = (Camera3D)camera.Clone();
-            clone.ID = "left";
-            clone.Transform3D.Translation = new Vector3(-5, 0, 0);
-            clone.Transform3D.Look = Vector3.UnitX;
-            clone.ViewportWidth /= 2;
-            clone.ViewportX = clone.ViewportWidth;
-            this.cameraManager.Add("TwoHorizontal", clone);
+            this.cameraManager.Add("FirstPersonFullScreen", camera);
             #endregion
 
             #region RailCharacterFollow
-
-            pawnCamera = new PawnCamera3D("rail character follow camera 1",
-                ObjectType.ZoomOnDoorCamera, Transform3D.Zero,
+            pawnCamera = new PawnCamera3D("RailCamera1",
+                ObjectType.RailCamera, Transform3D.Zero,
                 ProjectionParameters.StandardMediumFourThree, this.graphics.GraphicsDevice.Viewport);
 
             pawnCamera.Add(new RailCharacterFollowController("rail character follow controller 1",
                 pawnCamera, true, new RailParameters("r1", new Vector3(-300, 68, 0),
                 new Vector3(300, 68, 0)), playerActor, new Vector3(300, -100, 0), 114));
-            this.cameraManager.Add("RailCharacterFollow", pawnCamera);
+            this.cameraManager.Add("FullScreen", pawnCamera);
 
             #endregion
 
@@ -927,7 +888,7 @@ namespace GDApp
 
             pawnCamera.Add(new RotatorController("rotate camera controller 1",
                 pawnCamera, true, this.rotator));
-            this.cameraManager.Add("RotateCamera", pawnCamera);
+            this.cameraManager.Add("FullScreen", pawnCamera);
 
             #endregion
 
@@ -937,12 +898,12 @@ namespace GDApp
                 ObjectType.ZoomOnDoorCamera, new Transform3D(new Vector3(100, 126, 0), new Vector3(100,-51,0), Vector3.UnitY),
                 ProjectionParameters.StandardMediumFourThree, this.graphics.GraphicsDevice.Viewport);
             
-            this.cameraManager.Add("ZoomOnDoor", pawnCamera);
+            this.cameraManager.Add("FullScreen", pawnCamera);
 
             #endregion
 
             //set the default layout
-            this.cameraManager.SetCameraLayout("RailCharacterFollow");
+            this.cameraManager.SetCameraLayout("FirstPersonFullScreen");
         }
 
         /// <summary>
@@ -1029,7 +990,7 @@ namespace GDApp
             if (this.keyboardManager.IsFirstKeyPress(Keys.F1))
                 this.cameraManager.SetCameraLayout("FullScreen");
             else if (this.keyboardManager.IsFirstKeyPress(Keys.F2))
-                this.cameraManager.SetCameraLayout("TwoHorizontal");
+                this.cameraManager.SetCameraLayout("FirstPersonFullScreen");
             else if (this.keyboardManager.IsFirstKeyPress(Keys.F3))
                 this.cameraManager.SetCameraLayout("Rail");
             else if (this.keyboardManager.IsFirstKeyPress(Keys.F4))
@@ -1060,10 +1021,10 @@ namespace GDApp
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
+            GraphicsDevice.Clear(Color.Gray);
 
             graphics.GraphicsDevice.SamplerStates[0] 
-                            = SamplerState.LinearClamp;
+                            = SamplerState.LinearWrap;
 
             //RasterizerState rasterizer = new RasterizerState();
             //rasterizer.FillMode = FillMode.WireFrame;
@@ -1076,13 +1037,9 @@ namespace GDApp
             //      + this.activeCamera.Transform3D.Translation,
             //      new Vector2(10, 30), Color.White);
             //spriteBatch.End();
-
-            for (int i = 0; i < cameraManager.Size; i++)
-            {
-                this.activeCamera = cameraManager[i];
-                this.graphics.GraphicsDevice.Viewport = this.activeCamera.Viewport;
-                base.Draw(gameTime);
-            }
+            
+            this.graphics.GraphicsDevice.Viewport = this.CameraManager.ActiveCamera.Viewport;
+            base.Draw(gameTime);
         }
 
         public void checkNext(int step)

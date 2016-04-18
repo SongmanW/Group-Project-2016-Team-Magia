@@ -34,8 +34,8 @@ namespace GDLibrary
         public override void Draw(GameTime gameTime)
         {
             this.effect.World = this.Transform3D.World;
-            this.effect.View = game.ActiveCamera.View;
-            this.effect.Projection = game.ActiveCamera.ProjectionParameters.Projection;
+            this.effect.View = game.CameraManager.ActiveCamera.View;
+            this.effect.Projection = game.CameraManager.ActiveCamera.ProjectionParameters.Projection;
 
             //load the GFX card with the W, V, and P values
             this.effect.CurrentTechnique.Passes[0].Apply();

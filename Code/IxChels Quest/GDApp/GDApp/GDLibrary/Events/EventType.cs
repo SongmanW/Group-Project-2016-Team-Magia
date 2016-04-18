@@ -8,7 +8,9 @@ namespace GDLibrary
         OnExit,
 
         OnPlayerLose,
-        OnPlayerWin
+        OnPlayerWin,
+        OnRotationEnd,
+        OnRotationStart
         //all other events
     }
 }

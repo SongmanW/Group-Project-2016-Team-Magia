@@ -49,17 +49,19 @@ namespace GDLibrary
             {
                 foreach (BasicEffect be in mesh.Effects)
                 {
-                    be.EnableDefaultLighting();
+                    //be.EnableDefaultLighting();
  
                     //uncomment and try this code
-                    /*
-                    be.EmissiveColor = Color.Green.ToVector3();
+                    be.EmissiveColor = Color.DarkGray.ToVector3();
                     be.DirectionalLight0.DiffuseColor = Color.White.ToVector3();
                     be.DirectionalLight0.Direction = new Vector3(0, 0, -1);
                     be.DirectionalLight0.Enabled = true;
-                    */
-                    be.Projection = game.ActiveCamera.ProjectionParameters.Projection;
-                    be.View = game.ActiveCamera.View;
+                    be.SpecularColor = Color.White.ToVector3();
+                    be.SpecularPower = 0.1f;
+
+
+                    be.Projection = game.CameraManager.ActiveCamera.ProjectionParameters.Projection;
+                    be.View = game.CameraManager.ActiveCamera.View;
                     be.World = transforms[mesh.ParentBone.Index] * this.Transform3D.World;
 
                     if (texture != null)
