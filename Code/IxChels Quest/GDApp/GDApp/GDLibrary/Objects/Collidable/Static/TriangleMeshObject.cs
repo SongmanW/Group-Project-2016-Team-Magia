@@ -48,7 +48,7 @@ namespace GDLibrary
                             Matrix.CreateTranslation(this.Transform3D.Translation);
         }
 
-        private TriangleMesh GetTriangleMesh(Model model, Transform3D transform)
+        public TriangleMesh GetTriangleMesh(Model model, Transform3D transform)
         {
             TriangleMesh triangleMesh = new TriangleMesh();
             List<Vector3> vertexList = new List<Vector3>();
