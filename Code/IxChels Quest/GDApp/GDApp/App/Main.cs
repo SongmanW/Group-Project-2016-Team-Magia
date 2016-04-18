@@ -495,9 +495,9 @@ namespace GDApp
             transform = new Transform3D(new Vector3(0, -50, 0), Vector3.Zero, 1f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
             this.rotator = new PawnCollidableObject("RotationThingy", ObjectType.Rotation, transform, null, model, Color.White, 1);
             Matrix rot;
-            this.rotator.AddPrimitive(new Capsule(transform.Translation - new Vector3(0, 0, 20), Matrix.Identity, 5, 40), new MaterialProperties());
+            this.rotator.AddPrimitive(new Capsule(transform.Translation - new Vector3(0, 20, 20), Matrix.Identity, 2.5f, 40), new MaterialProperties());
             Matrix.CreateRotationY(MathHelper.ToRadians(90), out rot);
-            this.rotator.AddPrimitive(new Capsule(transform.Translation - new Vector3(20, 0, 0), rot, 5, 40), new MaterialProperties());
+            this.rotator.AddPrimitive(new Capsule(transform.Translation - new Vector3(20, 20, 0), rot, 2.5f, 40), new MaterialProperties());
             this.rotator.Enable(true, 200);
 
             this.objectManager.Add(this.rotator);

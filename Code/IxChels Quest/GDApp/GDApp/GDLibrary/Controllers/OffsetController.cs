@@ -36,7 +36,7 @@ namespace GDLibrary
                 if(this.ParentActor.ObjectType == ObjectType.Door)
                     ((PawnCollidableObject)this.ParentActor).Body.MoveTo(this.ParentActor.Transform3D.Translation, this.ParentActor.Transform3D.Orientation);
                 if (this.ParentActor.ObjectType == ObjectType.Rotation)
-                    ((PawnCollidableObject)this.ParentActor).Body.MoveTo(this.ParentActor.Transform3D.Translation, this.ParentActor.Transform3D.Orientation);
+                    ((PawnCollidableObject)this.ParentActor).Body.MoveTo(this.ParentActor.Transform3D.Translation + Vector3.UnitY * 20, this.ParentActor.Transform3D.Orientation);
                 if (offset.Length() < maxOffset.Length())
                 {
                     this.offset += maxOffset / 100 * gameTime.ElapsedGameTime.Milliseconds;
