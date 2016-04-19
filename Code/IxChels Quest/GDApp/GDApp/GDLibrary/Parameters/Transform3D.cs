@@ -225,8 +225,8 @@ namespace GDLibrary
             this.rotation = rotateTo;
 
             //update the look and up - RADIANS!!!!
-            Matrix rot = Matrix.CreateFromYawPitchRoll(MathHelper.ToRadians(this.rotation.X),
-                MathHelper.ToRadians(this.rotation.Y), MathHelper.ToRadians(this.rotation.Z));
+            Matrix rot = Matrix.CreateFromYawPitchRoll(MathHelper.ToRadians(this.rotation.Y),
+                MathHelper.ToRadians(this.rotation.X), MathHelper.ToRadians(this.rotation.Z));
 
             this.look = Vector3.Transform(this.originalLook, rot);
             this.up = Vector3.Transform(this.originalUp, rot);

@@ -26,6 +26,7 @@ namespace GDLibrary
         Rotation,
         Door,
         Wall,
-        Plate
+        Plate,
+        Room
     }
 }

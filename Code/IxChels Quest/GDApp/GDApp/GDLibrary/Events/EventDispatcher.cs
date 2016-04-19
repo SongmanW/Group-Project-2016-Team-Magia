@@ -62,20 +62,20 @@ namespace GDLibrary
                 GameStarted(eventData.sender);
         }
 
-        public delegate void RotationStartEventHandler(object sender);
+        public delegate void RotationStartEventHandler(EventData data);
         public event RotationStartEventHandler RotationStarted;
         public void OnRotationStart(EventData eventData)
         {
             if (RotationStarted != null)
-                RotationStarted(eventData.sender);
+                RotationStarted(eventData);
         }
 
-        public delegate void RotationEndEventHandler(object sender);
+        public delegate void RotationEndEventHandler(EventData data);
         public event RotationEndEventHandler RotationEnd;
         public void OnRotationEnd(EventData eventData)
         {
             if (RotationEnd != null)
-                RotationEnd(eventData.sender);
+                RotationEnd(eventData);
         }
 
     }

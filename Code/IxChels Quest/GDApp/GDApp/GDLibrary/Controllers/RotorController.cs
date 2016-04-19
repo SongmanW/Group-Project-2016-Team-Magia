@@ -33,6 +33,10 @@ namespace GDLibrary
                 }
                 else
                 {
+                    float magnitude = -(rotated - 90);
+                    if (clockwise)
+                        magnitude *= -1;
+                    this.ParentActor.Transform3D.RotateAroundYBy(magnitude);
                     this.running = false;
                     EventDispatcher.Publish(new EventData("stopped rotating", this, EventType.OnRotationEnd));
                 }

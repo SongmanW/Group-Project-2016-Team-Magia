@@ -349,7 +349,7 @@ namespace GDApp
             //InitializeSkyBox(1000);
             LoadModels();
             InitializeModels();
-            InitializeTexturedPrimitives();
+            //InitializeTexturedPrimitives();
 
             InitializeCameraTracks();
             InitializeCamera();
@@ -375,13 +375,13 @@ namespace GDApp
             model = Content.Load<Model>("Assets\\Models\\DoorV1");
             this.modelDictionary.Add("door", model);
 
-            model = Content.Load<Model>("Assets\\Models\\RoomV4");
+            model = Content.Load<Model>("Assets\\Models\\RoomV6");
             this.modelDictionary.Add("room", model);
 
             model = Content.Load<Model>("Assets\\Models\\totemV1");
             this.modelDictionary.Add("rotation", model);
 
-            model = Content.Load<Model>("Assets\\Models\\wall");
+            model = Content.Load<Model>("Assets\\Models\\wallv1");
             this.modelDictionary.Add("wall", model);
 
             model = Content.Load<Model>("Assets\\Models\\plate");
@@ -444,16 +444,16 @@ namespace GDApp
             ModelObject modelObject = null;
             CollidableObject collidableObj = null;
             PawnCollidableObject collObj = null;
-            TriangleMeshObject triangleObj = null;
+            ZoneObject zoneObj = null;
 
 
             #region Player Model
             model = this.modelDictionary["player"];
-            transform = new Transform3D(new Vector3(-200, 24, 0),
-                new Vector3(0, 180, 0), 0.1f * Vector3.One,
-                Vector3.UnitX, Vector3.UnitY);
+            transform = new Transform3D(new Vector3(-100, 10, 0),
+                new Vector3(0, 180, 0), 0.05f * Vector3.One,
+                -Vector3.UnitZ, Vector3.UnitY);
             this.playerActor = new PlayerObject("player",
-                ObjectType.Player, transform, null, model, Color.White, 1f, KeyData.Player_Keys, 7.5f, 23, 1, 1);
+                ObjectType.Player, transform, null, model, Color.White, 1f, KeyData.Player_Keys, 3.75f, 11.5f, 1, 1);
             //this.playerActor.Add(new CharacterMoveController(this, "character move controller", this.playerActor));
             //this.playerActor.Add(new CharacterRotatorInteractionController(this, "character rotator interaction controller", this.playerActor));
             this.playerActor.Enable(false, 1);
@@ -462,9 +462,9 @@ namespace GDApp
 
             #region ExitDoor Model
             model = this.modelDictionary["door"];
-            transform = new Transform3D(new Vector3(300, 0, 0), Vector3.Zero, 1f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
+            transform = new Transform3D(new Vector3(140, 0, 0), Vector3.Zero, 1f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
             this.doorActor = new PawnCollidableObject("door", ObjectType.Door, transform, null, model, Color.White, 1f);
-            Vector3 scales = new Vector3(12, 250, 69);
+            Vector3 scales = new Vector3(12, 250, 25);
             this.doorActor.AddPrimitive(new Box(transform.Translation, Matrix.Identity, scales), new MaterialProperties());
             this.doorActor.Enable(true, 2000);
 
@@ -482,17 +482,50 @@ namespace GDApp
             texture = Content.Load<Texture2D>("Assets\\Textures\\Game\\white");
             #region Room Model
             model = this.modelDictionary["room"];
-            transform = new Transform3D(new Vector3(0, 0, 0), new Vector3(0,180,0), 0.1f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
+            transform = new Transform3D(new Vector3(0, 0, 0), new Vector3(0,180,0), 1f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
             MaterialProperties material = new MaterialProperties(1f, 0.1f, 0.05f);
-            triangleObj = new TriangleMeshObject("room", ObjectType.Wall, transform, null, model, Color.White, 1, material);
-            triangleObj.Enable(true, 2000);
+            collidableObj = new CollidableObject("room", ObjectType.Room, transform, null, model, Color.White, 1);
+            //floor
+            scales = new Vector3(300, 1, 300);
+            collidableObj.AddPrimitive(new Box(transform.Translation, Matrix.Identity, scales), material);
+            collidableObj.Enable(true, 2000);
 
-            this.objectManager.Add(triangleObj);
+            this.objectManager.Add(collidableObj);
+
+            scales = new Vector3(10, 100, 300);
+            transform = new Transform3D(new Vector3(152, 0, 0), Vector3.Zero, scales, -Vector3.UnitZ, Vector3.UnitY);
+            zoneObj = new ZoneObject("roomwallback", ObjectType.Room, transform, true);
+            zoneObj.AddPrimitive(new Box(transform.Translation, Matrix.Identity, transform.Scale));
+            zoneObj.Enable(true);
+
+            this.objectManager.Add(zoneObj);
+            
+            transform = new Transform3D(new Vector3(-152, 0, 0), Vector3.Zero, scales, -Vector3.UnitZ, Vector3.UnitY);
+            zoneObj = new ZoneObject("roomwallfront", ObjectType.Room, transform, true);
+            zoneObj.AddPrimitive(new Box(transform.Translation, Matrix.Identity, transform.Scale));
+            zoneObj.Enable(true);
+
+            this.objectManager.Add(zoneObj);
+
+            scales = new Vector3(300, 100, 5);
+            transform = new Transform3D(new Vector3(0, 0, 130), Vector3.Zero, scales, -Vector3.UnitZ, Vector3.UnitY);
+            zoneObj = new ZoneObject("roomwallright", ObjectType.Room, transform, true);
+            zoneObj.AddPrimitive(new Box(transform.Translation, Matrix.Identity, transform.Scale));
+            zoneObj.Enable(true);
+
+            this.objectManager.Add(zoneObj);
+
+            transform = new Transform3D(new Vector3(0, 0, -130), Vector3.Zero, scales, -Vector3.UnitZ, Vector3.UnitY);
+            zoneObj = new ZoneObject("roomwallleft", ObjectType.Room, transform, true);
+            zoneObj.AddPrimitive(new Box(transform.Translation, Matrix.Identity, transform.Scale));
+            zoneObj.Enable(true);
+
+            this.objectManager.Add(zoneObj);
             #endregion
 
             #region Rotationthingy Model
             model = this.modelDictionary["rotation"];
-            transform = new Transform3D(new Vector3(0, -50, 0), Vector3.Zero, 1f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
+            transform = new Transform3D(new Vector3(0, -57, 0), Vector3.Zero, 1f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
             this.rotator = new PawnCollidableObject("RotationThingy", ObjectType.Rotation, transform, null, model, Color.White, 1);
             Matrix rot;
             this.rotator.AddPrimitive(new Capsule(transform.Translation - new Vector3(0, 20, 20), Matrix.Identity, 2.5f, 40), new MaterialProperties());
@@ -507,31 +540,30 @@ namespace GDApp
             //Maybe we should rather go for a more active approach meaning Rotator gets everything which is gonna rotate around it and rotates it
             #region Wall right Model
             model = this.modelDictionary["wall"];
-            transform = new Transform3D(new Vector3(0, 0, 157f), new Vector3(0, 0, 0), 0.1f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            texture = Content.Load<Texture2D>("Assets/Models/skin/Brick_Tut_35");
-            wall1 = new PawnCollidableObject("Wall1", ObjectType.Wall, transform, texture, model, Color.Gray, 1);
+            transform = new Transform3D(new Vector3(-4f, -1.8f, -69.8f), new Vector3(0, 90, 0), 1f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
+            wall1 = new PawnCollidableObject("Wall1", ObjectType.Wall, transform, null, model, Color.Gray, 1);
             wall1.Add(new RotatorController("wall1Rotator", wall1, true, this.rotator));
-            scales = new Vector3(320, 250, 1);
-            wall1.AddPrimitive(new Box(transform.Translation, Matrix.Identity, scales), new MaterialProperties());
+            scales = new Vector3(300, 100, 12);
+            wall1.AddPrimitive(new Box(transform.Translation, Matrix.Identity, scales), material);
             wall1.Enable(true, 2000);
 
             this.objectManager.Add(wall1);
             #endregion
             #region Wall left Model
             model = this.modelDictionary["wall"];
-            transform = new Transform3D(new Vector3(0, 0, -157f), new Vector3(0,180,0), 0.1f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            wall2 = new PawnCollidableObject("Wall2", ObjectType.Wall, transform, texture, model, Color.White, 1);
+            transform = new Transform3D(new Vector3(-4f, -1.8f, 69.8f), new Vector3(0,90,0), 1f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
+            wall2 = new PawnCollidableObject("Wall2", ObjectType.Wall, transform, null, model, Color.White, 1);
             wall2.Add(new RotatorController("wall2Rotator", wall2, true, this.rotator));
-            wall2.AddPrimitive(new Box(transform.Translation, Matrix.Identity, scales), new MaterialProperties());
+            wall2.AddPrimitive(new Box(transform.Translation, Matrix.Identity, scales), material);
             wall2.Enable(true, 2000);
 
             this.objectManager.Add(wall2);
             #endregion
-
+            texture = Content.Load<Texture2D>("Assets/skin/Brick_Tut_35");
             #region Pressure Plate Exit Model
             model = this.modelDictionary["plate"];
-            scales = new Vector3(25, 5, 25);
-            transform = new Transform3D(new Vector3(250, 4.75f, 0), new Vector3(0, 90, 0), Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
+            scales = new Vector3(12.5f, 2.5f, 12.5f);
+            transform = new Transform3D(new Vector3(125, 0, 0), new Vector3(0, 90, 0), Vector3.One * 0.5f, -Vector3.UnitZ, Vector3.UnitY);
             step1 = new PawnCollidableObject("PressurePlate1", ObjectType.Plate, transform, texture, model, Color.White, 1);
             step1.AddPrimitive(new Box(transform.Translation, Matrix.Identity, scales), new MaterialProperties());
             step1.Enable(true, 2000);
@@ -874,8 +906,8 @@ namespace GDApp
                 ProjectionParameters.StandardMediumFourThree, this.graphics.GraphicsDevice.Viewport);
 
             pawnCamera.Add(new RailCharacterFollowController("rail character follow controller 1",
-                pawnCamera, true, new RailParameters("r1", new Vector3(-300, 68, 0),
-                new Vector3(300, 68, 0)), playerActor, new Vector3(300, -100, 0), 114));
+                pawnCamera, true, new RailParameters("r1", new Vector3(-148, 34, 0),
+                new Vector3(145, 34, 0)), playerActor, new Vector3(300, -100, 0), 50));
             this.cameraManager.Add("FullScreen", pawnCamera);
 
             #endregion
@@ -1021,7 +1053,7 @@ namespace GDApp
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.Gray);
+            GraphicsDevice.Clear(Color.CornflowerBlue);
 
             graphics.GraphicsDevice.SamplerStates[0] 
                             = SamplerState.LinearWrap;

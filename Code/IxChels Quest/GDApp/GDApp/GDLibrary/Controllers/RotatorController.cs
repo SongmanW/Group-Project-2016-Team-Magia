@@ -54,9 +54,10 @@ namespace GDLibrary
 
                 if(this.ParentActor.ObjectType == ObjectType.Wall)
                 {
-                    Matrix rot2 = Matrix.CreateRotationY(MathHelper.ToRadians(0));
+                    Matrix rot2 = Matrix.CreateRotationY(MathHelper.ToRadians(90));
                     ((CollidableObject)this.ParentActor).Body.MoveTo(this.ParentActor.Transform3D.Translation, this.ParentActor.Transform3D.Orientation * rot2);
                 }
+                
 
                 base.Update(gameTime);
             }

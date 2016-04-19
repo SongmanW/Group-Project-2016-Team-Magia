@@ -11,15 +11,27 @@ namespace GDLibrary
     /// Represents an area that can detect collisions. It does NOT have an associated model.
     /// We can use this class to create activation zones e.g. for camera switching or event generation
     /// </summary>
-    public class ZoneObject : Actor
+    public class ZoneObject : DrawnActor
     {
         #region Variables
         private Body body;
         private CollisionSkin collision;
         private float mass;
+        private bool isImpenetrable;
         #endregion
 
         #region Properties
+        public bool IsImpenetrable
+        {
+            get
+            {
+                return isImpenetrable;
+            }
+            set
+            {
+                isImpenetrable = value;
+            }
+        }
         public CollisionSkin Collision
         {
             get
@@ -44,7 +56,8 @@ namespace GDLibrary
         }
         #endregion
 
-        public ZoneObject(string id, ObjectType objectType, Transform3D transform)
+        public ZoneObject(string id, ObjectType objectType,
+            Transform3D transform, bool isImpenetrable)
             : base(id, objectType, transform)
         {
             //set body and skin for this zone
@@ -52,6 +65,7 @@ namespace GDLibrary
             this.body.ExternalData = this;
             this.collision = new CollisionSkin(this.body);
             this.body.CollisionSkin = this.collision;
+            this.isImpenetrable = isImpenetrable; //we cant move through it
         }
 
         //Adds a primitive to this zone. Notice that material properties are irrelevant since the zone will generate any forces on the intersecting body.
@@ -60,13 +74,13 @@ namespace GDLibrary
             this.collision.AddPrimitive(primitive, (int)MaterialTable.MaterialID.NormalNormal);
         }
 
-        public void Enable()
+        public void Enable(bool bImmovable)
         {
             //mass is irrelevant since a zone is basically an invisible area used for detecting player(s)
             this.mass = 1;
 
             //zones dont move
-            this.body.Immovable = true;
+            this.body.Immovable = bImmovable;
 
             //calculate the centre of mass
             Vector3 com = SetMass(mass);

@@ -96,7 +96,7 @@ namespace GDLibrary
             this.physCont = new PhysicsController();
             this.physicSystem.AddController(physCont);
 
-            if(bEnableDebugDrawer)
+            if (bEnableDebugDrawer)
             {
                 this.physicsDebugDrawer = new PhysicsDebugDrawer(game);
                 game.Components.Add(this.physicsDebugDrawer);
@@ -135,6 +135,11 @@ namespace GDLibrary
                     {
                         CollidableObject collidableObject = drawnActor as CollidableObject;
                         this.DebugDrawer.DrawDebug(collidableObject.Body, collidableObject.Collision);
+                    }
+                    else if (drawnActor is ZoneObject)
+                    {
+                        ZoneObject zoneObject = drawnActor as ZoneObject;
+                        this.DebugDrawer.DrawDebug(zoneObject.Body, zoneObject.Collision);
                     }
                 }
             }

@@ -99,16 +99,15 @@ namespace GDLibrary
                         this.Transform3D.RotateTo(new Vector3(0, 180 + MathHelper.ToDegrees((float)Math.Acos(moveVector.X)), 0));
                     }
                 }
-                Vector3 distanceToTotem = this.Transform3D.Translation - game.rotator.Transform3D.Translation;
-                distanceToTotem.Y = 0;
+                Console.WriteLine(this.Transform3D.Look);
                 if (game.NextStep > 1)
                 {
-                    if (distanceToTotem.Length() < 50)
+                    if (this.Transform3D.Translation.Length() < 50)
                     {
                         if (game.KeyboardManager.IsFirstKeyPress(Keys[KeyData.PlayerInteractIndex]) || game.KeyboardManager.IsFirstKeyPress(Keys[KeyData.PlayerInteractIndexAlt]))
                         {
-                            Console.WriteLine("Turn: " + distanceToTotem.Length());
-                            EventDispatcher.Publish(new EventData("rotation start", this, EventType.OnRotationStart));
+
+                            EventDispatcher.Publish(new RotationEventData("rotation start", this, EventType.OnRotationStart, true));
                         }
                     }
                 }
@@ -124,6 +123,8 @@ namespace GDLibrary
                 this.Transform3D.Look = Vector3.Transform(this.oldPTransform.Look, rot);
                 this.Transform3D.Up = Vector3.Transform(this.oldPTransform.Up, rot);
                 this.Transform3D.Rotation = this.oldPTransform.Rotation - newRotation;
+
+                this.Body.MoveTo(this.Transform3D.Translation, this.Transform3D.Orientation);
             }
         }
 
@@ -174,7 +175,9 @@ namespace GDLibrary
         {
             this.offSet = this.Transform3D.Translation - game.rotator.Transform3D.Translation;
             this.oldTransform = (Transform3D)game.rotator.Transform3D.Clone();
-            this.oldPTransform = (Transform3D)game.rotator.Transform3D.Clone();
+            this.oldPTransform = (Transform3D)this.Transform3D.Clone();
+
+            this.Enable(true, 1);
 
             bSet = true;
         }
@@ -182,6 +185,8 @@ namespace GDLibrary
         public void Unset()
         {
             bSet = false;
+            this.Body.MoveTo(this.Transform3D.Translation, this.Transform3D.Orientation);
+            this.Enable(false, 1);
         }
 
     }

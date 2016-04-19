@@ -51,8 +51,6 @@ namespace GDLibrary
                 railParameters.Look.Y,
                 calcLook.Z);
 
-            Console.WriteLine("Camera Translation: " + this.ParentActor.Transform3D.Translation);
-
             base.Update(gameTime);
         }
     }

@@ -40,7 +40,7 @@ namespace GDLibrary
             game.EventDispatcher.RotationEnd += HandleRotationEnd;
         }
 
-        private void HandleRotationEnd(object sender)
+        private void HandleRotationEnd(EventData data)
         {
             Console.WriteLine("Rotation End");
             ((RotatorController)(this.game.wall1).ControllerList[0]).Unset();
@@ -48,13 +48,13 @@ namespace GDLibrary
             this.game.playerActor.Unset();
         }
 
-        private void HandleRotationStart(object sender)
+        private void HandleRotationStart(EventData data)
         {
             Console.WriteLine("Rotation Start");
             ((RotatorController)(this.game.wall1).ControllerList[0]).Set();
             ((RotatorController)(this.game.wall2).ControllerList[0]).Set();
             this.game.playerActor.Set();
-            ((RotorController)this.game.rotator.ControllerList[1]).Rotate(90, 3000, true);
+            ((RotorController)this.game.rotator.ControllerList[1]).Rotate(90, 30, ((RotationEventData)data).clockwise);
         }
 
         public void Add(DrawnActor actor)

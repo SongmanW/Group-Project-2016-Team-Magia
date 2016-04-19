@@ -138,10 +138,12 @@
     <Compile Include="GDLibrary\Debug\BoundingBoxDrawer.cs" />
     <Compile Include="GDLibrary\Debug\PhysicsDebugDrawer.cs" />
     <Compile Include="GDLibrary\Dictionary\GenericDictionary.cs" />
+    <Compile Include="GDLibrary\Events\CameraEventData.cs" />
     <Compile Include="GDLibrary\Events\EventData.cs" />
     <Compile Include="GDLibrary\Events\EventDispatcher.cs" />
     <Compile Include="GDLibrary\Events\EventType.cs" />
     <Compile Include="GDLibrary\Events\PlayerSprite.cs" />
+    <Compile Include="GDLibrary\Events\RotationEventData.cs" />
     <Compile Include="GDLibrary\Factory\VertexFactory.cs" />
     <Compile Include="GDLibrary\Interfaces\Controller.cs" />
     <Compile Include="GDLibrary\Interfaces\IActor.cs" />
@@ -155,6 +157,7 @@
     <Compile Include="GDLibrary\Objects\Collidable\Player\PlayerObject.cs" />
     <Compile Include="GDLibrary\Objects\Collidable\Static\TriangleMeshObject.cs" />
     <Compile Include="GDLibrary\Objects\Collidable\PawnCollidableObject.cs" />
+    <Compile Include="GDLibrary\Objects\Collidable\Zones\AlarmZoneObject.cs" />
     <Compile Include="GDLibrary\Objects\Collidable\Zones\CameraZoneObject.cs" />
     <Compile Include="GDLibrary\Objects\Collidable\Zones\ZoneObject.cs" />
     <Compile Include="GDLibrary\Objects\Model\CharacterModelObject.cs" />
