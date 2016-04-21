@@ -48,7 +48,7 @@ namespace GDLibrary
                     MathHelper.ToRadians(newRotation.X), MathHelper.ToRadians(newRotation.Z));
 
                 this.ParentActor.Transform3D.Translation = this.targetActor.Transform3D.Translation + Vector3.Transform(this.offSet, rot);
-                this.ParentActor.Transform3D.Look = Vector3.Transform(this.oldPTransform.Look, rot);
+                this.ParentActor.Transform3D.Look = Vector3.Lerp(this.ParentActor.Transform3D.Look, Vector3.Transform(this.oldPTransform.Look, rot), 0.6f);
                 this.ParentActor.Transform3D.Up = Vector3.Transform(this.oldPTransform.Up, rot);
                 this.ParentActor.Transform3D.Rotation = this.oldPTransform.Rotation - newRotation;
 

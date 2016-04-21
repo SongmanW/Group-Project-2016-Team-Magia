@@ -13,7 +13,7 @@ namespace GDLibrary
         private RailParameters railParameters;
         private Actor targetActor;
 
-        public RailCharacterFollowController(string name, Actor parentActor, bool bEnabled, RailParameters railParameters, Actor targetActor, Vector3 look, float distanceToTarget)
+        public RailCharacterFollowController(string name, Actor parentActor, bool bEnabled, RailParameters railParameters, Actor targetActor, float distanceToTarget)
             : base(name, parentActor, bEnabled)
         {
             this.railParameters = railParameters;
@@ -22,14 +22,12 @@ namespace GDLibrary
 
             //put the camera on the rail mid point
             this.ParentActor.Transform3D.Translation = railParameters.Start;
-            //look along Rail all the time
-            this.ParentActor.Transform3D.Look = Vector3.Normalize(look);
         }
 
         public override void Update(GameTime gameTime)
         {
             //define target (new target is targetActor - Camera.Look*distance )
-            Vector3 target = this.targetActor.Transform3D.Translation - Vector3.Normalize(this.railParameters.End - this.railParameters.Start) * distanceToTarget;
+            Vector3 target = this.targetActor.Transform3D.Translation - railParameters.Look * distanceToTarget;
 
             Vector3 cameraToTarget = CameraUtility.GetCameraToTarget(target, this.ParentActor.Transform3D);
 
@@ -48,7 +46,7 @@ namespace GDLibrary
             Vector3 calcLook = Vector3.Lerp(Vector3.Normalize(cameraToTarget), railParameters.Look, 0.6f);
             this.ParentActor.Transform3D.Look = new Vector3(
                 calcLook.X,
-                railParameters.Look.Y,
+                MathHelper.Lerp(this.ParentActor.Transform3D.Look.Y, railParameters.Look.Y, 0.2f),
                 calcLook.Z);
 
             base.Update(gameTime);

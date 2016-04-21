@@ -27,6 +27,7 @@ namespace GDLibrary
         Door,
         Wall,
         Plate,
-        Room
+        Room,
+        CollidableZone
     }
 }

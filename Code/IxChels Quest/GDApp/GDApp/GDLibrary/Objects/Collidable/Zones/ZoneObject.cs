@@ -74,13 +74,13 @@ namespace GDLibrary
             this.collision.AddPrimitive(primitive, (int)MaterialTable.MaterialID.NormalNormal);
         }
 
-        public void Enable(bool bImmovable)
+        public void Enable()
         {
             //mass is irrelevant since a zone is basically an invisible area used for detecting player(s)
             this.mass = 1;
 
             //zones dont move
-            this.body.Immovable = bImmovable;
+            this.body.Immovable = true;
 
             //calculate the centre of mass
             Vector3 com = SetMass(mass);

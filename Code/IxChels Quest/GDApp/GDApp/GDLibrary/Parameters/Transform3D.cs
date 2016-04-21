@@ -159,7 +159,7 @@ namespace GDLibrary
 
         public object Clone() //deep copy - Vector3 are structures (i.e. value types) and so MemberwiseClone() will copy by value and effectively make a deep copy
         {
-            return this.MemberwiseClone();
+            return new Transform3D(this.Translation, this.Rotation, this.Scale, this.Look, this.Up);
         }
 
         public override bool Equals(object obj)

@@ -99,18 +99,73 @@ namespace GDLibrary
                         this.Transform3D.RotateTo(new Vector3(0, 180 + MathHelper.ToDegrees((float)Math.Acos(moveVector.X)), 0));
                     }
                 }
-                Console.WriteLine(this.Transform3D.Look);
                 if (game.NextStep > 1)
                 {
                     if (this.Transform3D.Translation.Length() < 50)
                     {
                         if (game.KeyboardManager.IsFirstKeyPress(Keys[KeyData.PlayerInteractIndex]) || game.KeyboardManager.IsFirstKeyPress(Keys[KeyData.PlayerInteractIndexAlt]))
                         {
+                            if(this.Transform3D.Translation.X < 0)
+                            {
+                                //down
+                                if(this.Transform3D.Translation.Z < 0)
+                                {
+                                    //left
+                                    if(this.Transform3D.Look.X + this.Transform3D.Look.Z < 0)
+                                        EventDispatcher.Publish(new RotationEventData("rotation start", this, EventType.OnRotationStart, false));
+                                    else
+                                        EventDispatcher.Publish(new RotationEventData("rotation start", this, EventType.OnRotationStart, true));
+                                }
+                                else
+                                {
+                                    //right
+                                    if (this.Transform3D.Look.X < this.Transform3D.Look.Z)
+                                        EventDispatcher.Publish(new RotationEventData("rotation start", this, EventType.OnRotationStart, false));
+                                    else
+                                        EventDispatcher.Publish(new RotationEventData("rotation start", this, EventType.OnRotationStart, true));
+                                }
+                            }
+                            else
+                            {
+                                //up
+                                if (this.Transform3D.Translation.Z < 0)
+                                {
+                                    //left
+                                    if (this.Transform3D.Look.X < this.Transform3D.Look.Z)
+                                        EventDispatcher.Publish(new RotationEventData("rotation start", this, EventType.OnRotationStart, true));
+                                    else
+                                        EventDispatcher.Publish(new RotationEventData("rotation start", this, EventType.OnRotationStart, false));
 
-                            EventDispatcher.Publish(new RotationEventData("rotation start", this, EventType.OnRotationStart, true));
+                                }
+                                else
+                                {
+                                    //right
+                                    if (this.Transform3D.Look.X + this.Transform3D.Look.Z < 0)
+                                        EventDispatcher.Publish(new RotationEventData("rotation start", this, EventType.OnRotationStart, true));
+                                    else
+                                        EventDispatcher.Publish(new RotationEventData("rotation start", this, EventType.OnRotationStart, false));
+
+                                }
+
+                            }
                         }
                     }
                 }
+                if (game.CameraManager.ActiveCamera.ID == "RailCamera2")
+                {
+                    if (this.Transform3D.Translation.Z > 20)
+                    {
+                        EventDispatcher.Publish(new CameraEventData("change Camera", this, EventType.OnCameraChanged, "FullScreen", "RailCamera3"));
+                    }
+                }
+                else if (game.CameraManager.ActiveCamera.ID == "RailCamera3")
+                {
+                    if (this.Transform3D.Translation.Z < -20)
+                    {
+                        EventDispatcher.Publish(new CameraEventData("change Camera", this, EventType.OnCameraChanged, "FullScreen", "RailCamera2"));
+                    }
+                }
+                    
             }
             else
             {

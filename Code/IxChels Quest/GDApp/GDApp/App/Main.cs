@@ -445,6 +445,7 @@ namespace GDApp
             CollidableObject collidableObj = null;
             PawnCollidableObject collObj = null;
             ZoneObject zoneObj = null;
+            CameraZoneObject camObj = null;
 
 
             #region Player Model
@@ -454,9 +455,7 @@ namespace GDApp
                 -Vector3.UnitZ, Vector3.UnitY);
             this.playerActor = new PlayerObject("player",
                 ObjectType.Player, transform, null, model, Color.White, 1f, KeyData.Player_Keys, 3.75f, 11.5f, 1, 1);
-            //this.playerActor.Add(new CharacterMoveController(this, "character move controller", this.playerActor));
-            //this.playerActor.Add(new CharacterRotatorInteractionController(this, "character rotator interaction controller", this.playerActor));
-            this.playerActor.Enable(false, 1);
+            this.playerActor.Enable(false, 100);
             this.objectManager.Add(this.playerActor);
             #endregion
 
@@ -496,14 +495,14 @@ namespace GDApp
             transform = new Transform3D(new Vector3(152, 0, 0), Vector3.Zero, scales, -Vector3.UnitZ, Vector3.UnitY);
             zoneObj = new ZoneObject("roomwallback", ObjectType.Room, transform, true);
             zoneObj.AddPrimitive(new Box(transform.Translation, Matrix.Identity, transform.Scale));
-            zoneObj.Enable(true);
+            zoneObj.Enable();
 
             this.objectManager.Add(zoneObj);
             
             transform = new Transform3D(new Vector3(-152, 0, 0), Vector3.Zero, scales, -Vector3.UnitZ, Vector3.UnitY);
             zoneObj = new ZoneObject("roomwallfront", ObjectType.Room, transform, true);
             zoneObj.AddPrimitive(new Box(transform.Translation, Matrix.Identity, transform.Scale));
-            zoneObj.Enable(true);
+            zoneObj.Enable();
 
             this.objectManager.Add(zoneObj);
 
@@ -511,26 +510,26 @@ namespace GDApp
             transform = new Transform3D(new Vector3(0, 0, 130), Vector3.Zero, scales, -Vector3.UnitZ, Vector3.UnitY);
             zoneObj = new ZoneObject("roomwallright", ObjectType.Room, transform, true);
             zoneObj.AddPrimitive(new Box(transform.Translation, Matrix.Identity, transform.Scale));
-            zoneObj.Enable(true);
+            zoneObj.Enable();
 
             this.objectManager.Add(zoneObj);
 
             transform = new Transform3D(new Vector3(0, 0, -130), Vector3.Zero, scales, -Vector3.UnitZ, Vector3.UnitY);
             zoneObj = new ZoneObject("roomwallleft", ObjectType.Room, transform, true);
             zoneObj.AddPrimitive(new Box(transform.Translation, Matrix.Identity, transform.Scale));
-            zoneObj.Enable(true);
+            zoneObj.Enable();
 
             this.objectManager.Add(zoneObj);
             #endregion
 
             #region Rotationthingy Model
             model = this.modelDictionary["rotation"];
-            transform = new Transform3D(new Vector3(0, -57, 0), Vector3.Zero, 1f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
+            transform = new Transform3D(new Vector3(0, -57, 0), Vector3.Zero, 0.6f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
             this.rotator = new PawnCollidableObject("RotationThingy", ObjectType.Rotation, transform, null, model, Color.White, 1);
             Matrix rot;
-            this.rotator.AddPrimitive(new Capsule(transform.Translation - new Vector3(0, 20, 20), Matrix.Identity, 2.5f, 40), new MaterialProperties());
+            this.rotator.AddPrimitive(new Capsule(transform.Translation - new Vector3(0, 0, 20 * 0.6f), Matrix.Identity, 2.5f * 0.6f, 40 * 0.6f), new MaterialProperties());
             Matrix.CreateRotationY(MathHelper.ToRadians(90), out rot);
-            this.rotator.AddPrimitive(new Capsule(transform.Translation - new Vector3(20, 20, 0), rot, 2.5f, 40), new MaterialProperties());
+            this.rotator.AddPrimitive(new Capsule(transform.Translation - new Vector3(20 *0.6f, 0, 0), rot, 2.5f * 0.6f, 40 * 0.6f), new MaterialProperties());
             this.rotator.Enable(true, 200);
 
             this.objectManager.Add(this.rotator);
@@ -571,36 +570,36 @@ namespace GDApp
             this.objectManager.Add(step1);
             #endregion
             #region Pressure Plate Right Up Model
-            transform = new Transform3D(new Vector3(50, 4.75f, 230), Vector3.Zero, Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            step2 = new PawnCollidableObject("PressurePlate2", ObjectType.Plate, transform, texture, model, Color.White, 1);
-            step2.AddPrimitive(new Box(transform.Translation, Matrix.Identity, scales), new MaterialProperties());
-            step2.Enable(true, 2000);
-
-            this.objectManager.Add(step2);
-            #endregion
-            #region Pressure Plate Right Down Model
-            transform = new Transform3D(new Vector3(-50, 4.75f, 230), Vector3.Zero, Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
+            transform = new Transform3D(new Vector3(26, 0, 110), Vector3.Zero, Vector3.One * 0.5f, -Vector3.UnitZ, Vector3.UnitY);
             step4 = new PawnCollidableObject("PressurePlate4", ObjectType.Plate, transform, texture, model, Color.White, 1);
             step4.AddPrimitive(new Box(transform.Translation, Matrix.Identity, scales), new MaterialProperties());
             step4.Enable(true, 2000);
-            
+
             this.objectManager.Add(step4);
             #endregion
-            #region Pressure Plate Left Up Model
-            transform = new Transform3D(new Vector3(50, 4.75f, -230), Vector3.Zero, Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            step3 = new PawnCollidableObject("PressurePlate3", ObjectType.Plate, transform, texture, model, Color.White, 1);
-            step3.AddPrimitive(new Box(transform.Translation, Matrix.Identity, scales), new MaterialProperties());
-            step3.Enable(true, 2000);
-            
-            this.objectManager.Add(step3);
-            #endregion
-            #region Pressure Plate Left Down Model
-            transform = new Transform3D(new Vector3(-50, 4.75f, -230), Vector3.Zero, Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
+            #region Pressure Plate Right Down Model
+            transform = new Transform3D(new Vector3(-36, 0, 110), Vector3.Zero, Vector3.One * 0.5f, -Vector3.UnitZ, Vector3.UnitY);
             step5 = new PawnCollidableObject("PressurePlate5", ObjectType.Plate, transform, texture, model, Color.White, 1);
             step5.AddPrimitive(new Box(transform.Translation, Matrix.Identity, scales), new MaterialProperties());
             step5.Enable(true, 2000);
-
+            
             this.objectManager.Add(step5);
+            #endregion
+            #region Pressure Plate Left Up Model
+            transform = new Transform3D(new Vector3(26, 0, -110), Vector3.Zero, Vector3.One*0.5f, -Vector3.UnitZ, Vector3.UnitY);
+            step2 = new PawnCollidableObject("PressurePlate2", ObjectType.Plate, transform, texture, model, Color.White, 1);
+            step2.AddPrimitive(new Box(transform.Translation, Matrix.Identity, scales), new MaterialProperties());
+            step2.Enable(true, 2000);
+            
+            this.objectManager.Add(step2);
+            #endregion
+            #region Pressure Plate Left Down Model
+            transform = new Transform3D(new Vector3(-36, 0, -110), Vector3.Zero, Vector3.One * 0.5f, -Vector3.UnitZ, Vector3.UnitY);
+            step3 = new PawnCollidableObject("PressurePlate3", ObjectType.Plate, transform, texture, model, Color.White, 1);
+            step3.AddPrimitive(new Box(transform.Translation, Matrix.Identity, scales), new MaterialProperties());
+            step3.Enable(true, 2000);
+
+            this.objectManager.Add(step3);
             #endregion
 
             #region Traps
@@ -670,6 +669,8 @@ namespace GDApp
             transform = new Transform3D(new Vector3(-180, 20f, -230), -Vector3.UnitZ * 90, Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
             arrow8 = new PawnModelObject("Arrow8", ObjectType.Plate, transform, texture, model);
             this.objectManager.Add(arrow8);
+
+            scales = new Vector3(300, 100, 20);
             #endregion
 
             rotator.Add(new OffsetController("offset controller 2", rotator, true, new Vector3(0, 50, 0)));
@@ -784,7 +785,6 @@ namespace GDApp
 
             this.objectManager = new ObjectManager(this, 10, 10);
             Components.Add(this.objectManager);
-
         }
 
         #region DEBUG
@@ -902,12 +902,33 @@ namespace GDApp
 
             #region RailCharacterFollow
             pawnCamera = new PawnCamera3D("RailCamera1",
-                ObjectType.RailCamera, Transform3D.Zero,
+                ObjectType.RailCamera, (Transform3D)Transform3D.Zero.Clone(),
                 ProjectionParameters.StandardMediumFourThree, this.graphics.GraphicsDevice.Viewport);
 
             pawnCamera.Add(new RailCharacterFollowController("rail character follow controller 1",
                 pawnCamera, true, new RailParameters("r1", new Vector3(-148, 34, 0),
-                new Vector3(145, 34, 0)), playerActor, new Vector3(300, -100, 0), 50));
+                new Vector3(145, 34, 0)), playerActor, 50));
+
+            this.cameraManager.Add("FullScreen", pawnCamera);
+            
+            pawnCamera = new PawnCamera3D("RailCamera2",
+                ObjectType.RailCamera, (Transform3D)Transform3D.Zero.Clone(),
+                ProjectionParameters.StandardMediumFourThree, this.graphics.GraphicsDevice.Viewport);
+
+            pawnCamera.Add(new RailCharacterFollowController("rail character follow controller 2",
+                pawnCamera, true, new RailParameters("r2", new Vector3(0, 34, 60),
+                new Vector3(0, 34, -120)), playerActor, 50));
+
+            this.cameraManager.Add("FullScreen", pawnCamera);
+
+            pawnCamera = new PawnCamera3D("RailCamera3",
+                ObjectType.RailCamera, (Transform3D)Transform3D.Zero.Clone(),
+                ProjectionParameters.StandardMediumFourThree, this.graphics.GraphicsDevice.Viewport);
+
+            pawnCamera.Add(new RailCharacterFollowController("rail character follow controller 3",
+                pawnCamera, true, new RailParameters("r3", new Vector3(0, 34, -60),
+                new Vector3(0, 34, 120)), playerActor, 50));
+
             this.cameraManager.Add("FullScreen", pawnCamera);
 
             #endregion
@@ -929,6 +950,7 @@ namespace GDApp
             pawnCamera = new PawnCamera3D("ZoomOnDoor",
                 ObjectType.ZoomOnDoorCamera, new Transform3D(new Vector3(100, 126, 0), new Vector3(100,-51,0), Vector3.UnitY),
                 ProjectionParameters.StandardMediumFourThree, this.graphics.GraphicsDevice.Viewport);
+            pawnCamera.Add(new ShakeController("shaker1", pawnCamera, true));
             
             this.cameraManager.Add("FullScreen", pawnCamera);
 
@@ -972,8 +994,8 @@ namespace GDApp
 
             demoCameraLayout();
             //demoCameraTrack(gameTime);
-            demoRotation();
-            demoWinLose();
+            //demoRotation();
+            //demoWinLose();
 
             if(bReset)
             {
@@ -1020,13 +1042,13 @@ namespace GDApp
         private void demoCameraLayout()
         {
             if (this.keyboardManager.IsFirstKeyPress(Keys.F1))
-                this.cameraManager.SetCameraLayout("FullScreen");
+                this.cameraManager.SetCamera("FullScreen", "RailCamera1");
             else if (this.keyboardManager.IsFirstKeyPress(Keys.F2))
                 this.cameraManager.SetCameraLayout("FirstPersonFullScreen");
             else if (this.keyboardManager.IsFirstKeyPress(Keys.F3))
-                this.cameraManager.SetCameraLayout("Rail");
+                this.cameraManager.SetCamera("FullScreen", "RailCamera2");
             else if (this.keyboardManager.IsFirstKeyPress(Keys.F4))
-                this.cameraManager.SetCameraLayout("Track");
+                this.cameraManager.SetCamera("FullScreen", "RailCamera3");
             else if (this.keyboardManager.IsFirstKeyPress(Keys.F5))
                 this.cameraManager.SetCameraLayout("RailCharacterFollow");
             else if (this.keyboardManager.IsFirstKeyPress(Keys.F6))
@@ -1083,6 +1105,10 @@ namespace GDApp
                     case 1:
                         ((OffsetController)step1.ControllerList[0]).Set();
                         ((OffsetController)rotator.ControllerList[0]).Set();
+                        Transform3D oldposition = this.CameraManager.ActiveCamera.Transform3D;
+                        this.CameraManager.SetCamera("FullScreen", "ZoomOnDoor");
+                        this.CameraManager.ActiveCamera.Transform3D = oldposition;
+                        ((ShakeController)((PawnCamera3D)this.CameraManager.ActiveCamera).ControllerList[0]).Start("FullScreen", "RailCamera1");
                         break;
                     case 2:
                         ((OffsetController)step2.ControllerList[0]).Set();

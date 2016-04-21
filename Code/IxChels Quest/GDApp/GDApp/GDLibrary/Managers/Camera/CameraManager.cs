@@ -64,11 +64,40 @@ namespace GDLibrary
 
             game.EventDispatcher.RotationStarted += HandleRotationStarted;
             game.EventDispatcher.RotationEnd += HandleRotationEnd;
+            game.EventDispatcher.CameraChanged += HandleCameraChanged;
+        }
+
+        private void HandleCameraChanged(EventData eventData)
+        {
+            CameraEventData data = (CameraEventData)eventData;
+            this.SetCamera(data.cameraLayout, data.cameraID);
         }
 
         private void HandleRotationEnd(object sender)
         {
             ((RotatorController)((PawnCamera3D)activeCameraList[activeCameraIndex]).ControllerList[0]).Unset();
+            if(Math.Abs(activeCameraList[activeCameraIndex].Transform3D.Look.Z) < 0.1)
+            {
+                //Set to Central Camera
+                Transform3D oldposition = activeCameraList[activeCameraIndex].Transform3D;
+                this.SetCamera("FullScreen", "RailCamera1");
+                this.activeCameraList[activeCameraIndex].Transform3D = oldposition;
+            }
+            else
+            {
+                if(activeCameraList[activeCameraIndex].Transform3D.Look.Z > 0.1)
+                {
+                    Transform3D oldposition = activeCameraList[activeCameraIndex].Transform3D;
+                    this.SetCamera("FullScreen", "RailCamera3");
+                    this.activeCameraList[activeCameraIndex].Transform3D = oldposition;
+                }
+                else
+                {
+                    Transform3D oldposition = activeCameraList[activeCameraIndex].Transform3D;
+                    this.SetCamera("FullScreen", "RailCamera2");
+                    this.activeCameraList[activeCameraIndex].Transform3D = oldposition;
+                }
+            }
         }
 
         private void HandleRotationStarted(object sender)
@@ -77,11 +106,6 @@ namespace GDLibrary
             this.SetCamera("FullScreen", "RotateCamera");
             this.activeCameraList[activeCameraIndex].Transform3D = oldposition;
             ((RotatorController)((PawnCamera3D)activeCameraList[activeCameraIndex]).ControllerList[0]).Set();
-        }
-
-        private void EventDispatcher_CameraChanged(object sender)
-        {
-            throw new System.NotImplementedException();
         }
 
         public void Add(string cameraLayout, Camera3D camera)

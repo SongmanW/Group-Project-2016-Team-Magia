@@ -46,6 +46,10 @@ namespace GDLibrary
                     OnRotationEnd(eventData);
                     break;
 
+                case EventType.OnCameraChanged:
+                    OnCameraChanged(eventData);
+                    break;
+
                 //add a case to handle the On...() method for each type
 
                 default:
@@ -78,5 +82,12 @@ namespace GDLibrary
                 RotationEnd(eventData);
         }
 
+        public delegate void CameraChangedEventHandler(EventData data);
+        public event CameraChangedEventHandler CameraChanged;
+        public void OnCameraChanged(EventData eventData)
+        {
+            if (CameraChanged != null)
+                CameraChanged(eventData);
+        }
     }
 }
