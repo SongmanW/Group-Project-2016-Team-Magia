@@ -221,6 +221,11 @@ namespace GDLibrary
                         game.checkNext(step);
                     }
                 }
+                else if(c.ObjectType == ObjectType.Door)
+                {
+                    //win
+                    game.checkNext(6);
+                }
             }
 
             return true;

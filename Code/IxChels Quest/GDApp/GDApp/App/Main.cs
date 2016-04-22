@@ -472,7 +472,7 @@ namespace GDApp
             #region EntranceDoor Model
             model = this.modelDictionary["door"];
             transform = new Transform3D(new Vector3(-300, 0, 0), Vector3.Zero, 1f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            collObj = new PawnCollidableObject("door", ObjectType.Door, transform, null, model, Color.White, 1f);
+            collObj = new PawnCollidableObject("door", ObjectType.Entrance, transform, null, model, Color.White, 1f);
             collObj.AddPrimitive(new Box(transform.Translation, Matrix.Identity, scales), new MaterialProperties());
             collObj.Enable(true, 2000);
 
@@ -675,7 +675,7 @@ namespace GDApp
 
             rotator.Add(new OffsetController("offset controller 2", rotator, true, new Vector3(0, 50, 0)));
             rotator.Add(new RotorController("rotor Controller", this.rotator, true));
-            doorActor.Add(new OffsetController("offset vontroller 7", doorActor, true, new Vector3(0, -200, 0)));
+            doorActor.Add(new OffsetController("offset vontroller 7", doorActor, true, new Vector3(0, -110, 0)));
             step1.Add(new OffsetController("offset controller 1", step1, true, new Vector3(0, -3, 0)));
             step2.Add(new OffsetController("offset controller 3", step2, true, new Vector3(0, -3, 0)));
             step3.Add(new OffsetController("offset controller 4", step3, true, new Vector3(0, -3, 0)));
@@ -1100,7 +1100,7 @@ namespace GDApp
         {
             if(step == this.nextStep)
             {
-                switch (nextStep)
+                switch (step)
                 {
                     case 1:
                         ((OffsetController)step1.ControllerList[0]).Set();
@@ -1112,6 +1112,9 @@ namespace GDApp
                         break;
                     case 2:
                         ((OffsetController)step2.ControllerList[0]).Set();
+                        ((OffsetController)step3.ControllerList[0]).Unset();
+                        ((OffsetController)step4.ControllerList[0]).Unset();
+                        ((OffsetController)step5.ControllerList[0]).Unset();
                         break;
                     case 3:
                         ((OffsetController)step3.ControllerList[0]).Set();
@@ -1122,6 +1125,11 @@ namespace GDApp
                     case 5:
                         ((OffsetController)step5.ControllerList[0]).Set();
                         ((OffsetController)doorActor.ControllerList[0]).Set();
+                        oldposition = this.CameraManager.ActiveCamera.Transform3D;
+                        string activeC = this.CameraManager.ActiveCamera.ID;
+                        this.CameraManager.SetCamera("FullScreen", "ZoomOnDoor");
+                        this.CameraManager.ActiveCamera.Transform3D = oldposition;
+                        ((ShakeController)((PawnCamera3D)this.CameraManager.ActiveCamera).ControllerList[0]).Start("FullScreen", activeC);
                         break;
                     case 6:
                         //win
@@ -1131,18 +1139,26 @@ namespace GDApp
             }
             else
             {
-                switch (nextStep)
+                switch (step)
                 {
                     case 1:
                         break;
-                    case 2:
-                    case 3:
-                    case 4:
                     case 5:
-                        ((OffsetController)step2.ControllerList[0]).Unset();
-                        ((OffsetController)step3.ControllerList[0]).Unset();
+                        ((OffsetController)step5.ControllerList[0]).Set();
                         ((OffsetController)step4.ControllerList[0]).Unset();
-                        ((OffsetController)step5.ControllerList[0]).Unset();
+                        ((OffsetController)step3.ControllerList[0]).Unset();
+                        ((OffsetController)step2.ControllerList[0]).Unset();
+                        goto case 2;
+                    case 4:
+                        ((OffsetController)step4.ControllerList[0]).Set();
+                        ((OffsetController)step3.ControllerList[0]).Unset();
+                        ((OffsetController)step2.ControllerList[0]).Unset();
+                        goto case 2;
+                    case 3:
+                        ((OffsetController)step3.ControllerList[0]).Set();
+                        ((OffsetController)step2.ControllerList[0]).Unset();
+                        goto case 2;
+                    case 2:
                         if (mistake)
                         {
                             bReset = true;
@@ -1167,6 +1183,8 @@ namespace GDApp
                             ((OffsetController)trap7.ControllerList[0]).Set();
                             ((OffsetController)trap8.ControllerList[0]).Set();
                         }
+                        break;
+                    case 6:
                         break;
                 }
             }
