@@ -781,7 +781,7 @@ namespace GDApp
 
         private void InitializeManagers(bool isMouseVisible)
         {
-            this.physicsManager = new PhysicsManager(this, true);
+            this.physicsManager = new PhysicsManager(this, false);
             Components.Add(physicsManager);
 
             this.cameraManager = new CameraManager(this);
@@ -975,7 +975,7 @@ namespace GDApp
             #endregion
 
             //set the default layout
-            this.cameraManager.SetCameraLayout("FirstPersonFullScreen");
+            this.cameraManager.SetCameraLayout("FullScreen");
         }
 
         /// <summary>
@@ -1010,10 +1010,10 @@ namespace GDApp
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
 
-            demoCameraLayout();
+            //demoCameraLayout();
             //demoCameraTrack(gameTime);
             //demoRotation();
-            demoWinLose();
+            //demoWinLose();
 
             if(bReset)
             {
@@ -1168,6 +1168,7 @@ namespace GDApp
                         break;
                     case 6:
                         //win
+                        Exit();
                         break;
                 }
                 this.nextStep++;
