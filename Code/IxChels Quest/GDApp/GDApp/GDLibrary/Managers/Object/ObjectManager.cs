@@ -52,7 +52,7 @@ namespace GDLibrary
             ((RotatorController)(this.game.wall1).ControllerList[0]).Set();
             ((RotatorController)(this.game.wall2).ControllerList[0]).Set();
             this.game.playerActor.Set();
-            ((RotorController)this.game.rotator.ControllerList[1]).Rotate(90, 1000, ((RotationEventData)data).clockwise);
+            ((RotorController)this.game.rotator.ControllerList[1]).Rotate(90, 4000, ((RotationEventData)data).clockwise);
         }
 
         public void Add(DrawnActor actor)

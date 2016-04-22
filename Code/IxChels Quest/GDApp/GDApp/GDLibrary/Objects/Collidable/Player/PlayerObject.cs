@@ -3,6 +3,7 @@ using JigLibX.Collision;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using SkinnedModel;
 using System;
 
 namespace GDLibrary
@@ -18,6 +19,7 @@ namespace GDLibrary
         private Vector3 offSet;
         private Transform3D oldTransform;
         private Transform3D oldPTransform;
+        private Random random;
         #endregion
 
         #region Properties
@@ -41,7 +43,9 @@ namespace GDLibrary
                     radius, height, accelerationRate, decelerationRate)
         {
             this.keys = keys;
+
             this.Body.CollisionSkin.callbackFn += CollisionSkin_callbackFn;
+            this.random = new Random();
         }
 
         public override void Update(GameTime gameTime)
@@ -85,24 +89,45 @@ namespace GDLibrary
                 {
                     moveVectorZ = Vector3.Normalize(new Vector3(game.CameraManager.ActiveCamera.Transform3D.Right.X, 0, game.CameraManager.ActiveCamera.Transform3D.Right.Z));
                 }
-                this.CharacterBody.Velocity = ((moveVectorX == Vector3.Zero && moveVectorZ == Vector3.Zero ? Vector3.Zero : Vector3.Normalize(moveVectorX + moveVectorZ)) * 85);
-                this.CharacterBody.DesiredVelocity = Vector3.Zero;
+                if (moveVectorX == Vector3.Zero && moveVectorZ == Vector3.Zero)
+                {
+                    this.CharacterBody.DesiredVelocity = Vector3.Zero;
+                }
+                else
+                {
+                    this.CharacterBody.Velocity = Vector3.Normalize(moveVectorX + moveVectorZ) * 45;
+
+                    int ran = (int)Math.Floor(random.NextDouble() * 2.9);
+                    switch(ran)
+                    {
+                        case 0:
+                            game.SoundManager.PlayCue("Footsteps_Stone1");
+                            break;
+                        case 1:
+                            game.SoundManager.PlayCue("Footsteps_Stone2");
+                            break;
+                        case 2:
+                            game.SoundManager.PlayCue("Footsteps_Stone3");
+                            break;
+                    }
+                }
                 if (moveVectorX != Vector3.Zero || moveVectorZ != Vector3.Zero)
                 {
                     Vector3 moveVector = Vector3.Normalize(moveVectorX + moveVectorZ);
                     if (moveVector.Z >= 0)
                     {
-                        this.Transform3D.RotateTo(new Vector3(0, 180 - MathHelper.ToDegrees((float)Math.Acos(moveVector.X)), 0));
+                        this.Transform3D.RotateTo(new Vector3(-90, -MathHelper.ToDegrees((float)Math.Acos(moveVector.X)), 0));
                     }
                     else
                     {
-                        this.Transform3D.RotateTo(new Vector3(0, 180 + MathHelper.ToDegrees((float)Math.Acos(moveVector.X)), 0));
+                        this.Transform3D.RotateTo(new Vector3(-90,  MathHelper.ToDegrees((float)Math.Acos(moveVector.X)), 0));
                     }
                 }
                 if (game.NextStep > 1)
                 {
                     if (this.Transform3D.Translation.Length() < 50)
                     {
+                        Console.WriteLine(this.Transform3D.Look);
                         if (game.KeyboardManager.IsFirstKeyPress(Keys[KeyData.PlayerInteractIndex]) || game.KeyboardManager.IsFirstKeyPress(Keys[KeyData.PlayerInteractIndexAlt]))
                         {
                             if(this.Transform3D.Translation.X < 0)
@@ -111,7 +136,7 @@ namespace GDLibrary
                                 if(this.Transform3D.Translation.Z < 0)
                                 {
                                     //left
-                                    if(this.Transform3D.Look.X + this.Transform3D.Look.Z < 0)
+                                    if(this.Transform3D.Look.X < this.Transform3D.Look.Z)
                                         EventDispatcher.Publish(new RotationEventData("rotation start", this, EventType.OnRotationStart, false));
                                     else
                                         EventDispatcher.Publish(new RotationEventData("rotation start", this, EventType.OnRotationStart, true));
@@ -119,7 +144,7 @@ namespace GDLibrary
                                 else
                                 {
                                     //right
-                                    if (this.Transform3D.Look.X < this.Transform3D.Look.Z)
+                                    if (this.Transform3D.Look.X + this.Transform3D.Look.Z > 0)
                                         EventDispatcher.Publish(new RotationEventData("rotation start", this, EventType.OnRotationStart, false));
                                     else
                                         EventDispatcher.Publish(new RotationEventData("rotation start", this, EventType.OnRotationStart, true));
@@ -131,7 +156,7 @@ namespace GDLibrary
                                 if (this.Transform3D.Translation.Z < 0)
                                 {
                                     //left
-                                    if (this.Transform3D.Look.X < this.Transform3D.Look.Z)
+                                    if (this.Transform3D.Look.X + this.Transform3D.Look.Z > 0)
                                         EventDispatcher.Publish(new RotationEventData("rotation start", this, EventType.OnRotationStart, true));
                                     else
                                         EventDispatcher.Publish(new RotationEventData("rotation start", this, EventType.OnRotationStart, false));
@@ -140,7 +165,7 @@ namespace GDLibrary
                                 else
                                 {
                                     //right
-                                    if (this.Transform3D.Look.X + this.Transform3D.Look.Z < 0)
+                                    if (this.Transform3D.Look.X < this.Transform3D.Look.Z)
                                         EventDispatcher.Publish(new RotationEventData("rotation start", this, EventType.OnRotationStart, true));
                                     else
                                         EventDispatcher.Publish(new RotationEventData("rotation start", this, EventType.OnRotationStart, false));
@@ -148,6 +173,7 @@ namespace GDLibrary
                                 }
 
                             }
+                            game.SoundManager.PlayCue("Totem_Rotate");
                         }
                     }
                 }
@@ -248,6 +274,5 @@ namespace GDLibrary
             this.Body.MoveTo(this.Transform3D.Translation, this.Transform3D.Orientation);
             this.Enable(false, 1);
         }
-
     }
 }

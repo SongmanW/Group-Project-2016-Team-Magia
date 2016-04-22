@@ -93,6 +93,12 @@
     <Reference Include="mscorlib">
       <Private>False</Private>
     </Reference>
+    <Reference Include="SkinnedModel">
+      <HintPath>..\..\..\..\SkinnedModel.dll</HintPath>
+    </Reference>
+    <Reference Include="SkinnedModelPipeline">
+      <HintPath>..\..\..\..\SkinnedModelPipeline.dll</HintPath>
+    </Reference>
     <Reference Include="System">
       <Private>False</Private>
     </Reference>

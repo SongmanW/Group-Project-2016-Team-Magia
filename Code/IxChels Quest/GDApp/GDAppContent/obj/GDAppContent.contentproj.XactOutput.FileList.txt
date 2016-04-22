@@ -1,0 +1,3 @@
+Content\Assets\Audio\IxchelsQuestAudio.xgs
+Content\Assets\Audio\Wave Bank.xwb
+Content\Assets\Audio\Sound Bank.xsb

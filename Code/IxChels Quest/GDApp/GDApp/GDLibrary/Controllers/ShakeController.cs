@@ -30,7 +30,6 @@ namespace GDLibrary
                     ((float)random.NextDouble()) * range - range/2);
                 this.ParentActor.Transform3D.Translation = this.oldTranslation + randomVector;
                 timer += gameTime.ElapsedGameTime.Milliseconds;
-                Console.WriteLine(this.ParentActor.Transform3D.Translation);
             }
             else
             {

@@ -101,3 +101,39 @@ Content\Assets\Models\RoomV5.xnb
 Content\Assets\skin\mfjyroO.xnb
 Content\Assets\skin\mfjyroO_0.xnb
 Content\Assets\Models\RoomV6.xnb
+Content\Assets\Models\Animated.xnb
+Content\Assets\Models\GP modle\coat.xnb
+Content\Assets\Models\GP modle\eye.xnb
+Content\Assets\Models\GP modle\fastener.xnb
+Content\Assets\Models\GP modle\hand.xnb
+Content\Assets\Models\GP modle\head.xnb
+Content\Assets\Models\GP modle\leg.xnb
+Content\Assets\Models\GP modle\shouse.xnb
+Content\Assets\Models\GP modle\coat_0.xnb
+Content\Assets\Models\GP modle\hand_0.xnb
+Content\Assets\Models\GP modle\leg_0.xnb
+Content\Assets\Models\GP modle\fastener_0.xnb
+Content\Assets\Models\GP modle\head_0.xnb
+Content\Assets\Models\GP modle\eye_0.xnb
+Content\Assets\Models\GP modle\shouse_0.xnb
+Content\Assets\Audio\Sounds\Arrow.xnb
+Content\Assets\Audio\Sounds\Arrow_Load.xnb
+Content\Assets\Audio\Sounds\Background.xnb
+Content\Assets\Audio\Sounds\Death_Grunt.xnb
+Content\Assets\Audio\Sounds\Footsteps_Stone.xnb
+Content\Assets\Audio\Sounds\Menu_Select.xnb
+Content\Assets\Audio\Sounds\Pressure_Plate.xnb
+Content\Assets\Audio\Sounds\Prompt(Cue).xnb
+Content\Assets\Audio\Sounds\Rocks_Falling.xnb
+Content\Assets\Audio\Sounds\Stone_Door.xnb
+Content\Assets\Audio\Sounds\Totem_Rotate.xnb
+Content\Assets\Audio\Sounds\Tribal_Drums.xnb
+Content\Assets\Models\arrow1.xnb
+Content\Assets\Models\skin\RUSTY-METAL-TEXTURE.xnb
+Content\Assets\Models\skin\RUSTY-METAL-TEXTURE_0.xnb
+Content\Assets\Audio\Sounds\Footsteps_Stone3.xnb
+Content\Assets\Audio\Sounds\Footsteps_Stone1.xnb
+Content\Assets\Audio\Sounds\Footsteps_Stone2.xnb
+Content\Assets\Audio\IxchelsQuestAudio.xgs
+Content\Assets\Audio\Wave Bank.xwb
+Content\Assets\Audio\Sound Bank.xsb

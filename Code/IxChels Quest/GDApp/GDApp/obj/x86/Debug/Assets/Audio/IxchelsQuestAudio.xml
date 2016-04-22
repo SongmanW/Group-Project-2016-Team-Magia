@@ -1,0 +1,368 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Sections>
+  <WaveBank Name="Wave Bank">Wave Bank
+{
+    Name = Wave Bank;
+    Xbox File = Xbox\Wave Bank.xwb;
+    Windows File = Win\Wave Bank.xwb;
+    Xbox Bank Path Edited = 0;
+    Windows Bank Path Edited = 0;
+    Seek Tables = 1;
+    Compression Preset Name = &lt;none&gt;;
+    Xbox Bank Last Modified Low = 0;
+    Xbox Bank Last Modified High = 0;
+    PC Bank Last Modified Low = 0;
+    PC Bank Last Modified High = 0;
+    Header Last Modified Low = 0;
+    Header Last Modified High = 0;
+    Bank Last Revised Low = 4042646008;
+    Bank Last Revised High = 30514341;
+
+    Wave
+    {
+        Name = Tribal_Drums;
+        File = Sounds\Tribal_Drums.wav;
+        Build Settings Last Modified Low = 4134917601;
+        Build Settings Last Modified High = 30513688;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 11720952;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 3895253248;
+            Last Modified High = 30502087;
+        }
+    }
+
+    Wave
+    {
+        Name = Background;
+        File = Sounds\Background.wav;
+        Build Settings Last Modified Low = 4217695878;
+        Build Settings Last Modified High = 30513688;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 80;
+            Play Region Length = 28552636;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 2889586944;
+            Last Modified High = 30513686;
+        }
+    }
+
+    Wave
+    {
+        Name = Footsteps_Stone;
+        File = Sounds\Footsteps_Stone.wav;
+        Build Settings Last Modified Low = 4275351643;
+        Build Settings Last Modified High = 30513688;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 1;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 20193502;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 1104554240;
+            Last Modified High = 30513685;
+        }
+    }
+
+    Wave
+    {
+        Name = Menu_Select;
+        File = Sounds\Menu_Select.wav;
+        Build Settings Last Modified Low = 43370645;
+        Build Settings Last Modified High = 30513689;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 1;
+            Sampling Rate = 48000;
+            Bits Per Sample = 1;
+            Play Region Offset = 118;
+            Play Region Length = 13312;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 1849586944;
+            Last Modified High = 30513686;
+        }
+    }
+
+    Wave
+    {
+        Name = Prompt(Cue);
+        File = Sounds\Prompt(Cue).wav;
+        Build Settings Last Modified Low = 157942101;
+        Build Settings Last Modified High = 30513689;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 118;
+            Play Region Length = 198448;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 2909586944;
+            Last Modified High = 30513686;
+        }
+    }
+
+    Wave
+    {
+        Name = Pressure_Plate;
+        File = Sounds\Pressure_Plate.wav;
+        Build Settings Last Modified Low = 289905296;
+        Build Settings Last Modified High = 30513689;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 48000;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 597204;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 770220544;
+            Last Modified High = 30502086;
+        }
+    }
+
+    Wave
+    {
+        Name = Stone_Door;
+        File = Sounds\Stone_Door.wav;
+        Build Settings Last Modified Low = 406096914;
+        Build Settings Last Modified High = 30513689;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 269080;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 1950511872;
+            Last Modified High = 30503318;
+        }
+    }
+
+    Wave
+    {
+        Name = Totem_Rotate;
+        File = Sounds\Totem_Rotate.wav;
+        Build Settings Last Modified Low = 557252028;
+        Build Settings Last Modified High = 30513689;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 80;
+            Play Region Length = 2142208;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 569586944;
+            Last Modified High = 30513686;
+        }
+    }
+
+    Wave
+    {
+        Name = Rocks_Falling;
+        File = Sounds\Rocks_Falling.wav;
+        Build Settings Last Modified Low = 721718473;
+        Build Settings Last Modified High = 30513689;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 48000;
+            Bits Per Sample = 1;
+            Play Region Offset = 736;
+            Play Region Length = 2304000;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 4190220544;
+            Last Modified High = 30502086;
+        }
+    }
+
+    Wave
+    {
+        Name = Arrow;
+        File = Sounds\Arrow.wav;
+        Build Settings Last Modified Low = 954621761;
+        Build Settings Last Modified High = 30513689;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 1;
+            Sampling Rate = 48000;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 53612;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 179652352;
+            Last Modified High = 30513688;
+        }
+    }
+
+    Wave
+    {
+        Name = Arrow_Load;
+        File = Sounds\Arrow_Load.wav;
+        Build Settings Last Modified Low = 1037560054;
+        Build Settings Last Modified High = 30513689;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 144116;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 1519652352;
+            Last Modified High = 30513688;
+        }
+    }
+
+    Wave
+    {
+        Name = Death_Grunt;
+        File = Sounds\Death_Grunt.wav;
+        Build Settings Last Modified Low = 1122288526;
+        Build Settings Last Modified High = 30513689;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 512;
+            Play Region Length = 78336;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 2459652352;
+            Last Modified High = 30513688;
+        }
+    }
+
+    Wave
+    {
+        Name = Footsteps_Stone1;
+        File = Sounds\Footsteps_Stone1.wav;
+        Build Settings Last Modified Low = 3830037026;
+        Build Settings Last Modified High = 30514341;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 1;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 33572;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 2791067216;
+            Last Modified High = 30514341;
+        }
+    }
+
+    Wave
+    {
+        Name = Footsteps_Stone2;
+        File = Sounds\Footsteps_Stone2.wav;
+        Build Settings Last Modified Low = 3916662875;
+        Build Settings Last Modified High = 30514341;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 1;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 27882;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 2791087225;
+            Last Modified High = 30514341;
+        }
+    }
+
+    Wave
+    {
+        Name = Footsteps_Stone3;
+        File = Sounds\Footsteps_Stone3.wav;
+        Build Settings Last Modified Low = 4042646008;
+        Build Settings Last Modified High = 30514341;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 1;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 35848;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 2745045659;
+            Last Modified High = 30514341;
+        }
+    }
+}
+
+</WaveBank>
+</Sections>

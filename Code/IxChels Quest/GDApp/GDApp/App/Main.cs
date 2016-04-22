@@ -253,6 +253,10 @@ namespace GDApp
         private int nextStep;
         private bool bReset;
         private int resetCount;
+        private bool screamed;
+        private float interval;
+        private float timePassed;
+        private Random random;
         #endregion
 
         #region Properties
@@ -357,6 +361,14 @@ namespace GDApp
 
             InitializeLevel();
             base.Initialize();
+
+            this.soundManager.PlayCue("Background");
+            this.soundManager.PlayCue("Tribal_Drums");
+
+            this.screamed = false;
+            this.random = new Random();
+            this.interval = 25000 + (float)(random.NextDouble() * 10000 - 5000);
+            this.timePassed = 0;
         }
 
         private void InitializeEventDispatcher()
@@ -369,7 +381,7 @@ namespace GDApp
         {
             Model model = null;
 
-            model = Content.Load<Model>("Assets\\Models\\mm");
+            model = Content.Load<Model>("Assets\\Models\\animated");
             this.modelDictionary.Add("player", model);
 
             model = Content.Load<Model>("Assets\\Models\\DoorV1");
@@ -390,7 +402,7 @@ namespace GDApp
             model = Content.Load<Model>("Assets\\Models\\trap");
             this.modelDictionary.Add("trap", model);
 
-            model = Content.Load<Model>("Assets\\Models\\arrow");
+            model = Content.Load<Model>("Assets\\Models\\arrow1");
             this.modelDictionary.Add("arrow", model);
         }
 
@@ -451,10 +463,10 @@ namespace GDApp
             #region Player Model
             model = this.modelDictionary["player"];
             transform = new Transform3D(new Vector3(-100, 10, 0),
-                new Vector3(0, 180, 0), 0.05f * Vector3.One,
-                -Vector3.UnitZ, Vector3.UnitY);
+                new Vector3(-90, 0, 0), 0.15f * Vector3.One,
+                Vector3.UnitX, Vector3.UnitY);
             this.playerActor = new PlayerObject("player",
-                ObjectType.Player, transform, null, model, Color.White, 1f, KeyData.Player_Keys, 3.75f, 11.5f, 1, 1);
+                ObjectType.Player, transform, null, model, Color.White, 1f, KeyData.Player_Keys, 3.75f, 11.5f, 1f, 1f);
             this.playerActor.Enable(false, 100);
             this.objectManager.Add(this.playerActor);
             #endregion
@@ -638,36 +650,36 @@ namespace GDApp
             #endregion
             #region Arrow
             model = this.modelDictionary["arrow"];
-            transform = new Transform3D(new Vector3(80, 20f, 105), Vector3.UnitZ * 90, 0.5f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            arrow1 = new PawnModelObject("Arrow1", ObjectType.Plate, transform, texture, model);
+            transform = new Transform3D(new Vector3(80, 20f, 105), Vector3.UnitZ * 90,  Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
+            arrow1 = new PawnModelObject("Arrow1", ObjectType.Plate, transform, null, model);
             this.objectManager.Add(arrow1);
 
-            transform = new Transform3D(new Vector3(80, 20f, 115), Vector3.UnitZ * 90, 0.5f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            arrow2 = new PawnModelObject("Arrow2", ObjectType.Plate, transform, texture, model);
+            transform = new Transform3D(new Vector3(80, 20f, 115), Vector3.UnitZ * 90,  Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
+            arrow2 = new PawnModelObject("Arrow2", ObjectType.Plate, transform, null, model);
             this.objectManager.Add(arrow2);
 
-            transform = new Transform3D(new Vector3(80, 20f, -105), Vector3.UnitZ * 90, 0.5f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            arrow3 = new PawnModelObject("Arrow3", ObjectType.Plate, transform, texture, model);
+            transform = new Transform3D(new Vector3(80, 20f, -105), Vector3.UnitZ * 90,  Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
+            arrow3 = new PawnModelObject("Arrow3", ObjectType.Plate, transform, null, model);
             this.objectManager.Add(arrow3);
 
-            transform = new Transform3D(new Vector3(80, 20f, -115), Vector3.UnitZ * 90, 0.5f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            arrow4 = new PawnModelObject("Arrow4", ObjectType.Plate, transform, texture, model);
+            transform = new Transform3D(new Vector3(80, 20f, -115), Vector3.UnitZ * 90,  Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
+            arrow4 = new PawnModelObject("Arrow4", ObjectType.Plate, transform, null, model);
             this.objectManager.Add(arrow4);
 
-            transform = new Transform3D(new Vector3(-90, 20f, 105), -Vector3.UnitZ * 90, 0.5f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            arrow5 = new PawnModelObject("Arrow5", ObjectType.Plate, transform, texture, model);
+            transform = new Transform3D(new Vector3(-90, 20f, 105), -Vector3.UnitZ * 90,  Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
+            arrow5 = new PawnModelObject("Arrow5", ObjectType.Plate, transform, null, model);
             this.objectManager.Add(arrow5);
 
-            transform = new Transform3D(new Vector3(-90, 20f, 115), -Vector3.UnitZ * 90, 0.5f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            arrow6 = new PawnModelObject("Arrow6", ObjectType.Plate, transform, texture, model);
+            transform = new Transform3D(new Vector3(-90, 20f, 115), -Vector3.UnitZ * 90,  Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
+            arrow6 = new PawnModelObject("Arrow6", ObjectType.Plate, transform, null, model);
             this.objectManager.Add(arrow6);
 
-            transform = new Transform3D(new Vector3(-90, 20f, -105), -Vector3.UnitZ * 90, 0.5f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            arrow7 = new PawnModelObject("Arrow7", ObjectType.Plate, transform, texture, model);
+            transform = new Transform3D(new Vector3(-90, 20f, -105), -Vector3.UnitZ * 90,  Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
+            arrow7 = new PawnModelObject("Arrow7", ObjectType.Plate, transform, null, model);
             this.objectManager.Add(arrow7);
 
-            transform = new Transform3D(new Vector3(-90, 20f, -115), -Vector3.UnitZ * 90, 0.5f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            arrow8 = new PawnModelObject("Arrow8", ObjectType.Plate, transform, texture, model);
+            transform = new Transform3D(new Vector3(-90, 20f, -115), -Vector3.UnitZ * 90, Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
+            arrow8 = new PawnModelObject("Arrow8", ObjectType.Plate, transform, null, model);
             this.objectManager.Add(arrow8);
 
             scales = new Vector3(300, 100, 20);
@@ -785,6 +797,12 @@ namespace GDApp
 
             this.objectManager = new ObjectManager(this, 10, 10);
             Components.Add(this.objectManager);
+
+            this.soundManager = new SoundManager(this,
+                 "Content\\Assets\\Audio\\IxchelsQuestAudio.xgs",
+                 "Content\\Assets\\Audio\\Wave Bank.xwb",
+                "Content\\Assets\\Audio\\Sound Bank.xsb");
+            Components.Add(this.soundManager);
         }
 
         #region DEBUG
@@ -1007,8 +1025,20 @@ namespace GDApp
                 }
                 else
                 {
+                    if(resetCount > 200 && !screamed)
+                    {
+                        this.soundManager.PlayCue("Death_Grunt");
+                        screamed = true;
+                    }
                     resetCount += gameTime.ElapsedGameTime.Milliseconds;
                 }
+            }
+            this.timePassed += gameTime.ElapsedGameTime.Milliseconds;
+            if(this.timePassed > interval)
+            {
+                this.timePassed = 0;
+                this.interval = 25000 + (float)(random.NextDouble() * 10000 - 5000);
+                this.soundManager.PlayCue("Rocks_Falling");
             }
 
             base.Update(gameTime);
@@ -1109,18 +1139,22 @@ namespace GDApp
                         this.CameraManager.SetCamera("FullScreen", "ZoomOnDoor");
                         this.CameraManager.ActiveCamera.Transform3D = oldposition;
                         ((ShakeController)((PawnCamera3D)this.CameraManager.ActiveCamera).ControllerList[0]).Start("FullScreen", "RailCamera1");
+                        this.soundManager.PlayCue("Stone_Door");
                         break;
                     case 2:
                         ((OffsetController)step2.ControllerList[0]).Set();
                         ((OffsetController)step3.ControllerList[0]).Unset();
                         ((OffsetController)step4.ControllerList[0]).Unset();
                         ((OffsetController)step5.ControllerList[0]).Unset();
+                        this.soundManager.PlayCue("Pressure_Plate");
                         break;
                     case 3:
                         ((OffsetController)step3.ControllerList[0]).Set();
+                        this.soundManager.PlayCue("Pressure_Plate");
                         break;
                     case 4:
                         ((OffsetController)step4.ControllerList[0]).Set();
+                        this.soundManager.PlayCue("Pressure_Plate");
                         break;
                     case 5:
                         ((OffsetController)step5.ControllerList[0]).Set();
@@ -1130,6 +1164,7 @@ namespace GDApp
                         this.CameraManager.SetCamera("FullScreen", "ZoomOnDoor");
                         this.CameraManager.ActiveCamera.Transform3D = oldposition;
                         ((ShakeController)((PawnCamera3D)this.CameraManager.ActiveCamera).ControllerList[0]).Start("FullScreen", activeC);
+                        this.soundManager.PlayCue("Stone_Door");
                         break;
                     case 6:
                         //win
@@ -1148,17 +1183,21 @@ namespace GDApp
                         ((OffsetController)step4.ControllerList[0]).Unset();
                         ((OffsetController)step3.ControllerList[0]).Unset();
                         ((OffsetController)step2.ControllerList[0]).Unset();
+                        this.soundManager.PlayCue("Pressure_Plate");
                         goto case 2;
                     case 4:
                         ((OffsetController)step4.ControllerList[0]).Set();
                         ((OffsetController)step3.ControllerList[0]).Unset();
                         ((OffsetController)step2.ControllerList[0]).Unset();
+                        this.soundManager.PlayCue("Pressure_Plate");
                         goto case 2;
                     case 3:
                         ((OffsetController)step3.ControllerList[0]).Set();
                         ((OffsetController)step2.ControllerList[0]).Unset();
+                        this.soundManager.PlayCue("Pressure_Plate");
                         goto case 2;
                     case 2:
+                        nextStep = 2;
                         if (mistake)
                         {
                             bReset = true;
@@ -1170,6 +1209,7 @@ namespace GDApp
                             ((OffsetController)arrow6.ControllerList[0]).Set();
                             ((OffsetController)arrow7.ControllerList[0]).Set();
                             ((OffsetController)arrow8.ControllerList[0]).Set();
+                            this.soundManager.PlayCue("Arrow");
                         }
                         else
                         {
@@ -1182,6 +1222,8 @@ namespace GDApp
                             ((OffsetController)trap6.ControllerList[0]).Set();
                             ((OffsetController)trap7.ControllerList[0]).Set();
                             ((OffsetController)trap8.ControllerList[0]).Set();
+                            this.soundManager.PlayCue("Arrow_Load");
+
                         }
                         break;
                     case 6:
