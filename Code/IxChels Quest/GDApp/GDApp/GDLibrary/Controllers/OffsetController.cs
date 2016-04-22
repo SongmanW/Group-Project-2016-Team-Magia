@@ -12,6 +12,7 @@ namespace GDLibrary
         private Vector3 offset;
         private Vector3 originalTranslation;
         private bool bSet = false;
+        private float speed;
 
         public bool isSet
         {
@@ -26,6 +27,15 @@ namespace GDLibrary
         {
             this.maxOffset = maxOffset;
             this.originalTranslation = ParentActor.Transform3D.Translation;
+            this.speed = 1;
+        }
+
+        public OffsetController(string name, Actor parentActor, bool bEnabled, Vector3 maxOffset, float speed)
+            : base(name, parentActor, bEnabled)
+        {
+            this.maxOffset = maxOffset;
+            this.originalTranslation = ParentActor.Transform3D.Translation;
+            this.speed = speed;
         }
 
         public override void Update(GameTime gameTime)
@@ -39,7 +49,7 @@ namespace GDLibrary
                     ((PawnCollidableObject)this.ParentActor).Body.MoveTo(this.ParentActor.Transform3D.Translation + Vector3.UnitY * 20, this.ParentActor.Transform3D.Orientation);
                 if (offset.Length() < maxOffset.Length())
                 {
-                    this.offset += maxOffset / 100 * gameTime.ElapsedGameTime.Milliseconds;
+                    this.offset += maxOffset / 100 * gameTime.ElapsedGameTime.Milliseconds * speed;
                 }
             }
             else
