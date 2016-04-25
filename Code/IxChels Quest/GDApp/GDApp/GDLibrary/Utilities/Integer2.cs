@@ -1,4 +1,5 @@
 ﻿using System;
+using Microsoft.Xna.Framework;
 namespace GDLibrary
 {
     public class Integer2 : ICloneable
@@ -39,7 +40,10 @@ namespace GDLibrary
             this.y = y;
 
         }
-
+        public Integer2(Vector2 value)
+            : this(value.X, value.Y)
+        {
+        }
         public Integer2(float x, float y)
             : this((int)x, (int)y)
         {
