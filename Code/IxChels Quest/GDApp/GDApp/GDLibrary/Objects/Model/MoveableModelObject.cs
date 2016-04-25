@@ -10,9 +10,9 @@ namespace GDLibrary
 {
     public class MoveableModelObject : ModelObject
     {
-        public MoveableModelObject(string id, ObjectType objectType, Transform3D transform, 
-            Texture2D texture, Model model)
-            : base(id, objectType, transform, texture, model)
+        public MoveableModelObject(string id, ObjectType objectType, Transform3D transform, Effect effect,
+            Texture2D texture, Model model, Color color, float alpha)
+            : base(id, objectType, transform, effect, texture, model, color, alpha)
         {
 
         }

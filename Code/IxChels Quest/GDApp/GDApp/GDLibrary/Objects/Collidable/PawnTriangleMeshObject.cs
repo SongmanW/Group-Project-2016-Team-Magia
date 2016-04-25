@@ -26,9 +26,9 @@ namespace GDLibrary
         }
         #endregion
 
-        public PawnTriangleMeshObject(string id, ObjectType objectType, Transform3D transform,
+        public PawnTriangleMeshObject(string id, ObjectType objectType, Transform3D transform, Effect effect,
             Texture2D texture, Model model, Color color, float alpha, MaterialProperties materialProperties)
-            : base(id, objectType, transform, texture, model, color, alpha, materialProperties)
+            : base(id, objectType, transform, effect, texture, model, color, alpha, materialProperties)
         {
             this.materialProperties = materialProperties;
             

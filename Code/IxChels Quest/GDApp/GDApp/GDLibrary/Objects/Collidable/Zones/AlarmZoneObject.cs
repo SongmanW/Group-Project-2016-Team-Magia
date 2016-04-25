@@ -4,6 +4,7 @@ using JigLibX.Geometry;
 using JigLibX.Math;
 using JigLibX.Physics;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 using System;
 
 namespace GDLibrary
@@ -17,8 +18,8 @@ namespace GDLibrary
    
         #endregion
 
-        public AlarmZoneObject(string id, ObjectType objectType, Transform3D transform, bool isImpenetrable)
-            : base(id, objectType, transform, isImpenetrable)
+        public AlarmZoneObject(string id, ObjectType objectType, Transform3D transform, Effect effect, Color color, float alpha, bool isImpenetrable)
+            : base(id, objectType, transform, effect, color, alpha, isImpenetrable)
         {
             this.Collision.callbackFn += Collision_callbackFn;
         }

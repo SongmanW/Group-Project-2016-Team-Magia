@@ -31,9 +31,8 @@ namespace GDLibrary
         }
         #endregion
 
-        public ModelObject(string id, ObjectType objectType, Transform3D transform, 
-            Texture2D texture, Model model)
-            : base(id, objectType, transform)
+        public ModelObject(string id, ObjectType objectType, Transform3D transform, Effect effect, Texture2D texture, Model model, Color color, float alpha)
+            : base(id, objectType, transform, effect, color, alpha)
         {
             this.texture = texture;
             this.model = model;
@@ -81,7 +80,7 @@ namespace GDLibrary
 
         public virtual object Clone()
         {
-            return new ModelObject(this.ID, this.ObjectType, (Transform3D)this.Transform3D.Clone(), texture, model);
+            return new ModelObject(this.ID, this.ObjectType, (Transform3D)this.Transform3D.Clone(), this.Effect.Clone(), texture, model, this.Color, this.Alpha);
         }
     }
 }

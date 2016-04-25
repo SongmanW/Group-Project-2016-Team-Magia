@@ -52,9 +52,9 @@ namespace GDLibrary
 
         #endregion
 
-           public CollidableObject(string id, ObjectType objectType, Transform3D transform, 
+           public CollidableObject(string id, ObjectType objectType, Transform3D transform, Effect effect,
             Texture2D texture, Model model, Color color, float alpha)
-            : base(id, objectType, transform, texture, model)
+            : base(id, objectType, transform, effect, texture, model, color, alpha)
         {
             this.body = new Body();
             this.body.ExternalData = this;

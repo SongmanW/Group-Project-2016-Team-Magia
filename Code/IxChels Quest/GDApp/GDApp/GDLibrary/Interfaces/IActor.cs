@@ -1,6 +1,6 @@
 ﻿
 using Microsoft.Xna.Framework;
-namespace GDApp.GDLibrary.Objects
+namespace GDLibrary
 {
     public interface IActor
     {

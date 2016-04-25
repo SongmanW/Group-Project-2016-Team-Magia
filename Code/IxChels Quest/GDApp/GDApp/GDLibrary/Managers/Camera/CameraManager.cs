@@ -64,7 +64,7 @@ namespace GDLibrary
 
             game.EventDispatcher.RotationStarted += HandleRotationStarted;
             game.EventDispatcher.RotationEnd += HandleRotationEnd;
-            game.EventDispatcher.CameraChanged += HandleCameraChanged;
+            game.EventDispatcher.CameraChange += HandleCameraChanged;
         }
 
         private void HandleCameraChanged(EventData eventData)

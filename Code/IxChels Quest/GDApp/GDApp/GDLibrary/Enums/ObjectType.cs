@@ -29,6 +29,7 @@ namespace GDLibrary
         Plate,
         Room,
         CollidableZone,
-        Entrance
+        Entrance,
+        CollidableGround
     }
 }

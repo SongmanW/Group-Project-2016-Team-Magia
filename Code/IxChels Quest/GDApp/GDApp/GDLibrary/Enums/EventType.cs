@@ -11,7 +11,9 @@ namespace GDLibrary
         OnPlayerWin,
         OnRotationEnd,
         OnRotationStart,
-        OnCameraChanged
+        OnCameraChanged,
+        OnPlay,
+        OnRestart
         //all other events
     }
 }

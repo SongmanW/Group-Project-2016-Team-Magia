@@ -20,16 +20,16 @@ namespace GDLibrary
             }
         }
 
-        public CharacterModelObject(string id, ObjectType objectType, Transform3D transform,
-            Model model)
-            : base(id, objectType, transform, null, model)
+        public CharacterModelObject(string id, ObjectType objectType, Transform3D transform, Effect effect, 
+            Model model, Color color, float alpha)
+            : base(id, objectType, transform, effect, null, model, color, alpha)
         {
             this.camera = null;
         }
 
-        public CharacterModelObject(string id, ObjectType objectType, Transform3D transform,
-            Texture2D texture, Model model, Camera3D camera)
-            : base(id, objectType, transform, texture, model)
+        public CharacterModelObject(string id, ObjectType objectType, Transform3D transform, Effect effect,
+            Texture2D texture, Model model, Camera3D camera, Color color, float alpha)
+            : base(id, objectType, transform, effect, texture, model, color, alpha)
         {
             this.camera = camera;
         }

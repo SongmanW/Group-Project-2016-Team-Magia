@@ -62,9 +62,9 @@ namespace GDLibrary
         //handle the relevant menu events
         public virtual void EventDispatcher_MainMenu(EventData eventData)
         {
-            if ((eventData.EventType == EventType.OnPlay) || (eventData.EventType == EventType.OnRestart))
+            if ((eventData.eventType == EventType.OnPlay) || (eventData.eventType == EventType.OnRestart))
                 this.bPaused = false;
-            else if (eventData.EventType == EventType.OnPause)
+            else if (eventData.eventType == EventType.OnPause)
                 this.bPaused = true;
         }
         #endregion

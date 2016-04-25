@@ -19,10 +19,10 @@ namespace GDLibrary
     {
         public Character CharacterBody { get; set; }
 
-        public CharacterObject(string id, ObjectType objectType, Transform3D transform, 
+        public CharacterObject(string id, ObjectType objectType, Transform3D transform, Effect effect, 
             Texture2D texture, Model model, Color color, float alpha,
             float radius, float height, float accelerationRate, float decelerationRate)
-            : base(id, objectType, transform, texture, model, color, alpha)
+            : base(id, objectType, transform, effect, texture, model, color, alpha)
         {
             this.Body = new Character(accelerationRate, decelerationRate);
             this.Collision = new CollisionSkin(Body);

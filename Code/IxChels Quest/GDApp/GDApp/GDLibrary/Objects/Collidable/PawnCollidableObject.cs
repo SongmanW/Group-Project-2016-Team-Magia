@@ -23,9 +23,9 @@ namespace GDLibrary
         }
         #endregion
 
-        public PawnCollidableObject(string id, ObjectType objectType, Transform3D transform,
+        public PawnCollidableObject(string id, ObjectType objectType, Transform3D transform, Effect effect,
             Texture2D texture, Model model, Color color, float alpha)
-            : base(id, objectType, transform, texture, model, color, alpha)
+            : base(id, objectType, transform, effect, texture, model, color, alpha)
         {
 
         }

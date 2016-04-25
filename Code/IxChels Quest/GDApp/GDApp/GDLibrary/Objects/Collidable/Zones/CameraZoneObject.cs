@@ -1,5 +1,8 @@
 ﻿
 using JigLibX.Collision;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
+
 namespace GDLibrary
 {
     /// <summary>
@@ -37,9 +40,10 @@ namespace GDLibrary
 
         #endregion
 
-        public CameraZoneObject(string id, ObjectType objectType,
-            Transform3D transform, bool isImpenetrable, string cameraLayout, string cameraID)
-            : base(id, objectType, transform, isImpenetrable)
+        public CameraZoneObject(string id, ObjectType objectType, Transform3D transform,
+           Effect effect, Color color, float alpha,
+           bool isImpenetrable, string cameraLayout, string cameraID)
+           : base(id, objectType, transform, effect, color, alpha, isImpenetrable)
         {
             this.cameraLayout = cameraLayout;
             this.cameraID = cameraID;

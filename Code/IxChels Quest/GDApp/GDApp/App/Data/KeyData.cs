@@ -17,6 +17,6 @@ namespace GDApp
         public static int PlayerMoveRightIndexAlt = 8;
         public static int PlayerInteractIndexAlt = 9;
         public static int PlayerPauseIndex = 10;
-
+        internal static Keys KeyPauseShowMenu;
     }
 }

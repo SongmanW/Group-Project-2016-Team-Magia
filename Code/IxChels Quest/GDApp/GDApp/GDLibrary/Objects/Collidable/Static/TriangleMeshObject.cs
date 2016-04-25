@@ -27,9 +27,9 @@ namespace GDLibrary
      
         #endregion
 
-        public TriangleMeshObject(string id, ObjectType objectType, Transform3D transform, 
+        public TriangleMeshObject(string id, ObjectType objectType, Transform3D transform, Effect effect, 
             Texture2D texture, Model model, Color color, float alpha, MaterialProperties materialProperties)
-            : base(id, objectType, transform, texture, model, color, alpha)
+            : base(id, objectType, transform, effect, texture, model, color, alpha)
         {
             //get the primitive mesh which forms the skin
             TriangleMesh triangleMesh = GetTriangleMesh(model, transform);

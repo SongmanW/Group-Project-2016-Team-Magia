@@ -201,12 +201,15 @@ namespace GDApp
         #region Fields
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
-        private BasicEffect effect;
+        private BasicEffect primitiveEffect;
+        private BasicEffect texturedPrimitiveEffect;
+        private BasicEffect texturedModelEffect;
+        private Effect billboardEffect;
         private SpriteFont debugFont;
-        private BasicEffect textureEffect;
         private Texture2D texture;
         private Vector2 screenCentre;
-        
+        private Microsoft.Xna.Framework.Rectangle screenRectangle;
+
         private CameraManager cameraManager;
         private KeyboardManager keyboardManager;
         private MouseManager mouseManager;
@@ -260,6 +263,20 @@ namespace GDApp
         #endregion
 
         #region Properties
+        public Microsoft.Xna.Framework.Rectangle ScreenRectangle
+        {
+            get
+            {
+                return screenRectangle;
+            }
+        }
+        public SpriteBatch SpriteBatch
+        {
+            get
+            {
+                return this.spriteBatch;
+            }
+        }
         public int NextStep
         {
             get
@@ -348,7 +365,7 @@ namespace GDApp
             InitializeManagers(true);
             InitializeDictionaries();
             InitializeFonts();
-            InitializeEffect();
+            InitializeEffects();
 
             //InitializeSkyBox(1000);
             LoadModels();
@@ -373,7 +390,7 @@ namespace GDApp
 
         private void InitializeEventDispatcher()
         {
-            this.eventDispatcher = new EventDispatcher(this);
+            this.eventDispatcher = new EventDispatcher(this, 25);
             Components.Add(this.eventDispatcher);
         }
 
@@ -466,7 +483,7 @@ namespace GDApp
                 new Vector3(-90, 0, 0), 0.15f * Vector3.One,
                 Vector3.UnitX, Vector3.UnitY);
             this.playerActor = new PlayerObject("player",
-                ObjectType.Player, transform, null, model, Color.White, 1f, KeyData.Player_Keys, 3.75f, 11.5f, 1f, 1f);
+                ObjectType.Player, transform, this.texturedModelEffect, null, model, Color.White, 1f, KeyData.Player_Keys, 3.75f, 11.5f, 1f, 1f);
             this.playerActor.Enable(false, 100);
             this.objectManager.Add(this.playerActor);
             #endregion
@@ -474,7 +491,7 @@ namespace GDApp
             #region ExitDoor Model
             model = this.modelDictionary["door"];
             transform = new Transform3D(new Vector3(140, 0, 0), Vector3.Zero, 1f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            this.doorActor = new PawnCollidableObject("door", ObjectType.Door, transform, null, model, Color.White, 1f);
+            this.doorActor = new PawnCollidableObject("door", ObjectType.Door, transform, this.texturedModelEffect, null, model, Color.White, 1f);
             Vector3 scales = new Vector3(12, 250, 25);
             this.doorActor.AddPrimitive(new Box(transform.Translation, Matrix.Identity, scales), new MaterialProperties());
             this.doorActor.Enable(true, 2000);
@@ -484,7 +501,7 @@ namespace GDApp
             #region EntranceDoor Model
             model = this.modelDictionary["door"];
             transform = new Transform3D(new Vector3(-300, 0, 0), Vector3.Zero, 1f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            collObj = new PawnCollidableObject("door", ObjectType.Entrance, transform, null, model, Color.White, 1f);
+            collObj = new PawnCollidableObject("door", ObjectType.Entrance, transform, this.texturedModelEffect, null, model, Color.White, 1f);
             collObj.AddPrimitive(new Box(transform.Translation, Matrix.Identity, scales), new MaterialProperties());
             collObj.Enable(true, 2000);
 
@@ -495,7 +512,7 @@ namespace GDApp
             model = this.modelDictionary["room"];
             transform = new Transform3D(new Vector3(0, 0, 0), new Vector3(0,180,0), 1f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
             MaterialProperties material = new MaterialProperties(1f, 0.1f, 0.05f);
-            collidableObj = new CollidableObject("room", ObjectType.Room, transform, null, model, Color.White, 1);
+            collidableObj = new CollidableObject("room", ObjectType.Room, transform, this.texturedModelEffect, null, model, Color.White, 1);
             //floor
             scales = new Vector3(300, 1, 300);
             collidableObj.AddPrimitive(new Box(transform.Translation, Matrix.Identity, scales), material);
@@ -505,14 +522,14 @@ namespace GDApp
 
             scales = new Vector3(10, 100, 300);
             transform = new Transform3D(new Vector3(152, 0, 0), Vector3.Zero, scales, -Vector3.UnitZ, Vector3.UnitY);
-            zoneObj = new ZoneObject("roomwallback", ObjectType.Room, transform, true);
+            zoneObj = new ZoneObject("roomwallback", ObjectType.Room, transform, this.primitiveEffect, Color.Red, 1, true);
             zoneObj.AddPrimitive(new Box(transform.Translation, Matrix.Identity, transform.Scale));
             zoneObj.Enable();
 
             this.objectManager.Add(zoneObj);
             
             transform = new Transform3D(new Vector3(-152, 0, 0), Vector3.Zero, scales, -Vector3.UnitZ, Vector3.UnitY);
-            zoneObj = new ZoneObject("roomwallfront", ObjectType.Room, transform, true);
+            zoneObj = new ZoneObject("roomwallfront", ObjectType.Room, transform, this.primitiveEffect, Color.Red, 1, true);
             zoneObj.AddPrimitive(new Box(transform.Translation, Matrix.Identity, transform.Scale));
             zoneObj.Enable();
 
@@ -520,14 +537,14 @@ namespace GDApp
 
             scales = new Vector3(300, 100, 5);
             transform = new Transform3D(new Vector3(0, 0, 130), Vector3.Zero, scales, -Vector3.UnitZ, Vector3.UnitY);
-            zoneObj = new ZoneObject("roomwallright", ObjectType.Room, transform, true);
+            zoneObj = new ZoneObject("roomwallright", ObjectType.Room, transform, this.primitiveEffect, Color.Red, 1, true);
             zoneObj.AddPrimitive(new Box(transform.Translation, Matrix.Identity, transform.Scale));
             zoneObj.Enable();
 
             this.objectManager.Add(zoneObj);
 
             transform = new Transform3D(new Vector3(0, 0, -130), Vector3.Zero, scales, -Vector3.UnitZ, Vector3.UnitY);
-            zoneObj = new ZoneObject("roomwallleft", ObjectType.Room, transform, true);
+            zoneObj = new ZoneObject("roomwallleft", ObjectType.Room, transform, this.primitiveEffect, Color.Red, 1, true);
             zoneObj.AddPrimitive(new Box(transform.Translation, Matrix.Identity, transform.Scale));
             zoneObj.Enable();
 
@@ -537,7 +554,7 @@ namespace GDApp
             #region Rotationthingy Model
             model = this.modelDictionary["rotation"];
             transform = new Transform3D(new Vector3(0, -57, 0), Vector3.Zero, 0.6f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            this.rotator = new PawnCollidableObject("RotationThingy", ObjectType.Rotation, transform, null, model, Color.White, 1);
+            this.rotator = new PawnCollidableObject("RotationThingy", ObjectType.Rotation, transform, this.texturedModelEffect, null, model, Color.White, 1);
             Matrix rot;
             this.rotator.AddPrimitive(new Capsule(transform.Translation - new Vector3(0, 0, 20 * 0.6f), Matrix.Identity, 2.5f * 0.6f, 40 * 0.6f), new MaterialProperties());
             Matrix.CreateRotationY(MathHelper.ToRadians(90), out rot);
@@ -552,7 +569,7 @@ namespace GDApp
             #region Wall right Model
             model = this.modelDictionary["wall"];
             transform = new Transform3D(new Vector3(-4f, -1.8f, -69.8f), new Vector3(0, 90, 0), 1f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            wall1 = new PawnCollidableObject("Wall1", ObjectType.Wall, transform, null, model, Color.Gray, 1);
+            wall1 = new PawnCollidableObject("Wall1", ObjectType.Wall, transform, this.texturedModelEffect, null, model, Color.Gray, 1);
             wall1.Add(new RotatorController("wall1Rotator", wall1, true, this.rotator));
             scales = new Vector3(300, 100, 12);
             wall1.AddPrimitive(new Box(transform.Translation, Matrix.Identity, scales), material);
@@ -563,7 +580,7 @@ namespace GDApp
             #region Wall left Model
             model = this.modelDictionary["wall"];
             transform = new Transform3D(new Vector3(-4f, -1.8f, 69.8f), new Vector3(0,90,0), 1f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            wall2 = new PawnCollidableObject("Wall2", ObjectType.Wall, transform, null, model, Color.White, 1);
+            wall2 = new PawnCollidableObject("Wall2", ObjectType.Wall, transform, this.texturedModelEffect, null, model, Color.White, 1);
             wall2.Add(new RotatorController("wall2Rotator", wall2, true, this.rotator));
             wall2.AddPrimitive(new Box(transform.Translation, Matrix.Identity, scales), material);
             wall2.Enable(true, 2000);
@@ -575,7 +592,7 @@ namespace GDApp
             model = this.modelDictionary["plate"];
             scales = new Vector3(12.5f, 2.5f, 12.5f);
             transform = new Transform3D(new Vector3(125, 0, 0), new Vector3(0, 90, 0), Vector3.One * 0.5f, -Vector3.UnitZ, Vector3.UnitY);
-            step1 = new PawnCollidableObject("PressurePlate1", ObjectType.Plate, transform, texture, model, Color.White, 1);
+            step1 = new PawnCollidableObject("PressurePlate1", ObjectType.Plate, transform, this.texturedModelEffect, texture, model, Color.White, 1);
             step1.AddPrimitive(new Box(transform.Translation, Matrix.Identity, scales), new MaterialProperties());
             step1.Enable(true, 2000);
 
@@ -583,7 +600,7 @@ namespace GDApp
             #endregion
             #region Pressure Plate Right Up Model
             transform = new Transform3D(new Vector3(26, 0, 110), Vector3.Zero, Vector3.One * 0.5f, -Vector3.UnitZ, Vector3.UnitY);
-            step4 = new PawnCollidableObject("PressurePlate4", ObjectType.Plate, transform, texture, model, Color.White, 1);
+            step4 = new PawnCollidableObject("PressurePlate4", ObjectType.Plate, transform, this.texturedModelEffect, texture, model, Color.White, 1);
             step4.AddPrimitive(new Box(transform.Translation, Matrix.Identity, scales), new MaterialProperties());
             step4.Enable(true, 2000);
 
@@ -591,7 +608,7 @@ namespace GDApp
             #endregion
             #region Pressure Plate Right Down Model
             transform = new Transform3D(new Vector3(-36, 0, 110), Vector3.Zero, Vector3.One * 0.5f, -Vector3.UnitZ, Vector3.UnitY);
-            step5 = new PawnCollidableObject("PressurePlate5", ObjectType.Plate, transform, texture, model, Color.White, 1);
+            step5 = new PawnCollidableObject("PressurePlate5", ObjectType.Plate, transform, this.texturedModelEffect, texture, model, Color.White, 1);
             step5.AddPrimitive(new Box(transform.Translation, Matrix.Identity, scales), new MaterialProperties());
             step5.Enable(true, 2000);
             
@@ -599,7 +616,7 @@ namespace GDApp
             #endregion
             #region Pressure Plate Left Up Model
             transform = new Transform3D(new Vector3(26, 0, -110), Vector3.Zero, Vector3.One*0.5f, -Vector3.UnitZ, Vector3.UnitY);
-            step2 = new PawnCollidableObject("PressurePlate2", ObjectType.Plate, transform, texture, model, Color.White, 1);
+            step2 = new PawnCollidableObject("PressurePlate2", ObjectType.Plate, transform, this.texturedModelEffect, null, model, Color.White, 1);
             step2.AddPrimitive(new Box(transform.Translation, Matrix.Identity, scales), new MaterialProperties());
             step2.Enable(true, 2000);
             
@@ -607,7 +624,7 @@ namespace GDApp
             #endregion
             #region Pressure Plate Left Down Model
             transform = new Transform3D(new Vector3(-36, 0, -110), Vector3.Zero, Vector3.One * 0.5f, -Vector3.UnitZ, Vector3.UnitY);
-            step3 = new PawnCollidableObject("PressurePlate3", ObjectType.Plate, transform, texture, model, Color.White, 1);
+            step3 = new PawnCollidableObject("PressurePlate3", ObjectType.Plate, transform, this.texturedModelEffect, null, model, Color.White, 1);
             step3.AddPrimitive(new Box(transform.Translation, Matrix.Identity, scales), new MaterialProperties());
             step3.Enable(true, 2000);
 
@@ -617,69 +634,69 @@ namespace GDApp
             #region Traps
             model = this.modelDictionary["trap"];
             transform = new Transform3D(new Vector3(80, 20f, 105), Vector3.UnitZ * 90, 0.5f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            trap1 = new PawnModelObject("PressurePlate1", ObjectType.Plate, transform, texture, model);
+            trap1 = new PawnModelObject("PressurePlate1", ObjectType.Plate, transform, this.texturedModelEffect,texture, model, Color.White, 1);
             this.objectManager.Add(trap1);
 
             transform = new Transform3D(new Vector3(80, 20f, 115), Vector3.UnitZ * 90, 0.5f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            trap2 = new PawnModelObject("PressurePlate1", ObjectType.Plate, transform, texture, model);
+            trap2 = new PawnModelObject("PressurePlate1", ObjectType.Plate, transform, this.texturedModelEffect, texture, model, Color.White, 1);
             this.objectManager.Add(trap2);
 
             transform = new Transform3D(new Vector3(80, 20f, -105), Vector3.UnitZ * 90, 0.5f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            trap3 = new PawnModelObject("PressurePlate1", ObjectType.Plate, transform, texture, model);
+            trap3 = new PawnModelObject("PressurePlate1", ObjectType.Plate, transform, this.texturedModelEffect, texture, model, Color.White, 1);
             this.objectManager.Add(trap3);
 
             transform = new Transform3D(new Vector3(80, 20f, -115), Vector3.UnitZ * 90, 0.5f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            trap4 = new PawnModelObject("PressurePlate1", ObjectType.Plate, transform, texture, model);
+            trap4 = new PawnModelObject("PressurePlate1", ObjectType.Plate, transform, this.texturedModelEffect, texture, model, Color.White, 1);
             this.objectManager.Add(trap4);
 
             transform = new Transform3D(new Vector3(-90, 20f, 105), -Vector3.UnitZ * 90, 0.5f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            trap5 = new PawnModelObject("PressurePlate1", ObjectType.Plate, transform, texture, model);
+            trap5 = new PawnModelObject("PressurePlate1", ObjectType.Plate, transform, this.texturedModelEffect, texture, model, Color.White, 1);
             this.objectManager.Add(trap5);
 
             transform = new Transform3D(new Vector3(-90, 20f, 115), -Vector3.UnitZ * 90, 0.5f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            trap6 = new PawnModelObject("PressurePlate1", ObjectType.Plate, transform, texture, model);
+            trap6 = new PawnModelObject("PressurePlate1", ObjectType.Plate, transform, this.texturedModelEffect, texture, model, Color.White, 1);
             this.objectManager.Add(trap6);
 
             transform = new Transform3D(new Vector3(-90, 20f, -105), -Vector3.UnitZ * 90, 0.5f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            trap7 = new PawnModelObject("PressurePlate1", ObjectType.Plate, transform, texture, model);
+            trap7 = new PawnModelObject("PressurePlate1", ObjectType.Plate, transform, this.texturedModelEffect, texture, model, Color.White, 1);
             this.objectManager.Add(trap7);
 
             transform = new Transform3D(new Vector3(-90, 20f, -115), -Vector3.UnitZ * 90, 0.5f * Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            trap8 = new PawnModelObject("PressurePlate1", ObjectType.Plate, transform, texture, model);
+            trap8 = new PawnModelObject("PressurePlate1", ObjectType.Plate, transform, this.texturedModelEffect, texture, model, Color.White, 1);
             this.objectManager.Add(trap8);
             #endregion
             #region Arrow
             model = this.modelDictionary["arrow"];
             transform = new Transform3D(new Vector3(80, 20f, 105), Vector3.UnitZ * 90,  Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            arrow1 = new PawnModelObject("Arrow1", ObjectType.Plate, transform, null, model);
+            arrow1 = new PawnModelObject("Arrow1", ObjectType.Plate, transform, this.texturedModelEffect, texture, model, Color.White, 1);
             this.objectManager.Add(arrow1);
 
             transform = new Transform3D(new Vector3(80, 20f, 115), Vector3.UnitZ * 90,  Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            arrow2 = new PawnModelObject("Arrow2", ObjectType.Plate, transform, null, model);
+            arrow2 = new PawnModelObject("Arrow2", ObjectType.Plate, transform, this.texturedModelEffect, texture, model, Color.White, 1);
             this.objectManager.Add(arrow2);
 
             transform = new Transform3D(new Vector3(80, 20f, -105), Vector3.UnitZ * 90,  Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            arrow3 = new PawnModelObject("Arrow3", ObjectType.Plate, transform, null, model);
+            arrow3 = new PawnModelObject("Arrow3", ObjectType.Plate, transform, this.texturedModelEffect, texture, model, Color.White, 1);
             this.objectManager.Add(arrow3);
 
             transform = new Transform3D(new Vector3(80, 20f, -115), Vector3.UnitZ * 90,  Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            arrow4 = new PawnModelObject("Arrow4", ObjectType.Plate, transform, null, model);
+            arrow4 = new PawnModelObject("Arrow4", ObjectType.Plate, transform, this.texturedModelEffect, texture, model, Color.White, 1);
             this.objectManager.Add(arrow4);
 
             transform = new Transform3D(new Vector3(-90, 20f, 105), -Vector3.UnitZ * 90,  Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            arrow5 = new PawnModelObject("Arrow5", ObjectType.Plate, transform, null, model);
+            arrow5 = new PawnModelObject("Arrow5", ObjectType.Plate, transform, this.texturedModelEffect, texture, model, Color.White, 1);
             this.objectManager.Add(arrow5);
 
             transform = new Transform3D(new Vector3(-90, 20f, 115), -Vector3.UnitZ * 90,  Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            arrow6 = new PawnModelObject("Arrow6", ObjectType.Plate, transform, null, model);
+            arrow6 = new PawnModelObject("Arrow6", ObjectType.Plate, transform, this.texturedModelEffect, texture, model, Color.White, 1);
             this.objectManager.Add(arrow6);
 
             transform = new Transform3D(new Vector3(-90, 20f, -105), -Vector3.UnitZ * 90,  Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            arrow7 = new PawnModelObject("Arrow7", ObjectType.Plate, transform, null, model);
+            arrow7 = new PawnModelObject("Arrow7", ObjectType.Plate, transform, this.texturedModelEffect, texture, model, Color.White, 1);
             this.objectManager.Add(arrow7);
 
             transform = new Transform3D(new Vector3(-90, 20f, -115), -Vector3.UnitZ * 90, Vector3.One, -Vector3.UnitZ, Vector3.UnitY);
-            arrow8 = new PawnModelObject("Arrow8", ObjectType.Plate, transform, null, model);
+            arrow8 = new PawnModelObject("Arrow8", ObjectType.Plate, transform, this.texturedModelEffect, texture, model, Color.White, 1);
             this.objectManager.Add(arrow8);
 
             scales = new Vector3(300, 100, 20);
@@ -712,65 +729,14 @@ namespace GDApp
 
         }
 
-        private void InitializeSkyBox(int scale)
-        {
-            VertexPositionColorTexture[] vertices = VertexFactory.GetTextureQuadVertices();
-
-            Texture2D texture = null;
-            Transform3D transform = null;
-            TexturedPrimitiveObject texturedPrimitive = null, clone = null;
-
-            int halfScale = scale / 2;
-
-            texture = Content.Load<Texture2D>("Assets\\Textures\\Game\\Skybox\\back");
-            transform = new Transform3D(new Vector3(0, 0, -halfScale), new Vector3(0, 0, 0),
-                scale * Vector3.One, Vector3.UnitZ, Vector3.UnitY);
-
-            texturedPrimitive = new TexturedPrimitiveObject("sky", ObjectType.Decorator,
-                transform, vertices, this.textureEffect, Microsoft.Xna.Framework.Graphics.PrimitiveType.TriangleStrip, 2, texture);
-            this.objectManager.Add(texturedPrimitive);
-
-            //top
-            clone = (TexturedPrimitiveObject)texturedPrimitive.Clone();
-            clone.Texture = Content.Load<Texture2D>("Assets\\Textures\\Game\\Skybox\\sky");
-            clone.Transform3D.Translation = new Vector3(0, halfScale, 0);
-            clone.Transform3D.Rotation = new Vector3(90, -90, 0);
-            this.objectManager.Add(clone);
-
-            //left
-            clone = (TexturedPrimitiveObject)texturedPrimitive.Clone();
-            clone.Texture = Content.Load<Texture2D>("Assets\\Textures\\Game\\Skybox\\left");
-            clone.Transform3D.Translation = new Vector3(-halfScale, 0, 0);
-            clone.Transform3D.Rotation = new Vector3(0, 90, 0);
-            this.objectManager.Add(clone);
-
-            //right
-            clone = (TexturedPrimitiveObject)texturedPrimitive.Clone();
-            clone.Texture = Content.Load<Texture2D>("Assets\\Textures\\Game\\Skybox\\right");
-            clone.Transform3D.Translation = new Vector3(halfScale, 0, 0);
-            clone.Transform3D.Rotation = new Vector3(0, -90, 0);
-            this.objectManager.Add(clone);
-          
-            //front
-            clone = (TexturedPrimitiveObject)texturedPrimitive.Clone();
-            clone.Texture = Content.Load<Texture2D>("Assets\\Textures\\Game\\Skybox\\front");
-            clone.Transform3D.Translation = new Vector3(0, 0, halfScale);
-            clone.Transform3D.Rotation = new Vector3(0, 180, 0);
-            this.objectManager.Add(clone);
-
-            //grass
-            clone = (TexturedPrimitiveObject)texturedPrimitive.Clone();
-            clone.Texture = Content.Load<Texture2D>("Assets\\Textures\\Game\\Foliage\\Ground\\grass1");
-            clone.Transform3D.Translation = new Vector3(0, -5, 0);
-            clone.Transform3D.Rotation = new Vector3(-90, 0, 0);
-            this.objectManager.Add(clone);
-        }
+        
 
         private void IntializeGraphics(int width, int height)
         {
             this.graphics.PreferredBackBufferWidth = width;
             this.graphics.PreferredBackBufferHeight = height;
             this.screenCentre = new Vector2(width/2, height/2);
+            this.screenRectangle = new Microsoft.Xna.Framework.Rectangle(0, 0, graphics.PreferredBackBufferWidth, graphics.PreferredBackBufferHeight);
             this.graphics.ApplyChanges();
         }
 
@@ -835,74 +801,29 @@ namespace GDApp
         }
         #endregion
 
-        private void InitializeTexturedPrimitives()
-        {
-            RasterizerState rasterizerState = new RasterizerState();
-
-            this.texture = Content.Load<Texture2D>("Assets\\Textures\\Game\\symbol1");
-            Components.Add(new TexturedQuad(this, this.texture, this.textureEffect,
-                    rasterizerState, new Vector3(50, 50, 280),
-                    new Vector3(0, MathHelper.ToRadians(180), 0), new Vector3(15, 15, 15), Color.White));
-
-            this.texture = Content.Load<Texture2D>("Assets\\Textures\\Game\\symbol2");
-            Components.Add(new TexturedQuad(this, this.texture, this.textureEffect,
-                    rasterizerState, new Vector3(50, 50, -280),
-                    new Vector3(0, MathHelper.ToRadians(0), 0), new Vector3(15, 15, 15), Color.White));
-
-            this.texture = Content.Load<Texture2D>("Assets\\Textures\\Game\\symbol3");
-            Components.Add(new TexturedQuad(this, this.texture, this.textureEffect,
-                    rasterizerState, new Vector3(-50, 50, 280),
-                    new Vector3(0, MathHelper.ToRadians(180), 0), new Vector3(15, 15, 15), Color.White));
-
-            this.texture = Content.Load<Texture2D>("Assets\\Textures\\Game\\symbol4");
-            Components.Add(new TexturedQuad(this, this.texture, this.textureEffect,
-                    rasterizerState, new Vector3(-50, 50, -280),
-                    new Vector3(0, MathHelper.ToRadians(0), 0), new Vector3(15, 15, 15), Color.White));
-
-
-        }
-
         private void InitializeFonts()
         {
             this.debugFont = Content.Load<SpriteFont>("Assets\\Debug\\Fonts\\debug");
         }
+        
 
-        private void InitializeWireframePrimitives()
+        private void InitializeEffects()
         {
-            RasterizerState rasterizerState = new RasterizerState();
+            this.primitiveEffect = new BasicEffect(graphics.GraphicsDevice);
+            this.primitiveEffect.VertexColorEnabled = true;
 
-            //OriginHelper originHelper
-            //    = new OriginHelper(this, this.effect,
-            //        rasterizerState, Vector3.Zero,
-            //        Vector3.Zero, Vector3.One);
+            this.texturedPrimitiveEffect = new BasicEffect(graphics.GraphicsDevice);
+            this.texturedPrimitiveEffect.VertexColorEnabled = true;
+            this.texturedPrimitiveEffect.TextureEnabled = true;
 
-            //Components.Add(originHelper);
+            this.texturedModelEffect = new BasicEffect(graphics.GraphicsDevice);
+            // this.texturedModelEffect.VertexColorEnabled = true; //bug - 22/4/16
+            this.texturedModelEffect.TextureEnabled = false;
 
-            //creates the vertices and passes them each DRAW call to the GPU - inefficient
-            Components.Add(new UnbufferedCubeHelper(this, this.effect,
-                  rasterizerState, new Vector3(-5, 2, 0),
-                  Vector3.Zero, 0.5f * Vector3.One, Color.Red));  //left of the origin
-
-            //creates the vertices BUT moves the data onto a vertex buffer on the VRAM of the GPU - efficient but stil requires a large number of duplicate vertices to draw the cube
-            Components.Add(new BufferedCubeHelper(this, this.effect,
-                  rasterizerState, new Vector3(0, 2, 0),
-                  new Vector3(0, MathHelper.ToRadians(45), 0), new Vector3(1, 2, 1), Color.Green)); //rotated 45 degrees on Y axis, above the origin, scaled on Y axis
-
-            //creates the vertices and indices BUT moves the data onto a vertex and index buffer on the VRAM of the GPU - MOST efficient since indices indicate which vertices from the vertex buffer are re-used
-            Components.Add(new IndexedCubeHelper(this, this.effect,
-               rasterizerState, new Vector3(5, 2, 0),
-               new Vector3(0, 0, 0), new Vector3(2, 1, 1), Color.Blue)); //no rotation, above the origin, scaled on X axis
+            //used for billboards
+            this.billboardEffect = Content.Load<Effect>("Assets/Effects/Billboard");
         }
-
-        private void InitializeEffect()
-        {
-            this.effect = new BasicEffect(graphics.GraphicsDevice);
-            this.effect.VertexColorEnabled = true;
-
-            this.textureEffect = new BasicEffect(graphics.GraphicsDevice);
-            this.textureEffect.VertexColorEnabled = true;
-            this.textureEffect.TextureEnabled = true;  
-        }
+    
 
         private void InitializeCamera()
         {

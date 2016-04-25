@@ -9,47 +9,35 @@ namespace GDLibrary
     {
 
         #region Fields
-        private VertexPositionColor[] vertices;
-        private BasicEffect effect;
-        private PrimitiveType primitiveType;
-        private int primitiveCount;
+        private IVertexData vertexData;
+        private Effect effect;
         #endregion
 
         #region Properties
-        //add...
+        public IVertexData VertexData
+        {
+            get
+            {
+                return this.vertexData;
+            }
+            set
+            {
+                this.vertexData = value;
+            }
+        }
         #endregion
 
         public PrimitiveObject(string id, ObjectType objectType,
-            Transform3D transform, VertexPositionColor[] vertices,
-            BasicEffect effect, PrimitiveType primitiveType, int primitiveCount)
-            : base(id, objectType, transform)
+            Transform3D transform, IVertexData vertexData, Effect effect, Color color, float alpha)
+            : base(id, objectType, transform, effect, color, alpha)
         {
-          
-            this.vertices = vertices;
+            this.vertexData = vertexData;
             this.effect = effect;
-            this.primitiveType = primitiveType;
-            this.primitiveCount = primitiveCount;
-        }
-
-        public override void Draw(GameTime gameTime)
-        {
-            this.effect.World = this.Transform3D.World;
-            this.effect.View = game.CameraManager.ActiveCamera.View;
-            this.effect.Projection = game.CameraManager.ActiveCamera.ProjectionParameters.Projection;
-
-            //load the GFX card with the W, V, and P values
-            this.effect.CurrentTechnique.Passes[0].Apply();
-
-            //send the vertices to the shader to be rendered
-            this.effect.GraphicsDevice.DrawUserPrimitives<VertexPositionColor>(this.primitiveType, 
-                this.vertices, 0, this.primitiveCount);
         }
 
         public object Clone()
         {
-            return new PrimitiveObject(this.ID, this.ObjectType,
-                (Transform3D)this.Transform3D.Clone(), this.vertices,
-                this.effect, this.primitiveType, this.primitiveCount);
+            return new PrimitiveObject(this.ID, this.ObjectType, (Transform3D)this.Transform3D.Clone(), this.vertexData, this.Effect, this.Color, this.Alpha);
         }
     }
 }

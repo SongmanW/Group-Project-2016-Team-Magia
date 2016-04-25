@@ -4,6 +4,7 @@ using JigLibX.Geometry;
 using JigLibX.Math;
 using JigLibX.Physics;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 
 namespace GDLibrary
 {
@@ -57,8 +58,8 @@ namespace GDLibrary
         #endregion
 
         public ZoneObject(string id, ObjectType objectType,
-            Transform3D transform, bool isImpenetrable)
-            : base(id, objectType, transform)
+            Transform3D transform, Effect effect, Color color, float alpha, bool isImpenetrable)
+            : base(id, objectType, transform, effect, color, alpha)
         {
             //set body and skin for this zone
             this.body = new Body();

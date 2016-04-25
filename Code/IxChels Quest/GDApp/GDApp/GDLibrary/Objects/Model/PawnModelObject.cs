@@ -24,8 +24,8 @@ namespace GDLibrary
         #endregion
 
         public PawnModelObject(string id, ObjectType objectType,
-            Transform3D transform, Texture2D texture, Model model)
-                : base(id, objectType, transform, texture, model)
+            Transform3D transform, Effect effect, Texture2D texture, Model model, Color color, float alpha)
+                : base(id, objectType, transform, effect, texture, model, color, alpha)
         {
 
         }
@@ -69,8 +69,11 @@ namespace GDLibrary
                 = new PawnModelObject("clone - " + this.ID,
                     this.ObjectType,
                     (Transform3D)this.Transform3D.Clone(), //deep copy
+                    this.Effect.Clone(),
                     this.Texture,
-                    this.Model); //shallow or deep?
+                    this.Model,
+                    this.Color,
+                    this.Alpha); //shallow or deep?
 
             for (int i = 0; i < this.controllerList.Count; i++)
             {

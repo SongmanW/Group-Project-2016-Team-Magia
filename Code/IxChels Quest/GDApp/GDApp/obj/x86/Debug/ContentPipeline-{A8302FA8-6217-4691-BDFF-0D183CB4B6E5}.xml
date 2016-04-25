@@ -389,6 +389,186 @@
       <Time>2016-03-14T00:01:49.47673+00:00</Time>
     </Item>
     <Item>
+      <Source>Assets\skin\sign1.png</Source>
+      <Name>Assets\skin\sign1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\skin\sign1.xnb</Output>
+      <Time>2016-04-18T22:06:33.4763589+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\skin\sign2.png</Source>
+      <Name>Assets\skin\sign2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\skin\sign2.xnb</Output>
+      <Time>2016-04-18T22:06:33.4773596+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\skin\sign3.png</Source>
+      <Name>Assets\skin\sign3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\skin\sign3.xnb</Output>
+      <Time>2016-04-18T22:06:33.4783611+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\skin\sign4.png</Source>
+      <Name>Assets\skin\sign4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\skin\sign4.xnb</Output>
+      <Time>2016-04-18T22:06:33.4793613+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\skin\Brick_Tut_35.jpg</Source>
+      <Name>Assets\skin\Brick_Tut_35</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\skin\Brick_Tut_35.xnb</Output>
+      <Time>2016-04-18T22:06:33.4753571+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Models\skin\mfjyroO.jpg</Source>
+      <Name>Assets\Models\skin\mfjyroO</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\skin\mfjyroO.xnb</Output>
+      <Time>2016-04-18T22:06:33.4683552+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Models\skin\sign1.png</Source>
+      <Name>Assets\Models\skin\sign1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\skin\sign1.xnb</Output>
+      <Time>2016-04-18T22:06:33.469355+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Models\skin\sign2.png</Source>
+      <Name>Assets\Models\skin\sign2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\skin\sign2.xnb</Output>
+      <Time>2016-04-18T22:06:33.4703537+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Models\skin\sign3.png</Source>
+      <Name>Assets\Models\skin\sign3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\skin\sign3.xnb</Output>
+      <Time>2016-04-18T22:06:33.4713544+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Models\skin\sign4.png</Source>
+      <Name>Assets\Models\skin\sign4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\skin\sign4.xnb</Output>
+      <Time>2016-04-18T22:06:33.4723555+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Models\skin\Brick_Tut_35.jpg</Source>
+      <Name>Assets\Models\skin\Brick_Tut_35</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\skin\Brick_Tut_35.xnb</Output>
+      <Time>2016-04-18T22:06:33.4673537+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\skin\mfjyroO.jpg</Source>
+      <Name>Assets\skin\mfjyroO</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\skin\mfjyroO.xnb</Output>
+      <Time>2016-04-21T13:13:21.7598171+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Models\GP modle\coat.jpg</Source>
+      <Name>Assets\Models\GP modle\coat</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\GP modle\coat.xnb</Output>
+      <Time>2016-04-22T13:35:17.8923831+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Models\GP modle\eye.jpg</Source>
+      <Name>Assets\Models\GP modle\eye</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\GP modle\eye.xnb</Output>
+      <Time>2016-04-22T13:34:50.2611093+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Models\GP modle\fastener.jpg</Source>
+      <Name>Assets\Models\GP modle\fastener</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\GP modle\fastener.xnb</Output>
+      <Time>2016-04-22T13:37:01.2560906+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Models\GP modle\hand.jpg</Source>
+      <Name>Assets\Models\GP modle\hand</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\GP modle\hand.xnb</Output>
+      <Time>2016-04-22T13:35:44.1593235+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Models\GP modle\head.jpg</Source>
+      <Name>Assets\Models\GP modle\head</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\GP modle\head.xnb</Output>
+      <Time>2016-04-22T13:37:12.2673099+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Models\GP modle\leg.jpg</Source>
+      <Name>Assets\Models\GP modle\leg</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\GP modle\leg.xnb</Output>
+      <Time>2016-04-22T13:36:36.7507277+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Models\GP modle\shouse.jpg</Source>
+      <Name>Assets\Models\GP modle\shouse</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\GP modle\shouse.xnb</Output>
+      <Time>2016-04-22T13:37:26.499334+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Models\skin\RUSTY-METAL-TEXTURE.jpg</Source>
+      <Name>Assets\Models\skin\RUSTY-METAL-TEXTURE</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\skin\RUSTY-METAL-TEXTURE.xnb</Output>
+      <Time>2016-04-22T15:25:36.0096636+01:00</Time>
+    </Item>
+    <Item>
       <Source>Assets\Models\generic\box.FBX</Source>
       <Name>Assets\Models\generic\box</Name>
       <Importer>FbxImporter</Importer>
@@ -398,7 +578,7 @@
       <Time>2016-02-29T00:27:28.4858047+00:00</Time>
       <Dependency>
         <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\generic\box_0.xml</Key>
-        <Value>2016-04-11T22:48:00.1432021+01:00</Value>
+        <Value>2016-04-25T13:42:14.7750816+01:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -411,7 +591,7 @@
       <Time>2016-02-29T00:27:28.4858047+00:00</Time>
       <Dependency>
         <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\generic\cylinder_0.xml</Key>
-        <Value>2016-04-11T22:48:00.2689864+01:00</Value>
+        <Value>2016-04-25T13:42:14.8643573+01:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -424,7 +604,7 @@
       <Time>2016-02-28T20:38:54.3538442+00:00</Time>
       <Dependency>
         <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\characterModelv2_0.xml</Key>
-        <Value>2016-04-11T22:48:00.4677781+01:00</Value>
+        <Value>2016-04-25T13:42:14.9779344+01:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -437,7 +617,7 @@
       <Time>2016-02-28T20:38:54.3538442+00:00</Time>
       <Dependency>
         <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\mm_0.xml</Key>
-        <Value>2016-04-11T22:48:00.5792566+01:00</Value>
+        <Value>2016-04-25T13:42:15.0660058+01:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -450,7 +630,7 @@
       <Time>2016-02-28T21:11:28.5347361+00:00</Time>
       <Dependency>
         <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\door_0.xml</Key>
-        <Value>2016-04-11T22:48:00.6241169+01:00</Value>
+        <Value>2016-04-25T13:42:15.1027833+01:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -463,7 +643,7 @@
       <Time>2016-02-28T21:11:28.535237+00:00</Time>
       <Dependency>
         <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\plate_0.xml</Key>
-        <Value>2016-04-11T22:48:00.6634284+01:00</Value>
+        <Value>2016-04-25T13:42:15.1361709+01:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -476,7 +656,7 @@
       <Time>2016-02-28T21:11:28.5357375+00:00</Time>
       <Dependency>
         <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\room_0.xml</Key>
-        <Value>2016-04-11T22:48:00.7079596+01:00</Value>
+        <Value>2016-04-25T13:42:15.1723899+01:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -489,7 +669,7 @@
       <Time>2016-02-28T21:11:28.5377377+00:00</Time>
       <Dependency>
         <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\rotation_0.xml</Key>
-        <Value>2016-04-11T22:48:00.846018+01:00</Value>
+        <Value>2016-04-25T13:42:15.3235352+01:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -502,7 +682,7 @@
       <Time>2016-02-28T21:11:28.5382386+00:00</Time>
       <Dependency>
         <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\wall_0.xml</Key>
-        <Value>2016-04-11T22:48:00.8961702+01:00</Value>
+        <Value>2016-04-25T13:42:15.365521+01:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -515,7 +695,7 @@
       <Time>2016-02-29T00:27:28.4858047+00:00</Time>
       <Dependency>
         <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\generic\dome_0.xml</Key>
-        <Value>2016-04-11T22:48:01.0115732+01:00</Value>
+        <Value>2016-04-25T13:42:15.4464037+01:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -528,7 +708,7 @@
       <Time>2016-02-29T00:27:28.4858047+00:00</Time>
       <Dependency>
         <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\generic\hedra_0.xml</Key>
-        <Value>2016-04-11T22:48:01.0549292+01:00</Value>
+        <Value>2016-04-25T13:42:15.4820413+01:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -541,7 +721,7 @@
       <Time>2016-02-29T00:27:28.4858047+00:00</Time>
       <Dependency>
         <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\generic\octahedron_0.xml</Key>
-        <Value>2016-04-11T22:48:01.0956484+01:00</Value>
+        <Value>2016-04-25T13:42:15.5160691+01:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -554,7 +734,7 @@
       <Time>2016-02-29T00:27:28.4858047+00:00</Time>
       <Dependency>
         <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\generic\plane_0.xml</Key>
-        <Value>2016-04-11T22:48:01.1696774+01:00</Value>
+        <Value>2016-04-25T13:42:15.5783982+01:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -567,7 +747,7 @@
       <Time>2016-02-29T00:27:28.4858047+00:00</Time>
       <Dependency>
         <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\generic\prism_0.xml</Key>
-        <Value>2016-04-11T22:48:01.2097089+01:00</Value>
+        <Value>2016-04-25T13:42:15.6141712+01:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -580,7 +760,7 @@
       <Time>2016-02-29T00:27:28.5024348+00:00</Time>
       <Dependency>
         <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\generic\sphere_0.xml</Key>
-        <Value>2016-04-11T22:48:01.2802491+01:00</Value>
+        <Value>2016-04-25T13:42:15.6623165+01:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -593,7 +773,7 @@
       <Time>2016-02-29T00:27:28.503936+00:00</Time>
       <Dependency>
         <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\generic\spindle_0.xml</Key>
-        <Value>2016-04-11T22:48:01.3287889+01:00</Value>
+        <Value>2016-04-25T13:42:15.7035251+01:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -606,7 +786,7 @@
       <Time>2016-02-29T00:27:28.505438+00:00</Time>
       <Dependency>
         <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\generic\torus_0.xml</Key>
-        <Value>2016-04-11T22:48:01.381818+01:00</Value>
+        <Value>2016-04-25T13:42:15.746193+01:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -619,7 +799,7 @@
       <Time>2016-02-29T00:27:28.508798+00:00</Time>
       <Dependency>
         <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\generic\torusknot_0.xml</Key>
-        <Value>2016-04-11T22:48:01.4734505+01:00</Value>
+        <Value>2016-04-25T13:42:15.8195701+01:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -632,7 +812,7 @@
       <Time>2016-03-08T13:45:14.1739571+00:00</Time>
       <Dependency>
         <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\arrow_0.xml</Key>
-        <Value>2016-04-11T22:48:01.5704297+01:00</Value>
+        <Value>2016-04-25T13:42:15.8655341+01:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -645,8 +825,329 @@
       <Time>2016-03-08T13:45:14.1739571+00:00</Time>
       <Dependency>
         <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\trap_0.xml</Key>
-        <Value>2016-04-11T22:48:01.6290421+01:00</Value>
+        <Value>2016-04-25T13:42:15.9176595+01:00</Value>
       </Dependency>
+    </Item>
+    <Item>
+      <Source>Assets\Models\DoorV1.FBX</Source>
+      <Name>Assets\Models\DoorV1</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\DoorV1.xnb</Output>
+      <Time>2016-04-17T23:36:55.7937463+01:00</Time>
+      <Dependency>
+        <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\DoorV1_0.xml</Key>
+        <Value>2016-04-25T13:42:15.9775342+01:00</Value>
+      </Dependency>
+      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\grey-stone-concrete-wall-with-sm_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Assets\Models\roomV1.FBX</Source>
+      <Name>Assets\Models\roomV1</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\roomV1.xnb</Output>
+      <Time>2016-04-17T23:36:55.8327795+01:00</Time>
+      <Dependency>
+        <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\roomV1_0.xml</Key>
+        <Value>2016-04-25T13:42:23.0618669+01:00</Value>
+      </Dependency>
+      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\mfjyroO_0.xnb</Request>
+      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\sign4_0.xnb</Request>
+      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\sign3_0.xnb</Request>
+      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\sign2_0.xnb</Request>
+      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\sign1_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Assets\Models\roomV2.FBX</Source>
+      <Name>Assets\Models\roomV2</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\roomV2.xnb</Output>
+      <Time>2016-04-17T23:36:55.8718056+01:00</Time>
+      <Dependency>
+        <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\roomV2_0.xml</Key>
+        <Value>2016-04-25T13:42:36.1243058+01:00</Value>
+      </Dependency>
+      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\mfjyroO_0.xnb</Request>
+      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\sign4_0.xnb</Request>
+      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\sign3_0.xnb</Request>
+      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\sign2_0.xnb</Request>
+      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\sign1_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Assets\Models\totemV1.FBX</Source>
+      <Name>Assets\Models\totemV1</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\totemV1.xnb</Output>
+      <Time>2016-04-17T23:36:55.8738002+01:00</Time>
+      <Dependency>
+        <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\totemV1_0.xml</Key>
+        <Value>2016-04-25T13:42:36.7685443+01:00</Value>
+      </Dependency>
+      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\totem_1x_0.xnb</Request>
+      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\grey-stone-concrete-wall-with-sm_0.xnb</Request>
+      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Wood-Texture-by-xNickixstockx_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Assets\Models\totemV2.FBX</Source>
+      <Name>Assets\Models\totemV2</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\totemV2.xnb</Output>
+      <Time>2016-04-17T23:36:55.8758016+01:00</Time>
+      <Dependency>
+        <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\totemV2_0.xml</Key>
+        <Value>2016-04-25T13:42:37.048182+01:00</Value>
+      </Dependency>
+      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\grey-stone-concrete-wall-with-sm_0.xnb</Request>
+      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\totem_1x_0.xnb</Request>
+      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Wood-Texture-by-xNickixstockx_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Assets\Models\wallV1.FBX</Source>
+      <Name>Assets\Models\wallV1</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\wallV1.xnb</Output>
+      <Time>2016-04-17T23:36:55.8788032+01:00</Time>
+      <Dependency>
+        <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\wallV1_0.xml</Key>
+        <Value>2016-04-25T13:42:37.4194165+01:00</Value>
+      </Dependency>
+      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\mfjyroO_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Assets\Models\wallV2.FBX</Source>
+      <Name>Assets\Models\wallV2</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\wallV2.xnb</Output>
+      <Time>2016-04-17T23:36:55.8818068+01:00</Time>
+      <Dependency>
+        <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\wallV2_0.xml</Key>
+        <Value>2016-04-25T13:42:37.7402553+01:00</Value>
+      </Dependency>
+      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\mfjyroO_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Assets\Models\RoomV3.FBX</Source>
+      <Name>Assets\Models\RoomV3</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\RoomV3.xnb</Output>
+      <Time>2016-04-18T22:06:33.4623523+01:00</Time>
+      <Dependency>
+        <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\RoomV3_0.xml</Key>
+        <Value>2016-04-25T13:42:38.6478086+01:00</Value>
+      </Dependency>
+      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\skin\mfjyroO_0.xnb</Request>
+      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\skin\sign4_0.xnb</Request>
+      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\skin\sign3_0.xnb</Request>
+      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\skin\sign2_0.xnb</Request>
+      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\skin\sign1_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Assets\Models\RoomV5.FBX</Source>
+      <Name>Assets\Models\RoomV5</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\RoomV5.xnb</Output>
+      <Time>2016-04-21T13:13:21.6816879+01:00</Time>
+      <Dependency>
+        <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\RoomV5_0.xml</Key>
+        <Value>2016-04-25T13:42:39.0098749+01:00</Value>
+      </Dependency>
+      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\skin\mfjyroO_0.xnb</Request>
+      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\skin\sign4_0.xnb</Request>
+      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\skin\sign2_0.xnb</Request>
+      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\skin\sign3_0.xnb</Request>
+      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\skin\sign1_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Assets\Models\RoomV6.FBX</Source>
+      <Name>Assets\Models\RoomV6</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\RoomV6.xnb</Output>
+      <Time>2016-04-21T13:13:21.7598171+01:00</Time>
+      <Dependency>
+        <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\RoomV6_0.xml</Key>
+        <Value>2016-04-25T13:42:44.9914511+01:00</Value>
+      </Dependency>
+      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\skin\mfjyroO_0.xnb</Request>
+      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\skin\sign4_0.xnb</Request>
+      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\skin\sign3_0.xnb</Request>
+      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\skin\sign2_0.xnb</Request>
+      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\skin\sign1_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Assets\Models\Animated.FBX</Source>
+      <Name>Assets\Models\Animated</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\Animated.xnb</Output>
+      <Time>0001-01-01T00:00:00</Time>
+      <Dependency>
+        <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\Animated_0.xml</Key>
+        <Value>2016-04-25T13:42:46.1419258+01:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Assets\Models\arrow1.FBX</Source>
+      <Name>Assets\Models\arrow1</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\arrow1.xnb</Output>
+      <Time>0001-01-01T00:00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Audio\Sounds\Arrow.wav</Source>
+      <Name>Assets\Audio\Sounds\Arrow</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Audio\Sounds\Arrow.xnb</Output>
+      <Time>0001-01-01T00:00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Audio\Sounds\Arrow_Load.wav</Source>
+      <Name>Assets\Audio\Sounds\Arrow_Load</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Audio\Sounds\Arrow_Load.xnb</Output>
+      <Time>0001-01-01T00:00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Audio\Sounds\Background.wav</Source>
+      <Name>Assets\Audio\Sounds\Background</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Audio\Sounds\Background.xnb</Output>
+      <Time>0001-01-01T00:00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Audio\Sounds\Death_Grunt.wav</Source>
+      <Name>Assets\Audio\Sounds\Death_Grunt</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Audio\Sounds\Death_Grunt.xnb</Output>
+      <Time>0001-01-01T00:00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Audio\Sounds\Footsteps_Stone.wav</Source>
+      <Name>Assets\Audio\Sounds\Footsteps_Stone</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Audio\Sounds\Footsteps_Stone.xnb</Output>
+      <Time>0001-01-01T00:00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Audio\Sounds\Menu_Select.wav</Source>
+      <Name>Assets\Audio\Sounds\Menu_Select</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Audio\Sounds\Menu_Select.xnb</Output>
+      <Time>0001-01-01T00:00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Audio\Sounds\Pressure_Plate.wav</Source>
+      <Name>Assets\Audio\Sounds\Pressure_Plate</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Audio\Sounds\Pressure_Plate.xnb</Output>
+      <Time>0001-01-01T00:00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Audio\Sounds\Prompt(Cue).wav</Source>
+      <Name>Assets\Audio\Sounds\Prompt(Cue)</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Audio\Sounds\Prompt(Cue).xnb</Output>
+      <Time>0001-01-01T00:00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Audio\Sounds\Rocks_Falling.wav</Source>
+      <Name>Assets\Audio\Sounds\Rocks_Falling</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Audio\Sounds\Rocks_Falling.xnb</Output>
+      <Time>0001-01-01T00:00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Audio\Sounds\Stone_Door.wav</Source>
+      <Name>Assets\Audio\Sounds\Stone_Door</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Audio\Sounds\Stone_Door.xnb</Output>
+      <Time>0001-01-01T00:00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Audio\Sounds\Totem_Rotate.wav</Source>
+      <Name>Assets\Audio\Sounds\Totem_Rotate</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Audio\Sounds\Totem_Rotate.xnb</Output>
+      <Time>0001-01-01T00:00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Audio\Sounds\Tribal_Drums.wav</Source>
+      <Name>Assets\Audio\Sounds\Tribal_Drums</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Audio\Sounds\Tribal_Drums.xnb</Output>
+      <Time>0001-01-01T00:00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Audio\Sounds\Footsteps_Stone3.wav</Source>
+      <Name>Assets\Audio\Sounds\Footsteps_Stone3</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Audio\Sounds\Footsteps_Stone3.xnb</Output>
+      <Time>0001-01-01T00:00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Audio\Sounds\Footsteps_Stone1.wav</Source>
+      <Name>Assets\Audio\Sounds\Footsteps_Stone1</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Audio\Sounds\Footsteps_Stone1.xnb</Output>
+      <Time>0001-01-01T00:00:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Audio\Sounds\Footsteps_Stone2.wav</Source>
+      <Name>Assets\Audio\Sounds\Footsteps_Stone2</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Audio\Sounds\Footsteps_Stone2.xnb</Output>
+      <Time>0001-01-01T00:00:00</Time>
     </Item>
     <Item>
       <Source>Assets\Models\generic\box.FBX</Source>
@@ -787,116 +1288,6 @@
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\trap_0.xml</Output>
       <Time>2016-03-08T13:45:14.1739571+00:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Models\DoorV1.FBX</Source>
-      <Name>Assets\Models\DoorV1</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\DoorV1.xnb</Output>
-      <Time>2016-04-17T23:36:55.7937463+01:00</Time>
-      <Dependency>
-        <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\DoorV1_0.xml</Key>
-        <Value>2016-04-18T13:31:34.4353453+01:00</Value>
-      </Dependency>
-      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\grey-stone-concrete-wall-with-sm_0.xnb</Request>
-    </Item>
-    <Item>
-      <Source>Assets\Models\roomV1.FBX</Source>
-      <Name>Assets\Models\roomV1</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\roomV1.xnb</Output>
-      <Time>2016-04-17T23:36:55.8327795+01:00</Time>
-      <Dependency>
-        <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\roomV1_0.xml</Key>
-        <Value>2016-04-18T13:31:42.264109+01:00</Value>
-      </Dependency>
-      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\mfjyroO_0.xnb</Request>
-      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\sign4_0.xnb</Request>
-      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\sign3_0.xnb</Request>
-      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\sign2_0.xnb</Request>
-      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\sign1_0.xnb</Request>
-    </Item>
-    <Item>
-      <Source>Assets\Models\roomV2.FBX</Source>
-      <Name>Assets\Models\roomV2</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\roomV2.xnb</Output>
-      <Time>2016-04-17T23:36:55.8718056+01:00</Time>
-      <Dependency>
-        <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\roomV2_0.xml</Key>
-        <Value>2016-04-18T13:31:55.547172+01:00</Value>
-      </Dependency>
-      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\mfjyroO_0.xnb</Request>
-      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\sign4_0.xnb</Request>
-      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\sign3_0.xnb</Request>
-      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\sign2_0.xnb</Request>
-      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\sign1_0.xnb</Request>
-    </Item>
-    <Item>
-      <Source>Assets\Models\totemV1.FBX</Source>
-      <Name>Assets\Models\totemV1</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\totemV1.xnb</Output>
-      <Time>2016-04-17T23:36:55.8738002+01:00</Time>
-      <Dependency>
-        <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\totemV1_0.xml</Key>
-        <Value>2016-04-18T13:31:56.2864967+01:00</Value>
-      </Dependency>
-      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\totem_1x_0.xnb</Request>
-      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\grey-stone-concrete-wall-with-sm_0.xnb</Request>
-      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Wood-Texture-by-xNickixstockx_0.xnb</Request>
-    </Item>
-    <Item>
-      <Source>Assets\Models\totemV2.FBX</Source>
-      <Name>Assets\Models\totemV2</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\totemV2.xnb</Output>
-      <Time>2016-04-17T23:36:55.8758016+01:00</Time>
-      <Dependency>
-        <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\totemV2_0.xml</Key>
-        <Value>2016-04-18T13:31:56.5996698+01:00</Value>
-      </Dependency>
-      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\grey-stone-concrete-wall-with-sm_0.xnb</Request>
-      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\totem_1x_0.xnb</Request>
-      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Wood-Texture-by-xNickixstockx_0.xnb</Request>
-    </Item>
-    <Item>
-      <Source>Assets\Models\wallV1.FBX</Source>
-      <Name>Assets\Models\wallV1</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\wallV1.xnb</Output>
-      <Time>2016-04-17T23:36:55.8788032+01:00</Time>
-      <Dependency>
-        <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\wallV1_0.xml</Key>
-        <Value>2016-04-18T13:31:56.9780139+01:00</Value>
-      </Dependency>
-      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\mfjyroO_0.xnb</Request>
-    </Item>
-    <Item>
-      <Source>Assets\Models\wallV2.FBX</Source>
-      <Name>Assets\Models\wallV2</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\wallV2.xnb</Output>
-      <Time>2016-04-17T23:36:55.8818068+01:00</Time>
-      <Dependency>
-        <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\wallV2_0.xml</Key>
-        <Value>2016-04-18T13:31:57.316214+01:00</Value>
-      </Dependency>
-      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\mfjyroO_0.xnb</Request>
     </Item>
     <Item>
       <Source>Assets\Models\DoorV1.FBX</Source>
@@ -1077,37 +1468,10 @@
     </Item>
     <Item>
       <Source>Assets\Models\RoomV3.FBX</Source>
-      <Name>Assets\Models\RoomV3</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\RoomV3.xnb</Output>
-      <Time>2016-04-18T22:06:33.4623523+01:00</Time>
-      <Dependency>
-        <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\RoomV3_0.xml</Key>
-        <Value>2016-04-18T22:49:29.8014066+01:00</Value>
-      </Dependency>
-      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\skin\mfjyroO_0.xnb</Request>
-      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\skin\sign4_0.xnb</Request>
-      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\skin\sign3_0.xnb</Request>
-      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\skin\sign2_0.xnb</Request>
-      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\skin\sign1_0.xnb</Request>
-    </Item>
-    <Item>
-      <Source>Assets\Models\RoomV3.FBX</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\RoomV3_0.xml</Output>
       <Time>2016-04-18T22:06:33.4623523+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Models\skin\mfjyroO.jpg</Source>
-      <Name>Assets\Models\skin\mfjyroO</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\skin\mfjyroO.xnb</Output>
-      <Time>2016-04-18T22:06:33.4683552+01:00</Time>
     </Item>
     <Item>
       <Source>Assets\Models\skin\mfjyroO.jpg</Source>
@@ -1124,42 +1488,6 @@
       <Options>None</Options>
       <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\skin\mfjyroO_0.xnb</Output>
       <Time>2016-04-18T22:06:33.4683552+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Models\skin\sign1.png</Source>
-      <Name>Assets\Models\skin\sign1</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\skin\sign1.xnb</Output>
-      <Time>2016-04-18T22:06:33.469355+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Models\skin\sign2.png</Source>
-      <Name>Assets\Models\skin\sign2</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\skin\sign2.xnb</Output>
-      <Time>2016-04-18T22:06:33.4703537+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Models\skin\sign3.png</Source>
-      <Name>Assets\Models\skin\sign3</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\skin\sign3.xnb</Output>
-      <Time>2016-04-18T22:06:33.4713544+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Models\skin\sign4.png</Source>
-      <Name>Assets\Models\skin\sign4</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\skin\sign4.xnb</Output>
-      <Time>2016-04-18T22:06:33.4723555+01:00</Time>
     </Item>
     <Item>
       <Source>Assets\Models\skin\sign4.png</Source>
@@ -1226,49 +1554,27 @@
       <Time>2016-04-18T22:06:33.469355+01:00</Time>
     </Item>
     <Item>
-      <Source>Assets\skin\Brick_Tut_35.jpg</Source>
-      <Name>Assets\skin\Brick_Tut_35</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\skin\Brick_Tut_35.xnb</Output>
-      <Time>2016-04-18T22:06:33.4753571+01:00</Time>
+      <Source>Assets\Models\RoomV5.FBX</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\RoomV5_0.xml</Output>
+      <Time>2016-04-21T13:13:21.6816879+01:00</Time>
     </Item>
     <Item>
-      <Source>Assets\skin\sign1.png</Source>
-      <Name>Assets\skin\sign1</Name>
+      <Source>Assets\skin\mfjyroO.jpg</Source>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
       <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\skin\sign1.xnb</Output>
-      <Time>2016-04-18T22:06:33.4763589+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\skin\sign2.png</Source>
-      <Name>Assets\skin\sign2</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\skin\sign2.xnb</Output>
-      <Time>2016-04-18T22:06:33.4773596+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\skin\sign3.png</Source>
-      <Name>Assets\skin\sign3</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\skin\sign3.xnb</Output>
-      <Time>2016-04-18T22:06:33.4783611+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\skin\sign4.png</Source>
-      <Name>Assets\skin\sign4</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\skin\sign4.xnb</Output>
-      <Time>2016-04-18T22:06:33.4793613+01:00</Time>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\skin\mfjyroO_0.xnb</Output>
+      <Time>2016-04-21T13:13:21.7598171+01:00</Time>
     </Item>
     <Item>
       <Source>Assets\skin\sign4.png</Source>
@@ -1335,108 +1641,11 @@
       <Time>2016-04-18T22:06:33.4763589+01:00</Time>
     </Item>
     <Item>
-      <Source>Assets\Models\skin\Brick_Tut_35.jpg</Source>
-      <Name>Assets\Models\skin\Brick_Tut_35</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\skin\Brick_Tut_35.xnb</Output>
-      <Time>2016-04-18T22:06:33.4673537+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Models\RoomV5.FBX</Source>
-      <Name>Assets\Models\RoomV5</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\RoomV5.xnb</Output>
-      <Time>2016-04-21T13:13:21.6816879+01:00</Time>
-      <Dependency>
-        <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\RoomV5_0.xml</Key>
-        <Value>2016-04-21T13:26:27.4373964+01:00</Value>
-      </Dependency>
-      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\skin\mfjyroO_0.xnb</Request>
-      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\skin\sign4_0.xnb</Request>
-      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\skin\sign2_0.xnb</Request>
-      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\skin\sign3_0.xnb</Request>
-      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\skin\sign1_0.xnb</Request>
-    </Item>
-    <Item>
-      <Source>Assets\Models\RoomV5.FBX</Source>
-      <Importer>FbxImporter</Importer>
-      <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\RoomV5_0.xml</Output>
-      <Time>2016-04-21T13:13:21.6816879+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\skin\mfjyroO.jpg</Source>
-      <Name>Assets\skin\mfjyroO</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\skin\mfjyroO.xnb</Output>
-      <Time>2016-04-21T13:13:21.7598171+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\skin\mfjyroO.jpg</Source>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Parameters>
-        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
-        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
-        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
-        <Data Key="GenerateMipmaps" Type="bool">true</Data>
-        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
-        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
-      </Parameters>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\skin\mfjyroO_0.xnb</Output>
-      <Time>2016-04-21T13:13:21.7598171+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Models\RoomV6.FBX</Source>
-      <Name>Assets\Models\RoomV6</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\RoomV6.xnb</Output>
-      <Time>2016-04-21T13:13:21.7598171+01:00</Time>
-      <Dependency>
-        <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\RoomV6_0.xml</Key>
-        <Value>2016-04-21T13:26:36.7795976+01:00</Value>
-      </Dependency>
-      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\skin\mfjyroO_0.xnb</Request>
-      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\skin\sign4_0.xnb</Request>
-      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\skin\sign3_0.xnb</Request>
-      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\skin\sign2_0.xnb</Request>
-      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\skin\sign1_0.xnb</Request>
-    </Item>
-    <Item>
       <Source>Assets\Models\RoomV6.FBX</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\RoomV6_0.xml</Output>
       <Time>2016-04-21T13:13:21.7598171+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Models\Animated.FBX</Source>
-      <Name>Assets\Models\Animated</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\Animated.xnb</Output>
-      <Time>2016-04-22T13:08:45.3194034+01:00</Time>
-      <Dependency>
-        <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\Animated_0.xml</Key>
-        <Value>2016-04-22T13:33:31.2795481+01:00</Value>
-      </Dependency>
-      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\GP modle\coat_0.xnb</Request>
-      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\GP modle\hand_0.xnb</Request>
-      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\GP modle\leg_0.xnb</Request>
-      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\GP modle\fastener_0.xnb</Request>
-      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\GP modle\head_0.xnb</Request>
-      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\GP modle\eye_0.xnb</Request>
-      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\GP modle\shouse_0.xnb</Request>
     </Item>
     <Item>
       <Source>Assets\Models\Animated.FBX</Source>
@@ -1446,362 +1655,15 @@
       <Time>2016-04-22T13:08:45.3194034+01:00</Time>
     </Item>
     <Item>
-      <Source>Assets\Models\GP modle\coat.jpg</Source>
-      <Name>Assets\Models\GP modle\coat</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
+      <Source>Assets\Effects\Billboard.fx</Source>
+      <Name>Assets\Effects\Billboard</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\GP modle\coat.xnb</Output>
-      <Time>2016-04-22T13:35:17.8923831+01:00</Time>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Effects\Billboard.xnb</Output>
+      <Time>0001-01-01T00:00:00</Time>
     </Item>
-    <Item>
-      <Source>Assets\Models\GP modle\eye.jpg</Source>
-      <Name>Assets\Models\GP modle\eye</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\GP modle\eye.xnb</Output>
-      <Time>2016-04-22T13:34:50.2611093+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Models\GP modle\fastener.jpg</Source>
-      <Name>Assets\Models\GP modle\fastener</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\GP modle\fastener.xnb</Output>
-      <Time>2016-04-22T13:37:01.2560906+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Models\GP modle\hand.jpg</Source>
-      <Name>Assets\Models\GP modle\hand</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\GP modle\hand.xnb</Output>
-      <Time>2016-04-22T13:35:44.1593235+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Models\GP modle\head.jpg</Source>
-      <Name>Assets\Models\GP modle\head</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\GP modle\head.xnb</Output>
-      <Time>2016-04-22T13:37:12.2673099+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Models\GP modle\leg.jpg</Source>
-      <Name>Assets\Models\GP modle\leg</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\GP modle\leg.xnb</Output>
-      <Time>2016-04-22T13:36:36.7507277+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Models\GP modle\shouse.jpg</Source>
-      <Name>Assets\Models\GP modle\shouse</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\GP modle\shouse.xnb</Output>
-      <Time>2016-04-22T13:37:26.499334+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Models\GP modle\coat.jpg</Source>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Parameters>
-        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
-        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
-        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
-        <Data Key="GenerateMipmaps" Type="bool">true</Data>
-        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
-        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
-      </Parameters>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\GP modle\coat_0.xnb</Output>
-      <Time>2016-04-22T13:35:17.8923831+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Models\GP modle\hand.jpg</Source>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Parameters>
-        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
-        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
-        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
-        <Data Key="GenerateMipmaps" Type="bool">true</Data>
-        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
-        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
-      </Parameters>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\GP modle\hand_0.xnb</Output>
-      <Time>2016-04-22T13:35:44.1593235+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Models\GP modle\leg.jpg</Source>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Parameters>
-        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
-        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
-        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
-        <Data Key="GenerateMipmaps" Type="bool">true</Data>
-        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
-        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
-      </Parameters>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\GP modle\leg_0.xnb</Output>
-      <Time>2016-04-22T13:36:36.7507277+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Models\GP modle\fastener.jpg</Source>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Parameters>
-        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
-        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
-        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
-        <Data Key="GenerateMipmaps" Type="bool">true</Data>
-        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
-        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
-      </Parameters>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\GP modle\fastener_0.xnb</Output>
-      <Time>2016-04-22T13:37:01.2560906+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Models\GP modle\head.jpg</Source>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Parameters>
-        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
-        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
-        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
-        <Data Key="GenerateMipmaps" Type="bool">true</Data>
-        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
-        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
-      </Parameters>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\GP modle\head_0.xnb</Output>
-      <Time>2016-04-22T13:37:12.2673099+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Models\GP modle\eye.jpg</Source>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Parameters>
-        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
-        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
-        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
-        <Data Key="GenerateMipmaps" Type="bool">true</Data>
-        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
-        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
-      </Parameters>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\GP modle\eye_0.xnb</Output>
-      <Time>2016-04-22T13:34:50.2611093+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Models\GP modle\shouse.jpg</Source>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Parameters>
-        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
-        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
-        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
-        <Data Key="GenerateMipmaps" Type="bool">true</Data>
-        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
-        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
-      </Parameters>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\GP modle\shouse_0.xnb</Output>
-      <Time>2016-04-22T13:37:26.499334+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Audio\Sounds\Arrow.wav</Source>
-      <Name>Assets\Audio\Sounds\Arrow</Name>
-      <Importer>WavImporter</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Audio\Sounds\Arrow.xnb</Output>
-      <Time>2016-04-22T15:04:17.5607754+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Audio\Sounds\Arrow_Load.wav</Source>
-      <Name>Assets\Audio\Sounds\Arrow_Load</Name>
-      <Importer>WavImporter</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Audio\Sounds\Arrow_Load.xnb</Output>
-      <Time>2016-04-22T15:04:18.1400184+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Audio\Sounds\Background.wav</Source>
-      <Name>Assets\Audio\Sounds\Background</Name>
-      <Importer>WavImporter</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Audio\Sounds\Background.xnb</Output>
-      <Time>2016-04-22T15:04:19.0242508+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Audio\Sounds\Death_Grunt.wav</Source>
-      <Name>Assets\Audio\Sounds\Death_Grunt</Name>
-      <Importer>WavImporter</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Audio\Sounds\Death_Grunt.xnb</Output>
-      <Time>2016-04-22T15:04:19.0272528+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Audio\Sounds\Footsteps_Stone.wav</Source>
-      <Name>Assets\Audio\Sounds\Footsteps_Stone</Name>
-      <Importer>WavImporter</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Audio\Sounds\Footsteps_Stone.xnb</Output>
-      <Time>2016-04-22T15:04:19.0516304+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Audio\Sounds\Menu_Select.wav</Source>
-      <Name>Assets\Audio\Sounds\Menu_Select</Name>
-      <Importer>WavImporter</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Audio\Sounds\Menu_Select.xnb</Output>
-      <Time>2016-04-22T15:04:19.0546317+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Audio\Sounds\Pressure_Plate.wav</Source>
-      <Name>Assets\Audio\Sounds\Pressure_Plate</Name>
-      <Importer>WavImporter</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Audio\Sounds\Pressure_Plate.xnb</Output>
-      <Time>2016-04-22T16:04:55.3944712+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Audio\Sounds\Prompt(Cue).wav</Source>
-      <Name>Assets\Audio\Sounds\Prompt(Cue)</Name>
-      <Importer>WavImporter</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Audio\Sounds\Prompt(Cue).xnb</Output>
-      <Time>2016-04-22T15:04:19.0586347+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Audio\Sounds\Rocks_Falling.wav</Source>
-      <Name>Assets\Audio\Sounds\Rocks_Falling</Name>
-      <Importer>WavImporter</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Audio\Sounds\Rocks_Falling.xnb</Output>
-      <Time>2016-04-22T15:04:19.0626421+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Audio\Sounds\Stone_Door.wav</Source>
-      <Name>Assets\Audio\Sounds\Stone_Door</Name>
-      <Importer>WavImporter</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Audio\Sounds\Stone_Door.xnb</Output>
-      <Time>2016-04-22T15:04:19.065641+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Audio\Sounds\Totem_Rotate.wav</Source>
-      <Name>Assets\Audio\Sounds\Totem_Rotate</Name>
-      <Importer>WavImporter</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Audio\Sounds\Totem_Rotate.xnb</Output>
-      <Time>2016-04-22T15:04:19.0686442+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Audio\Sounds\Tribal_Drums.wav</Source>
-      <Name>Assets\Audio\Sounds\Tribal_Drums</Name>
-      <Importer>WavImporter</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Audio\Sounds\Tribal_Drums.xnb</Output>
-      <Time>2016-04-22T15:04:19.0806506+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Models\arrow1.FBX</Source>
-      <Name>Assets\Models\arrow1</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\arrow1.xnb</Output>
-      <Time>2016-04-22T15:24:53.0590271+01:00</Time>
-      <Dependency>
-        <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\arrow1_0.xml</Key>
-        <Value>2016-04-22T15:25:05.5019902+01:00</Value>
-      </Dependency>
-      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\skin\RUSTY-METAL-TEXTURE_0.xnb</Request>
-    </Item>
-    <Item>
-      <Source>Assets\Models\arrow1.FBX</Source>
-      <Importer>FbxImporter</Importer>
-      <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\arrow1_0.xml</Output>
-      <Time>2016-04-22T15:24:53.0590271+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Models\skin\RUSTY-METAL-TEXTURE.jpg</Source>
-      <Name>Assets\Models\skin\RUSTY-METAL-TEXTURE</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\skin\RUSTY-METAL-TEXTURE.xnb</Output>
-      <Time>2016-04-22T15:25:36.0096636+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Models\skin\RUSTY-METAL-TEXTURE.jpg</Source>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Parameters>
-        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
-        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
-        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
-        <Data Key="GenerateMipmaps" Type="bool">true</Data>
-        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
-        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
-      </Parameters>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\skin\RUSTY-METAL-TEXTURE_0.xnb</Output>
-      <Time>2016-04-22T15:25:36.0096636+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Audio\Sounds\Footsteps_Stone3.wav</Source>
-      <Name>Assets\Audio\Sounds\Footsteps_Stone3</Name>
-      <Importer>WavImporter</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Audio\Sounds\Footsteps_Stone3.xnb</Output>
-      <Time>2016-04-22T15:45:39.9037595+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Audio\Sounds\Footsteps_Stone1.wav</Source>
-      <Name>Assets\Audio\Sounds\Footsteps_Stone1</Name>
-      <Importer>WavImporter</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Audio\Sounds\Footsteps_Stone1.xnb</Output>
-      <Time>2016-04-22T15:45:44.5059152+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Audio\Sounds\Footsteps_Stone2.wav</Source>
-      <Name>Assets\Audio\Sounds\Footsteps_Stone2</Name>
-      <Importer>WavImporter</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Audio\Sounds\Footsteps_Stone2.xnb</Output>
-      <Time>2016-04-22T15:45:44.5079161+01:00</Time>
-    </Item>
-    <BuildSuccessful>true</BuildSuccessful>
+    <BuildSuccessful>false</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{A8302FA8-6217-4691-BDFF-0D183CB4B6E5}</ContentProjectGUID>
       <TargetPlatform>Windows</TargetPlatform>
@@ -1814,6 +1676,10 @@
       <OutputDirectory>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
+      <Assembly>
+        <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\SkinnedModelPipeline.dll</Key>
+        <Value>2013-04-01T22:03:18+01:00</Value>
+      </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
         <Value>2011-09-01T17:22:30+01:00</Value>

@@ -118,6 +118,7 @@
   <ItemGroup>
     <Compile Include="App\Data\GameData.cs" />
     <Compile Include="App\Data\KeyData.cs" />
+    <Compile Include="App\Data\MenuData.cs" />
     <Compile Include="GDLibrary\Cameras\Camera3D.cs" />
     <Compile Include="GDLibrary\Cameras\FirstPersonCamera3D.cs" />
     <Compile Include="GDLibrary\Cameras\FreeLookCamera3D.cs" />
@@ -145,19 +146,27 @@
     <Compile Include="GDLibrary\Debug\BoundingBoxDrawer.cs" />
     <Compile Include="GDLibrary\Debug\PhysicsDebugDrawer.cs" />
     <Compile Include="GDLibrary\Dictionary\GenericDictionary.cs" />
-    <Compile Include="GDLibrary\Events\CameraEventData.cs" />
-    <Compile Include="GDLibrary\Events\EventData.cs" />
-    <Compile Include="GDLibrary\Events\EventDispatcher.cs" />
-    <Compile Include="GDLibrary\Events\EventType.cs" />
-    <Compile Include="GDLibrary\Events\PlayerSprite.cs" />
-    <Compile Include="GDLibrary\Events\RotationEventData.cs" />
+    <Compile Include="GDLibrary\Enums\BillboardType.cs" />
+    <Compile Include="GDLibrary\Enums\EventCategoryType.cs" />
+    <Compile Include="GDLibrary\Enums\OrientationType.cs" />
+    <Compile Include="GDLibrary\Events\Base\EventDataEqualityComparer.cs" />
+    <Compile Include="GDLibrary\Events\Data\CameraEventData.cs" />
+    <Compile Include="GDLibrary\Events\Data\EventData.cs" />
+    <Compile Include="GDLibrary\Events\Base\EventDispatcher.cs" />
+    <Compile Include="GDLibrary\Enums\EventType.cs" />
+    <Compile Include="GDLibrary\Events\Data\RotationEventData.cs" />
     <Compile Include="GDLibrary\Factory\VertexFactory.cs" />
     <Compile Include="GDLibrary\Interfaces\Controller.cs" />
     <Compile Include="GDLibrary\Interfaces\IActor.cs" />
     <Compile Include="GDLibrary\Interfaces\IController.cs" />
+    <Compile Include="GDLibrary\Interfaces\IVertexData.cs" />
+    <Compile Include="GDLibrary\Managers\Base\GenericDraweableManager.cs" />
+    <Compile Include="GDLibrary\Managers\Menu\MenuItem.cs" />
+    <Compile Include="GDLibrary\Managers\Menu\MenuManager.cs" />
     <Compile Include="GDLibrary\Managers\Physics\PhysicsManager.cs" />
     <Compile Include="GDLibrary\Managers\Sound\Cue3D.cs" />
     <Compile Include="GDLibrary\Managers\Sound\SoundManager.cs" />
+    <Compile Include="GDLibrary\Managers\UI\UIManager.cs" />
     <Compile Include="GDLibrary\Objects\Collidable\CollidableObject.cs" />
     <Compile Include="GDLibrary\Objects\Collidable\PawnTriangleMeshObject.cs" />
     <Compile Include="GDLibrary\Objects\Collidable\Player\CharacterObject.cs" />
@@ -169,7 +178,12 @@
     <Compile Include="GDLibrary\Objects\Collidable\Zones\ZoneObject.cs" />
     <Compile Include="GDLibrary\Objects\Model\CharacterModelObject.cs" />
     <Compile Include="GDLibrary\Objects\Model\PawnModelObject.cs" />
-    <Compile Include="GDLibrary\Parameters\RailParameters.cs" />
+    <Compile Include="GDLibrary\Objects\Primitives\Billboards\BillboardPrimitiveObject.cs" />
+    <Compile Include="GDLibrary\Objects\UI\UIActor.cs" />
+    <Compile Include="GDLibrary\Objects\UI\UIMouseObject.cs" />
+    <Compile Include="GDLibrary\Objects\UI\UITextObject.cs" />
+    <Compile Include="GDLibrary\Objects\UI\UITextureObject.cs" />
+    <Compile Include="GDLibrary\Parameters\Camera\RailParameters.cs" />
     <Compile Include="GDLibrary\Cameras\RailCamera3D.cs" />
     <Compile Include="GDLibrary\Debug\Old\TexturedQuad.cs" />
     <Compile Include="GDLibrary\Enums\CameraLayout.cs" />
@@ -183,13 +197,23 @@
     <Compile Include="GDLibrary\Objects\Model\MoveableModelObject.cs" />
     <Compile Include="GDLibrary\Objects\Primitives\TexturedPrimitiveObject.cs" />
     <Compile Include="GDLibrary\Objects\Primitives\PrimitiveObject.cs" />
-    <Compile Include="GDLibrary\Parameters\Transform3D.cs" />
+    <Compile Include="GDLibrary\Parameters\Primitives\BillboardVertexData.cs" />
+    <Compile Include="GDLibrary\Parameters\Primitives\BufferedVertexData.cs" />
+    <Compile Include="GDLibrary\Parameters\Primitives\DynamicBufferedVertexData.cs" />
+    <Compile Include="GDLibrary\Parameters\Primitives\IndexedVertexData.cs" />
+    <Compile Include="GDLibrary\Parameters\Primitives\VertexData.cs" />
+    <Compile Include="GDLibrary\Parameters\Primitives\VertexInfo.cs" />
+    <Compile Include="GDLibrary\Parameters\Transforms\Transform2D.cs" />
+    <Compile Include="GDLibrary\Parameters\Transforms\Transform3D.cs" />
     <Compile Include="GDLibrary\Debug\Old\IndexedCubeHelper.cs" />
     <Compile Include="GDLibrary\Debug\Old\UnbufferedCubeHelper.cs" />
     <Compile Include="GDLibrary\Debug\Old\BufferedCubeHelper.cs" />
     <Compile Include="GDLibrary\Debug\Old\OriginHelper.cs" />
     <Compile Include="GDLibrary\Enums\ObjectType.cs" />
-    <Compile Include="GDLibrary\Parameters\ProjectionParameters.cs" />
+    <Compile Include="GDLibrary\Parameters\Camera\ProjectionParameters.cs" />
+    <Compile Include="GDLibrary\PathFinding\Edge.cs" />
+    <Compile Include="GDLibrary\PathFinding\Node.cs" />
+    <Compile Include="GDLibrary\PathFinding\PathFindingEngine.cs" />
     <Compile Include="GDLibrary\Utilities\CameraUtility.cs" />
     <Compile Include="GDLibrary\Utilities\CollisionUtility.cs" />
     <Compile Include="GDLibrary\Utilities\Integer2.cs" />
@@ -239,7 +263,9 @@
       <Install>true</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="GDLibrary\Objects\Collidable\Player\Animated\" />
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />
   <!--
