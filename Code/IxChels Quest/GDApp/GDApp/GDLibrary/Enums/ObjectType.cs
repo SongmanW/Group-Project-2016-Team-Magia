@@ -12,6 +12,8 @@ namespace GDLibrary
         Decorator,          //a chair, a table
         Player,             //you
         NonPlayerCharacter, //enemy
+        UIText,  //UI
+        UITexture2D, //UI
 
         //cameras
         FirstPersonCamera,

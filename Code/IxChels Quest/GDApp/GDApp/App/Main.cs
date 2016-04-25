@@ -216,7 +216,8 @@ namespace GDApp
         private ObjectManager objectManager;
         private SoundManager soundManager;
         private PhysicsManager physicsManager;
-
+        private UIManager uiManager;
+        private MenuManager menuManager;
 
 
         private GenericDictionary<string, Texture2D> textureDictionary;
@@ -282,6 +283,13 @@ namespace GDApp
             get
             {
                 return nextStep;
+            }
+        }
+        public SpriteBatch SpriteBatch
+        {
+            get
+            {
+                return this.spriteBatch;
             }
         }
         public PhysicsManager PhysicsManager
@@ -365,7 +373,12 @@ namespace GDApp
             InitializeManagers(true);
             InitializeDictionaries();
             InitializeFonts();
+<<<<<<< HEAD
             InitializeEffects();
+=======
+            InitializeEffect();
+            InitializeUI();
+>>>>>>> refs/remotes/origin/master
 
             //InitializeSkyBox(1000);
             LoadModels();
@@ -386,6 +399,34 @@ namespace GDApp
             this.random = new Random();
             this.interval = 25000 + (float)(random.NextDouble() * 10000 - 5000);
             this.timePassed = 0;
+        }
+
+        private void InitializeUI()
+        {
+            InitializeUIMenu();
+        }
+
+        private void InitializeUIMenu()
+        {
+            Transform2D transform = null;
+            SpriteFont font = null;
+            Texture2D texture = null;
+
+            //text
+            font = this.fontDictionary["ui"];
+            String text = "help me!";
+            Vector2 dimensions = font.MeasureString(text);
+            transform = new Transform2D(new Vector2(50, 600), 0, Vector2.One, Vector2.Zero, new Integer2(dimensions));
+            UITextObject textObject = new UITextObject("test1", ObjectType.UIText, transform, new Color(15, 15, 15, 150), SpriteEffects.None, 0, "help", font, true);
+            this.uiManager.Add(textObject);
+
+            //texture
+            texture = this.textureDictionary["white"];
+            transform = new Transform2D(new Vector2(40, 590), 0, new Vector2(4, 4), Vector2.Zero, new Integer2(texture.Width, texture.Height));
+            UITextureObject texture2DObject = new UITextureObject("texture1",
+                ObjectType.UITexture2D, transform, new Color(127, 127, 127, 50),
+                SpriteEffects.None, 1, texture, true);
+            this.uiManager.Add(texture2DObject);
         }
 
         private void InitializeEventDispatcher()
@@ -762,6 +803,7 @@ namespace GDApp
             Components.Add(this.mouseManager);
 
             this.objectManager = new ObjectManager(this, 10, 10);
+            this.objectManager.DrawOrder = 1;
             Components.Add(this.objectManager);
 
             this.soundManager = new SoundManager(this,
@@ -769,6 +811,21 @@ namespace GDApp
                  "Content\\Assets\\Audio\\Wave Bank.xwb",
                 "Content\\Assets\\Audio\\Sound Bank.xsb");
             Components.Add(this.soundManager);
+
+            this.uiManager = new UIManager(this, 10, 10);
+            this.uiManager.DrawOrder = 2; //always draw after object manager(1)
+            Components.Add(this.uiManager);
+
+            Texture2D[] menuTexturesArray = { 
+                                                this.textureDictionary["mainmenu"], 
+                                                this.textureDictionary["audiomenu"],
+                                                 this.textureDictionary["controlsmenu"],
+                                                this.textureDictionary["exitmenuwithtrans"]
+                                            };
+
+            this.menuManager = new MenuManager(this, menuTexturesArray, this.fontDictionary["menu"], MenuData.MenuTexturePadding, MenuData.MenuTextureColor);
+            this.menuManager.DrawOrder = 3; //always draw after ui manager(2)
+            Components.Add(this.menuManager);
         }
 
         #region DEBUG
