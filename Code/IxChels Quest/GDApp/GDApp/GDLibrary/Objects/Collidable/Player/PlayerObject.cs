@@ -20,6 +20,8 @@ namespace GDLibrary
         private Transform3D oldTransform;
         private Transform3D oldPTransform;
         private Random random;
+        private Matrix[] transforms;
+
         #endregion
 
         #region Properties
@@ -273,6 +275,43 @@ namespace GDLibrary
             bSet = false;
             this.Body.MoveTo(this.Transform3D.Translation, this.Transform3D.Orientation);
             this.Enable(false, 1);
+        }
+
+        public override void Draw(GameTime gameTime)
+        {
+            foreach (ModelMesh mesh in this.Model.Meshes)
+            {
+                foreach (BasicEffect be in mesh.Effects)
+                {
+                    //be.EnableDefaultLighting();
+
+                    //uncomment and try this code
+                    be.EmissiveColor = Color.DarkGray.ToVector3();
+                    be.DirectionalLight0.DiffuseColor = Color.White.ToVector3();
+                    be.DirectionalLight0.Direction = new Vector3(0, 0, -1);
+                    be.DirectionalLight0.Enabled = true;
+                    be.SpecularColor = Color.White.ToVector3();
+                    be.SpecularPower = 0.1f;
+
+
+                    be.Projection = game.CameraManager.ActiveCamera.ProjectionParameters.Projection;
+                    be.View = game.CameraManager.ActiveCamera.View;
+                    be.World = transforms[mesh.ParentBone.Index] * this.Transform3D.World;
+
+                    if (this.Texture != null)
+                    {
+                        be.TextureEnabled = true;
+                        be.Texture = this.Texture;
+                    }
+                    else
+                    {
+                        be.TextureEnabled = true;
+                    }
+                }
+                //Draw
+                mesh.Draw();
+            }
+            base.Draw(gameTime);
         }
     }
 }
