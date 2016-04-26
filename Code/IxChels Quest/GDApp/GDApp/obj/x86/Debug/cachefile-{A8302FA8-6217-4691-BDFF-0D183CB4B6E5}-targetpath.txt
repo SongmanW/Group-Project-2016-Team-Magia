@@ -41,26 +41,6 @@ Content\Assets\Textures\Game\symbol1.xnb
 Content\Assets\Textures\Game\symbol2.xnb
 Content\Assets\Textures\Game\symbol3.xnb
 Content\Assets\Textures\Game\symbol4.xnb
-Content\Assets\skin\sign1.xnb
-Content\Assets\skin\sign2.xnb
-Content\Assets\skin\sign3.xnb
-Content\Assets\skin\sign4.xnb
-Content\Assets\skin\Brick_Tut_35.xnb
-Content\Assets\Models\skin\mfjyroO.xnb
-Content\Assets\Models\skin\sign1.xnb
-Content\Assets\Models\skin\sign2.xnb
-Content\Assets\Models\skin\sign3.xnb
-Content\Assets\Models\skin\sign4.xnb
-Content\Assets\Models\skin\Brick_Tut_35.xnb
-Content\Assets\skin\mfjyroO.xnb
-Content\Assets\Models\GP modle\coat.xnb
-Content\Assets\Models\GP modle\eye.xnb
-Content\Assets\Models\GP modle\fastener.xnb
-Content\Assets\Models\GP modle\hand.xnb
-Content\Assets\Models\GP modle\head.xnb
-Content\Assets\Models\GP modle\leg.xnb
-Content\Assets\Models\GP modle\shouse.xnb
-Content\Assets\Models\skin\RUSTY-METAL-TEXTURE.xnb
 Content\Assets\Models\generic\box.xnb
 Content\Assets\Models\generic\cylinder.xnb
 Content\Assets\Models\characterModelv2.xnb
@@ -88,10 +68,54 @@ Content\Assets\Models\totemV1.xnb
 Content\Assets\Models\totemV2.xnb
 Content\Assets\Models\wallV1.xnb
 Content\Assets\Models\wallV2.xnb
+Content\grey-stone-concrete-wall-with-sm_0.xnb
+Content\mfjyroO_0.xnb
+Content\sign4_0.xnb
+Content\sign3_0.xnb
+Content\sign2_0.xnb
+Content\sign1_0.xnb
+Content\totem_1x_0.xnb
+Content\Wood-Texture-by-xNickixstockx_0.xnb
 Content\Assets\Models\RoomV3.xnb
+Content\Assets\Models\skin\mfjyroO.xnb
+Content\Assets\Models\skin\mfjyroO_0.xnb
+Content\Assets\Models\skin\sign1.xnb
+Content\Assets\Models\skin\sign2.xnb
+Content\Assets\Models\skin\sign3.xnb
+Content\Assets\Models\skin\sign4.xnb
+Content\Assets\Models\skin\sign4_0.xnb
+Content\Assets\Models\skin\sign3_0.xnb
+Content\Assets\Models\skin\sign2_0.xnb
+Content\Assets\Models\skin\sign1_0.xnb
+Content\Assets\skin\Brick_Tut_35.xnb
+Content\Assets\skin\sign1.xnb
+Content\Assets\skin\sign2.xnb
+Content\Assets\skin\sign3.xnb
+Content\Assets\skin\sign4.xnb
+Content\Assets\skin\sign4_0.xnb
+Content\Assets\skin\sign2_0.xnb
+Content\Assets\skin\sign3_0.xnb
+Content\Assets\skin\sign1_0.xnb
+Content\Assets\Models\skin\Brick_Tut_35.xnb
 Content\Assets\Models\RoomV5.xnb
+Content\Assets\skin\mfjyroO.xnb
+Content\Assets\skin\mfjyroO_0.xnb
 Content\Assets\Models\RoomV6.xnb
-Content\Assets\Models\arrow1.xnb
+Content\Assets\Models\Animated.xnb
+Content\Assets\Models\GP modle\coat.xnb
+Content\Assets\Models\GP modle\eye.xnb
+Content\Assets\Models\GP modle\fastener.xnb
+Content\Assets\Models\GP modle\hand.xnb
+Content\Assets\Models\GP modle\head.xnb
+Content\Assets\Models\GP modle\leg.xnb
+Content\Assets\Models\GP modle\shouse.xnb
+Content\Assets\Models\GP modle\coat_0.xnb
+Content\Assets\Models\GP modle\hand_0.xnb
+Content\Assets\Models\GP modle\leg_0.xnb
+Content\Assets\Models\GP modle\fastener_0.xnb
+Content\Assets\Models\GP modle\head_0.xnb
+Content\Assets\Models\GP modle\eye_0.xnb
+Content\Assets\Models\GP modle\shouse_0.xnb
 Content\Assets\Audio\Sounds\Arrow.xnb
 Content\Assets\Audio\Sounds\Arrow_Load.xnb
 Content\Assets\Audio\Sounds\Background.xnb
@@ -104,29 +128,10 @@ Content\Assets\Audio\Sounds\Rocks_Falling.xnb
 Content\Assets\Audio\Sounds\Stone_Door.xnb
 Content\Assets\Audio\Sounds\Totem_Rotate.xnb
 Content\Assets\Audio\Sounds\Tribal_Drums.xnb
-Content\Assets\Audio\Sounds\Footsteps_Stone3.xnb
-Content\Assets\Audio\Sounds\Footsteps_Stone1.xnb
-Content\Assets\Audio\Sounds\Footsteps_Stone2.xnb
-Content\grey-stone-concrete-wall-with-sm_0.xnb
-Content\mfjyroO_0.xnb
-Content\sign4_0.xnb
-Content\sign3_0.xnb
-Content\sign2_0.xnb
-Content\sign1_0.xnb
-Content\totem_1x_0.xnb
-Content\Wood-Texture-by-xNickixstockx_0.xnb
-Content\Assets\Models\skin\mfjyroO_0.xnb
-Content\Assets\Models\skin\sign4_0.xnb
-Content\Assets\Models\skin\sign3_0.xnb
-Content\Assets\Models\skin\sign2_0.xnb
-Content\Assets\Models\skin\sign1_0.xnb
-Content\Assets\skin\mfjyroO_0.xnb
-Content\Assets\skin\sign4_0.xnb
-Content\Assets\skin\sign2_0.xnb
-Content\Assets\skin\sign3_0.xnb
-Content\Assets\skin\sign1_0.xnb
-Content\Assets\Effects\Billboard.xnb
+Content\Assets\Models\arrow1.xnb
+Content\Assets\Models\skin\RUSTY-METAL-TEXTURE.xnb
 Content\Assets\Models\skin\RUSTY-METAL-TEXTURE_0.xnb
+<<<<<<< HEAD
 Content\Assets\Fonts\menu.xnb
 Content\Assets\Fonts\UI.xnb
 Content\Assets\Textures\UI\white.xnb
@@ -183,6 +188,11 @@ Content\Assets\Models\GP modle\eye_0.xnb
 Content\Assets\Models\GP modle\shouse_0.xnb
 Content\Assets\Models\animated4.xnb
 Content\Assets\Models\animated2.xnb
+=======
+Content\Assets\Audio\Sounds\Footsteps_Stone3.xnb
+Content\Assets\Audio\Sounds\Footsteps_Stone1.xnb
+Content\Assets\Audio\Sounds\Footsteps_Stone2.xnb
+>>>>>>> parent of 53fe207... finished import of v19, animation object is usable but our animation does not work yet....
 Content\Assets\Audio\IxchelsQuestAudio.xgs
 Content\Assets\Audio\Wave Bank.xwb
 Content\Assets\Audio\Sound Bank.xsb

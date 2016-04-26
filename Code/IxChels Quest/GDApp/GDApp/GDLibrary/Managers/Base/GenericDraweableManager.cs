@@ -8,7 +8,7 @@ namespace GDLibrary
     public class GenericDraweableManager<T> : DrawableGameComponent where T : IUpdateable
     {
         #region Fields
-        protected Main game;
+        private Main game;
         private bool bPaused;
         private List<T> drawList;
         private List<T> removeList;
