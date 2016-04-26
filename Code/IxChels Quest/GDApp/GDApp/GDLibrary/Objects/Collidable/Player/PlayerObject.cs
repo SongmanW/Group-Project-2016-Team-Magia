@@ -21,10 +21,22 @@ namespace GDLibrary
         private Transform3D oldPTransform;
         private Random random;
         private Matrix[] transforms;
+        private Vector3 translationOffset;
 
         #endregion
 
         #region Properties
+        public Vector3 TranslationOffset
+        {
+            get
+            {
+                return translationOffset;
+            }
+            set
+            {
+                translationOffset = value;
+            }
+        }
         public Keys[] Keys
         {
             get
@@ -40,11 +52,12 @@ namespace GDLibrary
 
         public PlayerObject(string id, ObjectType objectType, Transform3D transform, Effect effect, 
             Texture2D texture, Model model, Color color, float alpha, Keys[] keys,
-         float radius, float height, float accelerationRate, float decelerationRate)
+         float radius, float height, float accelerationRate, float decelerationRate, Vector3 translationOffset)
             : base(id, objectType, transform, effect, texture, model, color, alpha,
                     radius, height, accelerationRate, decelerationRate)
         {
             this.keys = keys;
+            this.translationOffset = translationOffset;
 
             this.Body.CollisionSkin.callbackFn += CollisionSkin_callbackFn;
             this.random = new Random();
@@ -275,6 +288,17 @@ namespace GDLibrary
             bSet = false;
             this.Body.MoveTo(this.Transform3D.Translation, this.Transform3D.Orientation);
             this.Enable(false, 1);
+        }
+
+
+
+        public override Matrix GetWorldMatrix()
+        {
+            return Matrix.CreateScale(this.Transform3D.Scale) *
+                this.Collision.GetPrimitiveLocal(0).Transform.Orientation *
+                this.Body.Orientation *
+                this.Transform3D.Orientation *
+                Matrix.CreateTranslation(this.Body.Position + translationOffset);
         }
 
         public override void Draw(GameTime gameTime)

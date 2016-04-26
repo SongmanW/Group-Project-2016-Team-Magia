@@ -513,13 +513,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Models\Animated.FBX">
-      <Name>Animated</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>SkinnedModelProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="Assets\Models\GP modle\coat.jpg">
       <Name>coat</Name>
       <Importer>TextureImporter</Importer>
@@ -667,7 +660,6 @@
       <Processor>EffectProcessor</Processor>
     </Compile>
   </ItemGroup>
-<<<<<<< HEAD
   <ItemGroup>
     <Compile Include="Assets\Models\animated2.FBX">
       <Name>animated2</Name>
@@ -919,8 +911,6 @@
       <Processor>TextureProcessor</Processor>
     </Compile>
   </ItemGroup>
-=======
->>>>>>> parent of 53fe207... finished import of v19, animation object is usable but our animation does not work yet....
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\$(XnaFrameworkVersion)\Microsoft.Xna.GameStudio.ContentPipeline.targets" />
   <!--  To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
