@@ -441,7 +441,7 @@ namespace GDApp
         {
             Model model = null;
 
-            model = Content.Load<Model>("Assets\\Models\\animated2");
+            model = Content.Load<Model>("Assets\\Models\\animated6");
             this.modelDictionary.Add("player", model);
 
             model = Content.Load<Model>("Assets\\Models\\DoorV1");
@@ -526,7 +526,7 @@ namespace GDApp
                 new Vector3(-90, 0, 0), 0.15f * Vector3.One,
                 Vector3.UnitX, Vector3.UnitY);
             this.playerActor = new AnimatedPlayerObject("player",
-                ObjectType.Player, transform, this.animatedModelEffect, null, model, Color.White, 1f, KeyData.Player_Keys, 3.75f, 11.5f, 1f, 1f, "Take 001" , Vector3.Zero);
+                ObjectType.Player, transform, this.animatedModelEffect, null, model, Color.White, 1f, KeyData.Player_Keys, 3.75f, 11.5f, 1f, 1f, "Take 001" , new Vector3(0, 0, 0));
             this.playerActor.Enable(false, 100);
             this.objectManager.Add(this.playerActor);
             #endregion
@@ -791,7 +791,7 @@ namespace GDApp
 
         private void InitializeManagers(bool isMouseVisible)
         {
-            this.physicsManager = new PhysicsManager(this, false);
+            this.physicsManager = new PhysicsManager(this, true);
             Components.Add(physicsManager);
 
             this.cameraManager = new CameraManager(this);
@@ -805,7 +805,7 @@ namespace GDApp
             this.mouseManager.SetPosition(this.screenCentre); 
             Components.Add(this.mouseManager);
 
-            this.objectManager = new ObjectManager(this, 10, 10, false);
+            this.objectManager = new ObjectManager(this, 10, 10, true);
             this.objectManager.DrawOrder = 1;
             Components.Add(this.objectManager);
 
@@ -1091,7 +1091,7 @@ namespace GDApp
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
+            GraphicsDevice.Clear(Color.Gold);
 
             graphics.GraphicsDevice.SamplerStates[0] 
                             = SamplerState.LinearWrap;
