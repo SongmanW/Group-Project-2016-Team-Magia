@@ -204,7 +204,6 @@ namespace GDApp
         private BasicEffect primitiveEffect;
         private BasicEffect texturedPrimitiveEffect;
         private BasicEffect texturedModelEffect;
-        private Effect animatedModelEffect;
         private Effect billboardEffect;
         private SpriteFont debugFont;
         private Texture2D texture;
@@ -227,7 +226,7 @@ namespace GDApp
         private GenericDictionary<string, Camera3DTrack> trackDictionary;
         private EventDispatcher eventDispatcher;
         private Camera3DTrack cameraTrack;
-        public AnimatedPlayerObject playerActor;
+        public PlayerObject playerActor;
         private PawnCollidableObject doorActor;
         public PawnCollidableObject rotator;
         private PawnCollidableObject step1;
@@ -270,6 +269,13 @@ namespace GDApp
             get
             {
                 return screenRectangle;
+            }
+        }
+        public SpriteBatch SpriteBatch
+        {
+            get
+            {
+                return this.spriteBatch;
             }
         }
         public int NextStep
@@ -364,12 +370,15 @@ namespace GDApp
             InitializeEventDispatcher();
             InitializeStatics();
             IntializeGraphics(1024, 768);
-            InitializeDictionaries();
-            LoadTextures();
-            InitializeFonts();
             InitializeManagers(true);
+            InitializeDictionaries();
+            InitializeFonts();
+<<<<<<< HEAD
             InitializeEffects();
+=======
+            InitializeEffect();
             InitializeUI();
+>>>>>>> refs/remotes/origin/master
 
             //InitializeSkyBox(1000);
             LoadModels();
@@ -390,17 +399,6 @@ namespace GDApp
             this.random = new Random();
             this.interval = 25000 + (float)(random.NextDouble() * 10000 - 5000);
             this.timePassed = 0;
-        }
-
-        private void LoadTextures()
-        {
-            this.textureDictionary.Add("white", Content.Load<Texture2D>("Assets\\Textures\\UI\\white"));
-            //menu
-            this.textureDictionary.Add("mainmenu", Content.Load<Texture2D>("Assets/Textures/Menu/mainmenu"));
-            this.textureDictionary.Add("audiomenu", Content.Load<Texture2D>("Assets/Textures/Menu/audiomenu"));
-            this.textureDictionary.Add("controlsmenu", Content.Load<Texture2D>("Assets/Textures/Menu/exitmenu"));
-            this.textureDictionary.Add("exitmenuwithtrans", Content.Load<Texture2D>("Assets/Textures/Menu/exitmenuwithtrans"));
-
         }
 
         private void InitializeUI()
@@ -441,7 +439,7 @@ namespace GDApp
         {
             Model model = null;
 
-            model = Content.Load<Model>("Assets\\Models\\animated2");
+            model = Content.Load<Model>("Assets\\Models\\animated");
             this.modelDictionary.Add("player", model);
 
             model = Content.Load<Model>("Assets\\Models\\DoorV1");
@@ -525,8 +523,8 @@ namespace GDApp
             transform = new Transform3D(new Vector3(-100, 10, 0),
                 new Vector3(-90, 0, 0), 0.15f * Vector3.One,
                 Vector3.UnitX, Vector3.UnitY);
-            this.playerActor = new AnimatedPlayerObject("player",
-                ObjectType.Player, transform, this.animatedModelEffect, null, model, Color.White, 1f, KeyData.Player_Keys, 3.75f, 11.5f, 1f, 1f, "Take 001" , Vector3.Zero);
+            this.playerActor = new PlayerObject("player",
+                ObjectType.Player, transform, this.texturedModelEffect, null, model, Color.White, 1f, KeyData.Player_Keys, 3.75f, 11.5f, 1f, 1f);
             this.playerActor.Enable(false, 100);
             this.objectManager.Add(this.playerActor);
             #endregion
@@ -786,7 +784,6 @@ namespace GDApp
         private void InitializeStatics()
         {
             Actor.game = this;
-            UIActor.game = this;
         }
 
         private void InitializeManagers(bool isMouseVisible)
@@ -805,7 +802,7 @@ namespace GDApp
             this.mouseManager.SetPosition(this.screenCentre); 
             Components.Add(this.mouseManager);
 
-            this.objectManager = new ObjectManager(this, 10, 10, false);
+            this.objectManager = new ObjectManager(this, 10, 10);
             this.objectManager.DrawOrder = 1;
             Components.Add(this.objectManager);
 
@@ -864,9 +861,6 @@ namespace GDApp
         private void InitializeFonts()
         {
             this.debugFont = Content.Load<SpriteFont>("Assets\\Debug\\Fonts\\debug");
-            this.fontDictionary.Add("debug", Content.Load<SpriteFont>("Assets\\Debug\\Fonts\\debug"));
-            this.fontDictionary.Add("ui", Content.Load<SpriteFont>("Assets\\Fonts\\ui"));
-            this.fontDictionary.Add("menu", Content.Load<SpriteFont>("Assets\\Fonts\\menu"));
         }
         
 
@@ -880,13 +874,11 @@ namespace GDApp
             this.texturedPrimitiveEffect.TextureEnabled = true;
 
             this.texturedModelEffect = new BasicEffect(graphics.GraphicsDevice);
-            this.texturedModelEffect.VertexColorEnabled = true; //bug - 22/4/16
+            // this.texturedModelEffect.VertexColorEnabled = true; //bug - 22/4/16
             this.texturedModelEffect.TextureEnabled = false;
 
             //used for billboards
             this.billboardEffect = Content.Load<Effect>("Assets/Effects/Billboard");
-
-            this.animatedModelEffect = Content.Load<Effect>("Assets/Effects/Animated");
         }
     
 
