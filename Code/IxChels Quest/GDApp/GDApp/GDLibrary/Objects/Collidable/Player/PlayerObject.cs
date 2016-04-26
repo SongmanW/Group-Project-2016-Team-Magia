@@ -131,11 +131,11 @@ namespace GDLibrary
                     Vector3 moveVector = Vector3.Normalize(moveVectorX + moveVectorZ);
                     if (moveVector.Z >= 0)
                     {
-                        this.Transform3D.RotateTo(new Vector3(-90, -MathHelper.ToDegrees((float)Math.Acos(moveVector.X)), 0));
+                        this.Transform3D.RotateTo(new Vector3(-90, -90-MathHelper.ToDegrees((float)Math.Acos(moveVector.X)), 0));
                     }
                     else
                     {
-                        this.Transform3D.RotateTo(new Vector3(-90, MathHelper.ToDegrees((float)Math.Acos(moveVector.X)), 0));
+                        this.Transform3D.RotateTo(new Vector3(-90, -90 + MathHelper.ToDegrees((float)Math.Acos(moveVector.X)), 0));
                     }
                 }
                 if (game.NextStep > 1)

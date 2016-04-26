@@ -401,6 +401,35 @@ namespace GDApp
             this.textureDictionary.Add("controlsmenu", Content.Load<Texture2D>("Assets/Textures/Menu/exitmenu"));
             this.textureDictionary.Add("exitmenuwithtrans", Content.Load<Texture2D>("Assets/Textures/Menu/exitmenuwithtrans"));
 
+            //IxChel - Menu
+            this.textureDictionary.Add("IButton", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/AudioButton"));
+            this.textureDictionary.Add("IButtonHighlighted", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/AudioButtonHighlighted"));
+            this.textureDictionary.Add("IAudio", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/AudioMenu"));
+            this.textureDictionary.Add("IAudioMenuMusic", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/AudioMenuMusic"));
+            this.textureDictionary.Add("IAudioMenuMute", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/AudioMenuMute"));
+            this.textureDictionary.Add("IAudioMenuReturn", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/AudioMenuReturn"));
+            this.textureDictionary.Add("IAudioMenuSFX", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/AudioMenuSFX"));
+            this.textureDictionary.Add("IControlsMenu", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/ControlsMenu"));
+            this.textureDictionary.Add("IControlsMenuReturn", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/ControlsMenuReturn"));
+            this.textureDictionary.Add("IMainMenu", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/MainMenu"));
+            this.textureDictionary.Add("IMainMenuOptions", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/MainMenuOptions"));
+            this.textureDictionary.Add("IMainMenuQuit", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/MainMenuQuit"));
+            this.textureDictionary.Add("IMainMEnuStart", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/MainMEnuStart"));
+            this.textureDictionary.Add("IOptionsMenu", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/OptionsMenu"));
+            this.textureDictionary.Add("IOptionsMenuAudio", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/OptionsMenuAudio"));
+            this.textureDictionary.Add("IOptionsMenuControls", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/OptionsMenuControls"));
+            this.textureDictionary.Add("IOptionsMenuReturn", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/OptionsMenuReturn"));
+            this.textureDictionary.Add("IPauseMenu", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/PauseMenu"));
+            this.textureDictionary.Add("IPauseMenuOptions", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/PauseMenuOptions"));
+            this.textureDictionary.Add("Imainmenu", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/PauseMenuQuit"));
+            this.textureDictionary.Add("Imainmenu", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/PauseMenuRestart"));
+            this.textureDictionary.Add("Imainmenu", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/PauseMenuResume"));
+            this.textureDictionary.Add("Imainmenu", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/YouLose"));
+            this.textureDictionary.Add("Imainmenu", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/YouLoseQuit"));
+            this.textureDictionary.Add("Imainmenu", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/YouLoseRestart"));
+            this.textureDictionary.Add("Imainmenu", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/YouWin"));
+            this.textureDictionary.Add("Imainmenu", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/YouWinQuit"));
+            this.textureDictionary.Add("Imainmenu", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/YouWinRestart"));
         }
 
         private void InitializeUI()
@@ -441,7 +470,7 @@ namespace GDApp
         {
             Model model = null;
 
-            model = Content.Load<Model>("Assets\\Models\\animated6");
+            model = Content.Load<Model>("Assets\\Models\\Animated\\dude");
             this.modelDictionary.Add("player", model);
 
             model = Content.Load<Model>("Assets\\Models\\DoorV1");
@@ -523,10 +552,10 @@ namespace GDApp
             #region Player Model
             model = this.modelDictionary["player"];
             transform = new Transform3D(new Vector3(-100, 10, 0),
-                new Vector3(-90, 0, 0), 0.15f * Vector3.One,
+                new Vector3(-90, -90, 0), 0.30f * Vector3.One,
                 Vector3.UnitX, Vector3.UnitY);
             this.playerActor = new AnimatedPlayerObject("player",
-                ObjectType.Player, transform, this.animatedModelEffect, null, model, Color.White, 1f, KeyData.Player_Keys, 3.75f, 11.5f, 1f, 1f, "Take 001" , new Vector3(0, 0, 0));
+                ObjectType.Player, transform, this.animatedModelEffect, null, model, Color.White, 1f, KeyData.Player_Keys, 3.75f, 11.5f, 1f, 1f,"Take 001", new Vector3(0, -10, 0));
             this.playerActor.Enable(false, 100);
             this.objectManager.Add(this.playerActor);
             #endregion
