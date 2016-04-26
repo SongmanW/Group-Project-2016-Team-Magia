@@ -993,26 +993,18 @@
       <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\skin\sign1_0.xnb</Request>
     </Item>
     <Item>
-      <Source>Assets\Models\Animated.FBX</Source>
-      <Name>Assets\Models\Animated</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>SkinnedModelProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\Animated.xnb</Output>
-      <Time>0001-01-01T00:00:00</Time>
-      <Dependency>
-        <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\Animated_0.xml</Key>
-        <Value>2016-04-25T13:42:46.1419258+01:00</Value>
-      </Dependency>
-    </Item>
-    <Item>
       <Source>Assets\Models\arrow1.FBX</Source>
       <Name>Assets\Models\arrow1</Name>
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\arrow1.xnb</Output>
-      <Time>0001-01-01T00:00:00</Time>
+      <Time>2016-04-22T15:24:53.0590271+01:00</Time>
+      <Dependency>
+        <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\arrow1_0.xml</Key>
+        <Value>2016-04-25T20:16:49.7221532+01:00</Value>
+      </Dependency>
+      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\skin\RUSTY-METAL-TEXTURE_0.xnb</Request>
     </Item>
     <Item>
       <Source>Assets\Audio\Sounds\Arrow.wav</Source>
@@ -1021,7 +1013,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Audio\Sounds\Arrow.xnb</Output>
-      <Time>0001-01-01T00:00:00</Time>
+      <Time>2016-04-22T15:04:17.5607754+01:00</Time>
     </Item>
     <Item>
       <Source>Assets\Audio\Sounds\Arrow_Load.wav</Source>
@@ -1030,7 +1022,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Audio\Sounds\Arrow_Load.xnb</Output>
-      <Time>0001-01-01T00:00:00</Time>
+      <Time>2016-04-22T15:04:18.1400184+01:00</Time>
     </Item>
     <Item>
       <Source>Assets\Audio\Sounds\Background.wav</Source>
@@ -1039,7 +1031,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Audio\Sounds\Background.xnb</Output>
-      <Time>0001-01-01T00:00:00</Time>
+      <Time>2016-04-22T15:04:19.0242508+01:00</Time>
     </Item>
     <Item>
       <Source>Assets\Audio\Sounds\Death_Grunt.wav</Source>
@@ -1048,7 +1040,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Audio\Sounds\Death_Grunt.xnb</Output>
-      <Time>0001-01-01T00:00:00</Time>
+      <Time>2016-04-22T15:04:19.0272528+01:00</Time>
     </Item>
     <Item>
       <Source>Assets\Audio\Sounds\Footsteps_Stone.wav</Source>
@@ -1057,7 +1049,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Audio\Sounds\Footsteps_Stone.xnb</Output>
-      <Time>0001-01-01T00:00:00</Time>
+      <Time>2016-04-22T15:04:19.0516304+01:00</Time>
     </Item>
     <Item>
       <Source>Assets\Audio\Sounds\Menu_Select.wav</Source>
@@ -1066,7 +1058,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Audio\Sounds\Menu_Select.xnb</Output>
-      <Time>0001-01-01T00:00:00</Time>
+      <Time>2016-04-22T15:04:19.0546317+01:00</Time>
     </Item>
     <Item>
       <Source>Assets\Audio\Sounds\Pressure_Plate.wav</Source>
@@ -1075,7 +1067,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Audio\Sounds\Pressure_Plate.xnb</Output>
-      <Time>0001-01-01T00:00:00</Time>
+      <Time>2016-04-22T16:04:55.3944712+01:00</Time>
     </Item>
     <Item>
       <Source>Assets\Audio\Sounds\Prompt(Cue).wav</Source>
@@ -1084,7 +1076,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Audio\Sounds\Prompt(Cue).xnb</Output>
-      <Time>0001-01-01T00:00:00</Time>
+      <Time>2016-04-22T15:04:19.0586347+01:00</Time>
     </Item>
     <Item>
       <Source>Assets\Audio\Sounds\Rocks_Falling.wav</Source>
@@ -1093,7 +1085,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Audio\Sounds\Rocks_Falling.xnb</Output>
-      <Time>0001-01-01T00:00:00</Time>
+      <Time>2016-04-22T15:04:19.0626421+01:00</Time>
     </Item>
     <Item>
       <Source>Assets\Audio\Sounds\Stone_Door.wav</Source>
@@ -1102,7 +1094,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Audio\Sounds\Stone_Door.xnb</Output>
-      <Time>0001-01-01T00:00:00</Time>
+      <Time>2016-04-22T15:04:19.065641+01:00</Time>
     </Item>
     <Item>
       <Source>Assets\Audio\Sounds\Totem_Rotate.wav</Source>
@@ -1111,7 +1103,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Audio\Sounds\Totem_Rotate.xnb</Output>
-      <Time>0001-01-01T00:00:00</Time>
+      <Time>2016-04-22T15:04:19.0686442+01:00</Time>
     </Item>
     <Item>
       <Source>Assets\Audio\Sounds\Tribal_Drums.wav</Source>
@@ -1120,7 +1112,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Audio\Sounds\Tribal_Drums.xnb</Output>
-      <Time>0001-01-01T00:00:00</Time>
+      <Time>2016-04-22T15:04:19.0806506+01:00</Time>
     </Item>
     <Item>
       <Source>Assets\Audio\Sounds\Footsteps_Stone3.wav</Source>
@@ -1129,7 +1121,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Audio\Sounds\Footsteps_Stone3.xnb</Output>
-      <Time>0001-01-01T00:00:00</Time>
+      <Time>2016-04-22T15:45:39.9037595+01:00</Time>
     </Item>
     <Item>
       <Source>Assets\Audio\Sounds\Footsteps_Stone1.wav</Source>
@@ -1138,7 +1130,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Audio\Sounds\Footsteps_Stone1.xnb</Output>
-      <Time>0001-01-01T00:00:00</Time>
+      <Time>2016-04-22T15:45:44.5059152+01:00</Time>
     </Item>
     <Item>
       <Source>Assets\Audio\Sounds\Footsteps_Stone2.wav</Source>
@@ -1147,7 +1139,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Audio\Sounds\Footsteps_Stone2.xnb</Output>
-      <Time>0001-01-01T00:00:00</Time>
+      <Time>2016-04-22T15:45:44.5079161+01:00</Time>
     </Item>
     <Item>
       <Source>Assets\Models\generic\box.FBX</Source>
@@ -1648,10 +1640,41 @@
       <Time>2016-04-21T13:13:21.7598171+01:00</Time>
     </Item>
     <Item>
-      <Source>Assets\Models\Animated.FBX</Source>
+      <Source>Assets\Effects\Billboard.fx</Source>
+      <Name>Assets\Effects\Billboard</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Effects\Billboard.xnb</Output>
+      <Time>2016-04-25T14:01:54.6069542+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Models\arrow1.FBX</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-<<<<<<< HEAD
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\arrow1_0.xml</Output>
+      <Time>2016-04-22T15:24:53.0590271+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Models\skin\RUSTY-METAL-TEXTURE.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\skin\RUSTY-METAL-TEXTURE_0.xnb</Output>
+      <Time>2016-04-22T15:25:36.0096636+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Models\animated2.FBX</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\animated2_0.xml</Output>
       <Time>2016-04-25T20:42:40.6351812+01:00</Time>
     </Item>
@@ -1685,21 +1708,12 @@
     <Item>
       <Source>Assets\Effects\Animated.fx</Source>
       <Name>Assets\Effects\Animated</Name>
-=======
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\Animated_0.xml</Output>
-      <Time>2016-04-22T13:08:45.3194034+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Effects\Billboard.fx</Source>
-      <Name>Assets\Effects\Billboard</Name>
->>>>>>> parent of 53fe207... finished import of v19, animation object is usable but our animation does not work yet....
       <Importer>EffectImporter</Importer>
       <Processor>EffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Effects\Billboard.xnb</Output>
-      <Time>0001-01-01T00:00:00</Time>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Effects\Animated.xnb</Output>
+      <Time>2016-04-25T21:46:35.7224828+01:00</Time>
     </Item>
-<<<<<<< HEAD
     <Item>
       <Source>Assets\Models\animated3.FBX</Source>
       <Importer>FbxImporter</Importer>
@@ -2334,9 +2348,6 @@
       <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\GP modle\shouse_0.xnb</Request>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
-=======
-    <BuildSuccessful>false</BuildSuccessful>
->>>>>>> parent of 53fe207... finished import of v19, animation object is usable but our animation does not work yet....
     <Settings>
       <ContentProjectGUID>{A8302FA8-6217-4691-BDFF-0D183CB4B6E5}</ContentProjectGUID>
       <TargetPlatform>Windows</TargetPlatform>

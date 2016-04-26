@@ -204,6 +204,7 @@ namespace GDApp
         private BasicEffect primitiveEffect;
         private BasicEffect texturedPrimitiveEffect;
         private BasicEffect texturedModelEffect;
+        private Effect animatedModelEffect;
         private Effect billboardEffect;
         private SpriteFont debugFont;
         private Texture2D texture;
@@ -226,7 +227,7 @@ namespace GDApp
         private GenericDictionary<string, Camera3DTrack> trackDictionary;
         private EventDispatcher eventDispatcher;
         private Camera3DTrack cameraTrack;
-        public PlayerObject playerActor;
+        public AnimatedPlayerObject playerActor;
         private PawnCollidableObject doorActor;
         public PawnCollidableObject rotator;
         private PawnCollidableObject step1;
@@ -269,13 +270,6 @@ namespace GDApp
             get
             {
                 return screenRectangle;
-            }
-        }
-        public SpriteBatch SpriteBatch
-        {
-            get
-            {
-                return this.spriteBatch;
             }
         }
         public int NextStep
@@ -370,15 +364,12 @@ namespace GDApp
             InitializeEventDispatcher();
             InitializeStatics();
             IntializeGraphics(1024, 768);
-            InitializeManagers(true);
             InitializeDictionaries();
+            LoadTextures();
             InitializeFonts();
-<<<<<<< HEAD
+            InitializeManagers(true);
             InitializeEffects();
-=======
-            InitializeEffect();
             InitializeUI();
->>>>>>> refs/remotes/origin/master
 
             //InitializeSkyBox(1000);
             LoadModels();
@@ -401,7 +392,6 @@ namespace GDApp
             this.timePassed = 0;
         }
 
-<<<<<<< HEAD
         private void LoadTextures()
         {
             this.textureDictionary.Add("white", Content.Load<Texture2D>("Assets\\Textures\\UI\\white"));
@@ -442,8 +432,6 @@ namespace GDApp
             this.textureDictionary.Add("Imainmenu", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/YouWinRestart"));
         }
 
-=======
->>>>>>> parent of 53fe207... finished import of v19, animation object is usable but our animation does not work yet....
         private void InitializeUI()
         {
             InitializeUIMenu();
@@ -482,11 +470,7 @@ namespace GDApp
         {
             Model model = null;
 
-<<<<<<< HEAD
             model = Content.Load<Model>("Assets\\Models\\Animated\\dude");
-=======
-            model = Content.Load<Model>("Assets\\Models\\animated");
->>>>>>> parent of 53fe207... finished import of v19, animation object is usable but our animation does not work yet....
             this.modelDictionary.Add("player", model);
 
             model = Content.Load<Model>("Assets\\Models\\DoorV1");
@@ -570,13 +554,8 @@ namespace GDApp
             transform = new Transform3D(new Vector3(-100, 10, 0),
                 new Vector3(-90, -90, 0), 0.30f * Vector3.One,
                 Vector3.UnitX, Vector3.UnitY);
-<<<<<<< HEAD
             this.playerActor = new AnimatedPlayerObject("player",
                 ObjectType.Player, transform, this.animatedModelEffect, null, model, Color.White, 1f, KeyData.Player_Keys, 3.75f, 11.5f, 1f, 1f,"Take 001", new Vector3(0, -10, 0));
-=======
-            this.playerActor = new PlayerObject("player",
-                ObjectType.Player, transform, this.texturedModelEffect, null, model, Color.White, 1f, KeyData.Player_Keys, 3.75f, 11.5f, 1f, 1f);
->>>>>>> parent of 53fe207... finished import of v19, animation object is usable but our animation does not work yet....
             this.playerActor.Enable(false, 100);
             this.objectManager.Add(this.playerActor);
             #endregion
@@ -836,6 +815,7 @@ namespace GDApp
         private void InitializeStatics()
         {
             Actor.game = this;
+            UIActor.game = this;
         }
 
         private void InitializeManagers(bool isMouseVisible)
@@ -854,11 +834,7 @@ namespace GDApp
             this.mouseManager.SetPosition(this.screenCentre); 
             Components.Add(this.mouseManager);
 
-<<<<<<< HEAD
             this.objectManager = new ObjectManager(this, 10, 10, true);
-=======
-            this.objectManager = new ObjectManager(this, 10, 10);
->>>>>>> parent of 53fe207... finished import of v19, animation object is usable but our animation does not work yet....
             this.objectManager.DrawOrder = 1;
             Components.Add(this.objectManager);
 
@@ -917,6 +893,9 @@ namespace GDApp
         private void InitializeFonts()
         {
             this.debugFont = Content.Load<SpriteFont>("Assets\\Debug\\Fonts\\debug");
+            this.fontDictionary.Add("debug", Content.Load<SpriteFont>("Assets\\Debug\\Fonts\\debug"));
+            this.fontDictionary.Add("ui", Content.Load<SpriteFont>("Assets\\Fonts\\ui"));
+            this.fontDictionary.Add("menu", Content.Load<SpriteFont>("Assets\\Fonts\\menu"));
         }
         
 
@@ -930,11 +909,13 @@ namespace GDApp
             this.texturedPrimitiveEffect.TextureEnabled = true;
 
             this.texturedModelEffect = new BasicEffect(graphics.GraphicsDevice);
-            // this.texturedModelEffect.VertexColorEnabled = true; //bug - 22/4/16
+            this.texturedModelEffect.VertexColorEnabled = true; //bug - 22/4/16
             this.texturedModelEffect.TextureEnabled = false;
 
             //used for billboards
             this.billboardEffect = Content.Load<Effect>("Assets/Effects/Billboard");
+
+            this.animatedModelEffect = Content.Load<Effect>("Assets/Effects/Animated");
         }
     
 
