@@ -305,7 +305,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\audiomenu.xnb</Output>
-      <Time>2016-04-26T13:07:46.5750291+01:00</Time>
+      <Time>2016-02-20T15:54:53.2148895+00:00</Time>
     </Item>
     <Item>
       <Source>Assets\Textures\Menu\exitmenu.png</Source>
@@ -314,7 +314,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\exitmenu.xnb</Output>
-      <Time>2016-04-26T13:07:46.6556726+01:00</Time>
+      <Time>2016-02-20T15:54:53.2153885+00:00</Time>
     </Item>
     <Item>
       <Source>Assets\Textures\Menu\exitmenuwithtrans.png</Source>
@@ -323,7 +323,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\exitmenuwithtrans.xnb</Output>
-      <Time>2016-04-26T13:07:46.7364274+01:00</Time>
+      <Time>2016-02-20T15:54:53.2163927+00:00</Time>
     </Item>
     <Item>
       <Source>Assets\Textures\Menu\mainmenu.PNG</Source>
@@ -332,7 +332,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\mainmenu.xnb</Output>
-      <Time>2016-04-26T13:07:46.8319593+01:00</Time>
+      <Time>2016-02-20T15:54:53.2173563+00:00</Time>
     </Item>
     <Item>
       <Source>Assets\Textures\UI\mouseicons.png</Source>
@@ -1679,6 +1679,19 @@
       <Time>2016-04-25T20:42:40.6351812+01:00</Time>
     </Item>
     <Item>
+      <Source>Assets\Models\animated2.FBX</Source>
+      <Name>Assets\Models\animated2</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\animated2.xnb</Output>
+      <Time>2016-04-25T20:42:40.6351812+01:00</Time>
+      <Dependency>
+        <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\animated2_0.xml</Key>
+        <Value>2016-04-25T20:42:45.7656062+01:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
       <Source>Assets\Fonts\menu.spritefont</Source>
       <Name>Assets\Fonts\menu</Name>
       <Importer>FontDescriptionImporter</Importer>
@@ -1719,7 +1732,7 @@
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\animated3_0.xml</Output>
-      <Time>2016-04-26T11:02:18.2556099+01:00</Time>
+      <Time>2016-04-26T09:21:50.9245193+01:00</Time>
     </Item>
     <Item>
       <Source>Assets\Models\animated3.FBX</Source>
@@ -1728,10 +1741,10 @@
       <Processor>SkinnedModelProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\animated3.xnb</Output>
-      <Time>2016-04-26T11:02:18.2556099+01:00</Time>
+      <Time>2016-04-26T09:21:50.9245193+01:00</Time>
       <Dependency>
         <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\animated3_0.xml</Key>
-        <Value>2016-04-26T13:12:57.6504285+01:00</Value>
+        <Value>2016-04-26T09:21:56.4456861+01:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -1739,7 +1752,20 @@
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\animated4_0.xml</Output>
-      <Time>2016-04-26T11:02:18.2712337+01:00</Time>
+      <Time>2016-04-26T09:48:57.8880193+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Models\animated4.FBX</Source>
+      <Name>Assets\Models\animated4</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\animated4.xnb</Output>
+      <Time>2016-04-26T09:48:57.8880193+01:00</Time>
+      <Dependency>
+        <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\animated4_0.xml</Key>
+        <Value>2016-04-26T09:49:06.0038026+01:00</Value>
+      </Dependency>
     </Item>
     <Item>
       <Source>Assets\Models\animated5.FBX</Source>
@@ -1748,10 +1774,10 @@
       <Processor>SkinnedModelProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\animated5.xnb</Output>
-      <Time>2016-04-26T11:02:18.2712337+01:00</Time>
+      <Time>2016-04-26T10:09:39.9047788+01:00</Time>
       <Dependency>
         <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\animated5_0.xml</Key>
-        <Value>2016-04-26T13:13:00.1050455+01:00</Value>
+        <Value>2016-04-26T10:09:57.3378391+01:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -1759,7 +1785,7 @@
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\animated5_0.xml</Output>
-      <Time>2016-04-26T11:02:18.2712337+01:00</Time>
+      <Time>2016-04-26T10:09:39.9047788+01:00</Time>
     </Item>
     <Item>
       <Source>Assets\Models\Animated\head.tga</Source>
@@ -1768,7 +1794,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\Animated\head.xnb</Output>
-      <Time>2016-04-26T11:02:18.1618543+01:00</Time>
+      <Time>2016-04-26T10:23:18.6550868+01:00</Time>
     </Item>
     <Item>
       <Source>Assets\Models\Animated\jacket.tga</Source>
@@ -1777,7 +1803,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\Animated\jacket.xnb</Output>
-      <Time>2016-04-26T11:02:18.1931094+01:00</Time>
+      <Time>2016-04-26T10:23:18.6550868+01:00</Time>
     </Item>
     <Item>
       <Source>Assets\Models\Animated\pants.tga</Source>
@@ -1786,7 +1812,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\Animated\pants.xnb</Output>
-      <Time>2016-04-26T11:02:18.2087329+01:00</Time>
+      <Time>2016-04-26T10:23:18.6707237+01:00</Time>
     </Item>
     <Item>
       <Source>Assets\Models\Animated\Tiny_skin.dds</Source>
@@ -1795,7 +1821,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\Animated\Tiny_skin.xnb</Output>
-      <Time>2016-04-26T11:02:18.0696922+01:00</Time>
+      <Time>2016-04-26T10:23:18.6707237+01:00</Time>
     </Item>
     <Item>
       <Source>Assets\Models\Animated\upBodyC.tga</Source>
@@ -1804,7 +1830,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\Animated\upBodyC.xnb</Output>
-      <Time>2016-04-26T11:02:18.2399876+01:00</Time>
+      <Time>2016-04-26T10:23:18.6863345+01:00</Time>
     </Item>
     <Item>
       <Source>Assets\Models\Animated\dude.fbx</Source>
@@ -1813,10 +1839,10 @@
       <Processor>SkinnedModelProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\Animated\dude.xnb</Output>
-      <Time>2016-04-26T11:02:18.1306011+01:00</Time>
+      <Time>2016-04-26T10:23:18.6394603+01:00</Time>
       <Dependency>
         <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\Animated\dude_0.xml</Key>
-        <Value>2016-04-26T13:13:05.2505244+01:00</Value>
+        <Value>2016-04-26T10:23:41.0070193+01:00</Value>
       </Dependency>
       <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\Animated\head_0.xnb</Request>
       <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\Animated\jacket_0.xnb</Request>
@@ -1830,14 +1856,14 @@
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\Animated\dude_spheres.xnb</Output>
-      <Time>2016-04-26T11:02:18.1306011+01:00</Time>
+      <Time>2016-04-26T10:23:18.6394603+01:00</Time>
     </Item>
     <Item>
       <Source>Assets\Models\Animated\dude.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\Animated\dude_0.xml</Output>
-      <Time>2016-04-26T11:02:18.1306011+01:00</Time>
+      <Time>2016-04-26T10:23:18.6394603+01:00</Time>
     </Item>
     <Item>
       <Source>Assets\Models\Animated\head.tga</Source>
@@ -1853,7 +1879,7 @@
       </Parameters>
       <Options>None</Options>
       <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\Animated\head_0.xnb</Output>
-      <Time>2016-04-26T11:02:18.1618543+01:00</Time>
+      <Time>2016-04-26T10:23:18.6550868+01:00</Time>
     </Item>
     <Item>
       <Source>Assets\Models\Animated\jacket.tga</Source>
@@ -1869,7 +1895,7 @@
       </Parameters>
       <Options>None</Options>
       <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\Animated\jacket_0.xnb</Output>
-      <Time>2016-04-26T11:02:18.1931094+01:00</Time>
+      <Time>2016-04-26T10:23:18.6550868+01:00</Time>
     </Item>
     <Item>
       <Source>Assets\Models\Animated\pants.tga</Source>
@@ -1885,7 +1911,7 @@
       </Parameters>
       <Options>None</Options>
       <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\Animated\pants_0.xnb</Output>
-      <Time>2016-04-26T11:02:18.2087329+01:00</Time>
+      <Time>2016-04-26T10:23:18.6707237+01:00</Time>
     </Item>
     <Item>
       <Source>Assets\Models\Animated\upBodyC.tga</Source>
@@ -1901,14 +1927,14 @@
       </Parameters>
       <Options>None</Options>
       <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\Animated\upBodyC_0.xnb</Output>
-      <Time>2016-04-26T11:02:18.2399876+01:00</Time>
+      <Time>2016-04-26T10:23:18.6863345+01:00</Time>
     </Item>
     <Item>
       <Source>Assets\Models\animated6.FBX</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\animated6_0.xml</Output>
-      <Time>2016-04-26T11:02:18.2868615+01:00</Time>
+      <Time>2016-04-26T10:50:47.7285713+01:00</Time>
     </Item>
     <Item>
       <Source>Assets\Models\animated6.FBX</Source>
@@ -1917,435 +1943,11 @@
       <Processor>SkinnedModelProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\animated6.xnb</Output>
-      <Time>2016-04-26T11:02:18.2868615+01:00</Time>
+      <Time>2016-04-26T10:50:47.7285713+01:00</Time>
       <Dependency>
         <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\animated6_0.xml</Key>
-        <Value>2016-04-26T13:13:09.8326568+01:00</Value>
+        <Value>2016-04-26T10:50:55.0315449+01:00</Value>
       </Dependency>
-    </Item>
-    <Item>
-      <Source>Assets\Textures\Menu\IxChel\AudioButton.png</Source>
-      <Name>Assets\Textures\Menu\IxChel\AudioButton</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\IxChel\AudioButton.xnb</Output>
-      <Time>2016-04-26T13:08:25.833815+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Textures\Menu\IxChel\AudioButtonHighlighted.png</Source>
-      <Name>Assets\Textures\Menu\IxChel\AudioButtonHighlighted</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\IxChel\AudioButtonHighlighted.xnb</Output>
-      <Time>2016-04-26T13:08:25.849444+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Textures\Menu\IxChel\AudioMenu.png</Source>
-      <Name>Assets\Textures\Menu\IxChel\AudioMenu</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\IxChel\AudioMenu.xnb</Output>
-      <Time>2016-04-26T13:08:25.849444+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Textures\Menu\IxChel\AudioMenuMusic.png</Source>
-      <Name>Assets\Textures\Menu\IxChel\AudioMenuMusic</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\IxChel\AudioMenuMusic.xnb</Output>
-      <Time>2016-04-26T13:08:25.8650662+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Textures\Menu\IxChel\AudioMenuMute.png</Source>
-      <Name>Assets\Textures\Menu\IxChel\AudioMenuMute</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\IxChel\AudioMenuMute.xnb</Output>
-      <Time>2016-04-26T13:08:25.8806944+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Textures\Menu\IxChel\AudioMenuReturn.png</Source>
-      <Name>Assets\Textures\Menu\IxChel\AudioMenuReturn</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\IxChel\AudioMenuReturn.xnb</Output>
-      <Time>2016-04-26T13:08:25.8806944+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Textures\Menu\IxChel\AudioMenuSFX.png</Source>
-      <Name>Assets\Textures\Menu\IxChel\AudioMenuSFX</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\IxChel\AudioMenuSFX.xnb</Output>
-      <Time>2016-04-26T13:08:25.8963174+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Textures\Menu\IxChel\ControlsMenu.png</Source>
-      <Name>Assets\Textures\Menu\IxChel\ControlsMenu</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\IxChel\ControlsMenu.xnb</Output>
-      <Time>2016-04-26T13:08:25.8963174+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Textures\Menu\IxChel\ControlsMenuReturn.png</Source>
-      <Name>Assets\Textures\Menu\IxChel\ControlsMenuReturn</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\IxChel\ControlsMenuReturn.xnb</Output>
-      <Time>2016-04-26T13:08:25.911946+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Textures\Menu\IxChel\MainMenu.png</Source>
-      <Name>Assets\Textures\Menu\IxChel\MainMenu</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\IxChel\MainMenu.xnb</Output>
-      <Time>2016-04-26T13:08:25.9275738+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Textures\Menu\IxChel\MainMenuOptions.png</Source>
-      <Name>Assets\Textures\Menu\IxChel\MainMenuOptions</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\IxChel\MainMenuOptions.xnb</Output>
-      <Time>2016-04-26T13:08:25.9275738+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Textures\Menu\IxChel\MainMenuQuit.png</Source>
-      <Name>Assets\Textures\Menu\IxChel\MainMenuQuit</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\IxChel\MainMenuQuit.xnb</Output>
-      <Time>2016-04-26T13:08:25.9431948+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Textures\Menu\IxChel\MainMenuStart.png</Source>
-      <Name>Assets\Textures\Menu\IxChel\MainMenuStart</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\IxChel\MainMenuStart.xnb</Output>
-      <Time>2016-04-26T13:08:25.9588273+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Textures\Menu\IxChel\OptionsMenu.png</Source>
-      <Name>Assets\Textures\Menu\IxChel\OptionsMenu</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\IxChel\OptionsMenu.xnb</Output>
-      <Time>2016-04-26T13:08:25.9588273+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Textures\Menu\IxChel\OptionsMenuAudio.png</Source>
-      <Name>Assets\Textures\Menu\IxChel\OptionsMenuAudio</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\IxChel\OptionsMenuAudio.xnb</Output>
-      <Time>2016-04-26T13:08:25.9744488+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Textures\Menu\IxChel\OptionsMenuControls.png</Source>
-      <Name>Assets\Textures\Menu\IxChel\OptionsMenuControls</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\IxChel\OptionsMenuControls.xnb</Output>
-      <Time>2016-04-26T13:08:25.9744488+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Textures\Menu\IxChel\OptionsMenuReturn.png</Source>
-      <Name>Assets\Textures\Menu\IxChel\OptionsMenuReturn</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\IxChel\OptionsMenuReturn.xnb</Output>
-      <Time>2016-04-26T13:08:25.9900726+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Textures\Menu\IxChel\PauseMenu.png</Source>
-      <Name>Assets\Textures\Menu\IxChel\PauseMenu</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\IxChel\PauseMenu.xnb</Output>
-      <Time>2016-04-26T13:08:26.0057028+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Textures\Menu\IxChel\PauseMenuOptions.png</Source>
-      <Name>Assets\Textures\Menu\IxChel\PauseMenuOptions</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\IxChel\PauseMenuOptions.xnb</Output>
-      <Time>2016-04-26T13:08:26.0057028+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Textures\Menu\IxChel\PauseMenuQuit.png</Source>
-      <Name>Assets\Textures\Menu\IxChel\PauseMenuQuit</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\IxChel\PauseMenuQuit.xnb</Output>
-      <Time>2016-04-26T13:08:26.0277198+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Textures\Menu\IxChel\PauseMenuRestart.png</Source>
-      <Name>Assets\Textures\Menu\IxChel\PauseMenuRestart</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\IxChel\PauseMenuRestart.xnb</Output>
-      <Time>2016-04-26T13:08:26.0367262+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Textures\Menu\IxChel\PauseMenuResume.png</Source>
-      <Name>Assets\Textures\Menu\IxChel\PauseMenuResume</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\IxChel\PauseMenuResume.xnb</Output>
-      <Time>2016-04-26T13:08:26.0467325+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Models\animetedn4.fbx</Source>
-      <Importer>FbxImporter</Importer>
-      <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\animetedn4_0.xml</Output>
-      <Time>2016-04-26T13:12:32.2967509+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Textures\Menu\IxChel\YouLose.png</Source>
-      <Name>Assets\Textures\Menu\IxChel\YouLose</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\IxChel\YouLose.xnb</Output>
-      <Time>2016-04-26T13:17:08.2736455+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Textures\Menu\IxChel\YouLoseQuit.png</Source>
-      <Name>Assets\Textures\Menu\IxChel\YouLoseQuit</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\IxChel\YouLoseQuit.xnb</Output>
-      <Time>2016-04-26T13:17:08.289282+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Textures\Menu\IxChel\YouLoseRestart.png</Source>
-      <Name>Assets\Textures\Menu\IxChel\YouLoseRestart</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\IxChel\YouLoseRestart.xnb</Output>
-      <Time>2016-04-26T13:17:08.289282+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Textures\Menu\IxChel\YouWin.png</Source>
-      <Name>Assets\Textures\Menu\IxChel\YouWin</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\IxChel\YouWin.xnb</Output>
-      <Time>2016-04-26T13:17:08.3048963+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Textures\Menu\IxChel\YouWinQuit.png</Source>
-      <Name>Assets\Textures\Menu\IxChel\YouWinQuit</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\IxChel\YouWinQuit.xnb</Output>
-      <Time>2016-04-26T13:17:08.3674003+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Textures\Menu\IxChel\YouWinRestart.png</Source>
-      <Name>Assets\Textures\Menu\IxChel\YouWinRestart</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\IxChel\YouWinRestart.xnb</Output>
-      <Time>2016-04-26T13:17:08.4455301+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Models\animetedn4.fbx</Source>
-      <Name>Assets\Models\animetedn4</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>SkinnedModelProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\animetedn4.xnb</Output>
-      <Time>2016-04-26T13:12:32.2967509+01:00</Time>
-      <Dependency>
-        <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\animetedn4_0.xml</Key>
-        <Value>2016-04-26T13:13:12.6801121+01:00</Value>
-      </Dependency>
-    </Item>
-    <Item>
-      <Source>Assets\Models\GP modle\coat.jpg</Source>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Parameters>
-        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
-        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
-        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
-        <Data Key="GenerateMipmaps" Type="bool">true</Data>
-        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
-        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
-      </Parameters>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\GP modle\coat_0.xnb</Output>
-      <Time>2016-04-22T13:35:17.8923831+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Models\GP modle\hand.jpg</Source>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Parameters>
-        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
-        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
-        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
-        <Data Key="GenerateMipmaps" Type="bool">true</Data>
-        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
-        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
-      </Parameters>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\GP modle\hand_0.xnb</Output>
-      <Time>2016-04-22T13:35:44.1593235+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Models\GP modle\leg.jpg</Source>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Parameters>
-        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
-        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
-        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
-        <Data Key="GenerateMipmaps" Type="bool">true</Data>
-        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
-        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
-      </Parameters>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\GP modle\leg_0.xnb</Output>
-      <Time>2016-04-22T13:36:36.7507277+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Models\GP modle\fastener.jpg</Source>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Parameters>
-        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
-        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
-        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
-        <Data Key="GenerateMipmaps" Type="bool">true</Data>
-        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
-        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
-      </Parameters>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\GP modle\fastener_0.xnb</Output>
-      <Time>2016-04-22T13:37:01.2560906+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Models\GP modle\head.jpg</Source>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Parameters>
-        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
-        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
-        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
-        <Data Key="GenerateMipmaps" Type="bool">true</Data>
-        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
-        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
-      </Parameters>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\GP modle\head_0.xnb</Output>
-      <Time>2016-04-22T13:37:12.2673099+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Models\GP modle\eye.jpg</Source>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Parameters>
-        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
-        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
-        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
-        <Data Key="GenerateMipmaps" Type="bool">true</Data>
-        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
-        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
-      </Parameters>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\GP modle\eye_0.xnb</Output>
-      <Time>2016-04-22T13:34:50.2611093+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Models\GP modle\shouse.jpg</Source>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Parameters>
-        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
-        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
-        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
-        <Data Key="GenerateMipmaps" Type="bool">true</Data>
-        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
-        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
-      </Parameters>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\GP modle\shouse_0.xnb</Output>
-      <Time>2016-04-22T13:37:26.499334+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Assets\Models\animated4.FBX</Source>
-      <Name>Assets\Models\animated4</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\animated4.xnb</Output>
-      <Time>2016-04-26T11:02:18.2712337+01:00</Time>
-      <Dependency>
-        <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\animated4_0.xml</Key>
-        <Value>2016-04-26T13:12:59.1675116+01:00</Value>
-      </Dependency>
-      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\GP modle\coat_0.xnb</Request>
-      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\GP modle\leg_0.xnb</Request>
-      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\GP modle\fastener_0.xnb</Request>
-      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\GP modle\hand_0.xnb</Request>
-      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\GP modle\shouse_0.xnb</Request>
-      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\GP modle\head_0.xnb</Request>
-      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\GP modle\eye_0.xnb</Request>
-    </Item>
-    <Item>
-      <Source>Assets\Models\animated2.FBX</Source>
-      <Name>Assets\Models\animated2</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\animated2.xnb</Output>
-      <Time>2016-04-25T20:42:40.6351812+01:00</Time>
-      <Dependency>
-        <Key>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Assets\Models\animated2_0.xml</Key>
-        <Value>2016-04-25T20:42:45.7656062+01:00</Value>
-      </Dependency>
-      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\GP modle\coat_0.xnb</Request>
-      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\GP modle\hand_0.xnb</Request>
-      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\GP modle\leg_0.xnb</Request>
-      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\GP modle\fastener_0.xnb</Request>
-      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\GP modle\head_0.xnb</Request>
-      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\GP modle\eye_0.xnb</Request>
-      <Request>C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\GP modle\shouse_0.xnb</Request>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
