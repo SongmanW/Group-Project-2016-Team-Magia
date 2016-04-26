@@ -219,6 +219,7 @@ namespace GDApp
         private PhysicsManager physicsManager;
         private UIManager uiManager;
         private MenuManager menuManager;
+        private MenuManager menuManager2;
 
 
         private GenericDictionary<string, Texture2D> textureDictionary;
@@ -227,7 +228,7 @@ namespace GDApp
         private GenericDictionary<string, Camera3DTrack> trackDictionary;
         private EventDispatcher eventDispatcher;
         private Camera3DTrack cameraTrack;
-        public AnimatedPlayerObject playerActor;
+        public PlayerObject playerActor;
         private PawnCollidableObject doorActor;
         public PawnCollidableObject rotator;
         private PawnCollidableObject step1;
@@ -421,15 +422,15 @@ namespace GDApp
             this.textureDictionary.Add("IOptionsMenuReturn", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/OptionsMenuReturn"));
             this.textureDictionary.Add("IPauseMenu", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/PauseMenu"));
             this.textureDictionary.Add("IPauseMenuOptions", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/PauseMenuOptions"));
-            this.textureDictionary.Add("Imainmenu", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/PauseMenuQuit"));
-            this.textureDictionary.Add("Imainmenu", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/PauseMenuRestart"));
-            this.textureDictionary.Add("Imainmenu", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/PauseMenuResume"));
-            this.textureDictionary.Add("Imainmenu", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/YouLose"));
-            this.textureDictionary.Add("Imainmenu", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/YouLoseQuit"));
-            this.textureDictionary.Add("Imainmenu", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/YouLoseRestart"));
-            this.textureDictionary.Add("Imainmenu", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/YouWin"));
-            this.textureDictionary.Add("Imainmenu", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/YouWinQuit"));
-            this.textureDictionary.Add("Imainmenu", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/YouWinRestart"));
+            this.textureDictionary.Add("IPauseMenuQuit", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/PauseMenuQuit"));
+            this.textureDictionary.Add("IPauseMenuRestart", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/PauseMenuRestart"));
+            this.textureDictionary.Add("IPauseMenuResume", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/PauseMenuResume"));
+            this.textureDictionary.Add("IYouLose", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/YouLose"));
+            this.textureDictionary.Add("IYouLoseQuit", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/YouLoseQuit"));
+            this.textureDictionary.Add("IYouLoseRestart", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/YouLoseRestart"));
+            this.textureDictionary.Add("IYouWin", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/YouWin"));
+            this.textureDictionary.Add("IYouWinQuit", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/YouWinQuit"));
+            this.textureDictionary.Add("IYouWinRestart", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/YouWinRestart"));
         }
 
         private void InitializeUI()
@@ -442,7 +443,7 @@ namespace GDApp
             Transform2D transform = null;
             SpriteFont font = null;
             Texture2D texture = null;
-
+            /*
             //text
             font = this.fontDictionary["ui"];
             String text = "help me!";
@@ -458,6 +459,7 @@ namespace GDApp
                 ObjectType.UITexture2D, transform, new Color(127, 127, 127, 50),
                 SpriteEffects.None, 1, texture, true);
             this.uiManager.Add(texture2DObject);
+            */
         }
 
         private void InitializeEventDispatcher()
@@ -470,7 +472,7 @@ namespace GDApp
         {
             Model model = null;
 
-            model = Content.Load<Model>("Assets\\Models\\Animated\\dude");
+            model = Content.Load<Model>("Assets\\Models\\Animated");
             this.modelDictionary.Add("player", model);
 
             model = Content.Load<Model>("Assets\\Models\\DoorV1");
@@ -552,10 +554,10 @@ namespace GDApp
             #region Player Model
             model = this.modelDictionary["player"];
             transform = new Transform3D(new Vector3(-100, 10, 0),
-                new Vector3(-90, -90, 0), 0.30f * Vector3.One,
+                new Vector3(-90, 0, 0), 0.15f * Vector3.One,
                 Vector3.UnitX, Vector3.UnitY);
-            this.playerActor = new AnimatedPlayerObject("player",
-                ObjectType.Player, transform, this.animatedModelEffect, null, model, Color.White, 1f, KeyData.Player_Keys, 3.75f, 11.5f, 1f, 1f,"Take 001", new Vector3(0, -10, 0));
+            this.playerActor = new PlayerObject("player",
+                ObjectType.Player, transform, this.animatedModelEffect, null, model, Color.White, 1f, KeyData.Player_Keys, 3.75f, 11.5f, 1f, 1f, new Vector3(0, 0, 0));
             this.playerActor.Enable(false, 100);
             this.objectManager.Add(this.playerActor);
             #endregion
@@ -834,7 +836,7 @@ namespace GDApp
             this.mouseManager.SetPosition(this.screenCentre); 
             Components.Add(this.mouseManager);
 
-            this.objectManager = new ObjectManager(this, 10, 10, true);
+            this.objectManager = new ObjectManager(this, 10, 10, false);
             this.objectManager.DrawOrder = 1;
             Components.Add(this.objectManager);
 
@@ -848,16 +850,23 @@ namespace GDApp
             this.uiManager.DrawOrder = 2; //always draw after object manager(1)
             Components.Add(this.uiManager);
 
-            Texture2D[] menuTexturesArray = { 
-                                                this.textureDictionary["mainmenu"], 
-                                                this.textureDictionary["audiomenu"],
-                                                 this.textureDictionary["controlsmenu"],
-                                                this.textureDictionary["exitmenuwithtrans"]
+            Texture2D[] menuTexturesArray = {
+                                                this.textureDictionary["IYouWin"]
+                                            };
+            Texture2D[] menuTexturesArray2 = {
+                                                this.textureDictionary["IYouLose"]
                                             };
 
             this.menuManager = new MenuManager(this, menuTexturesArray, this.fontDictionary["menu"], MenuData.MenuTexturePadding, MenuData.MenuTextureColor);
             this.menuManager.DrawOrder = 3; //always draw after ui manager(2)
+            this.menuManager.Pause = true;
             Components.Add(this.menuManager);
+
+
+            this.menuManager2 = new MenuManager(this, menuTexturesArray2, this.fontDictionary["menu"], MenuData.MenuTexturePadding, MenuData.MenuTextureColor);
+            this.menuManager2.DrawOrder = 3; //always draw after ui manager(2)
+            this.menuManager2.Pause = true;
+            Components.Add(this.menuManager2);
         }
 
         #region DEBUG
@@ -1028,7 +1037,7 @@ namespace GDApp
             //demoCameraLayout();
             //demoCameraTrack(gameTime);
             //demoRotation();
-            //demoWinLose();
+            demoWinLose();
 
             if(bReset)
             {
@@ -1183,7 +1192,7 @@ namespace GDApp
                         break;
                     case 6:
                         //win
-                        Exit();
+                        this.menuManager.Pause = false;
                         break;
                 }
                 this.nextStep++;

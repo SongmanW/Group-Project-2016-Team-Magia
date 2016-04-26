@@ -8,21 +8,21 @@ namespace GDLibrary
     {
         #region Main Menu Strings
         //all the strings shown to the user through the menu
-        public static String Game_Title = "Space Invaders";
-        public static String Menu_Play = "Play";
-        public static string StringMenuRestart = "Restart";
-        public static String StringMenuSave = "Save";
-        public static String StringMenuAudio = "Audio";
-        public static String StringMenuControls = "Controls";
-        public static String StringMenuExit = "Exit";
+        public static String Game_Title = "";
+        public static String Menu_Play = "";
+        public static string StringMenuRestart = "";
+        public static String StringMenuSave = "";
+        public static String StringMenuAudio = "";
+        public static String StringMenuControls = "";
+        public static String StringMenuExit = "";
 
-        public static String StringMenuVolumeUp = "Volume Up";
-        public static String StringMenuVolumeDown = "Volume Down";
-        public static string StringMenuVolumeMute = "Mute On/Off";
-        public static String StringMenuBack = "Back";
+        public static String StringMenuVolumeUp = " ";
+        public static String StringMenuVolumeDown = " ";
+        public static string StringMenuVolumeMute = " ";
+        public static String StringMenuBack = "";
 
-        public static string StringMenuExitYes = "Yes";
-        public static string StringMenuExitNo = "No";
+        public static string StringMenuExitYes = "";
+        public static string StringMenuExitNo = "";
         #endregion
 
         #region Colours, Padding, Texture transparency , Array Indices and Bounds

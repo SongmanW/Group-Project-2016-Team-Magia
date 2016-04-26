@@ -183,6 +183,7 @@ Content\Assets\Models\GP modle\eye_0.xnb
 Content\Assets\Models\GP modle\shouse_0.xnb
 Content\Assets\Models\animated4.xnb
 Content\Assets\Models\animated2.xnb
+Content\Assets\Models\Animated.xnb
 Content\Assets\Audio\IxchelsQuestAudio.xgs
 Content\Assets\Audio\Wave Bank.xwb
 Content\Assets\Audio\Sound Bank.xsb
