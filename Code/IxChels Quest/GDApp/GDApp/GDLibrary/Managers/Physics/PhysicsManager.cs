@@ -123,32 +123,6 @@ namespace GDLibrary
             base.Update(gameTime);
         }
 
-        public override void Draw(GameTime gameTime)
-        {
-            if (!bPaused && bEnableDebugDrawer)
-            {
-                for (int i = 0; i < this.game.ObjectManager.Size; i++)
-                {
-                    drawnActor = this.game.ObjectManager[i];
-
-                    if (drawnActor is CollidableObject)
-                    {
-                        CollidableObject collidableObject = drawnActor as CollidableObject;
-                        this.DebugDrawer.DrawDebug(collidableObject.Body, collidableObject.Collision);
-                    }
-                    else if (drawnActor is ZoneObject)
-                    {
-                        ZoneObject zoneObject = drawnActor as ZoneObject;
-                        this.DebugDrawer.DrawDebug(zoneObject.Body, zoneObject.Collision);
-                    }
-                }
-            }
-
-
-
-            base.Draw(gameTime);
-        }
-
         //to do - dispose, clone
     }
 }
