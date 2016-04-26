@@ -132,21 +132,6 @@ Content\Assets\Fonts\menu.xnb
 Content\Assets\Fonts\UI.xnb
 Content\Assets\Textures\UI\white.xnb
 Content\Assets\Effects\Animated.xnb
-Content\Assets\Models\animated3.xnb
-Content\Assets\Models\animated4.xnb
-Content\Assets\Models\animated5.xnb
-Content\Assets\Models\Animated\head.xnb
-Content\Assets\Models\Animated\jacket.xnb
-Content\Assets\Models\Animated\pants.xnb
-Content\Assets\Models\Animated\Tiny_skin.xnb
-Content\Assets\Models\Animated\upBodyC.xnb
-Content\Assets\Models\Animated\dude.xnb
-Content\Assets\Models\Animated\dude_spheres.xnb
-Content\Assets\Models\Animated\head_0.xnb
-Content\Assets\Models\Animated\jacket_0.xnb
-Content\Assets\Models\Animated\pants_0.xnb
-Content\Assets\Models\Animated\upBodyC_0.xnb
-Content\Assets\Models\animated6.xnb
 Content\Assets\Audio\IxchelsQuestAudio.xgs
 Content\Assets\Audio\Wave Bank.xwb
 Content\Assets\Audio\Sound Bank.xsb

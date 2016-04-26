@@ -135,7 +135,7 @@ namespace GDLibrary
                     }
                     else
                     {
-                        this.Transform3D.RotateTo(new Vector3(-90, MathHelper.ToDegrees((float)Math.Acos(moveVector.X)), 0));
+                        this.Transform3D.RotateTo(new Vector3(-90,  MathHelper.ToDegrees((float)Math.Acos(moveVector.X)), 0));
                     }
                 }
                 if (game.NextStep > 1)
