@@ -391,6 +391,7 @@ namespace GDApp
             this.random = new Random();
             this.interval = 25000 + (float)(random.NextDouble() * 10000 - 5000);
             this.timePassed = 0;
+            EventDispatcher.Publish(new EventData("menu event", this, EventType.OnPause, EventCategoryType.MainMenu));
         }
 
         private void LoadTextures()
@@ -1094,7 +1095,7 @@ namespace GDApp
                 {
                     bReset = false;
                     resetCount = 0;
-                    Reset();
+                    menuManager.OpenMenu("Lose");
                 }
                 else
                 {
@@ -1112,6 +1113,12 @@ namespace GDApp
                 this.timePassed = 0;
                 this.interval = 25000 + (float)(random.NextDouble() * 10000 - 5000);
                 this.soundManager.PlayCue("Rocks_Falling");
+            }
+
+            if(keyboardManager.IsFirstKeyPress(Keys.Escape))
+            {
+                EventDispatcher.Publish(new EventData("menu pause", this, EventType.OnPause, EventCategoryType.MainMenu));
+                menuManager.OpenMenu("Pause");
             }
 
             base.Update(gameTime);

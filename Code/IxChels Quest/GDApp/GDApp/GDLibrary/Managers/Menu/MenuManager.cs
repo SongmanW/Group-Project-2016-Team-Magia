@@ -485,19 +485,23 @@ namespace GDLibrary
             if (name.Equals(MenuData.Menu_Play))
             {
                 HideMenu();
+                game.SoundManager.PlayCue("Menu_Select");
             }
             else if (name.Equals(MenuData.StringMenuRestart))
             {
                 game.Reset();
+                game.SoundManager.PlayCue("Menu_Select");
             }
             else if (name.Equals(MenuData.StringMenuResume))
             {
                 HideMenu();
+                game.SoundManager.PlayCue("Menu_Select");
             }
             else if(name.Equals(MenuData.StringMenuOptions))
             {
                 ShowOptionsMenuScreen();
                 menuState = menuState == MenuData.MenuStateMain ? MenuData.MenuStateOptionsMain : MenuData.MenuStateOptionsPause;
+                game.SoundManager.PlayCue("Menu_Select");
             }
             else if (name.Equals(MenuData.StringMenuAudio))
             {
@@ -506,6 +510,7 @@ namespace GDLibrary
                     menuState = MenuData.MenuStateAudioMain;
                 else if (menuState == MenuData.MenuStateOptionsPause)
                     menuState = MenuData.MenuStateAudioPause;
+                game.SoundManager.PlayCue("Menu_Select");
             }
             else if (name.Equals(MenuData.StringMenuControls))
             {
@@ -514,26 +519,32 @@ namespace GDLibrary
                     menuState = MenuData.MenuStateControlsMain;
                 else if (menuState == MenuData.MenuStateOptionsPause)
                     menuState = MenuData.MenuStateControlsPause;
+                game.SoundManager.PlayCue("Menu_Select");
             }
             else if (name.Equals(MenuData.StringMenuExit))
             {
                 game.Exit();
+                game.SoundManager.PlayCue("Menu_Select");
             }
             else if (name.Equals(MenuData.StringMenuSFXUp))
             {
                 IncreaseSFX();
+                game.SoundManager.PlayCue("Menu_Select");
             }
             else if (name.Equals(MenuData.StringMenuSFXDown))
             {
                 DecreaseSFX();
+                game.SoundManager.PlayCue("Menu_Select");
             }
             else if (name.Equals(MenuData.StringMenuMusicUp))
             {
                 IncreaseMusic();
+                game.SoundManager.PlayCue("Menu_Select");
             }
             else if (name.Equals(MenuData.StringMenuMusicDown))
             {
                 DecreaseMusic();
+                game.SoundManager.PlayCue("Menu_Select");
             }
             else if (name.Equals(MenuData.StringMenuMute))
             {
@@ -545,6 +556,7 @@ namespace GDLibrary
                 {
                     Mute();
                 }
+                game.SoundManager.PlayCue("Menu_Select");
             }
             else if (name.Equals(MenuData.StringMenuBack))
             {
@@ -568,6 +580,7 @@ namespace GDLibrary
                     ShowPauseMenuScreen();
                     menuState = MenuData.MenuStatePause;
                 }
+                game.SoundManager.PlayCue("Menu_Select");
             }
             else
             {

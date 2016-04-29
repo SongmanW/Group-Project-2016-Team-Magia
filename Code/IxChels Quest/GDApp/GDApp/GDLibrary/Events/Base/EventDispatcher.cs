@@ -81,6 +81,12 @@ namespace GDLibrary
                 //add a case to handle the On...() method for each type
 
                 default:
+                    switch (eventData.eventCategoryType)
+                    {
+                        case EventCategoryType.MainMenu:
+                            OnMainMenu(eventData);
+                            break;
+                    }
                     break;
             }
         }
@@ -116,6 +122,13 @@ namespace GDLibrary
         {
             if (CameraChange != null)
                 CameraChange(eventData);
+        }
+
+        //called when a menu event needs to be generated e.g. click exit
+        protected virtual void OnMainMenu(EventData eventData)
+        {
+            if (MainMenuChanged != null)
+                MainMenuChanged(eventData);
         }
     }
 }
