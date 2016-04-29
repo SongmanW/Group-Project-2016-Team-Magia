@@ -161,6 +161,7 @@
     <Compile Include="GDLibrary\Interfaces\IController.cs" />
     <Compile Include="GDLibrary\Interfaces\IVertexData.cs" />
     <Compile Include="GDLibrary\Managers\Base\GenericDraweableManager.cs" />
+    <Compile Include="GDLibrary\Managers\Menu\AdvancedMenuItem.cs" />
     <Compile Include="GDLibrary\Managers\Menu\MenuItem.cs" />
     <Compile Include="GDLibrary\Managers\Menu\MenuManager.cs" />
     <Compile Include="GDLibrary\Managers\Physics\PhysicsManager.cs" />

@@ -109,7 +109,7 @@ namespace GDLibrary
         }
         public bool IsLeftButtonClickedOnce()
         {
-            return ((newState.LeftButton.Equals(ButtonState.Pressed)) && (oldState.LeftButton.Equals(ButtonState.Pressed)));
+            return ((newState.LeftButton.Equals(ButtonState.Pressed)) && (oldState.LeftButton.Equals(ButtonState.Released)));
         }
         public bool IsLeftButtonClicked()
         {

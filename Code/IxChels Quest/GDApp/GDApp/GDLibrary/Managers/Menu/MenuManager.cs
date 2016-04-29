@@ -18,12 +18,40 @@ namespace GDLibrary
         private Texture2D[] menuTextures;
         private Rectangle textureRectangle;
 
-        private MenuItem menuPlay, menuRestart, menuExit, menuAudio, menuControls;
-        private MenuItem menuVolumeUp, menuVolumeDown, menuVolumeMute, menuBack;
-        private MenuItem menuExitYes, menuExitNo;
-
         protected int currentMenuTextureIndex = 0; //0 = main, 1 = volume
         private bool bPaused;
+        private int menuState;
+        private AdvancedMenuItem mainStart;
+        private AdvancedMenuItem mainOptions;
+        private AdvancedMenuItem mainQuit;
+        private AdvancedMenuItem pauseResume;
+        private AdvancedMenuItem pauseRestart;
+        private AdvancedMenuItem pauseOptions;
+        private AdvancedMenuItem pauseQuit;
+        private AdvancedMenuItem optionsAudio;
+        private AdvancedMenuItem optionsControls;
+        private AdvancedMenuItem optionsReturn;
+        private AdvancedMenuItem audioSFXDown;
+        private AdvancedMenuItem audioSFXUp;
+        private AdvancedMenuItem audioMusicDown;
+        private AdvancedMenuItem audioMusicUp;
+        private AdvancedMenuItem audioMute;
+        private AdvancedMenuItem audioReturn;
+        private AdvancedMenuItem controlsReturn;
+        private AdvancedMenuItem loseRestart;
+        private AdvancedMenuItem loseQuit;
+        private AdvancedMenuItem winRestart;
+        private AdvancedMenuItem winQuit;
+
+        private int numberBarsSFX;
+        private int numberBarsSFXMax;
+        private int numberBarsMusic;
+        private int numberBarsMusicMax;
+
+        private float volumeSFX;
+        private float volumeMusic;
+
+        private bool muted;
         #endregion
 
         #region Properties
@@ -77,6 +105,21 @@ namespace GDLibrary
             //deflate the texture rectangle by the padding required
             this.textureRectangle.Inflate(-textureBorderPadding.X, -textureBorderPadding.Y);
 
+            this.menuState = MenuData.MenuStateMain;
+
+            this.numberBarsMusicMax = 6;
+            this.numberBarsSFXMax = 6;
+            this.numberBarsMusic = 3;
+            this.numberBarsSFX = 3;
+
+            this.volumeMusic = numberBarsMusic/(float)numberBarsMusicMax;
+            this.volumeSFX = numberBarsSFX/(float)numberBarsSFXMax;
+
+            this.muted = false;
+
+            game.SoundManager.SetVolume(volumeMusic, "Music");
+            game.SoundManager.SetVolume(volumeSFX, "SFX");
+
             //show the menu
             ShowMenu();
         }
@@ -90,7 +133,27 @@ namespace GDLibrary
 
            base.Initialize();
         }
-                                                                                                                               
+
+        public void OpenMenu(string name)
+        {
+            if(name.Equals("Pause"))
+            {
+                menuState = MenuData.MenuStatePause;
+                ShowPauseMenuScreen();
+            }
+            else if(name.Equals("Win"))
+            {
+                menuState = MenuData.MenuStateWin;
+                ShowWinScreen();
+            }
+            else if(name.Equals("Lose"))
+            {
+                menuState = MenuData.MenuStateLose;
+                ShowLoseScreen();
+            }
+            ShowMenu();
+        }
+
         public void Add(MenuItem theMenuItem) 
         {
             menuItemList.Add(theMenuItem);
@@ -133,10 +196,48 @@ namespace GDLibrary
                     menuItemList[i].Draw(game.SpriteBatch, menuFont);
                 }
 
+                if(menuState == MenuData.MenuStateAudioMain || menuState == MenuData.MenuStateAudioPause)
+                {
+                    DrawAudio();
+                }
+
                 game.SpriteBatch.End();
             }
+            game.Window.Title = "currentScreen" + currentMenuTextureIndex;
 
             base.Draw(gameTime);
+        }
+
+        private void DrawAudio()
+        {
+            Texture2D texture = null;
+            if (muted)
+            {
+                texture = menuTextures[MenuData.TextureX];
+                game.SpriteBatch.Draw(texture, new Vector2(833, 403), Color.White);
+            }
+            else
+            {
+                texture = menuTextures[MenuData.TextureButton];
+                if (currentMenuTextureIndex == MenuData.TextureAudioMenuSFX)
+                {
+                    texture = menuTextures[MenuData.TextureButtonHighlighted];
+                }
+                for (int i = 0; i < numberBarsSFX; i++)
+                {
+                    game.SpriteBatch.Draw(texture, new Vector2(790 + 30 * i, 150), Color.White);
+                }
+
+                texture = menuTextures[MenuData.TextureButton];
+                if (currentMenuTextureIndex == MenuData.TextureAudioMenuMusic)
+                {
+                    texture = menuTextures[MenuData.TextureButtonHighlighted];
+                }
+                for (int i = 0; i < numberBarsMusic; i++)
+                {
+                    game.SpriteBatch.Draw(texture, new Vector2(790 + 30 * i, 283), Color.White);
+                }
+            }
         }
 
         private void TestIfPaused()
@@ -197,6 +298,7 @@ namespace GDLibrary
         //iterate through each menu item and see if it is "highlighted" or "highlighted and clicked upon"
         private void ProcessMenuItemList()
         {
+            bool hover = false;
            for(int i = 0; i < menuItemList.Count; i++)
            {
                MenuItem item = menuItemList[i];
@@ -204,21 +306,134 @@ namespace GDLibrary
                //is the mouse over the item?
                if (this.game.MouseManager.Bounds.Intersects(item.Bounds)) 
                {
-                   item.SetActive(true);
+                    hover = true;
+                    item.SetActive(true);
+                    if(item is AdvancedMenuItem)
+                    {
+                        if (game.MouseManager.IsLeftButtonClickedOnce())
+                        {
+                            DoMenuAction(menuItemList[i].Name);
+                            break;
+                        }
+                        else
+                        { 
+                            DoMenuHighlight(item.Name);
+                            break;
+                        }
 
-                   //is the left mouse button clicked
-                   if (game.MouseManager.IsLeftButtonClickedOnce())
-                   {
-                       DoMenuAction(menuItemList[i].Name);
-                       break;
-                   }
+                    }
+
+                    //is the left mouse button clicked
+                    if (game.MouseManager.IsLeftButtonClickedOnce())
+                    {
+                        DoMenuAction(menuItemList[i].Name);
+                        break;
+                    }
                }
                else
                {
                    item.SetActive(false);
                }
            }
+           if(!hover)
+           {
+                DoMenuHighlight("Unhighlight");
+           }
         }
+
+        private void DoMenuHighlight(string name)
+        {
+            if (name.Equals("Unhighlight"))
+            {
+                if (menuState == MenuData.MenuStateMain)
+                    currentMenuTextureIndex = MenuData.TextureMainMenu;
+                else if (menuState == MenuData.MenuStatePause)
+                    currentMenuTextureIndex = MenuData.TexturePauseMenu;
+                else if (menuState == MenuData.MenuStateAudioMain || menuState == MenuData.MenuStateAudioPause)
+                    currentMenuTextureIndex = MenuData.TextureAudio;
+                else if (menuState == MenuData.MenuStateControlsMain || menuState == MenuData.MenuStateControlsPause)
+                    currentMenuTextureIndex = MenuData.TextureControlsMenu;
+                else if (menuState == MenuData.MenuStateOptionsMain || menuState == MenuData.MenuStateOptionsPause)
+                    currentMenuTextureIndex = MenuData.TextureOptionsMenu;
+                else if (menuState == MenuData.MenuStateLose)
+                    currentMenuTextureIndex = MenuData.TextureYouLose;
+                else if (menuState == MenuData.MenuStateWin)
+                    currentMenuTextureIndex = MenuData.TextureYouWin;
+            }
+            else if (name.Equals(MenuData.Menu_Play))
+            {
+                if (menuState == MenuData.MenuStateMain)
+                    currentMenuTextureIndex = MenuData.TextureMainMEnuStart;
+                else if (menuState == MenuData.MenuStatePause)
+                    currentMenuTextureIndex = MenuData.TexturePauseMenuResume;
+            }
+            else if (name.Equals(MenuData.StringMenuRestart))
+            {
+                if (menuState == MenuData.MenuStatePause)
+                    currentMenuTextureIndex = MenuData.TexturePauseMenuRestart;
+                else if (menuState == MenuData.MenuStateWin)
+                    currentMenuTextureIndex = MenuData.TextureYouWinRestart;
+                else if (menuState == MenuData.MenuStateLose)
+                    currentMenuTextureIndex = MenuData.TextureYouLoseRestart;
+            }
+            else if (name.Equals(MenuData.StringMenuResume))
+            {
+                currentMenuTextureIndex = MenuData.TexturePauseMenuResume;
+            }
+            else if (name.Equals(MenuData.StringMenuOptions))
+            {
+                if (menuState == MenuData.MenuStateMain)
+                    currentMenuTextureIndex = MenuData.TextureMainMenuOptions;
+                else if (menuState == MenuData.MenuStatePause)
+                    currentMenuTextureIndex = MenuData.TexturePauseMenuOptions;
+            }
+            else if (name.Equals(MenuData.StringMenuAudio))
+            {
+                currentMenuTextureIndex = MenuData.TextureOptionsMenuAudio;
+            }
+            else if (name.Equals(MenuData.StringMenuControls))
+            {
+                currentMenuTextureIndex = MenuData.TextureOptionsMenuControls;
+            }
+            else if (name.Equals(MenuData.StringMenuExit))
+            {
+                if (menuState == MenuData.MenuStateMain)
+                    currentMenuTextureIndex = MenuData.TextureMainMenuQuit;
+                else if (menuState == MenuData.MenuStatePause)
+                    currentMenuTextureIndex = MenuData.TexturePauseMenuQuit;
+                else if (menuState == MenuData.MenuStateWin)
+                    currentMenuTextureIndex = MenuData.TextureYouWinQuit;
+                else if (menuState == MenuData.MenuStateLose)
+                    currentMenuTextureIndex = MenuData.TextureYouLoseQuit;
+            }
+            else if (name.Equals(MenuData.StringMenuSFXUp) || name.Equals(MenuData.StringMenuSFXDown))
+            {
+                currentMenuTextureIndex = MenuData.TextureAudioMenuSFX;
+            }
+            else if (name.Equals(MenuData.StringMenuMusicUp) || name.Equals(MenuData.StringMenuMusicDown))
+            {
+                currentMenuTextureIndex = MenuData.TextureAudioMenuMusic;
+            }
+            else if (name.Equals(MenuData.StringMenuMute))
+            {
+                currentMenuTextureIndex = MenuData.TextureAudioMenuMute;
+            }
+            else if (name.Equals(MenuData.StringMenuBack))
+            {
+                if (menuState == MenuData.MenuStateAudioMain || menuState == MenuData.MenuStateAudioPause)
+                    currentMenuTextureIndex = MenuData.TextureAudioMenuReturn;
+                else if (menuState == MenuData.MenuStateControlsMain || menuState == MenuData.MenuStateControlsPause)
+                    currentMenuTextureIndex = MenuData.TextureControlsMenuReturn;
+                else if (menuState == MenuData.MenuStateOptionsMain || menuState == MenuData.MenuStateOptionsPause)
+                    currentMenuTextureIndex = MenuData.TextureOptionsMenuReturn;
+            }
+            else
+            {
+                Console.WriteLine("There is a case not covered!");
+            }
+        }
+
+
 
         //to do - dispose, clone
         #endregion
@@ -227,32 +442,40 @@ namespace GDLibrary
         private void InitialiseMenuOptions()
         {
             //add the menu items to the list
-            this.menuPlay = new MenuItem(MenuData.Menu_Play, MenuData.Menu_Play,
-                MenuData.BoundsMenuPlay, MenuData.ColorMenuInactive, MenuData.ColorMenuActive);
-            this.menuRestart = new MenuItem(MenuData.StringMenuRestart, MenuData.StringMenuRestart,
-                MenuData.BoundsMenuRestart, MenuData.ColorMenuInactive, MenuData.ColorMenuActive);
-            this.menuAudio = new MenuItem(MenuData.StringMenuAudio, MenuData.StringMenuAudio,
-               MenuData.BoundsMenuAudio, MenuData.ColorMenuInactive, MenuData.ColorMenuActive);
-            this.menuControls = new MenuItem(MenuData.StringMenuControls, MenuData.StringMenuControls,
-              MenuData.BoundsMenuControls, MenuData.ColorMenuInactive, MenuData.ColorMenuActive);
-            this.menuExit = new MenuItem(MenuData.StringMenuExit, MenuData.StringMenuExit,
-                MenuData.BoundsMenuExit, MenuData.ColorMenuInactive, MenuData.ColorMenuActive);
+            //Main Menu
+            this.mainStart = new AdvancedMenuItem(MenuData.Menu_Play, "", MenuData.BoundsMainStart, MenuData.ColorMenuInactive, MenuData.ColorMenuActive);
+            this.mainOptions = new AdvancedMenuItem(MenuData.StringMenuOptions, "", MenuData.BoundsMainOptions, MenuData.ColorMenuInactive, MenuData.ColorMenuActive);
+            this.mainQuit = new AdvancedMenuItem(MenuData.StringMenuExit, "", MenuData.BoundsMainQuit, MenuData.ColorMenuInactive, MenuData.ColorMenuActive);
 
-            //second menu - audio settings
-            this.menuVolumeUp = new MenuItem(MenuData.StringMenuVolumeUp, MenuData.StringMenuVolumeUp,
-                MenuData.BoundsMenuVolumeUp, MenuData.ColorMenuInactive, MenuData.ColorMenuActive);
-            this.menuVolumeDown = new MenuItem(MenuData.StringMenuVolumeDown, MenuData.StringMenuVolumeDown,
-               MenuData.BoundsMenuVolumeDown, MenuData.ColorMenuInactive, MenuData.ColorMenuActive);
-            this.menuVolumeMute = new MenuItem(MenuData.StringMenuVolumeMute, MenuData.StringMenuVolumeMute,
-            MenuData.BoundsMenuVolumeMute, MenuData.ColorMenuInactive, MenuData.ColorMenuActive);
+            //Pause Menu
+            this.pauseResume = new AdvancedMenuItem(MenuData.StringMenuResume, "", MenuData.BoundsPauseResume, MenuData.ColorMenuInactive, MenuData.ColorMenuActive);
+            this.pauseRestart = new AdvancedMenuItem(MenuData.StringMenuRestart, "", MenuData.BoundsPauseRestart, MenuData.ColorMenuInactive, MenuData.ColorMenuActive);
+            this.pauseOptions= new AdvancedMenuItem(MenuData.StringMenuOptions, "", MenuData.BoundsPauseOptions, MenuData.ColorMenuInactive, MenuData.ColorMenuActive);
+            this.pauseQuit = new AdvancedMenuItem(MenuData.StringMenuExit, "", MenuData.BoundsPauseQuit, MenuData.ColorMenuInactive, MenuData.ColorMenuActive);
 
-            this.menuBack = new MenuItem(MenuData.StringMenuBack, MenuData.StringMenuBack,
-                 MenuData.BoundsMenuBack, MenuData.ColorMenuInactive, MenuData.ColorMenuActive);
+            //Options Menu
+            this.optionsAudio = new AdvancedMenuItem(MenuData.StringMenuAudio, "", MenuData.BoundsOptionsAudio, MenuData.ColorMenuInactive, MenuData.ColorMenuActive);
+            this.optionsControls = new AdvancedMenuItem(MenuData.StringMenuControls, "", MenuData.BoundsOptionsControls, MenuData.ColorMenuInactive, MenuData.ColorMenuActive);
+            this.optionsReturn = new AdvancedMenuItem(MenuData.StringMenuBack, "", MenuData.BoundsOptionsReturn, MenuData.ColorMenuInactive, MenuData.ColorMenuActive);
 
-            this.menuExitYes = new MenuItem(MenuData.StringMenuExitYes, MenuData.StringMenuExitYes,
-             MenuData.BoundsMenuExitYes, MenuData.ColorMenuInactive, MenuData.ColorMenuActive);
-            this.menuExitNo = new MenuItem(MenuData.StringMenuExitNo, MenuData.StringMenuExitNo,
-                MenuData.BoundsMenuExitNo, MenuData.ColorMenuInactive, MenuData.ColorMenuActive);
+            //Audio Menu
+            this.audioSFXDown = new AdvancedMenuItem(MenuData.StringMenuSFXDown, "", MenuData.BoundsAudioSFXDown, MenuData.ColorMenuInactive, MenuData.ColorMenuActive);
+            this.audioSFXUp = new AdvancedMenuItem(MenuData.StringMenuSFXUp, "", MenuData.BoundsAudioSFXUp, MenuData.ColorMenuInactive, MenuData.ColorMenuActive);
+            this.audioMusicDown = new AdvancedMenuItem(MenuData.StringMenuMusicDown, "", MenuData.BoundsAudioMusicDown, MenuData.ColorMenuInactive, MenuData.ColorMenuActive);
+            this.audioMusicUp = new AdvancedMenuItem(MenuData.StringMenuMusicUp, "", MenuData.BoundsAudioMusicUp, MenuData.ColorMenuInactive, MenuData.ColorMenuActive);
+            this.audioMute = new AdvancedMenuItem(MenuData.StringMenuMute, "", MenuData.BoundsAudioMute, MenuData.ColorMenuInactive, MenuData.ColorMenuActive);
+            this.audioReturn = new AdvancedMenuItem(MenuData.StringMenuBack, "", MenuData.BoundsAudioReturn, MenuData.ColorMenuInactive, MenuData.ColorMenuActive);
+
+            //Controls Menu
+            this.controlsReturn = new AdvancedMenuItem(MenuData.StringMenuBack, "", MenuData.BoundsControlsReturn, MenuData.ColorMenuInactive, MenuData.ColorMenuActive);
+
+            //Lose
+            this.loseRestart = new AdvancedMenuItem(MenuData.StringMenuRestart, "", MenuData.BoundsLoseRestart, MenuData.ColorMenuInactive, MenuData.ColorMenuActive);
+            this.loseQuit = new AdvancedMenuItem(MenuData.StringMenuExit, "", MenuData.BoundsLoseQuit, MenuData.ColorMenuInactive, MenuData.ColorMenuActive);
+
+            //Win
+            this.winRestart = new AdvancedMenuItem(MenuData.StringMenuRestart, "", MenuData.BoundsWinRestart, MenuData.ColorMenuInactive, MenuData.ColorMenuActive);
+            this.winQuit = new AdvancedMenuItem(MenuData.StringMenuExit, "", MenuData.BoundsWinQuit, MenuData.ColorMenuInactive, MenuData.ColorMenuActive);
 
             //add your new menu options here...
         }
@@ -265,72 +488,199 @@ namespace GDLibrary
             }
             else if (name.Equals(MenuData.StringMenuRestart))
             {
-                RestartGame();
+                game.Reset();
+            }
+            else if (name.Equals(MenuData.StringMenuResume))
+            {
+                HideMenu();
+            }
+            else if(name.Equals(MenuData.StringMenuOptions))
+            {
+                ShowOptionsMenuScreen();
+                menuState = menuState == MenuData.MenuStateMain ? MenuData.MenuStateOptionsMain : MenuData.MenuStateOptionsPause;
             }
             else if (name.Equals(MenuData.StringMenuAudio))
             {
                 ShowAudioMenuScreen();
+                if (menuState == MenuData.MenuStateOptionsMain)
+                    menuState = MenuData.MenuStateAudioMain;
+                else if (menuState == MenuData.MenuStateOptionsPause)
+                    menuState = MenuData.MenuStateAudioPause;
             }
             else if (name.Equals(MenuData.StringMenuControls))
             {
                 ShowControlsMenuScreen();
+                if (menuState == MenuData.MenuStateOptionsMain)
+                    menuState = MenuData.MenuStateControlsMain;
+                else if (menuState == MenuData.MenuStateOptionsPause)
+                    menuState = MenuData.MenuStateControlsPause;
             }
             else if (name.Equals(MenuData.StringMenuExit))
             {
-                ShowExitMenuScreen();       
+                game.Exit();
             }
-            else if (name.Equals(MenuData.StringMenuVolumeUp))
+            else if (name.Equals(MenuData.StringMenuSFXUp))
             {
-                //publish an event to be received by the sound manager
+                IncreaseSFX();
             }
-            else if (name.Equals(MenuData.StringMenuVolumeDown))
+            else if (name.Equals(MenuData.StringMenuSFXDown))
             {
-                //publish an event to be received by the sound manager
+                DecreaseSFX();
             }
-            else if (name.Equals(MenuData.StringMenuVolumeMute))
+            else if (name.Equals(MenuData.StringMenuMusicUp))
             {
-                //publish an event to be received by the sound manager
+                IncreaseMusic();
+            }
+            else if (name.Equals(MenuData.StringMenuMusicDown))
+            {
+                DecreaseMusic();
+            }
+            else if (name.Equals(MenuData.StringMenuMute))
+            {
+                if (muted)
+                {
+                    Unmute();
+                }
+                else
+                {
+                    Mute();
+                }
             }
             else if (name.Equals(MenuData.StringMenuBack))
             {
-                ShowMainMenuScreen();
+                if (menuState == MenuData.MenuStateAudioMain || menuState == MenuData.MenuStateAudioPause)
+                {
+                    ShowOptionsMenuScreen();
+                    menuState = menuState == MenuData.MenuStateAudioMain ? MenuData.MenuStateOptionsMain : MenuData.MenuStateOptionsPause;
+                }
+                else if (menuState == MenuData.MenuStateControlsMain || menuState == MenuData.MenuStateControlsPause)
+                {
+                    ShowOptionsMenuScreen();
+                    menuState = menuState == MenuData.MenuStateControlsMain ? MenuData.MenuStateOptionsMain : MenuData.MenuStateOptionsPause;
+                }
+                else if (menuState == MenuData.MenuStateOptionsMain)
+                {
+                    ShowMainMenuScreen();
+                    menuState = MenuData.MenuStateMain;
+                }
+                else if(menuState == MenuData.MenuStateOptionsPause)
+                {
+                    ShowPauseMenuScreen();
+                    menuState = MenuData.MenuStatePause;
+                }
             }
-            else if (name.Equals(MenuData.StringMenuExitYes))
+            else
             {
-                ExitGame();
-            }
-            else if (name.Equals(MenuData.StringMenuExitNo))
-            {
-                ShowMainMenuScreen();
+                Console.WriteLine("There is a case not covered!");
             }
 
             //add your new menu actions here...
         }
 
-        private void ShowControlsMenuScreen()
+        private void Mute()
         {
-            //remove any items in the menu
-            RemoveAll();
-            //add the appropriate items
-            Add(menuBack);
-            //set the background texture
-            currentMenuTextureIndex = MenuData.TextureIndexControlsMenu;
+            game.SoundManager.SetVolume(0, "SFX");
+            game.SoundManager.SetVolume(0, "Music");
+            muted = true;
         }
 
-        //add your ShowXMenuScreen() methods here...
+        private void Unmute()
+        {
+            game.SoundManager.SetVolume(volumeSFX, "SFX");
+            game.SoundManager.SetVolume(volumeMusic, "Music");
+            muted = false;
+        }
+
+        private void DecreaseMusic()
+        {
+            muted = false;
+            numberBarsMusic--;
+            if (numberBarsMusic < 0)
+            {
+                numberBarsMusic = 0;
+            }
+            volumeMusic = numberBarsMusic / (float)numberBarsMusicMax;
+            game.SoundManager.SetVolume(volumeMusic, "Music");
+        }
+
+        private void IncreaseMusic()
+        {
+            muted = false;
+            numberBarsMusic++;
+            if (numberBarsMusic > numberBarsMusicMax)
+            {
+                numberBarsMusic = numberBarsMusicMax;
+            }
+            volumeMusic = numberBarsMusic / (float)numberBarsMusicMax;
+            game.SoundManager.SetVolume(volumeMusic, "Music");
+        }
+
+        private void DecreaseSFX()
+        {
+            muted = false;
+            numberBarsSFX--;
+            if (numberBarsSFX < 0)
+            {
+                numberBarsSFX = 0;
+            }
+            volumeSFX = numberBarsSFX / (float)numberBarsSFXMax;
+            game.SoundManager.SetVolume(volumeSFX, "SFX");
+        }
+
+        private void IncreaseSFX()
+        {
+            muted = false;
+            numberBarsSFX++;
+            if(numberBarsSFX > numberBarsSFXMax)
+            {
+                numberBarsSFX = numberBarsSFXMax;
+            }
+            volumeSFX = numberBarsSFX / (float)numberBarsSFXMax;
+            game.SoundManager.SetVolume(volumeSFX, "SFX");
+        }
+
+        private void ShowControlsMenuScreen()
+        {
+            RemoveAll();
+
+            Add(controlsReturn);
+
+            currentMenuTextureIndex = MenuData.TextureControlsMenu;
+        }
+
+        private void ShowOptionsMenuScreen()
+        {
+            RemoveAll();
+
+            Add(optionsAudio);
+            Add(optionsControls);
+            Add(optionsReturn);
+
+            currentMenuTextureIndex = MenuData.TextureOptionsMenu;
+        }
 
         private void ShowMainMenuScreen()
         {
             //remove any items in the menu
             RemoveAll();
             //add the appropriate items
-            Add(menuPlay);
-            Add(menuRestart);
-            Add(menuAudio);
-            Add(menuControls);
-            Add(menuExit);
+            Add(mainStart);
+            Add(mainOptions);
+            Add(mainQuit);
             //set the background texture
-            currentMenuTextureIndex = MenuData.TextureIndexMainMenu;
+            currentMenuTextureIndex = MenuData.TextureMainMenu;
+        }
+
+        private void ShowPauseMenuScreen()
+        {
+            RemoveAll();
+
+            Add(pauseResume);
+            Add(pauseRestart);
+            Add(pauseOptions);
+            Add(pauseQuit);
+
+            currentMenuTextureIndex = MenuData.TexturePauseMenu;
         }
 
         private void ShowAudioMenuScreen()
@@ -338,23 +688,34 @@ namespace GDLibrary
             //remove any items in the menu
             RemoveAll();
             //add the appropriate items
-            Add(menuVolumeUp);
-            Add(menuVolumeDown);
-            Add(menuVolumeMute);
-            Add(menuBack);
+            Add(audioSFXDown);
+            Add(audioSFXUp);
+            Add(audioMusicDown);
+            Add(audioMusicUp);
+            Add(audioMute);
+            Add(audioReturn);
             //set the background texture
-            currentMenuTextureIndex = MenuData.TextureIndexAudioMenu;
+            currentMenuTextureIndex = MenuData.TextureAudio;
         }
 
-        private void ShowExitMenuScreen()
+        private void ShowLoseScreen()
         {
-            //remove any items in the menu
             RemoveAll();
-            //add the appropriate items
-            Add(menuExitYes);
-            Add(menuExitNo);
-            //set the background texture
-            currentMenuTextureIndex = MenuData.TextureIndexExitMenu;
+
+            Add(loseRestart);
+            Add(loseQuit);
+
+            currentMenuTextureIndex = MenuData.TextureYouLose;
+        }
+
+        private void ShowWinScreen()
+        {
+            RemoveAll();
+
+            Add(winRestart);
+            Add(winQuit);
+
+            currentMenuTextureIndex = MenuData.TextureYouWin;
         }
 
         #endregion

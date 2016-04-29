@@ -850,23 +850,72 @@ namespace GDApp
             this.uiManager.DrawOrder = 2; //always draw after object manager(1)
             Components.Add(this.uiManager);
 
+
+            this.textureDictionary.Add("IButton", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/AudioButton"));
+            this.textureDictionary.Add("IButtonHighlighted", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/AudioButtonHighlighted"));
+            this.textureDictionary.Add("IAudio", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/AudioMenu"));
+            this.textureDictionary.Add("IAudioMenuMusic", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/AudioMenuMusic"));
+            this.textureDictionary.Add("IAudioMenuMute", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/AudioMenuMute"));
+            this.textureDictionary.Add("IAudioMenuReturn", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/AudioMenuReturn"));
+            this.textureDictionary.Add("IAudioMenuSFX", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/AudioMenuSFX"));
+            this.textureDictionary.Add("IControlsMenu", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/ControlsMenu"));
+            this.textureDictionary.Add("IControlsMenuReturn", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/ControlsMenuReturn"));
+            this.textureDictionary.Add("IMainMenu", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/MainMenu"));
+            this.textureDictionary.Add("IMainMenuOptions", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/MainMenuOptions"));
+            this.textureDictionary.Add("IMainMenuQuit", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/MainMenuQuit"));
+            this.textureDictionary.Add("IMainMEnuStart", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/MainMEnuStart"));
+            this.textureDictionary.Add("IOptionsMenu", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/OptionsMenu"));
+            this.textureDictionary.Add("IOptionsMenuAudio", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/OptionsMenuAudio"));
+            this.textureDictionary.Add("IOptionsMenuControls", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/OptionsMenuControls"));
+            this.textureDictionary.Add("IOptionsMenuReturn", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/OptionsMenuReturn"));
+            this.textureDictionary.Add("IPauseMenu", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/PauseMenu"));
+            this.textureDictionary.Add("IPauseMenuOptions", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/PauseMenuOptions"));
+            this.textureDictionary.Add("IPauseMenuQuit", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/PauseMenuQuit"));
+            this.textureDictionary.Add("IPauseMenuRestart", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/PauseMenuRestart"));
+            this.textureDictionary.Add("IPauseMenuResume", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/PauseMenuResume"));
+            this.textureDictionary.Add("IYouLose", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/YouLose"));
+            this.textureDictionary.Add("IYouLoseQuit", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/YouLoseQuit"));
+            this.textureDictionary.Add("IYouLoseRestart", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/YouLoseRestart"));
+            this.textureDictionary.Add("IYouWin", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/YouWin"));
+            this.textureDictionary.Add("IYouWinQuit", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/YouWinQuit"));
+            this.textureDictionary.Add("IYouWinRestart", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/YouWinRestart"));
+            this.textureDictionary.Add("IX", Content.Load<Texture2D>("Assets/Textures/Menu/IxChel/X"));
+
             Texture2D[] menuTexturesArray = {
-                                                this.textureDictionary["IYouWin"]
-                                            };
-            Texture2D[] menuTexturesArray2 = {
-                                                this.textureDictionary["IYouLose"]
+                                                this.textureDictionary["IButton"],
+                                                this.textureDictionary["IButtonHighlighted"],
+                                                this.textureDictionary["IAudio"],
+                                                this.textureDictionary["IAudioMenuMusic"],
+                                                this.textureDictionary["IAudioMenuMute"],
+                                                this.textureDictionary["IAudioMenuReturn"],
+                                                this.textureDictionary["IAudioMenuSFX"],
+                                                this.textureDictionary["IControlsMenu"],
+                                                this.textureDictionary["IControlsMenuReturn"],
+                                                this.textureDictionary["IMainMenu"],
+                                                this.textureDictionary["IMainMenuOptions"],
+                                                this.textureDictionary["IMainMenuQuit"],
+                                                this.textureDictionary["IMainMEnuStart"],
+                                                this.textureDictionary["IOptionsMenu"],
+                                                this.textureDictionary["IOptionsMenuAudio"],
+                                                this.textureDictionary["IOptionsMenuControls"],
+                                                this.textureDictionary["IOptionsMenuReturn"],
+                                                this.textureDictionary["IPauseMenu"],
+                                                this.textureDictionary["IPauseMenuOptions"],
+                                                this.textureDictionary["IPauseMenuQuit"],
+                                                this.textureDictionary["IPauseMenuRestart"],
+                                                this.textureDictionary["IPauseMenuResume"],
+                                                this.textureDictionary["IYouLose"],
+                                                this.textureDictionary["IYouLoseQuit"],
+                                                this.textureDictionary["IYouLoseRestart"],
+                                                this.textureDictionary["IYouWin"],
+                                                this.textureDictionary["IYouWinQuit"],
+                                                this.textureDictionary["IYouWinRestart"],
+                                                this.textureDictionary["IX"]
                                             };
 
             this.menuManager = new MenuManager(this, menuTexturesArray, this.fontDictionary["menu"], MenuData.MenuTexturePadding, MenuData.MenuTextureColor);
             this.menuManager.DrawOrder = 3; //always draw after ui manager(2)
-            this.menuManager.Pause = true;
             Components.Add(this.menuManager);
-
-
-            this.menuManager2 = new MenuManager(this, menuTexturesArray2, this.fontDictionary["menu"], MenuData.MenuTexturePadding, MenuData.MenuTextureColor);
-            this.menuManager2.DrawOrder = 3; //always draw after ui manager(2)
-            this.menuManager2.Pause = true;
-            Components.Add(this.menuManager2);
         }
 
         #region DEBUG
@@ -1192,7 +1241,7 @@ namespace GDApp
                         break;
                     case 6:
                         //win
-                        this.menuManager.Pause = false;
+                        this.menuManager.OpenMenu("Win");
                         break;
                 }
                 this.nextStep++;
