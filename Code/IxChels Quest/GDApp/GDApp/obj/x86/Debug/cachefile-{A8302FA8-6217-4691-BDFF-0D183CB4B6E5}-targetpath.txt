@@ -1,4 +1,6 @@
 Content\Assets\Debug\Fonts\debug.xnb
+Content\Assets\Fonts\menu.xnb
+Content\Assets\Fonts\UI.xnb
 Content\Assets\Textures\Game\Abstract\abstract1.xnb
 Content\Assets\Textures\Game\Abstract\pink.xnb
 Content\Assets\Textures\Game\Abstract\pink_trans1.xnb
@@ -61,6 +63,41 @@ Content\Assets\Models\GP modle\head.xnb
 Content\Assets\Models\GP modle\leg.xnb
 Content\Assets\Models\GP modle\shouse.xnb
 Content\Assets\Models\skin\RUSTY-METAL-TEXTURE.xnb
+Content\Assets\Textures\UI\white.xnb
+Content\Assets\Models\Animated\head.xnb
+Content\Assets\Models\Animated\jacket.xnb
+Content\Assets\Models\Animated\pants.xnb
+Content\Assets\Models\Animated\Tiny_skin.xnb
+Content\Assets\Models\Animated\upBodyC.xnb
+Content\Assets\Textures\Menu\IxChel\AudioButton.xnb
+Content\Assets\Textures\Menu\IxChel\AudioButtonHighlighted.xnb
+Content\Assets\Textures\Menu\IxChel\AudioMenu.xnb
+Content\Assets\Textures\Menu\IxChel\AudioMenuMusic.xnb
+Content\Assets\Textures\Menu\IxChel\AudioMenuMute.xnb
+Content\Assets\Textures\Menu\IxChel\AudioMenuReturn.xnb
+Content\Assets\Textures\Menu\IxChel\AudioMenuSFX.xnb
+Content\Assets\Textures\Menu\IxChel\ControlsMenu.xnb
+Content\Assets\Textures\Menu\IxChel\ControlsMenuReturn.xnb
+Content\Assets\Textures\Menu\IxChel\MainMenu.xnb
+Content\Assets\Textures\Menu\IxChel\MainMenuOptions.xnb
+Content\Assets\Textures\Menu\IxChel\MainMenuQuit.xnb
+Content\Assets\Textures\Menu\IxChel\MainMenuStart.xnb
+Content\Assets\Textures\Menu\IxChel\OptionsMenu.xnb
+Content\Assets\Textures\Menu\IxChel\OptionsMenuAudio.xnb
+Content\Assets\Textures\Menu\IxChel\OptionsMenuControls.xnb
+Content\Assets\Textures\Menu\IxChel\OptionsMenuReturn.xnb
+Content\Assets\Textures\Menu\IxChel\PauseMenu.xnb
+Content\Assets\Textures\Menu\IxChel\PauseMenuOptions.xnb
+Content\Assets\Textures\Menu\IxChel\PauseMenuQuit.xnb
+Content\Assets\Textures\Menu\IxChel\PauseMenuRestart.xnb
+Content\Assets\Textures\Menu\IxChel\PauseMenuResume.xnb
+Content\Assets\Textures\Menu\IxChel\YouLose.xnb
+Content\Assets\Textures\Menu\IxChel\YouLoseQuit.xnb
+Content\Assets\Textures\Menu\IxChel\YouLoseRestart.xnb
+Content\Assets\Textures\Menu\IxChel\YouWin.xnb
+Content\Assets\Textures\Menu\IxChel\YouWinQuit.xnb
+Content\Assets\Textures\Menu\IxChel\YouWinRestart.xnb
+Content\Assets\Textures\Menu\IxChel\X.xnb
 Content\Assets\Models\generic\box.xnb
 Content\Assets\Models\generic\cylinder.xnb
 Content\Assets\Models\characterModelv2.xnb
@@ -92,6 +129,14 @@ Content\Assets\Models\RoomV3.xnb
 Content\Assets\Models\RoomV5.xnb
 Content\Assets\Models\RoomV6.xnb
 Content\Assets\Models\arrow1.xnb
+Content\Assets\Models\animated2.xnb
+Content\Assets\Models\animated3.xnb
+Content\Assets\Models\animated4.xnb
+Content\Assets\Models\animated5.xnb
+Content\Assets\Models\Animated\dude.xnb
+Content\Assets\Models\animated6.xnb
+Content\Assets\Models\animetedn4.xnb
+Content\Assets\Models\Animated.xnb
 Content\Assets\Audio\Sounds\Arrow.xnb
 Content\Assets\Audio\Sounds\Arrow_Load.xnb
 Content\Assets\Audio\Sounds\Background.xnb
@@ -107,6 +152,9 @@ Content\Assets\Audio\Sounds\Tribal_Drums.xnb
 Content\Assets\Audio\Sounds\Footsteps_Stone3.xnb
 Content\Assets\Audio\Sounds\Footsteps_Stone1.xnb
 Content\Assets\Audio\Sounds\Footsteps_Stone2.xnb
+Content\Assets\Effects\Billboard.xnb
+Content\Assets\Effects\Animated.xnb
+Content\Assets\Models\Animated\dude_spheres.xnb
 Content\grey-stone-concrete-wall-with-sm_0.xnb
 Content\mfjyroO_0.xnb
 Content\sign4_0.xnb
@@ -125,55 +173,7 @@ Content\Assets\skin\sign4_0.xnb
 Content\Assets\skin\sign2_0.xnb
 Content\Assets\skin\sign3_0.xnb
 Content\Assets\skin\sign1_0.xnb
-Content\Assets\Effects\Billboard.xnb
 Content\Assets\Models\skin\RUSTY-METAL-TEXTURE_0.xnb
-Content\Assets\Fonts\menu.xnb
-Content\Assets\Fonts\UI.xnb
-Content\Assets\Textures\UI\white.xnb
-Content\Assets\Effects\Animated.xnb
-Content\Assets\Models\animated3.xnb
-Content\Assets\Models\animated5.xnb
-Content\Assets\Models\Animated\head.xnb
-Content\Assets\Models\Animated\jacket.xnb
-Content\Assets\Models\Animated\pants.xnb
-Content\Assets\Models\Animated\Tiny_skin.xnb
-Content\Assets\Models\Animated\upBodyC.xnb
-Content\Assets\Models\Animated\dude.xnb
-Content\Assets\Models\Animated\dude_spheres.xnb
-Content\Assets\Models\Animated\head_0.xnb
-Content\Assets\Models\Animated\jacket_0.xnb
-Content\Assets\Models\Animated\pants_0.xnb
-Content\Assets\Models\Animated\upBodyC_0.xnb
-Content\Assets\Models\animated6.xnb
-Content\Assets\Textures\Menu\IxChel\AudioButton.xnb
-Content\Assets\Textures\Menu\IxChel\AudioButtonHighlighted.xnb
-Content\Assets\Textures\Menu\IxChel\AudioMenu.xnb
-Content\Assets\Textures\Menu\IxChel\AudioMenuMusic.xnb
-Content\Assets\Textures\Menu\IxChel\AudioMenuMute.xnb
-Content\Assets\Textures\Menu\IxChel\AudioMenuReturn.xnb
-Content\Assets\Textures\Menu\IxChel\AudioMenuSFX.xnb
-Content\Assets\Textures\Menu\IxChel\ControlsMenu.xnb
-Content\Assets\Textures\Menu\IxChel\ControlsMenuReturn.xnb
-Content\Assets\Textures\Menu\IxChel\MainMenu.xnb
-Content\Assets\Textures\Menu\IxChel\MainMenuOptions.xnb
-Content\Assets\Textures\Menu\IxChel\MainMenuQuit.xnb
-Content\Assets\Textures\Menu\IxChel\MainMenuStart.xnb
-Content\Assets\Textures\Menu\IxChel\OptionsMenu.xnb
-Content\Assets\Textures\Menu\IxChel\OptionsMenuAudio.xnb
-Content\Assets\Textures\Menu\IxChel\OptionsMenuControls.xnb
-Content\Assets\Textures\Menu\IxChel\OptionsMenuReturn.xnb
-Content\Assets\Textures\Menu\IxChel\PauseMenu.xnb
-Content\Assets\Textures\Menu\IxChel\PauseMenuOptions.xnb
-Content\Assets\Textures\Menu\IxChel\PauseMenuQuit.xnb
-Content\Assets\Textures\Menu\IxChel\PauseMenuRestart.xnb
-Content\Assets\Textures\Menu\IxChel\PauseMenuResume.xnb
-Content\Assets\Textures\Menu\IxChel\YouLose.xnb
-Content\Assets\Textures\Menu\IxChel\YouLoseQuit.xnb
-Content\Assets\Textures\Menu\IxChel\YouLoseRestart.xnb
-Content\Assets\Textures\Menu\IxChel\YouWin.xnb
-Content\Assets\Textures\Menu\IxChel\YouWinQuit.xnb
-Content\Assets\Textures\Menu\IxChel\YouWinRestart.xnb
-Content\Assets\Models\animetedn4.xnb
 Content\Assets\Models\GP modle\coat_0.xnb
 Content\Assets\Models\GP modle\hand_0.xnb
 Content\Assets\Models\GP modle\leg_0.xnb
@@ -181,10 +181,10 @@ Content\Assets\Models\GP modle\fastener_0.xnb
 Content\Assets\Models\GP modle\head_0.xnb
 Content\Assets\Models\GP modle\eye_0.xnb
 Content\Assets\Models\GP modle\shouse_0.xnb
-Content\Assets\Models\animated4.xnb
-Content\Assets\Models\animated2.xnb
-Content\Assets\Models\Animated.xnb
-Content\Assets\Textures\Menu\IxChel\X.xnb
+Content\Assets\Models\Animated\head_0.xnb
+Content\Assets\Models\Animated\jacket_0.xnb
+Content\Assets\Models\Animated\pants_0.xnb
+Content\Assets\Models\Animated\upBodyC_0.xnb
 Content\Assets\Audio\IxchelsQuestAudio.xgs
 Content\Assets\Audio\Wave Bank.xwb
 Content\Assets\Audio\Sound Bank.xsb

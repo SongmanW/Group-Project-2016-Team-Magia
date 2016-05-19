@@ -112,7 +112,7 @@ namespace GDLibrary
                 {
                     this.CharacterBody.Velocity = Vector3.Normalize(moveVectorX + moveVectorZ) * 45;
 
-                    int ran = (int)Math.Floor(random.NextDouble() * 2.9);
+                    int ran = (int)Math.Floor(random.NextDouble() * 2.9d);
                     switch(ran)
                     {
                         case 0:

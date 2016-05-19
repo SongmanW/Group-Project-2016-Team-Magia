@@ -265,3 +265,201 @@ C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\I
 C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\GP modle\shouse_0.xnb
 C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\Animated.xnb
 C:\Studium\2.Auslandssemester\Group Project\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\IxChel\X.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Debug\Fonts\debug.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Fonts\menu.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Fonts\UI.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Abstract\abstract1.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Abstract\pink.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Abstract\pink_trans1.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Fence\fence1.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Fence\fence2.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Fence\fence3.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Fence\fence4.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Structures\backwall.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Architecture\Structures\sidewall.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\alarm1.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\alarm2.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\billboardtexture.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\chevron1.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\chevron2.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\snow1.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Billboards\welcome.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Debug\Textures\ml.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Debug\Textures\slj.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Foliage\Ground\foliage.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Foliage\Ground\grass1.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Foliage\Trees\tree1.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Foliage\Trees\tree2.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Foliage\Trees\tree3.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Props\Crates\crate1.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Props\Crates\crate2.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\back.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\front.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\ground2.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\left.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\right.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\Skybox\sky.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\white.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\audiomenu.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\exitmenu.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\exitmenuwithtrans.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\mainmenu.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\UI\mouseicons.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\whitedoor.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\symbol1.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\symbol2.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\symbol3.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Game\symbol4.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\skin\sign1.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\skin\sign2.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\skin\sign3.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\skin\sign4.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\skin\Brick_Tut_35.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\skin\mfjyroO.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\skin\sign1.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\skin\sign2.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\skin\sign3.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\skin\sign4.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\skin\Brick_Tut_35.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\skin\mfjyroO.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\GP modle\coat.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\GP modle\eye.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\GP modle\fastener.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\GP modle\hand.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\GP modle\head.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\GP modle\leg.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\GP modle\shouse.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\skin\RUSTY-METAL-TEXTURE.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\UI\white.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\Animated\head.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\Animated\jacket.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\Animated\pants.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\Animated\Tiny_skin.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\Animated\upBodyC.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\IxChel\AudioButton.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\IxChel\AudioButtonHighlighted.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\IxChel\AudioMenu.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\IxChel\AudioMenuMusic.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\IxChel\AudioMenuMute.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\IxChel\AudioMenuReturn.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\IxChel\AudioMenuSFX.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\IxChel\ControlsMenu.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\IxChel\ControlsMenuReturn.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\IxChel\MainMenu.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\IxChel\MainMenuOptions.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\IxChel\MainMenuQuit.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\IxChel\MainMenuStart.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\IxChel\OptionsMenu.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\IxChel\OptionsMenuAudio.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\IxChel\OptionsMenuControls.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\IxChel\OptionsMenuReturn.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\IxChel\PauseMenu.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\IxChel\PauseMenuOptions.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\IxChel\PauseMenuQuit.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\IxChel\PauseMenuRestart.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\IxChel\PauseMenuResume.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\IxChel\YouLose.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\IxChel\YouLoseQuit.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\IxChel\YouLoseRestart.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\IxChel\YouWin.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\IxChel\YouWinQuit.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\IxChel\YouWinRestart.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Textures\Menu\IxChel\X.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\generic\box.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\generic\cylinder.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\characterModelv2.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\mm.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\door.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\plate.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\room.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\rotation.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\wall.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\generic\dome.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\generic\hedra.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\generic\octahedron.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\generic\plane.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\generic\prism.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\generic\sphere.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\generic\spindle.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\generic\torus.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\generic\torusknot.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\arrow.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\trap.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\DoorV1.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\roomV1.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\roomV2.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\totemV1.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\totemV2.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\wallV1.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\wallV2.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\RoomV3.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\RoomV5.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\RoomV6.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\arrow1.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\animated2.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\animated3.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\animated4.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\animated5.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\Animated\dude.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\animated6.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\animetedn4.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\Animated.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Audio\Sounds\Arrow.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Audio\Sounds\Arrow_Load.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Audio\Sounds\Background.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Audio\Sounds\Death_Grunt.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Audio\Sounds\Footsteps_Stone.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Audio\Sounds\Menu_Select.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Audio\Sounds\Pressure_Plate.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Audio\Sounds\Prompt(Cue).xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Audio\Sounds\Rocks_Falling.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Audio\Sounds\Stone_Door.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Audio\Sounds\Totem_Rotate.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Audio\Sounds\Tribal_Drums.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Audio\Sounds\Footsteps_Stone3.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Audio\Sounds\Footsteps_Stone1.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Audio\Sounds\Footsteps_Stone2.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Effects\Billboard.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Effects\Animated.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\Animated\dude_spheres.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\grey-stone-concrete-wall-with-sm_0.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\mfjyroO_0.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\sign4_0.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\sign3_0.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\sign2_0.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\sign1_0.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\totem_1x_0.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Wood-Texture-by-xNickixstockx_0.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\skin\mfjyroO_0.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\skin\sign4_0.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\skin\sign3_0.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\skin\sign2_0.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\skin\sign1_0.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\skin\mfjyroO_0.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\skin\sign4_0.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\skin\sign2_0.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\skin\sign3_0.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\skin\sign1_0.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\skin\RUSTY-METAL-TEXTURE_0.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\GP modle\coat_0.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\GP modle\hand_0.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\GP modle\leg_0.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\GP modle\fastener_0.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\GP modle\head_0.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\GP modle\eye_0.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\GP modle\shouse_0.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\Animated\head_0.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\Animated\jacket_0.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\Animated\pants_0.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Models\Animated\upBodyC_0.xnb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Audio\IxchelsQuestAudio.xgs
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Audio\Wave Bank.xwb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\Content\Assets\Audio\Sound Bank.xsb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\GDApp.exe
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\GDApp.pdb
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\JigLibX.dll
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\bin\x86\Debug\SkinnedModel.dll
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\GDApp.csprojResolveAssemblyReference.cache
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\GDApp.exe
+C:\Studium\2.Auslandssemester\Group-Project-2016-Team-Magia\Code\IxChels Quest\GDApp\GDApp\obj\x86\Debug\GDApp.pdb
